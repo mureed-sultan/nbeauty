@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html data-wf-page="652fe9df5341e43567662723" data-wf-site="652fe9df5341e43567662724">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+        body {
+            background-color: #fafafa;
+        }
+
+        .booking-form-wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        .booking-form-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .booking-form-title h1 {
+            font-size: 3rem;
+            color: #222;
+        }
+
+        .booking-form {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            background: #fff;
+            padding: 3rem;
+            border-radius: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-field label {
+            font-family: Inter, sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #222;
+        }
+
+        .form-field input,
+        .form-field select {
+            padding: 0.8rem 1rem;
+            border-radius: 1rem;
+            border: 1px solid #ddd;
+            font-family: Inter, sans-serif;
+            font-size: 1rem;
+            color: #333;
+            transition: 0.3s;
+        }
+
+        .form-field input:focus,
+        .form-field select:focus {
+            border-color: #222;
+            outline: none;
+        }
+
+        .form-field select[multiple] {
+            height: 100px;
+        }
+
+        .submit-btn {
+            display: inline-block;
+            align-self: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            .booking-form-title h1 {
+                font-size: 2rem;
+            }
+
+            .booking-form {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="body">
+    <section class="booking-form-wrapper">
+        <div class="booking-form-title">
+            <h1 class="h-124">Book Your Appointment</h1>
+        </div>
+        <form class="booking-form">
+            <div class="form-field">
+                <label for="customer-name">Customer Name</label>
+                <input type="text" id="customer-name" name="customer-name" placeholder="Enter your name" required />
+            </div>
+            <div class="form-field">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+            </div>
+            <div class="form-field">
+                <label for="services">Select Services (Multiple)</label>
+                <select id="services" name="services" multiple>
+                    <option>Hair Wash</option>
+                    <option>Hair Cut</option>
+                    <option>Facial</option>
+                    <option>Massage</option>
+                    <option>Manicure</option>
+                    <option>Pedicure</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label for="branch">Select Branch</label>
+                <select id="branch" name="branch">
+                    <option>Al Barsha</option>
+                    <option>Baniyas East</option>
+                    <option>Ras Al Khaimah</option>
+                    <option>Al Shamkhah</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label for="provider">Service Provider (Optional)</label>
+                <input type="text" id="provider" name="provider" placeholder="Leave blank if not required" />
+            </div>
+         <div class="center-align" style="margin-top: 2rem;">
+    <a data-w-id="24265995-43ba-c51a-0956-aa3f205eb7eb" style="opacity:0" href="#"
+        class="btn-1 pc-hide w-inline-block">
+        <img
+            src="../cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e43567662740_Arrow%203.svg"
+            loading="lazy"
+            style="-webkit-transform:translate3d(0vw, 0, 0) scale3d(1, 1, 1);opacity:0"
+            alt="" class="arrow-img" />
+        <div data-w-id="dba252a3-1e31-9541-99a1-2e9bc6a4daa1" style="background-color:rgba(0,0,0,0)"
+            class="btn-div-inside">
+            <h1 style="color:rgb(0,0,0)" class="h-18 center-align">Submit Now</h1>
+            <div style="opacity:0" class="btn-1-wh-stroke-circle"></div>
+        </div>
+    </a>
+</div>
+        </form>
+    </section>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from('.booking-form-title', {
+            opacity: 0,
+            y: -50,
+            duration: 1,
+            ease: "power2.out"
+        });
+
+        gsap.from('.booking-form .form-field', {
+            opacity: 0,
+            y: 50,
+            stagger: 0.2,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".booking-form",
+                start: "top 80%"
+            },
+            ease: "power2.out"
+        });
+
+        gsap.from('.submit-btn', {
+            opacity: 0,
+            y: 30,
+            duration: 1,
+            delay: 0.5,
+            scrollTrigger: {
+                trigger: ".submit-btn",
+                start: "top 90%"
+            },
+            ease: "power2.out"
+        });
+    </script>
+      <script src="./jquery.js" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+  <script src="./webflow.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="customEase.js"></script>
+</body>
+</html>

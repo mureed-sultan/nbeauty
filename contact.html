@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="main.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <style>
+    .contact-wrapper {
+      max-width: 1024px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    form.contact-form {
+      display: grid;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border-radius: 0.75rem;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .contact-details {
+      margin-top: 3rem;
+    }
+
+    .contact-details h3 {
+      margin-bottom: 1rem;
+    }
+
+    .map-box {
+      margin-top: 3rem;
+      width: 100%;
+      height: 350px;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    @media screen and (max-width: 480px) {
+      .contact-wrapper {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="body">
+  <div class="_1block-div">
+    <div class="_1block-content-div-1line center-align">
+      <h1 class="h-124">Contact Us</h1>
+      <p class="p-18">We’d love to hear from you! Reach out with any questions, bookings, or feedback.</p>
+    </div>
+
+    <div class="contact-wrapper">
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" />
+        <select name="branch" required>
+          <option value="">Select Branch</option>
+          <option>Al Barsha</option>
+          <option>Baniyas East</option>
+          <option>Ras Al Khaimah</option>
+          <option>Al Shamkhah</option>
+        </select>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="btn-1 w-inline-block">
+          <div class="btn-div-inside">
+            <h1 class="h-18 center-align">Send Message</h1>
+            <div class="btn-1-wh-stroke-circle"></div>
+          </div>
+        </button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="contact-details">
+        <h3 class="h-50">Reach Us Directly</h3>
+        <p class="p-18">📞 Phone: <a href="tel:+971542722555">+971 54 272 2555</a></p>
+        <p class="p-18">📧 Email: <a href="mailto:info@nbeauty.ae">info@nbeauty.ae</a></p>
+
+        <h3 class="h-50" style="margin-top: 2rem;">Our Locations</h3>
+        <p class="p-18">📍 Al Barsha – Mall Street #23, Dubai</p>
+        <p class="p-18">📍 Baniyas East – Bawabat Al Sharq Mall, Abu Dhabi</p>
+        <p class="p-18">📍 Ras Al Khaimah – Al Naeem Mall</p>
+        <p class="p-18">📍 Al Shamkhah – Makani Mall, Abu Dhabi</p>
+      </div>
+
+      <!-- Embedded Map -->
+      <div class="map-box">
+        <!-- Replace src with your Google Maps embed later -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28879.130370392674!2d55.27796205!3d25.1972019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b2cdd7d80cb%3A0x56d80c4e7cde891d!2sDubai!5e0!3m2!1sen!2sae!4v123456789"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from('.contact-form, .contact-details, .map-box', {
+      scrollTrigger: {
+        trigger: '.contact-form',
+        start: 'top 90%',
+        toggleActions: 'play none none none'
+      },
+      opacity: 0,
+      y: 40,
+      duration: 0.6
+    });
+  </script>
+</body>
+</html>

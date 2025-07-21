@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Appointment Form</title>
+  <link rel="stylesheet" href="main.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .form-wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .popup-form-title {
+      font-size: 1.75rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .popup-input {
+      border-radius: 0.5rem;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+    }
+    .submit-btn {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      width: 100%;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="appointment-pop-up-div" style="display: block !important;">
+  <div class="appointment-body-div">
+    <div class="menu-side-div-2 appointment-div">
+      <a href="#" class="location-header-div w-inline-block" onclick="closePopup()">
+        <h1 class="h-18">close</h1>
+        <div class="black-circle-div"></div>
+      </a>
+    </div>
+
+    <h1 class="h-50 medium popup-form-title">Welcome! Let’s Get You Started</h1>
+
+    <!-- Begin Bootstrap-enhanced Form -->
+    <div class="form-wrapper">
+      <form action="mailto:your@email.com" method="POST" enctype="text/plain">
+        <div class="mb-3">
+          <label class="form-label" for="name">Name</label>
+          <input type="text" name="Name" id="name" class="form-control popup-input" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="whatsapp">WhatsApp Contact</label>
+          <input type="tel" name="WhatsApp" id="whatsapp" class="form-control popup-input" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="email">Email</label>
+          <input type="email" name="Email" id="email" class="form-control popup-input" required />
+        </div>
+        <div class="mb-4">
+          <label class="form-label" for="branch">Preferred Branch</label>
+          <select name="Branch Preference" id="branch" class="form-select popup-input" required>
+            <option value="">-- Select a Branch --</option>
+            <option value="Business Bay">Business Bay</option>
+            <option value="Dubai Mall">Dubai Mall</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+    <!-- End Form -->
+
+    <p class="p-18 opening-soon mt-4 text-center">
+      You can also explore our branches below.
+    </p>
+
+    <div class="locations-div">
+      <!-- Keep your existing branch details unchanged here -->
+    </div>
+  </div>
+</div>
+
+<script>
+  // First-time visitor popup trigger
+  window.onload = function () {
+    if (!localStorage.getItem("visitedBefore")) {
+      document.querySelector(".appointment-pop-up-div").style.display = "block";
+      localStorage.setItem("visitedBefore", "true");
+    }
+  };
+
+  function closePopup() {
+    document.querySelector(".appointment-pop-up-div").style.display = "none";
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>POS Sales by Employee</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    label, select, input { margin: 5px 0; display: block; }
+    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+  </style>
+</head>
+<body>
+
+  <h2>POS Sales by Employee</h2>
+
+  <label for="employee">Employee:</label>
+  <select id="employee"></select>
+
+  <label for="start_date">Start Date:</label>
+  <input type="date" id="start_date">
+
+  <label for="end_date">End Date:</label>
+  <input type="date" id="end_date">
+
+  <button onclick="fetchSales()">Fetch Sales</button>
+
+  <table id="results">
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>Product</th>
+        <th>Qty</th>
+        <th>Unit Price</th>
+        <th>Subtotal</th>
+        <th>Discount</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    async function loadEmployees() {
+      const res = await fetch("http://localhost:8000/employees");
+      //   return
+      const data = await res.json();
+      console.log(data)
+      const select = document.getElementById("employee");
+      data.forEach(emp => {
+        const opt = document.createElement("option");
+        opt.value = emp.name;
+        opt.textContent = `${emp.name} (${emp.barcode})`;
+        select.appendChild(opt);
+      });
+    }
+
+    async function fetchSales() {
+      const emp = document.getElementById("employee").value;
+      const start = document.getElementById("start_date").value;
+      const end = document.getElementById("end_date").value;
+      const tbody = document.querySelector("#results tbody");
+      tbody.innerHTML = "";
+
+      const res = await fetch(`http://localhost:8000/pos_sales?employee=${emp}&start_date=${start}&end_date=${end}`);
+      const data = await res.json();
+
+      data.forEach(line => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${line.order_id[1]}</td>
+          <td>${line.product_id[1]}</td>
+          <td>${line.qty}</td>
+          <td>${line.price_unit}</td>
+          <td>${line.price_subtotal}</td>
+          <td>${line.discount}%</td>
+          <td>${line.create_date?.slice(0, 10)}</td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    loadEmployees();
+  </script>
+
+</body>
+</html>
