@@ -1,0 +1,539 @@
+<odoo>
+    <data>
+        <template id="nbeauty_aboutpage" name="About Us Page">
+            <t t-call="website.layout">
+                <main class="body">
+
+                    <div id="wrap">
+
+                        <div id="about" class="_2block-div about">
+                            <div class="_2bl-h-div-line-1">
+                                <p data-w-id="ca749007-244c-847e-3d69-d65f1ed6e5d5" style="opacity: 1"
+                                   class="p-18 _2block-1 hide">
+                                    Our Story:
+                                </p>
+                                <h1 data-w-id="ca749007-244c-847e-3d69-d65f1ed6e5d7" style="opacity: 1" class="h-124">
+                                    N Beauty Salon
+                                </h1>
+                            </div>
+                            <h1 data-w-id="ca749007-244c-847e-3d69-d65f1ed6e5d9" style="opacity: 1"
+                                class="h-124 _2block-2">
+                                Beauty Inside and
+                            </h1>
+                            <div class="_2block-content-div">
+                                <div class="_2block-content-div-1">
+                                    <div class="_2block-item-div-wrapper">
+                                        <div class="_2block-item-main-div">
+                                            <h1 class="h-151">01</h1>
+                                            <div class="_2block-item-div">
+                                                <h1 class="h-50">It all began as a nail studio</h1>
+                                                <p class="p-18 black _100">
+                                                    Where we dedicated ourselves to perfecting the art of nail
+                                                    care. Specializing in “russian manicure &amp; pedicure”
+                                                    technique, our mission was to provide top-notch nail services
+                                                    that left our clients feeling pampered and confident. We were
+                                                    committed to quality, precision, and ensuring that every visit
+                                                    to our studio was a delightful experience.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="_2block-item-div-wrapper pc-hide">
+                                        <div class="_2block-item-main-div _02">
+                                            <h1 class="h-151">02</h1>
+                                            <div class="_2block-item-div">
+                                                <h1 class="h-50 _02-mob">
+                                                    But we listened, and we heard your dreams
+                                                </h1>
+                                                <p class="p-18 black _02">
+                                                    You craved a place where beauty and wellness unite, where you
+                                                    could find everything you need under one roof.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="_2block-item-div-wrapper">
+                                        <div class="_2block-item-main-div _03">
+                                            <h1 class="h-151">03</h1>
+                                            <div class="_2block-item-div">
+                                                <h1 class="h-50">And, we expanded</h1>
+                                                <p class="p-18 black">
+                                                    Today, we proudly introduce our second branch located in the
+                                                    heart of the city - Dubai Mall Zabeel Expansion.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_2block-content-div-2">
+                                    <div class="_2block-item-div-wrapper mob-hide">
+                                        <div class="_2block-item-main-div _02">
+                                            <h1 class="h-151">02</h1>
+                                            <div class="_2block-item-div">
+                                                <h1 class="h-50 _02-mob">
+                                                    But we listened, and we heard your dreams
+                                                </h1>
+                                                <p class="p-18 black _02">
+                                                    You craved a place where beauty and wellness unite, where you
+                                                    could find everything you need under one roof.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="_2block-item-div-wrapper">
+                                        <div class="_2block-item-main-div _04">
+                                            <h1 class="h-151">04</h1>
+                                            <div class="_2block-item-div">
+                                                <h1 class="h-50">It&#x27;s not just about nails anymore</h1>
+                                                <p class="p-18 black _04">
+                                                    We call it our “beauty cave” - it&#x27;s about complete
+                                                    beauty, from head to toe. We offer a full range of services,
+                                                    all designed to enhance your natural beauty and elevate your
+                                                    spirit.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_2block-item-main-div _05">
+                                <h1 class="h-151">05</h1>
+                                <div class="_2block-item-div _05">
+                                    <div data-w-id="ca749007-244c-847e-3d69-d65f1ed6e60f" style="opacity: 1"
+                                         class="_05-item-div-line-1">
+                                        <h1 class="h-116">Every visit to PRO Nails</h1>
+                                        <img src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e43567662741_%26.svg"
+                                             loading="lazy" alt="" class="img _2block mob-hide"/>
+                                    </div>
+                                    <div data-w-id="ca749007-244c-847e-3d69-d65f1ed6e613" style="opacity: 1"
+                                         class="_05-item-div-line-1 pc-hide">
+                                        <img src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e43567662741_%26.svg"
+                                             loading="lazy" alt="" class="img _2block"/>
+                                        <h1 class="h-116">Beauty Studio</h1>
+                                    </div>
+                                    <div data-w-id="ca749007-244c-847e-3d69-d65f1ed6e617" style="opacity: 1"
+                                         class="_05-item-div-line-1">
+                                        <h1 class="h-116 mob-hide">
+                                            Beauty Studio is a celebration of  you
+                                        </h1>
+                                    </div>
+                                    <h1 data-w-id="ca749007-244c-847e-3d69-d65f1ed6e61a" style="opacity: 1"
+                                        class="h-116 mo-hide-2">
+                                        is a celebration of  you
+                                    </h1>
+                                    <p class="p-18 black _05">
+                                        Your support, your loyalty, and your smiles brought us here. Join us
+                                        in this new chapter of your beauty journey.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                          <img t-attf-src="/nbeauty/static/src/img/image1.JPG" loading="lazy"
+                         data-w-id="6be0ff32-dad0-c6fa-7bed-36db6eaec9d3"
+                         sizes="100vw"
+                         alt="Luxurious interior of the salon with cosmetics samples on the shelves"
+                         class="big-img-1 mob-hide"/>
+
+                        <div class="_8block-div">
+                            <div class="marquee-horizontal-css w-embed">
+                                <style>
+                                    .track-horizontal {
+                                    position: absolute;
+                                    white-space: nowrap;
+                                    will-change: transform;
+                                    animation: marquee-horizontal 40s linear infinite;
+                                    /* manipulate the speed of the marquee by changing "40s" line above*/
+                                    }
+
+                                    @keyframes marquee-horizontal {
+                                    from {
+                                    transform: translateX(0);
+                                    }
+
+                                    to {
+                                    transform: translateX(-50%);
+                                    }
+                                    }
+                                </style>
+                            </div>
+                            <div class="marquee-horizontal-alt-css w-embed">
+                                <style>
+                                    .track-horizontal-alt {
+                                    position: absolute;
+                                    white-space: nowrap;
+                                    will-change: transform;
+                                    animation: marquee-horizontal-alt 40s linear infinite;
+                                    /* manipulate the speed of the marquee by changing "40s" line above*/
+                                    }
+
+                                    @keyframes marquee-horizontal-alt {
+                                    from {
+                                    transform: translateX(-50%);
+                                    }
+
+                                    to {
+                                    transform: translateX(0%);
+                                    }
+                                    }
+                                </style>
+                            </div>
+                            <div class="_8block-h-div-line-1">
+                                <p data-w-id="da6e8fc1-9b85-a979-fc69-3e24160badb6" style="opacity:1"
+                                   class="p-18 _2block-1 hide">
+                                    Partners
+                                </p>
+                                <h1 data-w-id="da6e8fc1-9b85-a979-fc69-3e24160badb8" style="opacity:1" class="h-124">our
+                                    partners
+                                </h1>
+                            </div>
+                            <div class="flex-vertical">
+                                <div class="marquee-horizontal-large">
+                                    <div class="track-horizontal">
+                                        <div class="flex-horizontal">
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531671d6e5615ed84d1e9db_abc-logo.png"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d49200e2872170e31f85b7_lasulcane-logo.webp"
+                                                        alt="LaSultane de Saba logo" class="icon size-sultane"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d493b6bef7b761e4965cc4_palma.webp"
+                                                        alt="Palma de Salus logo" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                        </div>
+                                        <div class="flex-horizontal">
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531671d6e5615ed84d1e9db_abc-logo.png"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d49200e2872170e31f85b7_lasulcane-logo.webp"
+                                                        alt="LaSultane de Saba logo" class="icon size-sultane"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d493b6bef7b761e4965cc4_palma.webp"
+                                                        alt="Palma de Salus logo" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="marquee-horizontal-large">
+                                    <div class="track-horizontal-alt">
+                                        <div class="flex-horizontal">
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653168f9ea1e7e5ca13cc247_Layer%202.png"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653169089a6aa38ae8a730f1_Group.png"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531691b4fb106d0b5dc46a3_Group-1.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531691b4fb106d0b5dc46a3_Group-1-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531691b4fb106d0b5dc46a3_Group-1.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531692fea1e7e5ca13d144c_hydrafacial.2cb729122ebed9b1fdf89ac3c87c334a.png"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531693f24df4efd6919d172_logo%201.png"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d494d827ed48faece7cc6f_nutrili.webp"
+                                                        alt="Nutrili logo" class="icon size-nutrili"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d4ac6e3233b633867d64c8_logo-lycon-retina.png"
+                                                        alt="Lycon cosmetics logo" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                        </div>
+                                        <div class="flex-horizontal">
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653168f9ea1e7e5ca13cc247_Layer%202.png"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653169089a6aa38ae8a730f1_Group.png"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531691b4fb106d0b5dc46a3_Group-1.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531691b4fb106d0b5dc46a3_Group-1-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531691b4fb106d0b5dc46a3_Group-1.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531692fea1e7e5ca13d144c_hydrafacial.2cb729122ebed9b1fdf89ac3c87c334a.png"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531693f24df4efd6919d172_logo%201.png"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d494d827ed48faece7cc6f_nutrili.webp"
+                                                        alt="Nutrili logo" class="icon size-nutrili"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d4ac6e3233b633867d64c8_logo-lycon-retina.png"
+                                                        alt="Lycon cosmetics logo" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="marquee-horizontal-large">
+                                    <div class="track-horizontal">
+                                        <div class="flex-horizontal">
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531696c66989a8951c5955e_isc-logo-horiz.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531696c66989a8951c5955e_isc-logo-horiz-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531696c66989a8951c5955e_isc-logo-horiz.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653169766c85420cbb6ef5e1_fedua-logo-1615225651.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653169766c85420cbb6ef5e1_fedua-logo-1615225651-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/653169766c85420cbb6ef5e1_fedua-logo-1615225651.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316995df7c052925216f36_holy.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316995df7c052925216f36_holy-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316995df7c052925216f36_holy.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653169a90ee78101ccb87dd3_say.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653169a90ee78101ccb87dd3_say-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/653169a90ee78101ccb87dd3_say.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653168f9ea1e7e5ca13cc247_Layer%202.png"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d495fa1581e61ca5034f48_TK-Logo.webp"
+                                                        alt="Tokio inkarami logo" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d49e212abdf5072be13194_jBeverly.svg"
+                                                        alt="Beverly hills logo" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                        </div>
+                                        <div class="flex-horizontal">
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531696c66989a8951c5955e_isc-logo-horiz.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531696c66989a8951c5955e_isc-logo-horiz-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531696c66989a8951c5955e_isc-logo-horiz.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653169766c85420cbb6ef5e1_fedua-logo-1615225651.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653169766c85420cbb6ef5e1_fedua-logo-1615225651-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/653169766c85420cbb6ef5e1_fedua-logo-1615225651.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316995df7c052925216f36_holy.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316995df7c052925216f36_holy-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316995df7c052925216f36_holy.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653169a90ee78101ccb87dd3_say.png"
+                                                        sizes="(max-width: 479px) 21vw, 10vw"
+                                                        srcset="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653169a90ee78101ccb87dd3_say-p-500.png 500w, https://cdn.prod.website-files.com/652fe9df5341e43567662724/653169a90ee78101ccb87dd3_say.png 600w"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/653168f9ea1e7e5ca13cc247_Layer%202.png"
+                                                        alt="" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d495fa1581e61ca5034f48_TK-Logo.webp"
+                                                        alt="Tokio inkarami logo" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                            <div class="icon-container-alt">
+                                                <img
+                                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d49e212abdf5072be13194_jBeverly.svg"
+                                                        alt="Beverly hills logo" class="icon"/>
+                                            </div>
+                                            <div class="spacer-30 _15-xsvp"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="testimonials-section">
+                            <h2 class="testimonials-heading">Client Testimonials</h2>
+                            <div class="testimonials-container">
+                                <div class="testimonial">
+                                    <p class="testimonial-quote">“Absolutely love the service here! Professional and
+                                        friendly staff,
+                                        and the
+                                        results are always perfect.”
+                                    </p>
+                                    <p class="testimonial-author">— Aisha M., Dubai</p>
+                                </div>
+                                <div class="testimonial">
+                                    <p class="testimonial-quote">“The ambiance is soothing and the treatments are
+                                        top-notch.
+                                        Highly
+                                        recommended!”
+                                    </p>
+                                    <p class="testimonial-author">— Fatima S., Abu Dhabi</p>
+                                </div>
+                                <div class="testimonial">
+                                    <p class="testimonial-quote">“I've tried many salons, but NBeauty stands out. Great
+                                        experience
+                                        every
+                                        single time.”
+                                    </p>
+                                    <p class="testimonial-author">— Laila R., Ras Al Khaimah</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+            </t>
+
+        </template>
+    </data>
+</odoo>

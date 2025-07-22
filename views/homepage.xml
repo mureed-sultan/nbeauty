@@ -1,0 +1,1547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <data>
+
+        <template id="nbeauty_homepage" name="nBeauty Homepage" priority="1">
+            <t t-call="website.layout">
+                <main class="body">
+                    <div id="main" class="_1block-div ">
+                        <div class="_1block-content-div-1line">
+                            <h1
+                                    data-w-id="00b69083-65a7-3e7c-dea6-991bb6f1d930"
+                                    style="opacity: 0"
+                                    class="h-345 _1-1"
+                            >
+                                N Bea<span class="reg-it">u</span>ty
+                            </h1>
+                            <a
+                                    data-w-id="24265995-43ba-c51a-0956-aa3f205eb7eb"
+                                    style="opacity: 0"
+                                    href="#"
+                                    class="btn-1 pc-hide w-inline-block"
+                            >
+                                <img
+                                        src="../cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e43567662740_Arrow%203.svg"
+                                        loading="lazy"
+                                        style="
+              -webkit-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -moz-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0)
+                rotateY(0) rotateZ(0) skew(0, 0);
+              -ms-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0)
+                rotateY(0) rotateZ(0) skew(0, 0);
+              transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0)
+                rotateY(0) rotateZ(0) skew(0, 0);
+              opacity: 0;
+            "
+                                        alt=""
+                                        class="arrow-img"
+                                />
+                                <div
+                                        data-w-id="dba252a3-1e31-9541-99a1-2e9bc6a4daa1"
+                                        style="background-color: rgba(0, 0, 0, 0)"
+                                        class="btn-div-inside"
+                                >
+                                    <h1 style="color: rgb(0, 0, 0)" class="h-18 center-align">
+                                        Make an appointment
+                                    </h1>
+                                    <div style="opacity: 0" class="btn-1-wh-stroke-circle"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="_1block-content-div-2line">
+                            <!-- <p data-w-id="a1d1d981-776e-6d4b-c7ce-6807b666d95e" class="p-15 _1block-2 pc-hide">2025</p> -->
+                            <!-- <h1 data-w-id="a1d1d981-776e-6d4b-c7ce-6807b666d959" style="opacity:0" class="h-345 _1-2 pc-hide">Be aut<span
+                      class="reg-it">y</span></h1> -->
+                        </div>
+                        <div class="_1block-content-div-3line">
+                            <p
+                                    data-w-id="00803fe3-8a81-1d86-7626-3162137d13a7"
+                                    style="opacity: 0"
+                                    class="p-26 _1block pc-hide"
+                            >
+                                We offer a complete range of beauty treatments for nails, hair, face
+                                and body—allowing you to shine even brighter
+                            </p>
+                            <h1
+                                    data-w-id="142c5fdb-2f0a-0426-9e52-e41897088392"
+                                    style="opacity: 0"
+                                    class="h-345 _1-3"
+                            >
+                                Sa<span class="reg-it">l</span>on
+                            </h1>
+                            <p
+                                    data-w-id="f3dd1afe-10a7-af74-b323-a2b319642ae2"
+                                    style="opacity: 0"
+                                    class="p-26 _1block mob-hide z-10"
+                            >
+                                We offer a complete range of beauty treatments for nails, hair, face
+                                and body—allowing you to shine even brighter
+                            </p>
+                            <div class="home-hero_contact is-hidden">
+                                <a
+                                        data-w-id="cdbd560b-6ae9-6405-855d-964b88a4d1bb"
+                                        href="#"
+                                        class="home-hero_phone-link w-inline-block"
+                                >
+                                    <div class="home-hero_phones-ico w-embed">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 29 39"
+                                                fill="none"
+                                        >
+                                            <path
+                                                    d="M2.87227 11.6715C2.33829 8.1331 4.81806 4.95472 8.60621 3.79025C9.27845 3.58346 10.0038 3.64232 10.6344 3.95484C11.265 4.26736 11.7534 4.81002 12.0002 5.47226L13.2163 8.73502C13.4121 9.25991 13.4475 9.83169 13.318 10.377C13.1884 10.9222 12.8999 11.4161 12.4894 11.7953L8.8718 15.1283C8.69348 15.293 8.56061 15.5013 8.48614 15.733C8.41166 15.9647 8.39813 16.2118 8.44686 16.4503L8.48041 16.5966L8.56707 16.9622C9.01697 18.7389 9.70248 20.4465 10.6051 22.0392C11.5884 23.7316 12.8086 25.2729 14.2283 26.6155L14.3402 26.7168C14.5208 26.8781 14.7398 26.9895 14.976 27.0403C15.2121 27.0911 15.4573 27.0794 15.6877 27.0065L20.3649 25.5242C20.8964 25.3563 21.4657 25.352 21.9997 25.5119C22.5337 25.6717 23.008 25.9885 23.3618 26.4214L25.576 29.1245C26.4986 30.2496 26.3868 31.9035 25.3272 32.8963C22.4281 35.6162 18.4414 36.1732 15.6681 33.9314C12.2686 31.1726 9.40285 27.8078 7.21396 24.0053C5.00731 20.2057 3.53613 16.0212 2.87227 11.6715ZM11.3767 16.636L14.3737 13.8682C15.1952 13.1103 15.7728 12.1227 16.0323 11.0321C16.2918 9.94153 16.2215 8.7978 15.8303 7.74775L14.6169 4.48499C14.1203 3.15309 13.1377 2.0617 11.8694 1.43306C10.601 0.804409 9.14214 0.685764 7.78987 1.10128C3.08474 2.54983 -0.692228 6.79424 0.107338 12.0962C0.666474 15.7978 1.95528 20.5063 4.79849 25.4229C7.16004 29.523 10.2514 33.1509 13.918 36.1254C18.078 39.4866 23.6302 38.339 27.2366 34.9581C28.2686 33.9914 28.8949 32.665 28.9879 31.2495C29.0809 29.834 28.6335 28.4361 27.7371 27.3412L25.5229 24.6354C24.8146 23.7704 23.8656 23.138 22.7977 22.8193C21.7297 22.5006 20.5915 22.51 19.5289 22.8465L15.6457 24.0756C14.6431 23.0356 13.7649 21.8811 13.029 20.6357C12.3181 19.3766 11.7641 18.0342 11.3795 16.6388"
+                                                    fill="currentColor"
+                                            />
+                                        </svg>
+                                    </div>
+                                </a
+                                >
+                                <a
+                                        href="../m.pronails.ae/menu/Treatment-Menu.html"
+                                        class="home-hero_price-link is-last w-inline-block"
+                                >
+                                    <div class="home-hero_prices-text">Prices</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                                data-w-id="02ce3fbe-a809-7bfd-4cac-6078064206f1"
+                                class="photos-1block-div"
+                        >
+                            <img
+                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-18.JPG"
+                                    loading="eager"
+                                    sizes="(max-width: 479px) 50vw, 15vw"
+                                    alt=""
+                                    class="_1block-img-1"
+                            />
+                            <img
+                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-16.JPG"
+                                    loading="eager"
+                                    data-w-id="f1ee6eb7-6cf9-97a9-d406-4acc728e5375"
+                                    sizes="(max-width: 479px) 63vw, 19vw"
+                                    alt=""
+                                    class="_1block-img-2"
+                            />
+                            <img
+                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-14.JPG"
+                                    loading="eager"
+                                    data-w-id="16b8ad2a-f298-69e8-50d2-151e0de3f968"
+                                    sizes="(max-width: 479px) 67vw, 19vw"
+                                    alt=""
+                                    class="_1block-img-3"
+                            />
+                            <img
+                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-12.JPG"
+                                    loading="eager"
+                                    data-w-id="02a09a68-8eb5-1ceb-a89e-77216bcfb0a8"
+                                    sizes="(max-width: 479px) 60vw, 15vw"
+                                    alt=""
+                                    class="_1block-img-4"
+                            />
+                            <img
+                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-26.JPG"
+                                    loading="eager"
+                                    data-w-id="04f42924-a469-7a7a-05ca-0b020bee129c"
+                                    sizes="(max-width: 479px) 59vw, 17vw"
+                                    alt=""
+                                    class="_1block-img-5"
+                            />
+                            <img
+                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-22.JPG"
+                                    loading="eager"
+                                    data-w-id="6e3fbf1b-f6e2-af32-7d4b-32b023be2e20"
+                                    sizes="(max-width: 479px) 53vw, 14vw"
+                                    alt=""
+                                    class="_1block-img-6"
+                            />
+                            <img
+                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-24.JPG"
+                                    loading="eager"
+                                    data-w-id="e7d37861-4b8b-9f93-066b-043a7a209dec"
+                                    sizes="(max-width: 479px) 53vw, 14vw"
+                                    alt=""
+                                    class="_1block-img-7"
+                            />
+                            <img
+                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-37.JPG"
+                                    loading="eager"
+                                    data-w-id="f71da20d-1089-f66b-31ab-72593010cc11"
+                                    sizes="(max-width: 479px) 61vw, 17vw"
+                                    alt=""
+                                    class="_1block-img-8"
+                            />
+                            <img
+                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-38.webp"
+                                    loading="eager"
+                                    data-w-id="54bf990d-49d3-b85b-a128-dcd26fa225c2"
+                                    sizes="(max-width: 479px) 49vw, 14vw"
+                                    alt=""
+                                    class="_1block-img-9"
+                            />
+                        </div>
+                        <a
+                                data-w-id="725f09ed-bd0a-2d47-b7bb-81e9c48495a6"
+                                style="opacity: 0"
+                                href="#"
+                                class="btn-1 mob-hide w-inline-block"
+                        >
+                            <img
+                                    src="../cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e43567662740_Arrow%203.svg"
+                                    loading="lazy"
+                                    style="
+            -webkit-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1)
+              rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+            -moz-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+            -ms-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+            transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+            opacity: 0;
+          "
+                                    alt=""
+                                    class="arrow-img"
+                            />
+                            <div
+                                    data-w-id="725f09ed-bd0a-2d47-b7bb-81e9c48495a8"
+                                    style="background-color: rgba(0, 0, 0, 0)"
+                                    class="btn-div-inside"
+                            >
+                                <h1 class="h-18 center-align mob-btn-1">Make an appointment</h1>
+                                <div style="opacity: 0" class="btn-1-wh-stroke-circle"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="about" class="_2block-div">
+                        <div class="_2bl-h-div-line-1">
+                            <p data-w-id="b24e0134-f618-b265-28ca-992d5f2dd78f" style="opacity: 1"
+                               class="p-18 _2block-1 hide">
+                                Our Story:
+                            </p>
+                            <h1 data-w-id="175dd5d2-25dc-ccb4-7a74-271c9e37f220" style="opacity: 1" class="h-124">
+                                beautiful
+                            </h1>
+                        </div>
+                        <h1 data-w-id="eb4e90be-cb48-b6f8-1cd6-dd1b6524532d" style="opacity: 1" class="h-124 _2block-2">
+                            inside &#38; out
+                        </h1>
+                        <div class="_2block-content-div">
+                            <div class="_2block-content-div-1">
+                                <div class="_2block-item-div-wrapper">
+                                    <div class="_2block-item-main-div">
+                                        <h1 class="h-151">01</h1>
+                                        <div class="_2block-item-div">
+                                            <h1 class="h-50">It all began as a nail studio</h1>
+                                            <p class="p-18 black _100">
+                                                Where we dedicated ourselves to perfecting the art of nail
+                                                care. Specializing in “russian manicure &amp; pedicure”
+                                                technique, our mission was to provide top-notch nail services
+                                                that left our clients feeling pampered and confident. We were
+                                                committed to quality, precision, and ensuring that every visit
+                                                to our studio was a delightful experience.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_2block-item-div-wrapper pc-hide">
+                                    <div class="_2block-item-main-div _02">
+                                        <h1 class="h-151">02</h1>
+                                        <div class="_2block-item-div">
+                                            <h1 class="h-50 _02-mob">
+                                                But we listened, and we heard your dreams
+                                            </h1>
+                                            <p class="p-18 black _02">
+                                                You craved a place where beauty and wellness unite, where you
+                                                could find everything you need under one roof.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_2block-item-div-wrapper">
+                                    <div class="_2block-item-main-div _03">
+                                        <h1 class="h-151">03</h1>
+                                        <div class="_2block-item-div">
+                                            <h1 class="h-50">And, we expanded</h1>
+                                            <p class="p-18 black">
+                                                Today, we proudly introduce our second branch located in the
+                                                heart of the city - Dubai Mall Zabeel Expansion.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_2block-content-div-2">
+                                <div class="_2block-item-div-wrapper mob-hide">
+                                    <div class="_2block-item-main-div _02">
+                                        <h1 class="h-151">02</h1>
+                                        <div class="_2block-item-div">
+                                            <h1 class="h-50 _02-mob">
+                                                But we listened, and we heard your dreams
+                                            </h1>
+                                            <p class="p-18 black _02">
+                                                You craved a place where beauty and wellness unite, where you
+                                                could find everything you need under one roof.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_2block-item-div-wrapper">
+                                    <div class="_2block-item-main-div _04">
+                                        <h1 class="h-151">04</h1>
+                                        <div class="_2block-item-div">
+                                            <h1 class="h-50">It&#x27;s not just about nails anymore</h1>
+                                            <p class="p-18 black _04">
+                                                We call it our “beauty cave” - it&#x27;s about complete
+                                                beauty, from head to toe. We offer a full range of services,
+                                                all designed to enhance your natural beauty and elevate your
+                                                spirit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_2block-item-main-div _05">
+                            <h1 class="h-151">05</h1>
+                            <div class="_2block-item-div _05">
+                                <div data-w-id="44a12cb3-a578-69c7-1c70-c4b7a31c9966" style="opacity: 1"
+                                     class="_05-item-div-line-1">
+                                    <h1 class="h-116">Every visit to N Beauty</h1>
+                                    <img src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e43567662741_%26.svg"
+                                         loading="lazy" alt="" class="img _2block mob-hide"/>
+                                </div>
+                                <div data-w-id="1862ef3f-0b44-2337-f708-ec2b059508b9" style="opacity: 1"
+                                     class="_05-item-div-line-1 pc-hide">
+                                    <img src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e43567662741_%26.svg"
+                                         loading="lazy" alt="" class="img _2block"/>
+                                    <h1 class="h-116">Beauty Studio</h1>
+                                </div>
+                                <div data-w-id="971b0e87-93f7-2c5a-6c50-cc74804a7e2b" style="opacity: 1"
+                                     class="_05-item-div-line-1">
+                                    <h1 class="h-116 mob-hide">
+                                        Beauty Studio is a celebration of  you
+                                    </h1>
+                                </div>
+                                <h1 data-w-id="86e20a9f-caab-5c92-10c1-bfe1fe758dbb" style="opacity: 1"
+                                    class="h-116 mo-hide-2">
+                                    is a celebration of  you
+                                </h1>
+                                <p class="p-18 black _05">
+                                    Your support, your loyalty, and your smiles brought us here. Join us
+                                    in this new chapter of your beauty journey.
+                                </p>
+                                <a>Learn More ...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img t-attf-src="/nbeauty/static/src/img/bannerimage.JPG" loading="lazy"
+                         data-w-id="6be0ff32-dad0-c6fa-7bed-36db6eaec9d3"
+                         sizes="100vw"
+                         alt="Luxurious interior of the salon with cosmetics samples on the shelves"
+                         class="big-img-1 mob-hide"/>
+                    <div id="services" class="_4block-div">
+                        <div class="_4bl-h-div-line-1">
+                            <p data-w-id="4b30b9ed-085c-7b23-822f-aaaa4e155330" style="opacity: 1"
+                               class="p-18 _2block-1">
+                                Services
+                            </p>
+                            <h1 data-w-id="4b30b9ed-085c-7b23-822f-aaaa4e155332" style="opacity: 1" class="h-124">
+                                Total bliss  from
+                            </h1>
+                        </div>
+                        <h1 data-w-id="efb01e90-67fa-b95e-1fe1-a74f38d4d756" style="opacity: 1" class="h-124 _4block-2">
+                            fingertips
+                        </h1>
+                        <h1 data-w-id="769b3d76-76bc-783a-58b4-3f1cabb4d211" style="opacity: 1" class="h-124 _4block-3">
+                            to hair roots
+                        </h1>
+
+                        <section>
+                            <div id="faq-container" class="faq-container"></div>
+
+
+                        </section>
+
+
+                    </div>
+                    <img
+                            src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65d4a8b478b9e88bfde53e09_PRO_Nails_Beauty_Studio_Hair.webp"
+                            loading="lazy" data-w-id="27e23e71-5abd-b84f-8b4f-01b5dcffed50" sizes="100vw"
+                            alt="point of service in the salon "
+                            srcset="
+        https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d4a8b478b9e88bfde53e09_PRO_Nails_Beauty_Studio_Hair-p-500.webp   500w,
+        https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d4a8b478b9e88bfde53e09_PRO_Nails_Beauty_Studio_Hair-p-800.webp   800w,
+        https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d4a8b478b9e88bfde53e09_PRO_Nails_Beauty_Studio_Hair-p-1080.webp 1080w,
+        https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d4a8b478b9e88bfde53e09_PRO_Nails_Beauty_Studio_Hair-p-1600.webp 1600w,
+        https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d4a8b478b9e88bfde53e09_PRO_Nails_Beauty_Studio_Hair-p-2000.webp 2000w,
+        https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d4a8b478b9e88bfde53e09_PRO_Nails_Beauty_Studio_Hair-p-2600.webp 2600w,
+        https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d4a8b478b9e88bfde53e09_PRO_Nails_Beauty_Studio_Hair-p-3200.webp 3200w,
+        https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d4a8b478b9e88bfde53e09_PRO_Nails_Beauty_Studio_Hair.webp        3840w
+      " class="big-img-1 mob-hide hide"/>
+                    <img
+                            src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65d4a950840615d308eb59a8_PRO_Nails_Beauty_Studio_Hair_mob.webp"
+                            loading="lazy" data-w-id="3cbbefd3-5460-c72b-6271-cfce48e19d4e" sizes="100vw"
+                            alt="point of service in the salon "
+                            srcset="
+        https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d4a950840615d308eb59a8_PRO_Nails_Beauty_Studio_Hair_mob-p-500.webp 500w,
+        https://cdn.prod.website-files.com/652fe9df5341e43567662724/65d4a950840615d308eb59a8_PRO_Nails_Beauty_Studio_Hair_mob.webp       750w
+      " class="big-img-1 pc-hide hide"/>
+                    <div id="team" class="_5block-div">
+                        <div class="_5bl-h-div-line-1">
+                            <p data-w-id="0af67d7e-c41c-29cd-eeb1-c10b83cc3a5e" style="opacity: 1"
+                               class="p-18 _2block-1">
+                                Our Team
+                            </p>
+                            <h1 data-w-id="0af67d7e-c41c-29cd-eeb1-c10b83cc3a60" style="opacity: 1" class="h-124">
+                                The best
+                            </h1>
+                        </div>
+                        <div class="_5bl-h-div-line-1 _2">
+                            <p data-w-id="4a1d48be-71c2-bb84-b9cb-5fa3c6ff807c" style="opacity: 1"
+                               class="p-21 _5block mob-hide">
+                                Our specialists are already prepared to assist you with beauty
+                                procedures and immerse you in hours of exceptional self-care.
+                            </p>
+                            <h1 data-w-id="4a1d48be-71c2-bb84-b9cb-5fa3c6ff807e" style="opacity: 1" class="h-124">
+                                Professionals
+                            </h1>
+                        </div>
+                        <h1 data-w-id="057b186e-3962-f8b5-dce2-c93b9e1b29ef" style="opacity: 1"
+                            class="h-124 _5block center-align">
+                            for your comfort
+                        </h1>
+                        <p data-w-id="366aa03a-5b16-7cda-edd2-5cad737d2dd3" style="opacity: 1"
+                           class="p-21 _5block pc-hide">
+                            Our specialists are already prepared to assist you with beauty
+                            procedures and immerse you in hours of exceptional self-care.
+                        </p>
+                        <div class="c-faq-2">
+                            <div data-click="faq" class="c-faq-item-2">
+                                <div class="c-faq-q-2">
+                                    <div class="c-faq-q-text-2">
+                                        <div class="c-faq-h-5block-div">
+                                            <div class="faq-q-text">Nails services team</div>
+                                            <p class="p-10-mob">Touch to view</p>
+                                        </div>
+                                        <div class="h-70">01</div>
+                                    </div>
+                                </div>
+                                <div class="c-faq-a-2">
+                                    <div class="c-faq-a-text-2">
+                                        <img
+                                                src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65421c76e545408194cd17d0_PNB%20team%202-min-2.png"
+                                                loading="eager" sizes="100vw" srcset="
+                  https://cdn.prod.website-files.com/652fe9df5341e43567662724/65421c76e545408194cd17d0_PNB%20team%202-min-2-p-500.png  500w,
+                  https://cdn.prod.website-files.com/652fe9df5341e43567662724/65421c76e545408194cd17d0_PNB%20team%202-min-2-p-800.png  800w,
+                  https://cdn.prod.website-files.com/652fe9df5341e43567662724/65421c76e545408194cd17d0_PNB%20team%202-min-2.png       1005w
+                " alt="" class="_5block-faq-img"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-click="faq" class="c-faq-item-2 next">
+                                <div class="c-faq-q-2">
+                                    <div class="c-faq-q-text-2">
+                                        <div class="c-faq-h-5block-div">
+                                            <div class="faq-q-text">Face and body team</div>
+                                            <p class="p-10-mob">Touch to view</p>
+                                        </div>
+                                        <div class="h-70">02</div>
+                                    </div>
+                                </div>
+                                <div class="c-faq-a-2">
+                                    <div class="c-faq-a-text-2">
+                                        <img
+                                                src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65421c76e545408194cd17d0_PNB%20team%202-min-2.png"
+                                                loading="eager" sizes="100vw" srcset="
+                  https://cdn.prod.website-files.com/652fe9df5341e43567662724/65421c76e545408194cd17d0_PNB%20team%202-min-2-p-500.png  500w,
+                  https://cdn.prod.website-files.com/652fe9df5341e43567662724/65421c76e545408194cd17d0_PNB%20team%202-min-2-p-800.png  800w,
+                  https://cdn.prod.website-files.com/652fe9df5341e43567662724/65421c76e545408194cd17d0_PNB%20team%202-min-2.png       1005w
+                " alt="" class="_5block-faq-img"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-click="faq" class="c-faq-item-2 next">
+                                <div class="c-faq-q-2">
+                                    <div class="c-faq-q-text-2">
+                                        <div class="c-faq-h-5block-div">
+                                            <div class="faq-q-text">Hair treatments team</div>
+                                            <p class="p-10-mob">Touch to view</p>
+                                        </div>
+                                        <div class="h-70">03</div>
+                                    </div>
+                                </div>
+                                <div class="c-faq-a-2">
+                                    <div class="c-faq-a-text-2">
+                                        <img
+                                                src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65421c76e545408194cd17d0_PNB%20team%202-min-2.png"
+                                                loading="eager" sizes="100vw" srcset="
+                  https://cdn.prod.website-files.com/652fe9df5341e43567662724/65421c76e545408194cd17d0_PNB%20team%202-min-2-p-500.png  500w,
+                  https://cdn.prod.website-files.com/652fe9df5341e43567662724/65421c76e545408194cd17d0_PNB%20team%202-min-2-p-800.png  800w,
+                  https://cdn.prod.website-files.com/652fe9df5341e43567662724/65421c76e545408194cd17d0_PNB%20team%202-min-2.png       1005w
+                " alt="" class="_5block-faq-img"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-click="faq" class="c-faq-item-2 next">
+                                <div class="c-faq-q-2">
+                                    <div class="c-faq-q-text-2">
+                                        <div class="c-faq-h-5block-div">
+                                            <div class="faq-q-text">Management team</div>
+                                            <p class="p-10-mob">Touch to view</p>
+                                        </div>
+                                        <div class="h-70">04</div>
+                                    </div>
+                                </div>
+                                <div class="c-faq-a-2">
+                                    <div class="c-faq-a-text-2">
+                                        <img
+                                                src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65421c76e545408194cd17d0_PNB%20team%202-min-2.png"
+                                                loading="eager" sizes="100vw" srcset="
+                  https://cdn.prod.website-files.com/652fe9df5341e43567662724/65421c76e545408194cd17d0_PNB%20team%202-min-2-p-500.png  500w,
+                  https://cdn.prod.website-files.com/652fe9df5341e43567662724/65421c76e545408194cd17d0_PNB%20team%202-min-2-p-800.png  800w,
+                  https://cdn.prod.website-files.com/652fe9df5341e43567662724/65421c76e545408194cd17d0_PNB%20team%202-min-2.png       1005w
+                " alt="" class="_5block-faq-img"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_5block-content-div">
+                            <div class="_5block-item-div">
+                                <div class="_5block-circle-div"></div>
+                                <h1 class="h-55">Nails services team</h1>
+                                <img
+                                        src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%20team%202.png"
+                                        loading="lazy" sizes="100vw" srcset="
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%2520team%25202-p-500.png   500w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%2520team%25202-p-800.png   800w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%2520team%25202-p-1080.png 1080w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%2520team%25202-p-1600.png 1600w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%20team%202.png            1786w
+            " alt="" class="_5block-img"/>
+                            </div>
+                            <div class="_5block-item-div">
+                                <div class="_5block-circle-div"></div>
+                                <h1 class="h-55">Face and body team</h1>
+                                <img
+                                        src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%20team%202.png"
+                                        loading="lazy" sizes="100vw" srcset="
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%2520team%25202-p-500.png   500w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%2520team%25202-p-800.png   800w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%2520team%25202-p-1080.png 1080w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%2520team%25202-p-1600.png 1600w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%20team%202.png            1786w
+            " alt="" class="_5block-img _2"/>
+                            </div>
+                            <div class="_5block-item-div">
+                                <div class="_5block-circle-div"></div>
+                                <h1 class="h-55">Hair treatments team</h1>
+                                <img
+                                        src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%20team%202.png"
+                                        loading="lazy" sizes="100vw" srcset="
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%2520team%25202-p-500.png   500w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%2520team%25202-p-800.png   800w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%2520team%25202-p-1080.png 1080w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%2520team%25202-p-1600.png 1600w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%20team%202.png            1786w
+            " alt="" class="_5block-img _3"/>
+                            </div>
+                            <div class="_5block-item-div">
+                                <div class="_5block-circle-div"></div>
+                                <h1 class="h-55">Management team</h1>
+                                <img
+                                        src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%20team%202.png"
+                                        loading="lazy" sizes="100vw" srcset="
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%2520team%25202-p-500.png   500w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%2520team%25202-p-800.png   800w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%2520team%25202-p-1080.png 1080w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%2520team%25202-p-1600.png 1600w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e4356766274e_PNB%20team%202.png            1786w
+            " alt="" class="_5block-img _4"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="works" class="_6block-div">
+                        <div data-w-id="2861163b-62fb-6cd7-7fe0-0ce294b87693" class="top-content-6block-div">
+                            <div class="_6block-h-div-line-1">
+                                <p data-w-id="185430eb-c69e-4dfe-e38e-f02b46accc0e" style="opacity: 0"
+                                   class="p-18 _2block-1 hide">
+                                    Gallery
+                                </p>
+                                <h1 data-w-id="185430eb-c69e-4dfe-e38e-f02b46accc10" style="opacity: 0" class="h-124">
+                                    Our work speaks
+                                </h1>
+                            </div>
+                            <div class="works-2line-h-div">
+                                <p class="p-10-mob works">swipe</p>
+                                <h1 data-w-id="1237b029-2452-e7d4-042c-edd565662bdb" style="opacity: 0"
+                                    class="h-124 _6block-2line">
+                                    for itself:
+                                </h1>
+                            </div>
+                            <p data-w-id="38c9ccf1-67cd-0a1b-6a20-fa5c4abd30f5" style="opacity: 0" class="p-18 _6block">
+                                Our works stand as a testament to our expertise, whether in nail
+                                services, hair treatments, facial and body care, or lash and brow
+                                enhancements.
+                            </p>
+                        </div>
+                        <div class="_6block-content-div-main">
+                            <div class="_6block-content-div">
+                                <a href="#" class="lightbox w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-6.webp" loading="eager"
+                                         data-w-id="7733f195-38b2-65b8-c22f-afd5240b97cb" alt=""
+                                         class="_6block-img _1"/>
+                                </a>
+                                <a href="#"
+                                   class="lightbox w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-13.webp" loading="eager"
+                                         data-w-id="56720fe0-51bb-3c95-4c6c-f1e08d93fa81"
+                                         sizes="(max-width: 479px) 38vw, 15vw"
+                                         alt=""
+                                         class="_6block-img _2"/>
+                                </a>
+                                <a href="#" class="lightbox w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-14.webp" loading="eager"
+                                         data-w-id="69324cd4-1787-504c-83eb-feda9cec4f0b" alt=""
+                                         class="_6block-img _3"/>
+                                </a>
+                                <a href="#" class="lightbox w-inline-block w-lightbox">
+
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-15.webp" loading="eager"
+                                         data-w-id="bb10931d-2c60-3112-5345-da4cac83aa43" alt=""
+                                         class="_6block-img _4"/>
+                                </a>
+                                <a href="#" class="lightbox w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-16.webp" loading="eager"
+                                         data-w-id="0f7e32e1-4bc4-bf9e-dc52-54987a05e91a" alt=""
+                                         class="_6block-img _5"/>
+                                </a>
+                                <a href="#" class="lightbox w-inline-block w-lightbox">
+
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-17.webp" loading="eager"
+                                         data-w-id="9200eecd-d3c5-3b36-1fcf-9748b48a6cda" alt=""
+                                         class="_6block-img _6"/>
+                                </a>
+                                <a href="#" class="lightbox w-inline-block w-lightbox">
+
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-18.webp" loading="eager"
+                                         data-w-id="551028ac-e271-433f-a044-98c8d3d7fc29"
+                                         sizes="(max-width: 479px) 36vw, 14vw" alt="" class="_6block-img _8"/>
+                                </a>
+                                <a href="#"
+                                   class="lightbox w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-23.webp" loading="eager"
+                                         data-w-id="0a457eff-d307-0b4c-71ec-0fdd2a799cf1"
+                                         sizes="(max-width: 479px) 32vw, 100vw"
+                                         alt=""
+                                         class="_6block-img new-1"/>
+                                </a>
+                                <a href="#" class="lightbox w-inline-block w-lightbox">
+
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-25.webp" loading="eager"
+                                         data-w-id="e502bb79-a7ca-455d-49d0-d45437aea271" alt=""
+                                         class="_6block-img _7"/>
+                                </a>
+                                <a href="#" class="lightbox w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-26.webp" loading="eager"
+                                         data-w-id="d6de2de0-3cd1-d577-cbd4-452c5515d9a6"
+                                         sizes="(max-width: 479px) 100vw, 18vw" alt="" class="_6block-img _10"/>
+                                </a>
+                                <a href="#"
+                                   class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-27.webp"
+                                         loading=" lazy" data-w-id="ca54c905-3f96-f61f-178e-87099f201649" alt=""
+                                         class="_6block-img _9"/>
+                                </a>
+                                <a
+                                        href="#" class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-28.webp" loading="eager"
+                                         data-w-id="7037e3c8-a84c-5c51-640e-5d33e630a5cc"
+                                         sizes="(max-width: 479px) 34vw, 12vw"
+                                         alt=""
+                                         class="_6block-img _11"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img
+                                            t-attf-src="/nbeauty/static/src/img/toWEBP/image-28.webp" loading="eager"
+
+                                            alt=""
+                                            class="_6block-img _12"/>
+                                </a>
+                                <a href="#"
+                                   class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-23.webp" loading="eager"
+                                         data-w-id="02c3e4d1-a130-f847-4431-fadd4d25bd3c" alt=""
+                                         class="_6block-img _13"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-30.webp" loading="eager"
+                                         data-w-id="14d50d9b-aefd-47b0-c69b-20b669beb5eb" alt=""
+                                         class="_6block-img _14"/>
+                                </a>
+                                <a href="#"
+                                   class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-31.webp" loading="eager"
+                                         data-w-id="68eccb86-4e97-0043-79c0-e9a76bec1425" alt=""
+                                         class="_6block-img _15"/>
+                                </a>
+                                <a href="#"
+                                   class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-32.webp" loading="eager"
+                                         data-w-id="4421e4a4-9ea8-f94b-6dcc-7692dfab13d4"
+                                         sizes="(max-width: 479px) 34vw, 100vw"
+                                         alt=""
+                                         class="_6block-img new-2"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-33.webp" loading="eager"
+                                         data-w-id="abbfbd85-7ea7-f870-826b-022b3babcfc2" alt=""
+                                         class="_6block-img _17"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-34.webp" loading="eager"
+                                         data-w-id="d3333757-ce8f-f3fb-d5c7-651730c404d0" alt=""
+                                         class="_6block-img _16"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-36.webp" loading="eager"
+                                         data-w-id="6b17037b-f1a1-e870-41ab-33f23fca4da6" alt=""
+                                         class="_6block-img _18"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-37.webp" loading="eager"
+                                         data-w-id="fdb1ee2b-e2f7-26b6-4862-19ce3cd02d61" alt=""
+                                         class="_6block-img _19"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-8.webp" loading="eager"
+                                         data-w-id="a242c5ae-8850-3c0e-aa2d-8ff8dba3953c" alt=""
+                                         class="_6block-img _20"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img
+                                            t-attf-src="/nbeauty/static/src/img/slider-image-4.JPG" loading="lazy"
+                                            data-w-id="c7573fdd-1e15-399f-84dd-048660a89080" alt=""
+                                            class="_6block-img _21"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img
+                                            t-attf-src="/nbeauty/static/src/img/slider-image-5.JPG" loading="eager"
+                                            data-w-id="8372d351-70f5-b5a6-3934-d6dfc735d2d3"
+                                            sizes="(max-width: 479px) 36vw, 12vw" alt="" class="_6block-img _22"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_8block-div">
+                        <div class="marquee-horizontal-css w-embed">
+                            <style>
+                                .track-horizontal {
+                                position: absolute;
+                                white-space: nowrap;
+                                will-change: transform;
+                                animation: marquee-horizontal 40s linear infinite;
+                                /* manipulate the speed of the marquee by changing "40s" line above*/
+                                }
+
+                                @keyframes marquee-horizontal {
+                                from {
+                                transform: translateX(0);
+                                }
+
+                                to {
+                                transform: translateX(-50%);
+                                }
+                                }
+                            </style>
+                        </div>
+                        <div class="marquee-horizontal-alt-css w-embed">
+                            <style>
+                                .track-horizontal-alt {
+                                position: absolute;
+                                white-space: nowrap;
+                                will-change: transform;
+                                animation: marquee-horizontal-alt 40s linear infinite;
+                                /* manipulate the speed of the marquee by changing "40s" line above*/
+                                }
+
+                                @keyframes marquee-horizontal-alt {
+                                from {
+                                transform: translateX(-50%);
+                                }
+
+                                to {
+                                transform: translateX(0%);
+                                }
+                                }
+                            </style>
+                        </div>
+                        <div class="_8block-h-div-line-1">
+                            <p data-w-id="da6e8fc1-9b85-a979-fc69-3e24160badb6" style="opacity: 1"
+                               class="p-18 _2block-1 hide">
+                                Offer
+                            </p>
+                            <h1 data-w-id="da6e8fc1-9b85-a979-fc69-3e24160badb8" style="opacity: 1" class="h-124">
+                                Promotions/Offers:
+                            </h1>
+                        </div>
+                        <div class="flex-vertical">
+                            <div class="marquee-horizontal-large">
+                                <div class="track-horizontal">
+                                    <div class="flex-horizontal">
+                                        <div class="icon-container-alt">
+                                            <img
+                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202.png"
+                                                    sizes="(max-width: 479px) 21vw, 10vw" srcset="
+                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202-p-500.png 500w,
+                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202.png       600w
+                  " alt="" class="icon"/>
+                                        </div>
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                        <div class="icon-container-alt">
+                                            <img
+                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/6531671d6e5615ed84d1e9db_abc-logo.png"
+                                                    alt="" class="icon"/>
+                                        </div>
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                        <div class="icon-container-alt">
+                                            <img
+                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24.png"
+                                                    sizes="(max-width: 479px) 21vw, 10vw" srcset="
+                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24-p-500.png 500w,
+                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24.png       600w
+                  " alt="" class="icon"/>
+                                        </div>
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                        <div class="icon-container-alt">
+                                            <img
+                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo.png"
+                                                    sizes="(max-width: 479px) 21vw, 10vw" srcset="
+                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo-p-500.png 500w,
+                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo.png       600w
+                  " alt="" class="icon"/>
+                                        </div>
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                        <div class="icon-container-alt">
+                                            <img src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" srcset="
+                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio-p-500.png 500w,
+                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio.png       600w
+                  " alt="" class="icon"/>
+                                        </div>
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                        <div class="icon-container-alt">
+                                            <img
+                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65d49200e2872170e31f85b7_lasulcane-logo.webp"
+                                                    alt="LaSultane de Saba logo" class="icon size-sultane"/>
+                                        </div>
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                        <div class="icon-container-alt">
+                                            <img src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65d493b6bef7b761e4965cc4_palma.webp"
+                                                 alt="Palma de Salus logo" class="icon"/>
+                                        </div>
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                    </div>
+                                    <div class="flex-horizontal">
+                                        <div class="icon-container-alt">
+                                            <img
+                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202.png"
+                                                    sizes="(max-width: 479px) 21vw, 10vw" srcset="
+                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202-p-500.png 500w,
+                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202.png       600w
+                  " alt="" class="icon"/>
+                                        </div>
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                        <div class="icon-container-alt">
+                                            <img
+                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/6531671d6e5615ed84d1e9db_abc-logo.png"
+                                                    alt="" class="icon"/>
+                                        </div>
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                        <div class="icon-container-alt">
+                                            <img
+                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24.png"
+                                                    sizes="(max-width: 479px) 21vw, 10vw" srcset="
+                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24-p-500.png 500w,
+                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24.png       600w
+                  " alt="" class="icon"/>
+                                        </div>
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                        <div class="icon-container-alt">
+                                            <img
+                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo.png"
+                                                    sizes="(max-width: 479px) 21vw, 10vw" srcset="
+                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo-p-500.png 500w,
+                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo.png       600w
+                  " alt="" class="icon"/>
+                                        </div>
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                        <div class="icon-container-alt">
+                                            <img src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" srcset="
+                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio-p-500.png 500w,
+                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio.png       600w
+                  " alt="" class="icon"/>
+                                        </div>
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                        <div class="icon-container-alt">
+                                            <img
+                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65d49200e2872170e31f85b7_lasulcane-logo.webp"
+                                                    alt="LaSultane de Saba logo" class="icon size-sultane"/>
+                                        </div>
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                        <div class="icon-container-alt">
+                                            <img src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65d493b6bef7b761e4965cc4_palma.webp"
+                                                 alt="Palma de Salus logo" class="icon"/>
+                                        </div>
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="py-0">
+                        <div class="container text-center">
+                            <h2 class="mb-4">What Our Clients Say</h2>
+                            <div class="row g-4">
+                                <div class="col-md-4 testimonial-card-wrapper">
+                                    <div class="testimonial-card">
+                                        <img t-attf-src="/nbeauty/static/src/img/slider-image-1.JPG"
+                                             class="testimonial-img mb-3" alt="Client Photo"/>
+                                        <p class="mb-2">“Amazing service and support. I couldn’t be happier with the
+                                            results!”
+                                        </p>
+                                        <h6 class="mb-0">John Doe</h6>
+                                        <small class="text-muted">CEO, Example Inc.</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 testimonial-card-wrapper">
+                                    <div class="testimonial-card">
+                                        <img t-attf-src="/nbeauty/static/src/img/slider-image-1.JPG"
+                                             class="testimonial-img mb-3" alt="Client Photo"/>
+                                        <p class="mb-2">“Truly professional and exceeded our expectations at every
+                                            turn.”
+                                        </p>
+                                        <h6 class="mb-0">Jane Smith</h6>
+                                        <small class="text-muted">Marketing Director, Acme Co.</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 testimonial-card-wrapper">
+                                    <div class="testimonial-card">
+                                        <img t-attf-src="/nbeauty/static/src/img/slider-image-1.JPG"
+                                             class="testimonial-img mb-3" alt="Client Photo"/>
+                                        <p class="mb-2">“A top-notch experience from beginning to end. Highly
+                                            recommend!”
+                                        </p>
+                                        <h6 class="mb-0">Sam Wilson</h6>
+                                        <small class="text-muted">Freelancer</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="gift-block-div">
+                        <div class="top-content-gift-div">
+                            <div class="gift-h-div-line-1">
+                                <p data-w-id="d638ee24-93b7-13d6-4af8-b8a4111b0668" style="opacity: 1"
+                                   class="p-18 gift-top-p">
+                                    Gift certificate
+                                </p>
+                                <h1 data-w-id="d638ee24-93b7-13d6-4af8-b8a4111b066a" style="opacity: 1"
+                                    class="h-184 gift-top-1">
+                                    The gift
+                                </h1>
+                            </div>
+                            <div class="gift-2line-h-div">
+                                <h1 data-w-id="d638ee24-93b7-13d6-4af8-b8a4111b066f" style="opacity: 1" class="h-184">
+                                    of beauty
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="gift-content-div">
+                            <div class="gift-imgs-div mob-hide">
+                                <img class="gift-img-brown"
+                                     src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min.png"
+                                     alt="" style="opacity: 1" sizes="(max-width: 479px) 151.4630584716797px, 32vw"
+                                     data-w-id="bb0b7332-abf3-df51-13bf-2478ae53d15b" loading="lazy" srcset="
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-500.png   500w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-800.png   800w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-1080.png 1080w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min.png        1822w
+            "/>
+                                <img class="gift-img-white"
+                                     src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min.png"
+                                     alt="" style="opacity: 1" sizes="(max-width: 479px) 142.97584533691406px, 30vw"
+                                     data-w-id="fbb6df40-53a3-8089-5c3b-5f248de2d8b2" loading="lazy" srcset="
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-500.png   500w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-800.png   800w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-1080.png 1080w,
+              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min.png        1720w
+            "/>
+                            </div>
+                            <div class="gift-text-btn-div">
+                                <div class="gift-text-div">
+                                    <p data-w-id="0173e428-c14a-3393-95d0-21477dd6ff2a" style="opacity: 1"
+                                       class="p-21 reg-80">
+                                        A Gift Certificate at PRO Nails &amp; Beauty is an easy,
+                                        comfortable and the perfect way to treat yourself or your loved
+                                        ones
+                                    </p>
+                                    <p data-w-id="530e6286-8514-985a-554f-024ff2038434" style="opacity: 1"
+                                       class="p-18 gift">
+                                        You can buy a certificate for any price value or particular
+                                        service
+                                    </p>
+                                </div>
+                                <div class="gift-imgs-div pc-hide">
+                                    <img class="gift-img-brown"
+                                         src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min.png"
+                                         alt="" style="opacity: 1" sizes="100vw"
+                                         data-w-id="a6bed255-9a91-370c-81d4-d6c6ea3dd16d" loading="lazy"
+                                         srcset="
+                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-500.png   500w,
+                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-800.png   800w,
+                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-1080.png 1080w,
+                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min.png        1822w
+              "/>
+                                    <img class="gift-img-white"
+                                         src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min.png"
+                                         alt="" style="opacity: 1" sizes="100vw"
+                                         data-w-id="a6bed255-9a91-370c-81d4-d6c6ea3dd16e" loading="lazy"
+                                         srcset="
+                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-500.png   500w,
+                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-800.png   800w,
+                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-1080.png 1080w,
+                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min.png        1720w
+              "/>
+                                </div>
+                                <a data-w-id="c54ae4fc-8801-a9b1-16e6-47402aa8bccc" style="opacity: 1" href="#"
+                                   class="btn-1 gift w-inline-block">
+                                    <img
+                                            src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e43567662740_Arrow%203.svg"
+                                            loading="lazy" style="
+                -webkit-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1)
+                  rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                -moz-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1)
+                  rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                -ms-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1)
+                  rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0)
+                  rotateY(0) rotateZ(0) skew(0, 0);
+                opacity: 1;
+              " alt="" class="arrow-img"/>
+                                    <div data-w-id="c54ae4fc-8801-a9b1-16e6-47402aa8bcce"
+                                         style="background-color: rgba(0, 0, 0, 0)"
+                                         class="btn-div-inside">
+                                        <h1 style="color: rgb(0, 0, 0)" class="h-18 center-align">
+                                            get the certificate
+                                        </h1>
+                                        <div style="opacity: 1" class="btn-1-wh-stroke-circle"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card" class="_9block-div">
+                        <p data-w-id="28555b0c-d7b2-2bbb-1905-91b7df54a1bb" style="opacity: 1"
+                           class="p-18 _9block pc-hide">
+                            We offer special pricing terms for those clients who entrust their face
+                            and body to our hand time and time again.
+                        </p>
+                        <div class="_9block-top-main-div mob-hide">
+                            <div class="_9block-top-div-left">
+                                <div class="_9block-div-top-left-div-top">
+                                    <p class="p-26 _9block">For Those</p>
+                                    <p class="p-26 _9block">Who Choose Us</p>
+                                    <p class="p-26 _9block">Every Time</p>
+                                </div>
+                                <p data-w-id="acfba70a-b4d4-edda-09c9-6023fdac0356" style="opacity: 1"
+                                   class="p-18 _9block hide">
+                                    We offer special pricing terms for those clients who entrust their
+                                    face and body to our hand time and time again.
+                                </p>
+                            </div>
+                            <div class="_9block-div-right-main">
+                                <p data-w-id="0902204f-2511-1d67-0601-f113bcf42206" style="opacity: 1"
+                                   class="p-18 _9block">
+                                    We offer special pricing terms for those clients who entrust their
+                                    face and body to our hand time and time again.
+                                </p>
+                                <div class="_9block-div-r-left">
+                                    <div class="_9block-div-r-left-top hide">
+                                        <h1 data-w-id="3b56d785-a6c4-7919-9321-0ae1f3d9f7e0" style="opacity: 1"
+                                            class="h-40 _9block">
+                                            Includes:
+                                        </h1>
+                                        <p data-w-id="2e045d90-96b2-2515-1d61-9cadf4508b6a" style="opacity: 1"
+                                           class="p-18 _9block-2">
+                                            25% discount on your total bill<br/>10% discount on Retail
+                                            <br/>10% discount on Gift Vouchers
+                                        </p>
+                                    </div>
+                                    <a data-w-id="e5fd0acc-8d79-9c33-b275-8320bf4b157e" style="opacity: 1"
+                                       href="vip.html"
+                                       class="_9block-btn-link-block w-inline-block">
+                                        <div class="become-a-member-div">
+                                            <p class="p-25">get more details</p>
+                                            <img
+                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/653173e5c10cc14fb53e3b32_Arrow%203.png"
+                                                    loading="lazy" style="
+                    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+                      rotateY(0) rotateZ(0deg) skew(0, 0);
+                  " alt="" class="become-a-member-arrow"/>
+                                        </div>
+                                        <div style="width: 100%" class="_9block-line-div"></div>
+                                    </a>
+                                </div>
+                                <div class="_9block-div-r-r hide">
+                                    <div class="_9block-div-r-left-top">
+                                        <h1 data-w-id="bec6965c-daec-0b03-9755-1b77812bf6b0" style="opacity: 1"
+                                            class="h-40 _9block">
+                                            Free every month:
+                                        </h1>
+                                        <p data-w-id="bec6965c-daec-0b03-9755-1b77812bf6b2" style="opacity: 1"
+                                           class="p-18 _9block-2">
+                                            10 Hair Blowdry OR<br/>30 mins Massage
+                                        </p>
+                                    </div>
+                                    <div class="_9block-div-r-left-top">
+                                        <h1 data-w-id="1cd57bca-3e37-1b8f-b6f9-b67b7ddf645c" style="opacity: 1"
+                                            class="h-40 _9block">
+                                            Bonus
+                                        </h1>
+                                        <p data-w-id="1cd57bca-3e37-1b8f-b6f9-b67b7ddf645e" style="opacity: 1"
+                                           class="p-18 _9block-3">
+                                            Complimentary Authentic Beauty Concept Memento Hair Service
+                                            (Applicable on purchase of membership, valid for 1 month).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_9block-bottom-div">
+                            <h1 data-w-id="62706736-62e5-a3ee-f33b-af11c90bb41c" style="opacity: 1" class="h-640">
+                                CA
+                            </h1>
+                            <h1 data-w-id="0034b076-d240-3693-4560-de488f79b45f" style="opacity: 1" class="h-640 _2">
+                                RD
+                            </h1>
+                            <img class="card-imgs"
+                                 src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/653175d1823616dabc7db3df_Vip%20card%201.png"
+                                 alt="" style="opacity: 0" data-w-id="452fa3a7-e614-dcd7-a10e-291832d0d3f3"
+                                 loading="lazy"/>
+                            <h1 data-w-id="5b78667b-4d0e-0426-eabb-6fe50d14eb14" style="opacity: 1" class="h-65">
+                                Membership
+                            </h1>
+                        </div>
+                        <div class="_9block-top-main-div pc-hide">
+                            <div class="_9block-top-div-left">
+                                <div class="_9block-div-top-left-div-top">
+                                    <p class="p-26 _9block">For Those</p>
+                                    <p class="p-26 _9block">Who Choose Us</p>
+                                    <p class="p-26 _9block">Every Time</p>
+                                </div>
+                                <p data-w-id="8aa278ea-1d1c-2b5c-d5f1-0150152a6a85" style="opacity: 1"
+                                   class="p-18 _9block">
+                                    We offer special pricing terms for those clients who entrust their
+                                    face and body to our hand time and time again.
+                                </p>
+                            </div>
+                            <div class="_9block-div-right-main">
+                                <div class="_9block-div-r-left">
+                                    <div class="_9block-div-r-left-top">
+                                        <h1 data-w-id="8aa278ea-1d1c-2b5c-d5f1-0150152a6a8a" style="opacity: 1"
+                                            class="h-40 _9block">
+                                            Includes:
+                                        </h1>
+                                        <p data-w-id="8aa278ea-1d1c-2b5c-d5f1-0150152a6a8c" style="opacity: 1"
+                                           class="p-18 _9block-2">
+                                            25% discount on your total bill<br/>10% discount on Retail
+                                            <br/>10% discount on Gift Vouchers
+                                        </p>
+                                    </div>
+                                    <a data-w-id="8aa278ea-1d1c-2b5c-d5f1-0150152a6a92" style="opacity: 1" href="#"
+                                       class="_9block-btn-link-block mob-hide w-inline-block">
+                                        <div class="become-a-member-div">
+                                            <p class="p-25">Become a member</p>
+                                            <img
+                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/653173e5c10cc14fb53e3b32_Arrow%203.png"
+                                                    loading="lazy" style="
+                    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+                      rotateY(0) rotateZ(0deg) skew(0, 0);
+                  " alt="" class="become-a-member-arrow"/>
+                                        </div>
+                                        <div style="width: 100%" class="_9block-line-div"></div>
+                                    </a>
+                                </div>
+                                <div class="_9block-div-r-r hide">
+                                    <div class="_9block-div-r-left-top">
+                                        <h1 data-w-id="8aa278ea-1d1c-2b5c-d5f1-0150152a6a9a" style="opacity: 1"
+                                            class="h-40 _9block">
+                                            Free every month:
+                                        </h1>
+                                        <p data-w-id="8aa278ea-1d1c-2b5c-d5f1-0150152a6a9c" style="opacity: 1"
+                                           class="p-18 _9block-2">
+                                            10 Hair Blowdry OR<br/>30 mins Massage
+                                        </p>
+                                    </div>
+                                    <div class="_9block-div-r-left-top mob-hide">
+                                        <h1 data-w-id="8aa278ea-1d1c-2b5c-d5f1-0150152a6aa1" style="opacity: 1"
+                                            class="h-40 _9block">
+                                            Bonus
+                                        </h1>
+                                        <p data-w-id="8aa278ea-1d1c-2b5c-d5f1-0150152a6aa3" style="opacity: 1"
+                                           class="p-18 _9block-3">
+                                            Complimentary Authentic Beauty Concept Memento Hair Service
+                                            (Applicable on purchase of membership, valid for 1 month).
+                                        </p>
+                                    </div>
+                                    <a data-w-id="677bdd1b-622c-5c82-f106-9ae9c07a37b7" style="opacity: 1" href="#"
+                                       class="_9block-btn-link-block mob-hide w-inline-block">
+                                        <div class="become-a-member-div">
+                                            <p class="p-25">Become a member</p>
+                                            <img
+                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/653173e5c10cc14fb53e3b32_Arrow%203.png"
+                                                    loading="lazy" style="
+                    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+                      rotateY(0) rotateZ(0deg) skew(0, 0);
+                  " alt="" class="become-a-member-arrow"/>
+                                        </div>
+                                        <div style="width: 100%" class="_9block-line-div"></div>
+                                    </a>
+                                </div>
+                                <div class="_9block-div-r-left-top hide">
+                                    <h1 data-w-id="d4b2cac6-0e03-843e-8612-30522d5048eb" style="opacity: 1"
+                                        class="h-40 _9block">
+                                        Bonus
+                                    </h1>
+                                    <p data-w-id="d4b2cac6-0e03-843e-8612-30522d5048ed" style="opacity: 1"
+                                       class="p-18 _9block-3">
+                                        Complimentary Authentic Beauty Concept Memento Hair Service
+                                        <span class="text-span-10-mob">(Applicable on purchase of membership, valid for
+                                            1
+                                            month).
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="_9block-div-r-r mob-margin">
+                                    <a data-w-id="c602df8f-394d-8290-bc12-643906ed3599" style="opacity: 1"
+                                       href="vip.html"
+                                       class="_9block-btn-link-block w-inline-block">
+                                        <div class="become-a-member-div">
+                                            <p class="p-25">GET MORE DETAILS</p>
+                                            <img
+                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/653173e5c10cc14fb53e3b32_Arrow%203.png"
+                                                    loading="lazy" style="
+                    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+                      rotateY(0) rotateZ(0deg) skew(0, 0);
+                  " alt="" class="become-a-member-arrow"/>
+                                        </div>
+                                        <div style="width: 100%" class="_9block-line-div"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="
+        display: none;
+        -webkit-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+          rotateY(0) rotateZ(0) skew(0, 0);
+        -moz-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+          rotateY(0) rotateZ(0) skew(0, 0);
+        -ms-transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+          rotateY(0) rotateZ(0) skew(0, 0);
+        transform: translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0)
+          rotateY(0) rotateZ(0) skew(0, 0);
+      " class="menu-open-div">
+                        <div class="mob-menu-header">
+                            <img t-attf-src="/nbeauty/static/src/img/logo.webp" loading="lazy" alt=""
+                                 class="logo-img menu-open"/>
+                            <a
+                                    data-w-id="ff65ef17-3acb-c8ec-23df-e1a4e8e7d3bc" href="#"
+                                    class="location-header-div mob-menu w-inline-block">
+                                <h1 class="h-18">close</h1>
+                                <div class="black-circle-div"></div>
+                            </a>
+                        </div>
+                        <div class="menu-side-div mob-hide">
+                            <img t-attf-src="/nbeauty/static/src/img/logo.webp" loading="lazy" alt=""
+                                 class="logo-img menu-open"/>
+                            <a
+                                    href="https://www.instagram.com/nbeauty_dxb/" class="menu_link w-inline-block">
+                                <div class="menu_link-wrap">
+                                    <p class="menu_text">Instagram</p>
+                                    <div class="menu_line"></div>
+                                </div>
+                            </a>
+                            <a href="privacy-policy.html" class="location-header-div w-inline-block">
+                                <div class="black-circle-div"></div>
+                                <h1 class="h-18">privacy policy</h1>
+                            </a>
+                        </div>
+                        <div class="center-menu-div">
+                            <a data-w-id="dc96a2cd-c6a4-05fb-352c-30808595fc3d" style="border-color: rgba(0, 0, 0, 0)"
+                               href="old-home.html"
+                               aria-current="page" class="opened-menu-link-div w-inline-block w--current">
+                                <div>home</div>
+                            </a>
+                            <a href="about.html" data-w-id="7d20ecf3-875c-2907-150d-07a3f84a1aec"
+                               style="border-color: rgba(0, 0, 0, 0)" class="opened-menu-link-div _2 w-inline-block">
+                                <div>About us</div>
+                            </a>
+                            <a data-w-id="03010173-30be-b09a-f3d7-72c5b0106f56" style="border-color: rgba(0, 0, 0, 0)"
+                               href="services.html" class="opened-menu-link-div _3 w-inline-block">
+                                <div>Services</div>
+                            </a>
+                            <a data-w-id="1e13381d-1f22-3f0d-e1da-9303a06d49ad" style="border-color: rgba(0, 0, 0, 0)"
+                               href="#"
+                               class="opened-menu-link-div _4 hide w-inline-block">
+                                <div>studio in dubai mall</div>
+                            </a>
+                            <a data-w-id="029f2b73-972e-4421-8527-d6822d1a4679" style="border-color: rgba(0, 0, 0, 0)"
+                               href="locations.html" class="opened-menu-link-div _5 w-inline-block">
+                                <div>Locations</div>
+                            </a>
+                            <a data-w-id="160cc68d-bfac-8f8a-d16c-c4be36570933" style="border-color: rgba(0, 0, 0, 0)"
+                               href="pricelist.html" class="opened-menu-link-div _6 w-inline-block">
+                                <div>Price List</div>
+                            </a>
+                            <a data-w-id="e9f72928-9105-5891-edf6-8380568fdc6c" style="border-color: rgba(0, 0, 0, 0)"
+                               href="tribe.html" class="opened-menu-link-div _7 w-inline-block">
+                                <div>Tribe</div>
+                            </a>
+                            <a href="about.html" data-w-id="591e3b91-29e7-1f15-a11d-710cd3ac0378"
+                               style="border-color: rgba(0, 0, 0, 0)"
+                               class="opened-menu-link-div _8 w-inline-block">
+                                <div>About</div>
+                            </a>
+                            <a data-w-id="227bda83-af4f-c28b-8d04-c840a530da69" style="border-color: rgba(0, 0, 0, 0)"
+                               href="appointment.html" class="opened-menu-link-div _9 w-inline-block">
+                                <div>Appointment</div>
+                            </a>
+                        </div>
+                        <div class="menu-side-div-2">
+                            <a data-w-id="23ae96fc-22f0-1e24-1223-bf859a8785de" href="#"
+                               class="location-header-div omb-hide w-inline-block">
+                                <h1 class="h-18">close</h1>
+                                <div class="black-circle-div"></div>
+                            </a>
+                            <a href="https://www.facebook.com/nbeauty.dxb" class="menu_link mob-hide w-inline-block">
+                                <div class="menu_link-wrap">
+                                    <p class="menu_text">Facebook</p>
+                                    <div class="menu_line"></div>
+                                </div>
+                            </a>
+                            <a href="studio-rules.html" class="location-header-div omb-hide w-inline-block">
+                                <h1 class="h-18">Studio Rules</h1>
+                                <div class="black-circle-div"></div>
+                            </a>
+                            <a href="privacy-policy.html" class="p12-mob">Privacy Policy</a>
+                            <a href="studio-rules.html"
+                               class="p12-mob">Studio Rules
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pop-up-form-div _5">
+                        <div class="pop-up-form-div-inside">
+                            <div class="pop-up-h-close-btn-div">
+                                <h1 class="h-50 pop-up hide">make an appointment</h1>
+                                <a data-w-id="3a331f37-7513-9e86-ceb7-5eb66799d958" id="closebtnpopup" href="#"
+                                   class="location-header-div w-inline-block">
+                                    <h1 class="h-18">close</h1>
+                                    <div class="black-circle-div"></div>
+                                </a>
+                            </div>
+                            <h1 class="h-50 pop-up pc-hide">make an appointment</h1>
+                            <div class="form-block w-form">
+                                <form id="wf-form-EXPRESS-MANICURE" name="wf-form-EXPRESS-MANICURE"
+                                      data-name="EXPRESS MANICURE"
+                                      method="get"
+                                      class="form" data-wf-page-id="652fe9df5341e43567662723"
+                                      data-wf-element-id="3a331f37-7513-9e86-ceb7-5eb66799d95f">
+                                    <div class="text-fields-div">
+                                        <input class="text-field w-input" maxlength="256" name="Name-2"
+                                               data-name="Name 2"
+                                               placeholder="Your name:"
+                                               type="text" id="Name-2" required=""/>
+                                        <input class="text-field w-input" maxlength="256" name="Email-2"
+                                               data-name="Email 2" placeholder="Email:" type="email" id="Email-2"
+                                               required=""/>
+                                        <input
+                                                class="text-field w-input" maxlength="256" name="Phone-2"
+                                                data-name="Phone 2"
+                                                placeholder="Phone:"
+                                                type="tel" id="Phone-2" required=""/>
+                                        <input class="text-field w-input" maxlength="256" name="Message-2"
+                                               data-name="Message 2" placeholder="Message:" type="text" id="Message-2"
+                                               required=""/>
+                                    </div>
+                                    <div class="form-btn-div">
+                                        <input type="submit" data-wait="Please wait..."
+                                               data-w-id="3a331f37-7513-9e86-ceb7-5eb66799d966"
+                                               class="submit-button w-button" value="Submit"/>
+                                        <a data-w-id="3a331f37-7513-9e86-ceb7-5eb66799d967"
+                                           style="opacity: 1" href="#" class="send-form-block w-inline-block">
+                                            <div class="become-a-member-div">
+                                                <p class="p-25">send</p>
+                                                <img style="
+                      -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+                        rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                      -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+                        rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                      -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+                        rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                      transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
+                        rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                    " loading="lazy" alt=""
+                                                     src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/654664a968f8ee138762c2e1_Frame%2027650.png"
+                                                     class="send-arrow-img"/>
+                                            </div>
+                                            <div style="width: 100%" class="_9block-line-div"></div>
+                                        </a>
+                                    </div>
+                                </form>
+                                <div class="w-form-done">
+                                    <div>Thank you! Your submission has been received!</div>
+                                </div>
+                                <div class="w-form-fail">
+                                    <div>Oops! Something went wrong while submitting the form.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loader">
+                        <div class="trigger"></div>
+                        <div class="loader_top">
+                            <div class="loader_progress"></div>
+                            <div class="container is-loader-top">
+                                <img t-attf-src="/nbeauty/static/src/img/logo.webp"
+                                     loading="lazy" alt="" class="logo-img preloader"/>
+                                <p class="loader_p is-right">studio in dubai</p>
+                            </div>
+                        </div>
+                        <div class="loader_bottom">
+                            <div class="container is-loader-bottom">
+                                <img
+                                        t-attf-src="/nbeauty/static/src/img/logo.webp" loading="lazy" alt=""
+                                        class="logo-img preloader bottom"/>
+                                <p class="loader_number">   </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="appointment-pop-up-div">
+                        <div class="appointment-body-div">
+                            <div class="menu-side-div-2 appointment-div">
+                                <a href="#" class="location-header-div w-inline-block">
+                                    <h1 class="h-18">close</h1>
+                                    <div class="black-circle-div"></div>
+                                </a>
+                            </div>
+                            <h1 class="h-50 medium">choose your preferred location</h1>
+                            <div class="locations-div">
+                                <div class="location-div-pop-up">
+                                    <div class="location-top-div">
+                                        <p class="p-20 location">Branch Locations</p>
+                                        <select class="p-20 location" id="city-selector">
+                                            <option>Select Location</option>
+                                            <option>Dubai</option>
+                                            <option>Abu Dhabi - Mushrif Mall</option>
+                                            <option>Abu Dhabi - Makani Al Shamkha</option>
+                                            <option>Abu Dhabi - Bawabat Al Sharq</option>
+                                            <option>Abu Dhabi - Dalma Mall</option>
+                                            <option>Ras Al Khaimah - Al Naeem City Center</option>
+                                            <option>Ras Al Khaimah - Al Naeem Mall</option>
+                                            <option>Ras Al Khaimah - My City Centre Al Dhait</option>
+                                            <option>Ras Al Khaimah - Manar Mall</option>
+                                            <option>Ajman - City Life Al Jurf</option>
+                                            <option>Ajman - Radisson Blu Toombal</option>
+                                            <option>Fujairah - Lulu Mall</option>
+                                        </select>
+                                    </div>
+
+
+                                    <p class="p-18 opening-soon">
+                                        Re-opening soon!<br/>We are working to enhance your experience
+                                    </p>
+                                </div>
+
+                                <div class="location-div-pop-up">
+                                    <div id="location-point" class="location-point-div">
+                                        <img src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/655490b849d977be619c832f_Vector.png"
+                                             loading="lazy" alt="" class="location-icon"/>
+                                        <p class="p-18 black">
+                                            <a id="map-link" href="#" class="link-4">Select Location</a>
+                                        </p>
+                                    </div>
+                                    <div id="location-btns" class="location-btns-div">
+                                        <a id="call-btn" href="#" class="location-btn w-inline-block">
+                                            <p class="p-18 black btn">CALL US</p>
+                                        </a>
+                                        <a id="whatsapp-btn" href="#" class="location-btn w-inline-block">
+                                            <p class="p-18 black btn">TEXT ON WHATSAPP</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="home-hero_contact is-mobile">
+                        <a data-w-id="760ff563-1028-9484-066d-c5ee5a0ce440" href="#"
+                           class="home-hero_phone-link w-inline-block">
+                            <div class="home-hero_phones-ico w-embed">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 39" fill="none">
+                                    <path
+                                            d="M2.87227 11.6715C2.33829 8.1331 4.81806 4.95472 8.60621 3.79025C9.27845 3.58346 10.0038 3.64232 10.6344 3.95484C11.265 4.26736 11.7534 4.81002 12.0002 5.47226L13.2163 8.73502C13.4121 9.25991 13.4475 9.83169 13.318 10.377C13.1884 10.9222 12.8999 11.4161 12.4894 11.7953L8.8718 15.1283C8.69348 15.293 8.56061 15.5013 8.48614 15.733C8.41166 15.9647 8.39813 16.2118 8.44686 16.4503L8.48041 16.5966L8.56707 16.9622C9.01697 18.7389 9.70248 20.4465 10.6051 22.0392C11.5884 23.7316 12.8086 25.2729 14.2283 26.6155L14.3402 26.7168C14.5208 26.8781 14.7398 26.9895 14.976 27.0403C15.2121 27.0911 15.4573 27.0794 15.6877 27.0065L20.3649 25.5242C20.8964 25.3563 21.4657 25.352 21.9997 25.5119C22.5337 25.6717 23.008 25.9885 23.3618 26.4214L25.576 29.1245C26.4986 30.2496 26.3868 31.9035 25.3272 32.8963C22.4281 35.6162 18.4414 36.1732 15.6681 33.9314C12.2686 31.1726 9.40285 27.8078 7.21396 24.0053C5.00731 20.2057 3.53613 16.0212 2.87227 11.6715ZM11.3767 16.636L14.3737 13.8682C15.1952 13.1103 15.7728 12.1227 16.0323 11.0321C16.2918 9.94153 16.2215 8.7978 15.8303 7.74775L14.6169 4.48499C14.1203 3.15309 13.1377 2.0617 11.8694 1.43306C10.601 0.804409 9.14214 0.685764 7.78987 1.10128C3.08474 2.54983 -0.692228 6.79424 0.107338 12.0962C0.666474 15.7978 1.95528 20.5063 4.79849 25.4229C7.16004 29.523 10.2514 33.1509 13.918 36.1254C18.078 39.4866 23.6302 38.339 27.2366 34.9581C28.2686 33.9914 28.8949 32.665 28.9879 31.2495C29.0809 29.834 28.6335 28.4361 27.7371 27.3412L25.5229 24.6354C24.8146 23.7704 23.8656 23.138 22.7977 22.8193C21.7297 22.5006 20.5915 22.51 19.5289 22.8465L15.6457 24.0756C14.6431 23.0356 13.7649 21.8811 13.029 20.6357C12.3181 19.3766 11.7641 18.0342 11.3795 16.6388"
+                                            fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="/price-list.pdf" class="home-hero_price-link is-last w-inline-block">
+                            <div class="home-hero_prices-text">Prices</div>
+                        </a>
+                    </div>
+
+                    <div id="image-lightbox" style="display:none; position:fixed; top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);justify-content:center;align-items:center;z-index:9999;">
+    <div style="position:relative; max-width:80vw; max-height:80vh;">
+        <img id="lightbox-img" src="" alt="preview" style="display:block; margin:auto;"/>
+        <button id="lightbox-close" style="position:absolute; top:10px; right:10px; background:#fff; border:none; padding:5px 10px; cursor:pointer;">X</button>
+    </div>
+</div>
+
+                </main>
+            </t>
+        </template>
+    </data>
+</odoo>

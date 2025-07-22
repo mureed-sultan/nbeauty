@@ -1,0 +1,175 @@
+<odoo>
+    <template id="service_page_template" name="Modern Animated Service Booking Page">
+        <t t-call="website.layout">
+
+            <style>
+                .booking-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 4rem;
+                    padding: 5vw;
+                    background-color: var(--theme-bg-light);
+                }
+                .left-section, .right-section {
+                    flex: 1 1 40%;
+                    min-width: 300px;
+                    opacity: 0;
+                }
+                .left-section {
+                    transform: translateX(-50px);
+                }
+                .right-section {
+                    transform: translateX(50px);
+                }
+                .btn-theme {
+                    background-color: var(--theme-primary);
+                    color: #fff;
+                    padding: 0.8rem 2.5rem;
+                    border-radius: 50px;
+                    font-family: var(--font-primary);
+                    display: inline-block;
+                    margin-top: 1rem;
+                    text-align: center;
+                }
+                .input, .select {
+                    width: 100%;
+                    padding: 0.8rem 1rem;
+                    border-radius: 12px;
+                    border: 1px solid #ddd;
+                    margin-bottom: 1rem;
+                }
+                .form-grid {
+                    display: grid;
+                    gap: 1rem;
+                }
+                .service-title {
+                    font-size: 3rem;
+                    color: var(--theme-primary);
+                    font-family: var(--font-primary);
+                }
+                .service-image {
+                    border-radius: 1rem;
+                    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+                    max-width: 100%;
+                }
+                .service-description {
+                    margin: 2rem 0;
+                    color: var(--color-text);
+                    font-family: var(--font-primary);
+                }
+            </style>
+
+            <section class="booking-container">
+                <div class="left-section">
+                    <h1 class="service-title"><t t-esc="service.name"/></h1>
+                    <p class="text-muted"><t t-esc="service.description_short"/></p>
+                    <img t-if="service.image"
+                         t-att-src="'/web/image/website.service/' + str(service.id) + '/image'"
+                         class="service-image"/>
+
+                    <div class="service-description">
+                        <p id="desc-preview"><t t-esc="service.description_long[:50]"/>...</p>
+                        <p id="desc-full" style="display: none;"><t t-raw="service.description_long"/></p>
+                        <button id="readMoreBtn" class="btn-theme">Read More</button>
+                    </div>
+
+                    <h4 style="color: var(--theme-primary); font-weight: 600;"><t t-esc="service.price"/> PKR</h4>
+                </div>
+
+                <div class="right-section">
+                    <form action="/nbeauty/booking/submit" method="post" class="form-grid">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <input type="text" name="customer_name" class="input" required="required" placeholder="Your Name"/>
+                        <input type="text" name="customer_mobile" class="input" required="required" placeholder="Mobile No."/>
+                        <select name="branch_id" class="select" required="required">
+                            <t t-foreach="branches" t-as="branch">
+                                <option t-att-value="branch.id"><t t-esc="branch.name"/></option>
+                            </t>
+                        </select>
+                        <select name="employee_id" class="select">
+                            <option value="">No Preference</option>
+                            <t t-foreach="employees" t-as="emp">
+                                <option t-att-value="emp.id"><t t-esc="emp.name"/></option>
+                            </t>
+                        </select>
+                        <select name="service_ids" multiple="multiple" class="select" required="required">
+                            <t t-foreach="services" t-as="srv">
+                                <option t-att-value="srv.id" t-att-selected="'selected' if srv.name == service.name else None">
+                                    <t t-esc="srv.name"/>
+                                </option>
+                            </t>
+                        </select>
+                        <input type="date" name="booking_date" class="input" t-att-min="today" required="required"/>
+                        <input type="time" name="booking_time" class="input" required="required" min="09:00" max="21:00"/>
+                        <button type="submit" class="btn-theme">Book Now</button>
+                    </form>
+                </div>
+            </section>
+
+            <xpath expr="//head" position="inside">
+    <script type="text/javascript" src="/nbeauty/static/src/js/gsap.js"></script>
+</xpath>
+
+            <script>
+                gsap.to(".left-section", { opacity: 1, x: 0, duration: 1, ease: "power2.out" });
+                gsap.to(".right-section", { opacity: 1, x: 0, duration: 1, ease: "power2.out", delay: 0.3 });
+
+                const readMoreBtn = document.getElementById('readMoreBtn');
+                const descPreview = document.getElementById('desc-preview');
+                const descFull = document.getElementById('desc-full');
+                readMoreBtn.addEventListener('click', () => {
+                    if (descFull.style.display === 'none') {
+                        gsap.to(descPreview, { opacity: 0, duration: 0.3, onComplete: () => {
+                            descPreview.style.display = 'none';
+                            descFull.style.display = 'block';
+                            gsap.fromTo(descFull, { opacity: 0 }, { opacity: 1, duration: 0.5 });
+                            readMoreBtn.textContent = 'Show Less';
+                        }});
+                    } else {
+                        gsap.to(descFull, { opacity: 0, duration: 0.3, onComplete: () => {
+                            descFull.style.display = 'none';
+                            descPreview.style.display = 'block';
+                            gsap.fromTo(descPreview, { opacity: 0 }, { opacity: 1, duration: 0.5 });
+                            readMoreBtn.textContent = 'Read More';
+                        }});
+                    }
+                });
+
+                const dateInput = document.querySelector('input[name="booking_date"]');
+                const timeInput = document.querySelector('input[name="booking_time"]');
+
+                function getDubaiDate() {
+                    const now = new Date();
+                    const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+                    return new Date(utc + (4 * 60 * 60 * 1000)); // Dubai UTC+4
+                }
+
+                function updateMinDate() {
+                    const dubaiNow = getDubaiDate();
+                    const today = dubaiNow.toISOString().slice(0, 10);
+                    dateInput.setAttribute('min', today);
+                    updateMinTime();
+                }
+
+                function updateMinTime() {
+                    const dubaiNow = getDubaiDate();
+                    dubaiNow.setHours(dubaiNow.getHours() + 2);
+                    const today = getDubaiDate().toISOString().slice(0, 10);
+                    let minTime = "09:00";
+                    if (dateInput.value === today) {
+                        const hours = String(dubaiNow.getHours()).padStart(2, '0');
+                        const minutes = String(dubaiNow.getMinutes()).padStart(2, '0');
+                        minTime = `${hours}:${minutes}`;
+                        if (minTime > "21:00") minTime = "09:00";
+                    }
+                    timeInput.min = minTime;
+                    timeInput.max = "21:00";
+                }
+
+                dateInput.addEventListener('change', updateMinTime);
+                updateMinDate();
+            </script>
+
+        </t>
+    </template>
+</odoo>

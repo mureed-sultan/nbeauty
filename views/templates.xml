@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Add custom HTML attributes to <html> tag -->
+        <template id="nbeauty_add_html_attributes" inherit_id="web.layout" name="nBeauty HTML Attributes" priority="1000">
+            <xpath expr="/t/html" position="attributes">
+                <attribute name="data-wf-page">652fe9df5341e43567662723</attribute>
+                <attribute name="data-wf-site">652fe9df5341e43567662724</attribute>
+            </xpath>
+        </template>
+
+        <!-- Replace website layout header and inject menu -->
+        <template id="nbeauty_custom_header" inherit_id="website.layout" name="nBeauty Custom Header" priority="99">
+            <xpath expr="//head" position="inside">
+                <script type="text/javascript" src="/nbeauty/static/src/js/fullscreen_menu.js"></script>
+                <link rel="stylesheet" href="/nbeauty/static/src/css/main.css"/>
+            </xpath>
+
+            <xpath expr="//header" position="replace">
+                <header id="nbeauty-header" class="o_header_standard body">
+                    <div class="headerr-div d-flex justify-content-between align-items-center py-3">
+
+                        <!-- Phone Number -->
+                        <div class="phones-header-div">
+                            <a href="tel:+971542722555" class="link-block w-inline-block">
+                                <p class="p-16 phones-header">
+                                    <span class="link-3">+971 54 272 2555</span>
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- Logo -->
+                        <div class="logo-div">
+                            <a href="/" class="navbar-brand">
+                                <img t-att-src="'/web/image/website/%d/logo' % website.id"
+                                     alt="N Beauty Logo" class="logo-img" height="50" loading="lazy"/>
+                            </a>
+                        </div>
+
+                        <!-- Menu Button -->
+                        <div class="menu-button-div">
+                            <a href="javascript:void(0)" id="nbeauty-toggle-btn" class="location-header-div w-inline-block">
+                                <h1 class="h-18">menu</h1>
+                                <div class="black-circle-div"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Fullscreen Overlay Menu -->
+                    <div id="nbeauty-overlay" class="menu-open-div" style="display: none;
+                        transform: translate3d(0, 100%, 0) scale3d(1, 1, 1);">
+
+                        <!-- Top bar with logo + close -->
+                        <div class="mob-menu-header">
+                            <img t-att-src="'/web/image/website/%d/logo' % website.id"
+                                 alt="N Beauty Logo" class="logo-img menu-open" loading="lazy"/>
+                            <a href="javascript:void(0)" id="nbeauty-close-btn" class="location-header-div mob-menu w-inline-block">
+                                <h1 class="h-18">close</h1>
+                                <div class="black-circle-div"></div>
+                            </a>
+                        </div>
+
+                        <!-- Instagram + privacy -->
+                        <div class="menu-side-div mob-hide">
+                            <img t-att-src="'/web/image/website/%d/logo' % website.id"
+                                 alt="N Beauty Logo" class="logo-img menu-open" loading="lazy"/>
+                            <a href="https://www.instagram.com/nbeauty_dxb/" class="menu_link w-inline-block">
+                                <div class="menu_link-wrap">
+                                    <p class="menu_text">Instagram</p>
+                                    <div class="menu_line"></div>
+                                </div>
+                            </a>
+                            <a href="/privacy-policy" class="location-header-div w-inline-block">
+                                <div class="black-circle-div"></div>
+                                <h1 class="h-18">privacy policy</h1>
+                            </a>
+                        </div>
+
+                        <!-- Odoo Dynamic Menu -->
+                        <div class="center-menu-div">
+                            <t t-foreach="website.menu_id.child_id" t-as="menu">
+                                <a t-att-href="menu.url" class="opened-menu-link-div w-inline-block">
+                                    <div><t t-esc="menu.name"/></div>
+                                </a>
+                            </t>
+                        </div>
+
+                        <!-- Footer links -->
+                        <div class="menu-side-div-2">
+                            <a href="javascript:void(0)" id="nbeauty-close-btn-2" class="location-header-div omb-hide w-inline-block">
+                                <h1 class="h-18">close</h1>
+                                <div class="black-circle-div"></div>
+                            </a>
+                            <a href="https://www.facebook.com/nbeauty.dxb" class="menu_link mob-hide w-inline-block">
+                                <div class="menu_link-wrap">
+                                    <p class="menu_text">Facebook</p>
+                                    <div class="menu_line"></div>
+                                </div>
+                            </a>
+                            <a href="/studio-rules" class="location-header-div omb-hide w-inline-block">
+                                <h1 class="h-18">Studio Rules</h1>
+                                <div class="black-circle-div"></div>
+                            </a>
+                            <a href="/privacy-policy" class="p12-mob">Privacy Policy</a>
+                            <a href="/studio-rules" class="p12-mob">Studio Rules</a>
+                        </div>
+                    </div>
+                </header>
+            </xpath>
+
+            <xpath expr="//footer" position="inside">
+                <script src="/nbeauty/static/src/js/fullscreen_menu.js"></script>
+                <script src="/nbeauty/static/src/js/customEase.js"></script>
+                <script src="/nbeauty/static/src/js/gsap.js"></script>
+                <script src="/nbeauty/static/src/js/jquery.js"></script>
+                <script src="/nbeauty/static/src/js/webflow.js"></script>
+                <script src="/nbeauty/static/src/js/script.js"></script>
+                <script src="/nbeauty/static/src/js/homepage.js"></script>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

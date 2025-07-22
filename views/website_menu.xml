@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Root Menu: Website Content -->
+    <menuitem id="menu_website_content_root"
+              name="Website Content"
+              sequence="10"
+              groups="base.group_user"/>
+
+    <!-- Submenu: Services -->
+    <menuitem id="menu_website_services"
+              name="Services"
+              parent="menu_website_content_root"
+              action="nbeauty.model_website_service_action"
+              sequence="20"
+              groups="base.group_user"/>
+
+    <!-- Submenu: Bookings -->
+    <menuitem id="menu_nbeauty_booking_root"
+              name="Bookings"
+              parent="menu_website_content_root"
+              action="action_nbeauty_booking"
+              sequence="30"
+              groups="base.group_user"/>
+</odoo>

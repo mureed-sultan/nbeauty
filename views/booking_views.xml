@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Booking Form Template -->
+        <template id="website_booking_form" name="NBeauty Booking Page">
+            <t t-call="website.layout">
+                <div class="container my-5 animated fadeIn slow">
+                    <div class="card shadow-lg border-0 p-5" style="background: linear-gradient(145deg, #fff0f5, #f0f8ff); border-radius: 20px;">
+                        <h2 class="text-center mb-4 text-uppercase" style="color:#c71585;">💅 Book Your Beauty Session</h2>
+
+                        <form action="/nbeauty/booking/submit" method="post" class="form" style="font-family: 'Poppins', sans-serif;">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+                            <div class="mb-3">
+                                <label class="form-label">Your Name:</label>
+                                <input type="text" name="customer_name" class="form-control" required="required" placeholder="Enter your full name"/>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Mobile Number:</label>
+                                <input type="text" name="customer_mobile" class="form-control" required="required" placeholder="e.g. 0501234567"/>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Choose Services:</label>
+                                <select name="service_ids" multiple="multiple" class="form-select" required="required">
+                                    <t t-foreach="services" t-as="service">
+                                        <option t-att-value="service.id">
+                                            <t t-esc="service.name"/>
+                                        </option>
+                                    </t>
+                                </select>
+                                <small class="text-muted">Hold Ctrl or Cmd to select multiple</small>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Booking Date:</label>
+                                    <input type="date" name="booking_date" class="form-control" required="required"/>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Booking Time:</label>
+                                    <input type="time" name="booking_time" class="form-control" required="required"/>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Choose Provider:</label>
+                                <select name="employee_id" class="form-select" required="required">
+                                    <t t-foreach="employees" t-as="emp">
+                                        <option t-att-value="emp.id">
+                                            <t t-esc="emp.name"/>
+                                        </option>
+                                    </t>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Select Branch:</label>
+                                <select name="branch_id" class="form-select" required="required">
+                                    <t t-foreach="branches" t-as="branch">
+                                        <option t-att-value="branch.id">
+                                            <t t-esc="branch.name"/>
+                                        </option>
+                                    </t>
+                                </select>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-lg btn-danger shadow px-5 py-2" style="border-radius: 50px;">✨ Submit Booking</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <!-- Thank You Page Template -->
+        <template id="website_booking_thank_you" name="Thank You Page">
+            <t t-call="website.layout">
+                <div class="container my-5 text-center">
+                    <div class="alert alert-success shadow-sm p-4 animated fadeIn">
+                        <h2 class="mb-3">🎉 Thank You!</h2>
+                        <p>Your beauty appointment has been submitted successfully.</p>
+                        <a href="/" class="btn btn-outline-primary mt-3">Return to Home</a>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+    </data>
+</odoo>

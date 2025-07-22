@@ -1,0 +1,64 @@
+/* static/src/css/pricelist.css */
+
+/* Load Pasadena font */
+@font-face {
+    font-family: 'Pasadena';
+    src: url('/nbeauty/static/src/fonts/pasadena/Pasadena-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pasadena';
+    src: url('/nbeauty/static/src/fonts/pasadena/Pasadena-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Global override */
+* {
+    background-color: var(--biege);
+    margin: 0;
+    padding: 0;
+    font-family: 'Pasadena', sans-serif !important;
+    color: #333;
+}
+
+/* Button appearance and hover */
+._4block-btn-mob {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+}
+
+.c-faq-a-text:hover ._4block-btn-mob {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Service item hover effect */
+.c-faq-a-text {
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+}
+
+.c-faq-a-text:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* White circle animation */
+.white-circle-div-4block {
+    transition: transform 0.3s ease;
+}
+
+._4block-btn-mob:hover .white-circle-div-4block {
+    transform: scale(1.1);
+}
+
+.cat-description {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: normal;
+}

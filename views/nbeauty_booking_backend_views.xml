@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Action FIRST -->
+        <record id="action_nbeauty_booking" model="ir.actions.act_window">
+            <field name="name">NBeauty Bookings</field>
+            <field name="res_model">nbeauty.booking</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <!-- Menu (AFTER action is defined) -->
+        <menuitem id="menu_nbeauty_booking_root"
+                  name="Bookings"
+                  parent="base.menu_custom"
+                  action="action_nbeauty_booking"
+                  sequence="10"
+                  groups="base.group_system"/>
+
+        <!-- OWL List View -->
+        <record id="view_nbeauty_booking_list" model="ir.ui.view">
+            <field name="name">nbeauty.booking.list</field>
+            <field name="model">nbeauty.booking</field>
+            <field name="arch" type="xml">
+                <list string="NBeauty Bookings">
+                    <field name="customer_name"/>
+                    <field name="customer_mobile"/>
+                    <field name="booking_date"/>
+                    <field name="booking_time"/>
+                    <field name="employee_id"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- OWL Form View -->
+        <record id="view_nbeauty_booking_form" model="ir.ui.view">
+            <field name="name">nbeauty.booking.form</field>
+            <field name="model">nbeauty.booking</field>
+            <field name="arch" type="xml">
+                <form string="Booking Details">
+                    <group>
+                        <field name="customer_name"/>
+                        <field name="customer_mobile"/>
+                        <field name="booking_date"/>
+                        <field name="booking_time"/>
+                        <field name="employee_id"/>
+                        <field name="service_ids" widget="many2many_tags"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
