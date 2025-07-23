@@ -11699,7 +11699,7 @@ a.btn-primary{
 }
 @media screen and (max-width: 991px) {
     .pricelist-description {
-        font-size: px;
+        font-size: 8 px;
     }
 }
 
