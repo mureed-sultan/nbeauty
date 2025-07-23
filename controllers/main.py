@@ -9,13 +9,13 @@ class NBeautyHomepage(http.Controller):
     @http.route('/', auth='public', website=True)
     def homepage(self, **kw):
         branches = request.env['stock.warehouse'].sudo().search([])
-        return request.render('nbeauty.nbeauty_homepage',{
-            'branches':branches
+        return request.render('nbeauty.nbeauty_homepage', {
+            'branches': branches
         })
 
     @http.route('/aboutus', auth="public", website="true")
     def aboutpage(self):
-        return  request.render('nbeauty.nbeauty_aboutpage')
+        return request.render('nbeauty.nbeauty_aboutpage')
 
     @http.route(['/branches'], type='http', auth='public', website=True)
     def show_branches(self, city_id=None, **kwargs):
@@ -39,7 +39,11 @@ class NBeautyHomepage(http.Controller):
 
     @http.route('/location', auth="public", website="true")
     def location_page(self):
-        return  request.render('nbeauty.nbeauty-location')
+        return request.render('nbeauty.nbeauty-location')
+
+    @http.route('/pricelist',auth='public',website="true")
+    def pricelist_page(self):
+        return request.render('nbeauty.nbeauty-location')
 
     @http.route('/services/<slug>', type='http', auth='public', website=True)
     def service_detail(self, slug, **kwargs):

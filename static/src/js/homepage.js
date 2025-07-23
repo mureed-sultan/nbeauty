@@ -311,7 +311,7 @@ function createServiceBlock(service) {
                 </div>
             </div>
             <div class="_4block-text-bottom-main-div">
-                <div class="_4block-faq-text-bottom-div"><p>${service.price}</p></div>
+                <div class="_4block-faq-text-bottom-div"><p> Started From shurman${service.price}</p></div>
                 <a href="/service/${service.slug?service.slug:'404'}" class="_4block-btn-mob w-inline-block">
                     <h1 class="h-18 _4block">Make an appointment</h1>
                     <div class="white-circle-div-4block"></div>
@@ -381,6 +381,7 @@ function createChildBlock(child, parentWrapper) {
     });
 
     header.addEventListener('click', e => {
+    return
         e.stopPropagation();
         toggleWrapper(serviceWrapper, header.querySelector('.arrow-img-4block'));
         updateParentHeight(parentWrapper);

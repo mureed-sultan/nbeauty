@@ -110,7 +110,6 @@
             </xpath>
 
             <xpath expr="//footer" position="inside">
-                <script src="/nbeauty/static/src/js/fullscreen_menu.js"></script>
                 <script src="/nbeauty/static/src/js/customEase.js"></script>
                 <script src="/nbeauty/static/src/js/gsap.js"></script>
                 <script src="/nbeauty/static/src/js/jquery.js"></script>

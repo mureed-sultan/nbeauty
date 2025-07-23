@@ -1,142 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <template id="nbeauty-services" name="NBeauty Services">
-            <t t-call="website.layout">
+  <data>
+    <template id="nbeauty-services" name="NBeauty Services">
+      <t t-call="website.layout">
 
-                <section id="about" class="_2block-div about">
+        <!-- Include main.css -->
+        <link rel="stylesheet" type="text/css" href="/nbeauty/static/src/css/main.css"/>
 
-                    <div class="_2bl-h-div-line-1">
-                        <p class="p-18 _2block-1 hide">Services:</p>
-                        <h1 class="h-124">At N Beauty,</h1>
+        <section id="services" class="_2block-div about" style="padding-top: 3rem; padding-bottom: 3rem; background-color: #fff0f5;">
+          <div class="container">
+
+            <!-- Header -->
+            <div class="text-center mb-12">
+              <p class="p-18 _2block-1 hide">Services:</p>
+              <h1 class="h-124">At N Beauty,</h1>
+              <h6 class="h-100 _2block-2">We present diverse services tailored to accentuate your natural beauty.</h6>
+            </div>
+
+            <!-- Filters -->
+            <div class="services-filters flex flex-wrap justify-center items-center gap-4 mb-10">
+              <input id="service-search-input" type="text" placeholder="Search services..."
+                     class="input-pill p-2 px-4 border border-gray-300 rounded-full"/>
+              <select id="category-filter"
+                      class="input-pill p-2 px-4 border border-gray-300 rounded-full">
+                <option value="">All Categories</option>
+                <t t-foreach="categories" t-as="category">
+                  <option t-att-value="category.id">
+                    <t t-esc="category.name"/>
+                  </option>
+                </t>
+              </select>
+            </div>
+
+            <!-- Service Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10" id="services-container">
+              <t t-foreach="services" t-as="service">
+                <a t-att-href="'/services/' + service.slug"
+                   class="group block service-item bg-white p-6 border rounded-3xl hover:shadow-2xl transition-all duration-300"
+                   t-att-data-category-id="service.category_id.id"
+                   t-att-data-service-name="service.name.lower()">
+                  <div class="flex flex-col items-center gap-4">
+                    <div class="w-24 h-24 rounded-full overflow-hidden shadow-md">
+                      <img t-att-src="'/web/image/website.service/%s/icon' % service.id"
+                           t-att-alt="service.name"
+                           class="object-cover w-full h-full"/>
                     </div>
-                    <h6 class="h-100 _2block-2">
-                        We present diverse services tailored to accentuate your natural beauty.
-                    </h6>
+                    <h3 class="h-50 text-center font-semibold text-lg">
+                      <t t-esc="service.name"/>
+                    </h3>
+                    <span class="button-pill border border-black rounded-full px-5 py-1 text-sm mt-2">
+                      Book Now
+                    </span>
+                  </div>
+                </a>
+              </t>
+            </div>
 
-                    <!-- Search + Filter -->
-                    <div class="services-filters flex justify-center items-center gap-4 p-4">
-                        <input id="service-search-input"
-                               type="text"
-                               placeholder="Search services..."
-                               class="input-pill p-2 px-4 border border-gray-300 rounded-full"
-                        />
-                        <select id="category-filter" class="input-pill p-2 px-4 border border-gray-300 rounded-full">
-                            <option value="">All Categories</option>
-                            <t t-foreach="categories" t-as="category">
-                                <option t-att-value="category.id"><t t-esc="category.name"/></option>
-                            </t>
-                        </select>
-                    </div>
+          </div>
+        </section>
 
-                    <!-- Service Grid -->
-                    <div class="_2block-content-div grid grid-cols-2 gap-10 p-8" id="services-container">
-                        <t t-foreach="categories" t-as="category">
-                            <div class="_2block-content-div-1" t-att-data-category-id="category.id">
-                                <h2 class="h-50 mb-6"><t t-esc="category.name"/></h2>
-                                <t t-foreach="services.filtered(lambda s: s.category_id.id == category.id)" t-as="service">
-                                    <a t-att-href="'/services/' + service.slug"
-                                       class="block service-item p-6 border rounded-2xl hover:shadow-lg transition"
-                                       t-att-data-category-id="category.id"
-                                       t-att-data-service-name="service.name.lower()">
-                                        <div class="flex items-center gap-6">
-                                            <div class="w-24 h-24 rounded-full overflow-hidden shadow-md">
-                                                <img t-att-src="'/web/image/website.service/%s/icon' % service.id"
-                                                     t-att-alt="service.name"
-                                                     class="object-cover w-full h-full"/>
-                                            </div>
-                                            <div class="flex flex-col gap-2">
-                                                <h1 class="h-50 font-semibold"><t t-esc="service.name"/></h1>
-                                                <h3 class="service-heading text-sm text-gray-500"><t t-esc="category.name"/></h3>
-                                                <span class="button-pill inline-block border border-black rounded-full px-6 py-1 text-sm">Book Now</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </t>
-                            </div>
-                        </t>
-                    </div>
+        <!-- Location Section -->
+        <section class="appointment-pop-up-div py-10 bg-gray-100">
+          <div class="appointment-body-div container">
+            <h1 class="h-50 medium text-center mb-10">Choose your preferred location</h1>
+            <div class="locations-div flex gap-10 flex-wrap justify-center">
+              <div class="location-div-pop-up max-w-sm bg-white p-6 rounded-xl shadow-lg">
+                <p class="p-20 location">Business Bay</p>
+                <p class="p-18 black">
+                  <a href="https://maps.app.goo.gl/NRWTNhf5NnpZGmiP7" target="_blank">DAMAC Maison Cour Jardin Hotel</a> G-Floor / Shop 5
+                </p>
+                <p class="p-18 opening-soon text-red-500 mt-3">Re-opening soon!<br/>We are working to enhance your experience</p>
+              </div>
+              <div class="location-div-pop-up max-w-sm bg-white p-6 rounded-xl shadow-lg">
+                <p class="p-20 location">Dubai Mall</p>
+                <p class="p-18 black">
+                  <a href="https://maps.app.goo.gl/rFVCXsU5pZqvFQHS7" target="_blank">Dubai Mall Zabeel Expansion 2-Floor</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                    <div class="_2block-item-main-div _05 text-center py-10">
-                        <div class="_2block-item-div _05">
-                            <h1 class="h-116">Beauty Studio is a celebration of you</h1>
-                            <p class="p-18 black _05">
-                                Your support, your loyalty, and your smiles brought us here.<br/>
-                                Join us in this new chapter of your beauty journey.
-                            </p>
-                        </div>
-                    </div>
-                </section>
+        <!-- Marquee -->
+        <div class="embed">
+          <div class="marquee-horizontal-css w-embed">
+            <style>
+              .track-horizontal {
+                position: absolute;
+                white-space: nowrap;
+                will-change: transform;
+                animation: marquee-horizontal 40s linear infinite;
+              }
+              @keyframes marquee-horizontal {
+                from { transform: translateX(0); }
+                to { transform: translateX(-50%); }
+              }
+            </style>
+          </div>
+        </div>
 
-               <img t-attf-src="/nbeauty/static/src/img/bannerimage.JPG" loading="lazy"
-                         data-w-id="6be0ff32-dad0-c6fa-7bed-36db6eaec9d3"
-                         sizes="100vw"
-                         alt="Luxurious interior of the salon with cosmetics samples on the shelves"
-                         class="big-img-1 mob-hide"/>
+        <!-- JS -->
+        <xpath expr="//footer" position="inside">
+          <script src="/nbeauty/static/src/js/servicePage.js"></script>
+        </xpath>
 
-                <section class="appointment-pop-up-div py-10">
-                    <div class="appointment-body-div">
-                        <h1 class="h-50 medium">Choose your preferred location</h1>
-                        <div class="locations-div flex gap-10">
-                            <div class="location-div-pop-up">
-                                <p class="p-20 location">Business Bay</p>
-                                <p class="p-18 black">
-                                    <a href="https://maps.app.goo.gl/NRWTNhf5NnpZGmiP7">
-                                        DAMAC Maison Cour Jardin Hotel</a> G-Floor / Shop 5
-                                </p>
-                                <p class="p-18 opening-soon">Re-opening soon!<br/>We are working to enhance your experience</p>
-                            </div>
-                            <div class="location-div-pop-up">
-                                <p class="p-20 location">Dubai Mall</p>
-                                <p class="p-18 black">
-                                    <a href="https://maps.app.goo.gl/rFVCXsU5pZqvFQHS7">Dubai Mall Zabeel Expansion 2-Floor</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="embed">
-                    <div class="marquee-horizontal-css w-embed">
-                        <style>
-                            .track-horizontal {
-                                position: absolute;
-                                white-space: nowrap;
-                                will-change: transform;
-                                animation: marquee-horizontal 40s linear infinite;
-                            }
-                            @keyframes marquee-horizontal {
-                                from { transform: translateX(0); }
-                                to { transform: translateX(-50%); }
-                            }
-                        </style>
-                    </div>
-                </div>
-
-                <xpath expr="//footer" position="inside">
-                    <script src="/nbeauty/static/src/js/servicePage.js"></script>
-                    <style>
-                        .input-pill {
-                            padding: 0.5rem 1rem;
-                            border-radius: 9999px;
-                            border: 1px solid #ccc;
-                            min-width: 200px;
-                        }
-                        .button-pill {
-                            border: 1px solid black;
-                            border-radius: 9999px;
-                            padding: 0.5rem 1.5rem;
-                            background: none;
-                            transition: 0.3s;
-                        }
-                        .button-pill:hover {
-                            background-color: black;
-                            color: white;
-                        }
-                    </style>
-                </xpath>
-
-            </t>
-        </template>
-    </data>
+      </t>
+    </template>
+  </data>
 </odoo>

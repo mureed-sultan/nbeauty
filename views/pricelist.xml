@@ -2,8 +2,12 @@
     <data>
         <template id="nbeauty-location" name="Price List">
             <t t-call="website.layout">
-
-
+                <section class="body">
+                    <div id="faq-container" class="faq-container"></div>
+                    <xpath expr="//footer" position="inside">
+                        <script src="/nbeauty/static/src/js/pricelist.js"></script>
+                    </xpath>
+                </section>
             </t>
         </template>
     </data>
