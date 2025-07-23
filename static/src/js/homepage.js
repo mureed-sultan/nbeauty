@@ -276,6 +276,7 @@ const serviceCategories = [
             id:"2",
         title: "Make-Up & Tinting",
         titleArabic: "مكياج و صبغة",
+        description:"From subtle glam to all-out wow, flawless makeup, defined brows, and lashes that speak volumes.",
         services: [
             { name: "Bridal Make-up", arabic: "مكياج العرائس", price: "From 1000 AED" },
             { name: "Eyes Only", arabic: "للعيون فقط", price: "From 300 AED" },
@@ -289,6 +290,7 @@ const serviceCategories = [
             id:"3",
         title: "Eyelash Extensions",
         titleArabic: "تركيب الرموش",
+        description:"Make-up, Tinting Eyelash Extensions",
         services: [
             { name: "Full Set", arabic: "مجموعة كاملة", price: "500 AED" },
             { name: "1 Month", arabic: "شهر ١", price: "250 AED" },
@@ -301,6 +303,7 @@ const serviceCategories = [
             id:"4",
         title: "Skin Care",
         titleArabic: "العناية بالبشرة",
+        description:"Quick, calming, and glow-boosting — the perfect pick-me-up your skin will thank you for.",
         services: [
             { name: "Anti-Wrinkle, Revitalizing", arabic: "مكافحة التجاعيد وتجديد الحيوية", price: "250 AED" },
             { name: "Eye Treatment", arabic: "تحت العين", price: "300 AED" },
@@ -331,14 +334,14 @@ function createServiceBlock(service) {
             </div>
             <div class="_4block-text-bottom-main-div">
                 <div class="_4block-faq-text-bottom-div"><p>${service.price}</p></div>
-                <a href="#" class="_4block-btn-mob w-inline-block">
+                <a href="/service/${service.slug?service.slug:'404'}" class="_4block-btn-mob w-inline-block">
                     <h1 class="h-18 _4block">Make an appointment</h1>
                     <div class="white-circle-div-4block"></div>
                 </a>
             </div>
         </div>
 
-        <a href="#" class="_4block-btn hide w-inline-block">
+        <a  href="/service/${service.slug?service.slug:'404'}"  class="_4block-btn hide w-inline-block">
             <h1 class="h-18 _4block">Make an appointment</h1>
             <div class="white-circle-div-4block"></div>
         </a>
@@ -352,11 +355,9 @@ function toggleWrapper(wrapper, arrow) {
         const fullHeight = [...wrapper.children].reduce((acc, el) => acc + el.scrollHeight, 0);
         wrapper.style.height = `${fullHeight}px`;
         arrow.style.transform = 'rotate(180deg)';
-        console.log('Opening:', wrapper, 'Height:', fullHeight);
     } else {
         wrapper.style.height = '0px';
         arrow.style.transform = 'rotate(0deg)';
-        console.log('Closing:', wrapper);
     }
 }
 
@@ -370,7 +371,6 @@ function updateParentHeight(parentWrapper) {
         }
     });
     parentWrapper.style.height = `${totalHeight}px`;
-    console.log('Updated Parent Height:', parentWrapper, 'to', totalHeight);
 }
 
 function createChildBlock(child, parentWrapper) {
@@ -463,9 +463,26 @@ function createMainCategory(category, container) {
                 w.style.height = '0px';
                 const icon = w.previousElementSibling?.querySelector('.arrow-img-4block');
                 if (icon) icon.style.transform = 'rotate(0deg)';
+                // Also collapse inner .c-faq-a if present
+                const innerFaq = w.querySelector('.c-faq-a');
+                if (innerFaq) innerFaq.style.height = '0px';
             }
         });
-        toggleWrapper(wrapper, header.querySelector('.arrow-img-4block'));
+
+        const arrow = header.querySelector('.arrow-img-4block');
+
+        // CASE: Direct services
+        if (category.services) {
+            const serviceWrapper = wrapper.querySelector('.c-faq-a');
+            toggleWrapper(serviceWrapper, arrow);
+
+            // Match .c-faq-titles height to .c-faq-a
+            const totalHeight = serviceWrapper.scrollHeight + header.scrollHeight;
+            wrapper.style.height = serviceWrapper.style.height !== '0px' ? `${totalHeight}px` : '0px';
+        } else {
+            // CASE: With children
+            toggleWrapper(wrapper, arrow);
+        }
     });
 
     item.appendChild(header);
@@ -478,15 +495,12 @@ serviceCategories.forEach(category => {
     createMainCategory(category, container);
 });
 
-
-
-
 // Cache all elements in variables (best practice)
 const images = document.querySelectorAll('._6block-img');
 const lightbox = document.getElementById('image-lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
 const lightboxClose = document.getElementById('lightbox-close');
-console.log(images,lightbox,lightboxImg, lightboxClose)
+
 // Function to open lightbox
 function openLightbox(src) {
     lightboxImg.src = src;

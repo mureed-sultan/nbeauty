@@ -1,17 +1,9 @@
 <odoo>
     <data>
-        <template id="nbeauty-pricelist" name="Price List">
+        <template id="nbeauty-location" name="Price List">
             <t t-call="website.layout">
-                <t t-jquery="head" t-operation="append">
-                    <link rel="stylesheet" type="text/css" t-att-href="'/nbeauty/static/src/css/pricelist.css'"/>
-                </t>
 
-                <div id="service-accordion" class="services-accordion"></div>
 
-                <!-- Inject JS at the bottom of the page -->
-                <t t-jquery="body" t-operation="append">
-                    <script type="text/javascript" t-att-src="'/nbeauty/static/src/js/pricelist.js'"></script>
-                </t>
             </t>
         </template>
     </data>

@@ -77,17 +77,33 @@
         </template>
 
         <!-- Thank You Page Template -->
-        <template id="website_booking_thank_you" name="Thank You Page">
-            <t t-call="website.layout">
-                <div class="container my-5 text-center">
-                    <div class="alert alert-success shadow-sm p-4 animated fadeIn">
-                        <h2 class="mb-3">🎉 Thank You!</h2>
-                        <p>Your beauty appointment has been submitted successfully.</p>
-                        <a href="/" class="btn btn-outline-primary mt-3">Return to Home</a>
-                    </div>
-                </div>
+       <template id="website_booking_thank_you" name="Thank You Page">
+      <t t-call="website.layout">
+        <div class="container my-5 text-center">
+          <div class="alert alert-success shadow-sm p-4 animated fadeIn">
+            <h2 class="mb-3">🎉 Thank You!</h2>
+            <p>Your beauty appointment has been submitted successfully.</p>
+            <a href="/" class="btn btn-outline-primary mt-3">Return to Home</a>
+          </div>
+        </div>
+      </t>
+    </template>
+
+    <!-- Error Page (Custom Fallback) -->
+    <template id="website_booking_error" name="Booking Error Page">
+      <t t-call="website.layout">
+        <div class="container my-5 text-center">
+          <div class="alert alert-danger shadow-sm p-4 animated fadeIn">
+            <h2 class="mb-3">🚫 Booking Failed</h2>
+            <p>We couldn't process your booking. Please try again or contact support.</p>
+            <t t-if="error">
+              <pre class="text-sm text-muted mt-3"><t t-esc="error"/></pre>
             </t>
-        </template>
+            <a href="/nbeauty/booking" class="btn btn-outline-danger mt-3">Try Again</a>
+          </div>
+        </div>
+      </t>
+    </template>
 
     </data>
 </odoo>

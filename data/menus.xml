@@ -16,8 +16,8 @@
             <field name="sequence" type="int">20</field>
         </record>
         <record id="menu_nbeauty_pricelist" model="website.menu">
-            <field name="name">Price List</field>
-            <field name="url">/pricelist</field>
+            <field name="name">Locations</field>
+            <field name="url">/location</field>
             <field name="parent_id" ref="website.main_menu"/>
             <field name="sequence" type="int">30</field>
         </record>

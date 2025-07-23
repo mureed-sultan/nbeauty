@@ -16,15 +16,30 @@ class NBeautyHomepage(http.Controller):
     @http.route('/aboutus', auth="public", website="true")
     def aboutpage(self):
         return  request.render('nbeauty.nbeauty_aboutpage')
-    
-    @http.route('/services', auth="public", website="true")
+
+    @http.route(['/branches'], type='http', auth='public', website=True)
+    def show_branches(self, city_id=None, **kwargs):
+        cities = request.env['website.branch.city'].sudo().search([], order='sequence, name')
+        domain = [('city_id', '=', int(city_id))] if city_id else []
+        branches = request.env['website.branch'].sudo().search(domain, order='sequence, name')
+        return request.render('nbeauty.template_branch_listing', {
+            'cities': cities,
+            'branches': branches,
+            'selected_city': int(city_id) if city_id else None
+        })
+
+    @http.route('/services', auth="public", website=True)
     def services_page(self):
-        return  request.render('nbeauty.nbeauty-services')
+        services = request.env['website.service'].sudo().search([], order='sequence asc')
+        categories = request.env['website.service.category'].sudo().search([])
+        return request.render('nbeauty.nbeauty-services', {
+            'services': services,
+            'categories': categories
+        })
 
-
-    @http.route('/pricelist', auth="public", website="true")
-    def pricelist_page(self):
-        return  request.render('nbeauty.nbeauty-pricelist')
+    @http.route('/location', auth="public", website="true")
+    def location_page(self):
+        return  request.render('nbeauty.nbeauty-location')
 
     @http.route('/services/<slug>', type='http', auth='public', website=True)
     def service_detail(self, slug, **kwargs):
@@ -68,8 +83,12 @@ class NBeautyHomepage(http.Controller):
             service_ids = [int(s) for s in request.httprequest.form.getlist('service_ids')]
             employee_id = int(post.get('employee_id'))
             date = post.get('booking_date')
-            time = post.get('booking_time')
-            branch_id = int(post.get('branch_id'))  # ✅ Get this
+            time_str = post.get('booking_time')
+
+            hours, minutes = map(int, time_str.split(':'))
+            time_float = hours + minutes / 60.0
+
+            branch_id = int(post.get('branch_id'))
 
             request.env['nbeauty.booking'].sudo().create({
                 'customer_name': name,
@@ -77,15 +96,14 @@ class NBeautyHomepage(http.Controller):
                 'service_ids': [(6, 0, service_ids)],
                 'employee_id': employee_id,
                 'booking_date': date,
-                'booking_time': time,
-                'branch_id': branch_id,  # ✅ Save it
-
+                'booking_time': time_float,  # ✅ Use float
+                'branch_id': branch_id,
             })
 
             return request.redirect('/nbeauty/booking/thanks')
 
         except Exception as e:
-            return request.render('website.404', {'error': str(e)})
+            return request.render('nbeauty.website_booking_error', {'error': str(e)})
 
     @http.route('/nbeauty/booking/thanks', type='http', auth='public', website=True)
     def booking_thanks(self, **kwargs):

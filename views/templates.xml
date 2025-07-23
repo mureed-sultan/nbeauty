@@ -116,7 +116,7 @@
                 <script src="/nbeauty/static/src/js/jquery.js"></script>
                 <script src="/nbeauty/static/src/js/webflow.js"></script>
                 <script src="/nbeauty/static/src/js/script.js"></script>
-                <script src="/nbeauty/static/src/js/homepage.js"></script>
+<!--                <script src="/nbeauty/static/src/js/homepage.js"></script>-->
             </xpath>
         </template>
 

@@ -1,323 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
         <template id="nbeauty-services" name="NBeauty Services">
             <t t-call="website.layout">
 
-                <div id="about" class="_2block-div about">
+                <section id="about" class="_2block-div about">
+
                     <div class="_2bl-h-div-line-1">
-                        <p data-w-id="ca749007-244c-847e-3d69-d65f1ed6e5d5" style="opacity: 1"
-                           class="p-18 _2block-1 hide">
-                            Services:
-                        </p>
-                        <h1 data-w-id="ca749007-244c-847e-3d69-d65f1ed6e5d7" style="opacity: 1" class="h-124">
-                            At N Beauty,
-                        </h1>
+                        <p class="p-18 _2block-1 hide">Services:</p>
+                        <h1 class="h-124">At N Beauty,</h1>
                     </div>
-                    <h6 data-w-id="ca749007-244c-847e-3d69-d65f1ed6e5d9" style="opacity: 1" class="h-100 _2block-2">
-                        we present diverse services tailored to accentuate your natural beauty
+                    <h6 class="h-100 _2block-2">
+                        We present diverse services tailored to accentuate your natural beauty.
                     </h6>
-                    <div class="_2block-content-div">
-                        <div class="_2block-content-div-1">
-                            <div class="_2block-item-div-wrapper">
-                                <div class="_2block-item-main-div">
-                                    <h1 class="h-151">
-                                        <img src="img/nails.png" alt="Nails"/>
-                                    </h1>
-                                    <div class="_2block-item-div">
-                                        <h1 class="h-50">Nail Treatments</h1>
-                                        <h3 class="service-heading">Nails</h3>
-                                        <p class="p-18 black _100">
-                                            Where we dedicated ourselves to perfecting the art of nail
-                                            care. Specializing in “russian manicure &amp; pedicure”
-                                            technique, our mission was to provide top-notch nail services
-                                            that left our clients feeling pampered and confident. We were
-                                            committed to quality, precision, and ensuring that every visit
-                                            to our studio was a delightful experience.
-                                        </p>
-                                        <p class="service-description">
-                                            High-precision nail services with Russian technique for
-                                            polished elegance.
-                                        </p>
-                                        <button
-                                                style="border: 1px solid black; border-radius: 9999px; padding: 5px 20px; background:none">
-                                            Buy
-                                            Now
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="_2block-item-div-wrapper pc-hide">
-                                <div class="_2block-item-main-div _02">
-                                    <h1 class="h-151">
-                                        <img src="img/skin-care.png" alt="Skin Care"/>
-                                    </h1>
-                                    <div class="_2block-item-div">
-                                        <h1 class="h-50 _02-mob">
-                                            But we listened, and we heard your dreams
-                                        </h1>
-                                        <h3 class="service-heading">Skin Treatments</h3>
-                                        <p class="p-18 black _02">
-                                            You craved a place where beauty and wellness unite, where you
-                                            could find everything you need under one roof.
-                                        </p>
-                                        <p class="service-description">
-                                            Rejuvenating skin treatments to enhance natural glow and
-                                            confidence.
-                                        </p>
-                                        <button
-                                                style="border: 1px solid black; border-radius: 9999px; padding: 5px 20px; background:none">
-                                            Buy
-                                            Now
-                                        </button>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="_2block-item-div-wrapper">
-                                <div class="_2block-item-main-div _03">
-                                    <h1 class="h-151">
-                                        <img src="img/hair-care.png" alt="Hair Care"/>
-                                    </h1>
-                                    <div class="_2block-item-div">
-                                        <h1 class="h-50">And, we expanded</h1>
-                                        <h3 class="service-heading">Hair Care</h3>
-                                        <p class="p-18 black">
-                                            Today, we proudly introduce our second branch located in the
-                                            heart of the city - Dubai Mall Zabeel Expansion.
-                                        </p>
-                                        <p class="service-description">
-                                            Professional hair services tailored to your style and wellness
-                                            needs.
-                                        </p>
-                                        <button
-                                                style="border: 1px solid black; border-radius: 9999px; padding: 5px 20px; background:none">
-                                            Buy
-                                            Now
-                                        </button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="_2block-content-div-2">
-                            <div class="_2block-item-div-wrapper mob-hide">
-                                <div class="_2block-item-main-div _02">
-                                    <h1 class="h-151">
-                                        <img src="img/skin-care.png" alt="Skin Care"/>
-                                    </h1>
-                                    <div class="_2block-item-div">
-                                        <h1 class="h-50 _02-mob">
-                                            But we listened, and we heard your dreams
-                                        </h1>
-                                        <h3 class="service-heading">Skin Treatments</h3>
-                                        <p class="p-18 black _02">
-                                            You craved a place where beauty and wellness unite, where you
-                                            could find everything you need under one roof.
-                                        </p>
-                                        <p class="service-description">
-                                            Advanced facial and body treatments for healthy, radiant skin.
-                                        </p>
-                                        <button
-                                                style="border: 1px solid black; border-radius: 9999px; padding: 5px 20px; background:none">
-                                            Buy
-                                            Now
-                                        </button>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="_2block-item-div-wrapper">
-                                <div class="_2block-item-main-div _04">
-                                    <h1 class="h-151">
-                                        <img src="img/spa-body.png" alt="Spa &amp; Body"/>
-                                    </h1>
-                                    <div class="_2block-item-div">
-                                        <h1 class="h-50">It's not just about nails anymore</h1>
-                                        <h3 class="service-heading">Spa &amp; Body</h3>
-                                        <p class="p-18 black _04">
-                                            We call it our “beauty cave” - it's about complete beauty,
-                                            from head to toe. We offer a full range of services, all
-                                            designed to enhance your natural beauty and elevate your
-                                            spirit.
-                                        </p>
-                                        <p class="service-description">
-                                            Indulgent spa experiences to refresh body and soul.
-                                        </p>
-                                        <button
-                                                style="border: 1px solid black; border-radius: 9999px; padding: 5px 20px; background:none">
-                                            Buy
-                                            Now
-                                        </button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Search + Filter -->
+                    <div class="services-filters flex justify-center items-center gap-4 p-4">
+                        <input id="service-search-input"
+                               type="text"
+                               placeholder="Search services..."
+                               class="input-pill p-2 px-4 border border-gray-300 rounded-full"
+                        />
+                        <select id="category-filter" class="input-pill p-2 px-4 border border-gray-300 rounded-full">
+                            <option value="">All Categories</option>
+                            <t t-foreach="categories" t-as="category">
+                                <option t-att-value="category.id"><t t-esc="category.name"/></option>
+                            </t>
+                        </select>
                     </div>
 
-                    <div class="_2block-item-main-div _05">
-                        <h1 class="h-151">05</h1>
+                    <!-- Service Grid -->
+                    <div class="_2block-content-div grid grid-cols-2 gap-10 p-8" id="services-container">
+                        <t t-foreach="categories" t-as="category">
+                            <div class="_2block-content-div-1" t-att-data-category-id="category.id">
+                                <h2 class="h-50 mb-6"><t t-esc="category.name"/></h2>
+                                <t t-foreach="services.filtered(lambda s: s.category_id.id == category.id)" t-as="service">
+                                    <a t-att-href="'/services/' + service.slug"
+                                       class="block service-item p-6 border rounded-2xl hover:shadow-lg transition"
+                                       t-att-data-category-id="category.id"
+                                       t-att-data-service-name="service.name.lower()">
+                                        <div class="flex items-center gap-6">
+                                            <div class="w-24 h-24 rounded-full overflow-hidden shadow-md">
+                                                <img t-att-src="'/web/image/website.service/%s/icon' % service.id"
+                                                     t-att-alt="service.name"
+                                                     class="object-cover w-full h-full"/>
+                                            </div>
+                                            <div class="flex flex-col gap-2">
+                                                <h1 class="h-50 font-semibold"><t t-esc="service.name"/></h1>
+                                                <h3 class="service-heading text-sm text-gray-500"><t t-esc="category.name"/></h3>
+                                                <span class="button-pill inline-block border border-black rounded-full px-6 py-1 text-sm">Book Now</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </t>
+                            </div>
+                        </t>
+                    </div>
+
+                    <div class="_2block-item-main-div _05 text-center py-10">
                         <div class="_2block-item-div _05">
-                            <div data-w-id="ca749007-244c-847e-3d69-d65f1ed6e60f" style="opacity: 1"
-                                 class="_05-item-div-line-1">
-                                <h1 class="h-116">Every visit to PRO Nails</h1>
-                                <img src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e43567662741_%26.svg"
-                                     loading="lazy" alt="" class="img _2block mob-hide"/>
-                            </div>
-                            <div data-w-id="ca749007-244c-847e-3d69-d65f1ed6e613" style="opacity: 1"
-                                 class="_05-item-div-line-1 pc-hide">
-                                <img src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e43567662741_%26.svg"
-                                     loading="lazy" alt="" class="img _2block"/>
-                                <h1 class="h-116">Beauty Studio</h1>
-                            </div>
-                            <div data-w-id="ca749007-244c-847e-3d69-d65f1ed6e617" style="opacity: 1"
-                                 class="_05-item-div-line-1">
-                                <h1 class="h-116 mob-hide">
-                                    Beauty Studio is a celebration of  you
-                                </h1>
-                            </div>
-                            <h1 data-w-id="ca749007-244c-847e-3d69-d65f1ed6e61a" style="opacity: 1"
-                                class="h-116 mo-hide-2">
-                                is a celebration of  you
-                            </h1>
+                            <h1 class="h-116">Beauty Studio is a celebration of you</h1>
                             <p class="p-18 black _05">
-                                Your support, your loyalty, and your smiles brought us here. Join us
-                                in this new chapter of your beauty journey.
+                                Your support, your loyalty, and your smiles brought us here.<br/>
+                                Join us in this new chapter of your beauty journey.
                             </p>
                         </div>
                     </div>
-                </div>
-                <img src="/images/banner.JPG" loading="lazy" sizes="100vw"
-                     alt="Luxurious interior of the salon with cosmetics samples on the shelves "
-                     class="big-img-1 mob-hide"/>
+                </section>
 
-                <div class="appointment-pop-up-div">
+               <img t-attf-src="/nbeauty/static/src/img/bannerimage.JPG" loading="lazy"
+                         data-w-id="6be0ff32-dad0-c6fa-7bed-36db6eaec9d3"
+                         sizes="100vw"
+                         alt="Luxurious interior of the salon with cosmetics samples on the shelves"
+                         class="big-img-1 mob-hide"/>
+
+                <section class="appointment-pop-up-div py-10">
                     <div class="appointment-body-div">
-                        <div class="menu-side-div-2 appointment-div">
-                            <a data-w-id="93b8fb00-0176-07e7-89a9-d57e708f34e3" href="#"
-                               class="location-header-div w-inline-block">
-                                <h1 class="h-18">close</h1>
-                                <div class="black-circle-div"></div>
-                            </a>
-                        </div>
-                        <h1 class="h-50 medium">choose your preferred location</h1>
-                        <div class="locations-div">
+                        <h1 class="h-50 medium">Choose your preferred location</h1>
+                        <div class="locations-div flex gap-10">
                             <div class="location-div-pop-up">
-                                <div class="location-top-div">
-                                    <p class="p-20 location">business bay</p>
-                                    <div class="location-point-div hide">
-                                        <img src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/655490b849d977be619c832f_Vector.png"
-                                             loading="lazy" alt="" class="location-icon"/>
-                                        <p class="p-18 black">
-                                            <a href="https://maps.app.goo.gl/NRWTNhf5NnpZGmiP7" class="link-4">DAMAC
-                                                Maison Cour
-                                                Jardin Hotel</a>G-Floor / Shop 5
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="location-btns-div hide">
-                                    <a href="tel:+971585804022" class="location-btn w-inline-block">
-                                        <img
-                                                src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6554924c14a69a0e13656e6d_Vector-2.png"
-                                                loading="lazy" alt="" class="location-btn-icon"/>
-                                        <p class="p-18 black btn">CALL US</p>
-                                    </a>
-                                    <a
-                                            href="https://api.whatsapp.com/send?phone=971585804022&amp;text=I%20want%20to%20make%20an%20appointment"
-                                            class="location-btn w-inline-block">
-                                        <img
-                                                src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65549562fd4185156a312f90_Vector-1.png"
-                                                loading="lazy" alt="" class="location-btn-icon"/>
-                                        <p class="p-18 black btn">TEXT ON WHATSAPP</p>
-                                    </a>
-                                </div>
-                                <p class="p-18 opening-soon">
-                                    Re-opening soon!<br/>We are working to enhance your experience
+                                <p class="p-20 location">Business Bay</p>
+                                <p class="p-18 black">
+                                    <a href="https://maps.app.goo.gl/NRWTNhf5NnpZGmiP7">
+                                        DAMAC Maison Cour Jardin Hotel</a> G-Floor / Shop 5
                                 </p>
+                                <p class="p-18 opening-soon">Re-opening soon!<br/>We are working to enhance your experience</p>
                             </div>
                             <div class="location-div-pop-up">
-                                <div class="location-top-div">
-                                    <p class="p-20 location">DUBAI MALL</p>
-                                    <div class="location-point-div">
-                                        <img src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/655490b849d977be619c832f_Vector.png"
-                                             loading="lazy" alt="" class="location-icon"/>
-                                        <p class="p-18 black">
-                                            <a href="https://maps.app.goo.gl/rFVCXsU5pZqvFQHS7" class="link-4">Dubai
-                                                Mall Zabeel
-                                                Expansion
-                                                <br/>
-                                            </a>
-                                            2-Floor
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="location-btns-div">
-                                    <a href="tel:+971585805571" class="location-btn w-inline-block">
-                                        <img
-                                                src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/6554924c14a69a0e13656e6d_Vector-2.png"
-                                                loading="lazy" alt="" class="location-btn-icon"/>
-                                        <p class="p-18 black btn">CALL US</p>
-                                    </a>
-                                    <a href="https://chatwith.io/s/pro-nails-dubai-mall"
-                                       class="location-btn w-inline-block">
-                                        <img
-                                                src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/65549562fd4185156a312f90_Vector-1.png"
-                                                loading="lazy" alt="" class="location-btn-icon"/>
-                                        <p class="p-18 black btn">TEXT ON WHATSAPP</p>
-                                    </a>
-                                </div>
+                                <p class="p-20 location">Dubai Mall</p>
+                                <p class="p-18 black">
+                                    <a href="https://maps.app.goo.gl/rFVCXsU5pZqvFQHS7">Dubai Mall Zabeel Expansion 2-Floor</a>
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
+
                 <div class="embed">
                     <div class="marquee-horizontal-css w-embed">
                         <style>
                             .track-horizontal {
-                            position: absolute;
-                            white-space: nowrap;
-                            will-change: transform;
-                            animation: marquee-horizontal 40s linear infinite;
-                            /* manipulate the speed of the marquee by changing "40s" line above*/
+                                position: absolute;
+                                white-space: nowrap;
+                                will-change: transform;
+                                animation: marquee-horizontal 40s linear infinite;
                             }
-
                             @keyframes marquee-horizontal {
-                            from {
-                            transform: translateX(0);
-                            }
-
-                            to {
-                            transform: translateX(-50%);
-                            }
-                            }
-                        </style>
-                    </div>
-                    <div class="marquee-horizontal-alt-css w-embed">
-                        <style>
-                            .track-horizontal-alt {
-                            position: absolute;
-                            white-space: nowrap;
-                            will-change: transform;
-                            animation: marquee-horizontal-alt 40s linear infinite;
-                            /* manipulate the speed of the marquee by changing "40s" line above*/
-                            }
-
-                            @keyframes marquee-horizontal-alt {
-                            from {
-                            transform: translateX(-50%);
-                            }
-
-                            to {
-                            transform: translateX(0%);
-                            }
+                                from { transform: translateX(0); }
+                                to { transform: translateX(-50%); }
                             }
                         </style>
                     </div>
                 </div>
+
+                <xpath expr="//footer" position="inside">
+                    <script src="/nbeauty/static/src/js/servicePage.js"></script>
+                    <style>
+                        .input-pill {
+                            padding: 0.5rem 1rem;
+                            border-radius: 9999px;
+                            border: 1px solid #ccc;
+                            min-width: 200px;
+                        }
+                        .button-pill {
+                            border: 1px solid black;
+                            border-radius: 9999px;
+                            padding: 0.5rem 1.5rem;
+                            background: none;
+                            transition: 0.3s;
+                        }
+                        .button-pill:hover {
+                            background-color: black;
+                            color: white;
+                        }
+                    </style>
+                </xpath>
+
             </t>
         </template>
     </data>

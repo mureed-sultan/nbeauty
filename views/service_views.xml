@@ -1,4 +1,12 @@
 <odoo>
+    <!-- Action for Service Categories -->
+    <record id="action_website_service_category_popup" model="ir.actions.act_window">
+        <field name="name">Add Category</field>
+        <field name="res_model">website.service.category</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
     <!-- Action for Services -->
     <record id="model_website_service_action" model="ir.actions.act_window">
         <field name="name">Services</field>
@@ -6,7 +14,7 @@
         <field name="view_mode">list,form</field>
     </record>
 
-    <!-- list (List) View -->
+    <!-- List View -->
     <record id="view_service_list" model="ir.ui.view">
         <field name="name">website.service.list</field>
         <field name="model">website.service</field>
@@ -14,6 +22,7 @@
             <list>
                 <field name="name"/>
                 <field name="slug"/>
+                <field name="category_id"/>
                 <field name="price"/>
             </list>
         </field>
@@ -25,14 +34,22 @@
         <field name="model">website.service</field>
         <field name="arch" type="xml">
             <form>
+                <header>
+                    <button name="%(action_website_service_category_popup)d"
+                            string="Add Category"
+                            type="action"
+                            class="oe_highlight"/>
+                </header>
                 <sheet>
                     <group>
                         <field name="name"/>
                         <field name="slug"/>
+                        <field name="category_id"/>
                         <field name="description_short"/>
                         <field name="description_long" widget="html"/>
                         <field name="price"/>
                         <field name="image" widget="image"/>
+                        <field name="icon" widget="image"/>
                         <field name="meta_title"/>
                         <field name="meta_description"/>
                         <field name="meta_keywords"/>
