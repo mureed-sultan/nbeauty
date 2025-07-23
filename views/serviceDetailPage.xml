@@ -50,7 +50,7 @@
         }
 
         .btn-theme {
-          background: #ff69b4;
+          background: #df8da8;
           color: #fff;
           padding: 0.8rem 2rem;
           border: none;
@@ -79,7 +79,7 @@
 
         .service-title {
           font-size: 2.5rem;
-          color: #d63384;
+          color: #df8da8;
           font-weight: bold;
         }
 

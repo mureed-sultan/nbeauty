@@ -97,8 +97,8 @@
         .city-title {
           font-size: 1.8rem;
           font-weight: 700;
-          color: #d6336c;
-          border-left: 4px solid #ec4899;
+          color: #df8da8;
+          border-left: 4px solid #df8da8;
           padding-left: 1rem;
           margin-bottom: 2rem;
           animation: slideInLeft 0.6s ease;

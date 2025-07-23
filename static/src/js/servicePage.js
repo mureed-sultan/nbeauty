@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function drawCloth() {
         ctx.clearRect(0, 0, width, height);
-        ctx.fillStyle = '#db2675'; // deep silk pink
+        ctx.fillStyle = '#df8da8'; // deep silk pink
 
         for (let y = 0; y < rows - 1; y++) {
             for (let x = 0; x < cols - 1; x++) {
