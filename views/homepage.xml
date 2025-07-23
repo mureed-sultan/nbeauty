@@ -99,10 +99,7 @@
                                     </div>
                                 </a
                                 >
-                                <a
-                                        href="../m.pronails.ae/menu/Treatment-Menu.html"
-                                        class="home-hero_price-link is-last w-inline-block"
-                                >
+                                <a t-att-href="'/pricelist'" class="home-hero_price-link is-last w-inline-block">
                                     <div class="home-hero_prices-text">Prices</div>
                                 </a>
                             </div>
@@ -334,7 +331,7 @@
                                     Your support, your loyalty, and your smiles brought us here. Join us
                                     in this new chapter of your beauty journey.
                                 </p>
-                                <a>Learn More ...</a>
+                                <!--                                <a>Learn More ...</a>-->
                             </div>
                         </div>
                     </div>
@@ -791,109 +788,91 @@
                                 <div class="track-horizontal">
                                     <div class="flex-horizontal">
                                         <div class="icon-container-alt">
-                                            <img
-                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202.png"
-                                                    sizes="(max-width: 479px) 21vw, 10vw" srcset="
-                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202-p-500.png 500w,
-                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202.png       600w
-                  " alt="" class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-1-.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
-                                            <img
-                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/6531671d6e5615ed84d1e9db_abc-logo.png"
-                                                    alt="" class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-2-.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon"/>
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
-                                            <img
-                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24.png"
-                                                    sizes="(max-width: 479px) 21vw, 10vw" srcset="
-                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24-p-500.png 500w,
-                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24.png       600w
-                  " alt="" class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-3-.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon"/>
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
-                                            <img
-                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo.png"
-                                                    sizes="(max-width: 479px) 21vw, 10vw" srcset="
-                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo-p-500.png 500w,
-                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo.png       600w
-                  " alt="" class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-4-.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon"/>
+
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
-                                            <img src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio.png"
-                                                 sizes="(max-width: 479px) 21vw, 10vw" srcset="
-                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio-p-500.png 500w,
-                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio.png       600w
-                  " alt="" class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-5-.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon"/>
+
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
-                                            <img
-                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65d49200e2872170e31f85b7_lasulcane-logo.webp"
-                                                    alt="LaSultane de Saba logo" class="icon size-sultane"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-6-.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon"/>
+
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
-                                            <img src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65d493b6bef7b761e4965cc4_palma.webp"
-                                                 alt="Palma de Salus logo" class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-1-.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
+
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                     </div>
                                     <div class="flex-horizontal">
                                         <div class="icon-container-alt">
-                                            <img
-                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202.png"
-                                                    sizes="(max-width: 479px) 21vw, 10vw" srcset="
-                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202-p-500.png 500w,
-                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/653166f6073091cee0588404_dy5072f6c7-dyson-logo-file-dyson-logo-svg-wikimedia-commons%202.png       600w
-                  " alt="" class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-2-.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
+
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
-                                            <img
-                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/6531671d6e5615ed84d1e9db_abc-logo.png"
-                                                    alt="" class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-3-.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
+
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
-                                            <img
-                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24.png"
-                                                    sizes="(max-width: 479px) 21vw, 10vw" srcset="
-                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24-p-500.png 500w,
-                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/65316805aaef10edc7fdca86_kisspng-brand-herms-paris-logo-clothing-loopme-malaysia-hermes-5b81001436ca24.png       600w
-                  " alt="" class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-4-.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
+
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
-                                            <img
-                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo.png"
-                                                    sizes="(max-width: 479px) 21vw, 10vw" srcset="
-                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo-p-500.png 500w,
-                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531682572cd510d26d1328c_opi-logo.png       600w
-                  " alt="" class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-5-.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
+
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
-                                            <img src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio.png"
-                                                 sizes="(max-width: 479px) 21vw, 10vw" srcset="
-                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio-p-500.png 500w,
-                    https://cdn.prod.website-files.com/652fe9df5341e43567662724/6531683bc71922784e56efa2_luxio.png       600w
-                  " alt="" class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-6-.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
+
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
-                                            <img
-                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65d49200e2872170e31f85b7_lasulcane-logo.webp"
-                                                    alt="LaSultane de Saba logo" class="icon size-sultane"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-1-.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
+
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
-                                            <img src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65d493b6bef7b761e4965cc4_palma.webp"
-                                                 alt="Palma de Salus logo" class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-2-.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
+
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                     </div>
@@ -906,36 +885,42 @@
                             <h2 class="mb-4">What Our Clients Say</h2>
                             <div class="row g-4">
                                 <div class="col-md-4 testimonial-card-wrapper">
-                                    <div class="testimonial-card">
-                                        <img t-attf-src="/nbeauty/static/src/img/slider-image-1.JPG"
-                                             class="testimonial-img mb-3" alt="Client Photo"/>
-                                        <p class="mb-2">“Amazing service and support. I couldn’t be happier with the
-                                            results!”
+                                    <div class="testimonial-card text-center">
+                                        <img class="testimonial-img mb-3 rounded-circle" alt="Male Icon"
+                                             src="/nbeauty/static/src/img/icon-male.png"
+                                             style="width: 80px; height: 80px;"/>
+                                        <p class="mb-2">I am really satisfied with your salon, it is very clean and tidy
+                                            and the staff are very kind, especially Mrs. Anna.
                                         </p>
-                                        <h6 class="mb-0">John Doe</h6>
-                                        <small class="text-muted">CEO, Example Inc.</small>
+                                        <h6 class="mb-0">Erfan Shahram Ranjbar</h6>
+                                        <small class="text-muted">★★★★★</small>
                                     </div>
                                 </div>
                                 <div class="col-md-4 testimonial-card-wrapper">
-                                    <div class="testimonial-card">
-                                        <img t-attf-src="/nbeauty/static/src/img/slider-image-1.JPG"
-                                             class="testimonial-img mb-3" alt="Client Photo"/>
-                                        <p class="mb-2">“Truly professional and exceeded our expectations at every
-                                            turn.”
+                                    <div class="testimonial-card text-center">
+                                        <img class="testimonial-img mb-3 rounded-circle" alt="Female Icon"
+                                             src="/nbeauty/static/src/img/icon-female.png"
+                                             style="width: 80px; height: 80px;"/>
+                                        <p class="mb-2">Larisa is a very good and professional hairstylist and I have
+                                            been trusting her with my hair for over 10 years ever since she was working
+                                            in Bawabat Al Sharq mall branch. She’s a beautiful and a very nice person.
+                                            She’s the best in haircuts!
                                         </p>
-                                        <h6 class="mb-0">Jane Smith</h6>
-                                        <small class="text-muted">Marketing Director, Acme Co.</small>
+                                        <h6 class="mb-0">Sara Al Marzooqi</h6>
+                                        <small class="text-muted">★★★★★</small>
                                     </div>
                                 </div>
                                 <div class="col-md-4 testimonial-card-wrapper">
-                                    <div class="testimonial-card">
-                                        <img t-attf-src="/nbeauty/static/src/img/slider-image-1.JPG"
-                                             class="testimonial-img mb-3" alt="Client Photo"/>
-                                        <p class="mb-2">“A top-notch experience from beginning to end. Highly
-                                            recommend!”
+                                    <div class="testimonial-card text-center">
+                                        <img class="testimonial-img mb-3 rounded-circle" alt="Female Icon"
+                                             src="/nbeauty/static/src/img/icon-female.png"
+                                             style="width: 80px; height: 80px;"/>
+                                        <p class="mb-2">Wonderful service. I was very delighted with the attention I
+                                            received and how they attended to me on the spot. Will recommend this place
+                                            to my friends. Thank you ladies! Especially to my hairdresser! ❤️
                                         </p>
-                                        <h6 class="mb-0">Sam Wilson</h6>
-                                        <small class="text-muted">Freelancer</small>
+                                        <h6 class="mb-0">Faviola Dominguez</h6>
+                                        <small class="text-muted">★★★★★</small>
                                     </div>
                                 </div>
                             </div>
@@ -1458,7 +1443,7 @@
                     </div>
 
                     <div id="appintmentDiv" class="appointment-pop-up-div">
-                        <div  class="appointment-body-div">
+                        <div class="appointment-body-div">
                             <div class="menu-side-div-2 appointment-div">
                                 <a href="#" id="popup-closebtn" class="location-header-div w-inline-block">
                                     <h1 class="h-18">close</h1>
