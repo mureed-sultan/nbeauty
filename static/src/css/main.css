@@ -2987,6 +2987,7 @@ body {
   display: flex;
   position: absolute;
   inset: 0% auto auto 0%;
+  overflow:hidden;
 }
 
 ._1block-img-1 {
@@ -11695,6 +11696,11 @@ a.btn-primary{
 .pricelist-description{
     font-size: 20px;
     letter-spacing: normal;
+}
+@media screen and (max-width: 991px) {
+    .pricelist-description {
+        font-size: 12px;
+    }
 }
 
 #location-details {

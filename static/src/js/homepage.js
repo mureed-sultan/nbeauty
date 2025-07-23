@@ -94,28 +94,6 @@ selector.addEventListener('change', (event) => {
     updateLocation(value);
 });
 
-
-// First, get both the popup and the close button
-const appointmentPopup = document.querySelector('.appointment-pop-up-div');
-const closeButton = document.getElementById('closebtnpopup');
-
-// Add click event listener on the close button
-closeButton.addEventListener('click', function (e) {
-    e.preventDefault();
-    appointmentPopup[0].style.display = 'none';
-});
-
-
-
-
-
-
-
-
-
-
-
-
 const serviceCategories = [
     {
         id:"1",
@@ -525,3 +503,14 @@ lightboxClose.addEventListener('click', closeLightbox);
 lightbox.addEventListener('click', (e) => {
     if (e.target === lightbox) closeLightbox();
 });
+
+let popupCloseBtn = document.getElementById("popup-closebtn")
+const appointmentPopup = document.getElementById("appintmentDiv")
+
+// Add click event listener on the close button
+popupCloseBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    appointmentPopup.style.display = 'none';
+});
+
+

@@ -1459,10 +1459,10 @@
                         </div>
                     </div>
 
-                    <div class="appointment-pop-up-div">
-                        <div class="appointment-body-div">
+                    <div id="appintmentDiv" class="appointment-pop-up-div">
+                        <div  class="appointment-body-div">
                             <div class="menu-side-div-2 appointment-div">
-                                <a href="#" class="location-header-div w-inline-block">
+                                <a href="#" id="popup-closebtn" class="location-header-div w-inline-block">
                                     <h1 class="h-18">close</h1>
                                     <div class="black-circle-div"></div>
                                 </a>
