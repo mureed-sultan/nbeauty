@@ -106,9 +106,21 @@
 
         .branch-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* force 3 columns always */
           gap: 2rem;
         }
+
+@media (max-width: 1024px) {
+  .branch-grid {
+    grid-template-columns: repeat(2, 1fr); /* Tablet: 2 columns */
+  }
+}
+
+@media (max-width: 768px) {
+  .branch-grid {
+    grid-template-columns: 1fr; /* Phone: 1 column */
+  }
+}
 
         .branch-card {
           background: white;
