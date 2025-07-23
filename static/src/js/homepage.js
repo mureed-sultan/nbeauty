@@ -105,6 +105,7 @@ const serviceCategories = [
                 title: "Cut & Blow Dry",
                 titleArabic: "قص وتصفيف",
                 description:"Snip into a fresh new you, where every cut is a cut above the rest!",
+                price:"50",
                 services: [
                     { name: "Hair Wash", arabic: "غسيل الشعر", price: "50 AED" },
                     { name: "Trim", arabic: "قص أطراف الشعر", price: "80 AED" },
@@ -118,6 +119,8 @@ const serviceCategories = [
                 title: "Blow Dry",
                 titleArabic: "سيشوار",
                 description:"Turn up the volume, experience blowouts that bring your hair to life!",
+                price:"35",
+
                 services: [
                     { name: "Fringe Blow Dry", arabic: "سيشوار الغرة", price: "35 AED" },
                     { name: "Hair Blow Dry", arabic: "سيشوار الشعر", price: "80 - 200 AED" }
@@ -127,6 +130,7 @@ const serviceCategories = [
             title:"Full Ammonia Free Color",
             titleArabic:"صبغة كاملة (خالية من امونيا)",
             description:"Color your world gently, vibrant hues, zero compromise, all care!",
+            price:"220",
              services: [
                 { name: "Roots", arabic: "الجذور", price: "220 AED" },
                 { name: "Full Color INOA", arabic: "صبغ الشعر بالكامل (إينوا)", price: "110 AED" },
@@ -135,6 +139,7 @@ const serviceCategories = [
             title:"Full Color ",
             titleArabic:"صبغة كاملة",
             description:"Unleash your boldness, full color, full confidence, full you!",
+            price:"110",
             services: [
                 { name: "Roots Front", arabic: "الجذور الأمامية", price: "160 - 220 AED" },
                 { name: "Roots", arabic: "الجذور", price: "160 AED" },
@@ -145,6 +150,7 @@ const serviceCategories = [
                 title: "Color Rinse",
                 titleArabic: "رينساج",
                 description:"Refresh your shade, rinse away the ordinary, reveal the extraordinary!",
+                price:"170",
                 services: [
                     { name: "Hair Color Rinse", arabic: "رينساج الشعر", price: "370 AED" }
                 ]
@@ -153,6 +159,7 @@ const serviceCategories = [
                 title: "Highlights",
                 titleArabic: "هايلايت",
                 description:"Shine bright, let your highlights steal the spotlight!",
+                price:"370",
                 services: [
                     { name: "Half Head", arabic: "نصف الرأس", price: "420 - 870 AED" },
                     { name: "Short Hair", arabic: "شعر قصير", price: "200 - 450 AED" }
@@ -162,6 +169,7 @@ const serviceCategories = [
                 title: "Decolorization",
                 description:"Go lighter, go brighter, embrace a new canvas for your next look!",
                 titleArabic: "سحب اللون",
+                price:"200",
                 services: [
                     { name: "Hair Decolorization", arabic: "سحب لون الشعر", price: "250 AED" }
                 ]
@@ -170,6 +178,7 @@ const serviceCategories = [
                 title: "Hair Style",
                 titleArabic: "تصفيف الشعر",
                 description:"Style it your way, where every strand tells your story!",
+                price:"250",
                 services: [
                     { name: "Hair Style A", arabic: "تصفيف أ", price: "350 AED" },
                     { name: "Hair Style B", arabic: "تصفيف ب", price: "450 AED" },
@@ -180,6 +189,7 @@ const serviceCategories = [
                 title: "Hair Extension",
                 titleArabic: "وصلات الشعر",
                 description:"Longer, fuller, fabulous, let your hair dreams grow with us!",
+                price:"15",
                 services: [
                     { name: "Place Hair Extension (Per Piece)", arabic: "تركيب وصلة شعر", price: "25 AED" },
                     { name: "Remove Hair Extension only", arabic: "إزالة وصلة الشعر", price: "15 AED" },
@@ -189,6 +199,7 @@ const serviceCategories = [
                 title: "BB CRÈME ",
                 titleArabic: "وصلات الشعر",
                 description:"",
+                price:"1200",
                 services: [
                     { name: "BB Creme Application", arabic: "تركيب وصلة شعر", price: "25 AED" },
                 ]
@@ -196,6 +207,7 @@ const serviceCategories = [
                 title: "Botox ",
                 titleArabic: "بوتوكس",
                 description:"",
+                price:"1200",
                 services: [
                     { name: "Hair Botox", arabic: "تركيب وصلة شعر", price: "25 AED" },
                 ]
@@ -203,6 +215,7 @@ const serviceCategories = [
                 title: "Kerastase ",
                 titleArabic: "کیراستاس",
                 description:"",
+                price:"250",
                 services: [
                     { name: "Kerastase Hair Ritual", arabic: "عج الشعر من كاستاس", price: "25 AED" },
                 ]
@@ -210,6 +223,7 @@ const serviceCategories = [
                 title: "L'oreal ",
                 titleArabic: "کیراستاس",
                 description:"",
+                price:"150",
                 services: [
                     { name: "L'oreal HairTreatment", arabic: "عج الشعر من لوريال", price: "25 AED" },
                 ]
@@ -217,6 +231,7 @@ const serviceCategories = [
                 title: "Olaplex ",
                 titleArabic: "أو¥بليكس",
                 description:"",
+                price:"250",
                 services: [
                     { name: "Olaplex HairTreatment", arabic: "عج أو¥بليكس للشعر", price: "25 AED" },
                 ]
@@ -311,7 +326,7 @@ function createServiceBlock(service) {
                 </div>
             </div>
             <div class="_4block-text-bottom-main-div">
-                <div class="_4block-faq-text-bottom-div"><p> Started From shurman${service.price}</p></div>
+                <div class="_4block-faq-text-bottom-div"><p> Started From ${service.price}</p></div>
                 <a href="/service/${service.slug?service.slug:'404'}" class="_4block-btn-mob w-inline-block">
                     <h1 class="h-18 _4block">Make an appointment</h1>
                     <div class="white-circle-div-4block"></div>
@@ -361,6 +376,7 @@ function createChildBlock(child, parentWrapper) {
         <div class="c-faq-b-text">
             <div class="h-50-item">${child.title}
                 <p class="pricelist-description">${child.description}</p>
+                <p class="pricelist-description"> Starting From AED ${child.price}</p>
             </div>
         </div>
         <div class="c-faq-icon">
