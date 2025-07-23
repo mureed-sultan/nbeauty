@@ -7970,7 +7970,7 @@ select.p-20.location {
   }
 
   .h-70 {
-    font-size: 4.8vw;
+    font-size: 5.5vw;
   }
 
   .h-70._3page {
@@ -11699,7 +11699,7 @@ a.btn-primary{
 }
 @media screen and (max-width: 991px) {
     .pricelist-description {
-        font-size: 12px;
+        font-size: px;
     }
 }
 
