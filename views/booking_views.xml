@@ -99,7 +99,6 @@
             <t t-if="error">
               <pre class="text-sm text-muted mt-3"><t t-esc="error"/></pre>
             </t>
-            <a href="/nbeauty/booking" class="btn btn-outline-danger mt-3">Try Again</a>
           </div>
         </div>
       </t>

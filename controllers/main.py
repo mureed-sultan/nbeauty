@@ -32,7 +32,7 @@ class NBeautyHomepage(http.Controller):
     def services_page(self):
         services = request.env['website.service'].sudo().search([], order='sequence asc')
         categories = request.env['website.service.category'].sudo().search([])
-        return request.render('nbeauty.nbeauty-services', {
+        return request.render('nbeauty.nbeauty_services_template', {
             'services': services,
             'categories': categories
         })

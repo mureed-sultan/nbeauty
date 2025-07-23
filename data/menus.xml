@@ -2,7 +2,13 @@
 <odoo>
     <data noupdate="0">
 
-        <!-- Create menu item for /aboutus -->
+          <record id="menu_nbeauty_homepage" model="website.menu">
+            <field name="name">Home</field>
+            <field name="url">/</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">1</field>
+        </record>
+
         <record id="menu_nbeauty_aboutus" model="website.menu">
             <field name="name">About Us</field>
             <field name="url">/aboutus</field>
@@ -16,17 +22,16 @@
             <field name="sequence" type="int">20</field>
         </record>
         <record id="menu_nbeauty_pricelist" model="website.menu">
-            <field name="name">Locations</field>
-            <field name="url">/branches</field>
+            <field name="name">Pricelist</field>
+            <field name="url">/pricelist</field>
             <field name="parent_id" ref="website.main_menu"/>
             <field name="sequence" type="int">30</field>
         </record>
-        <record id="menu_nbeauty_pricelist" model="website.menu">
-            <field name="name">Book Now</field>
-            <field name="url">/</field>
+           <record id="menu_nbeauty_contactus" model="website.menu">
+            <field name="name">Contact Us</field>
+            <field name="url">/contactus</field>
             <field name="parent_id" ref="website.main_menu"/>
-            <field name="sequence" type="int">30</field>
+            <field name="sequence" type="int">50</field>
         </record>
-
     </data>
 </odoo>

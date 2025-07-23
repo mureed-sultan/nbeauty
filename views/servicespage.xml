@@ -1,110 +1,477 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <data>
-    <template id="nbeauty-services" name="NBeauty Services">
-      <t t-call="website.layout">
+    <data>
 
-        <!-- Include main.css -->
-        <link rel="stylesheet" type="text/css" href="/nbeauty/static/src/css/main.css"/>
+        <template id="nbeauty_services_template" name="NBeauty Services Page">
+            <t t-call="website.layout">
 
-        <section id="services" class="_2block-div about" style="padding-top: 3rem; padding-bottom: 3rem; background-color: #fff0f5;">
-          <div class="container">
+                <link rel="stylesheet" type="text/css" href="/nbeauty/static/src/css/main.css"/>
 
-            <!-- Header -->
-            <div class="text-center mb-12">
-              <p class="p-18 _2block-1 hide">Services:</p>
-              <h1 class="h-124">At N Beauty,</h1>
-              <h6 class="h-100 _2block-2">We present diverse services tailored to accentuate your natural beauty.</h6>
-            </div>
+                <!-- Embedded Custom Styling -->
+                <style>
+                    .modern-services-section {
+                    position: relative;
+                    background: linear-gradient(180deg, #f9e9f3 0%, #fff 100%);
+                    padding-top: 120px;
+                    padding-bottom: 80px;
+                    overflow: hidden;
+                    }
+                    .svg-top-curve {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100px;
+                    z-index: 1;
+                    }
+                    .nbeauty-services-header {
+                    position: relative;
+                    z-index: 2;
+                    text-align: center;
+                    margin-bottom: 60px;
+                    }
+                    .nbeauty-services-header h1 {
+                    font-size: 42px;
+                    font-weight: 800;
+                    color: #111;
+                    }
+                    .nbeauty-services-header p {
+                    font-size: 18px;
+                    color: #777;
+                    max-width: 600px;
+                    margin: 10px auto 0 auto;
+                    }
+                    .nbeauty-filters {
+                    position: relative;
+                    z-index: 2;
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    margin-bottom: 50px;
+                    }
+                    .nbeauty-filters input,
+                    .nbeauty-filters select {
+                    <!--                    padding: 14px 22px;-->
+                    border-radius: 40px;
+                    border: 1px solid #ddd;
+                    font-size: 15px;
+                    min-width: 250px;
+                    }
+                    .nbeauty-card {
+                    background: #fff;
+                    border-radius: 20px;
+                    padding: 30px 20px;
+                    text-align: center;
+                    transition: all 0.3s ease;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+                    }
+                    .nbeauty-card:hover {
+                    transform: translateY(-8px);
+                    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+                    }
+                    .nbeauty-card-img {
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin: 0 auto 20px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                    }
+                    .nbeauty-card-img img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    }
+                    .nbeauty-card-title {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #333;
+                    margin-bottom: 4px;
+                    }
+                    .nbeauty-card-subtitle {
+                    font-size: 14px;
+                    color: #888;
+                    }
+                    .nbeauty-book-btn {
+                    margin-top: 20px;
+                    padding: 8px 20px;
+                    background: #111;
+                    color: #fff;
+                    border-radius: 30px;
+                    display: inline-block;
+                    font-size: 13px;
+                    transition: background 0.3s ease;
+                    }
+                    .nbeauty-book-btn:hover {
+                    background: #000;
+                    }
+                    .pagination {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 30px;
+                    }
 
-            <!-- Filters -->
-            <div class="services-filters flex flex-wrap justify-center items-center gap-4 mb-10">
-              <input id="service-search-input" type="text" placeholder="Search services..."
-                     class="input-pill p-2 px-4 border border-gray-300 rounded-full"/>
-              <select id="category-filter"
-                      class="input-pill p-2 px-4 border border-gray-300 rounded-full">
-                <option value="">All Categories</option>
-                <t t-foreach="categories" t-as="category">
-                  <option t-att-value="category.id">
-                    <t t-esc="category.name"/>
-                  </option>
-                </t>
-              </select>
-            </div>
+                    .pagination ul.pager {
+                    list-style: none;
+                    display: flex;
+                    gap: 10px;
+                    padding: 0;
+                    margin: 0;
+                    }
 
-            <!-- Service Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10" id="services-container">
-              <t t-foreach="services" t-as="service">
-                <a t-att-href="'/services/' + service.slug"
-                   class="group block service-item bg-white p-6 border rounded-3xl hover:shadow-2xl transition-all duration-300"
-                   t-att-data-category-id="service.category_id.id"
-                   t-att-data-service-name="service.name.lower()">
-                  <div class="flex flex-col items-center gap-4">
-                    <div class="w-24 h-24 rounded-full overflow-hidden shadow-md">
-                      <img t-att-src="'/web/image/website.service/%s/icon' % service.id"
-                           t-att-alt="service.name"
-                           class="object-cover w-full h-full"/>
+                    .pagination ul.pager li a {
+                    padding: 8px 14px;
+                    background-color: #e5e5e5;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    color: #312F2C;
+                    font-weight: 600;
+                    transition: all 0.3s ease;
+                    }
+
+                    .pagination ul.pager li a:hover {
+                    background-color: #312F2C;
+                    color: #fff;
+                    }
+
+                    .pagination ul.pager li.current a {
+                    background-color: #312F2C;
+                    color: #fff;
+                    pointer-events: none;
+                    }
+                </style>
+
+
+                <!-- Hero Top Section -->
+                <section>
+                    <div class="_1-block-new"
+                         style="background: url('/nbeauty/static/src/img/bannerimage.JPG') no-repeat center center; background-size: cover;">
+                        <div class="buttom-div">
+                            <div class="message">
+                                <div class="h-40 small">
+                                    We offer a complete range of beauty treatments for nails, hair, face and body<br/>-
+                                    allowing you to shine even brighter
+                                </div>
+                                <p class="p-18 op-80">
+                                    Ladies who come to us for procedures aren't thinking about scheduling a manicure or
+                                    hair coloring. They're thinking about spending a few hours immersed in comfort and
+                                    self-care from the best in the business in our beauty cave, and they click the "Make
+                                    an appointment" button.
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
-                    <h3 class="h-50 text-center font-semibold text-lg">
-                      <t t-esc="service.name"/>
-                    </h3>
-                    <span class="button-pill border border-black rounded-full px-5 py-1 text-sm mt-2">
-                      Book Now
-                    </span>
-                  </div>
-                </a>
-              </t>
-            </div>
+                </section>
 
-          </div>
-        </section>
+                <!-- Our Story / Slider & Branch Section -->
+                <section>
+                    <div class="_2-block-new">
+                        <div class="_4bl-h-div">
+                            <p class="p-18 _2block-1">Our Story:</p>
+                            <h1 class="h-124">Not just beauty</h1>
+                        </div>
+                        <h1 class="h-124 _4block-3 mob">procedures</h1>
 
-        <!-- Location Section -->
-        <section class="appointment-pop-up-div py-10 bg-gray-100">
-          <div class="appointment-body-div container">
-            <h1 class="h-50 medium text-center mb-10">Choose your preferred location</h1>
-            <div class="locations-div flex gap-10 flex-wrap justify-center">
-              <div class="location-div-pop-up max-w-sm bg-white p-6 rounded-xl shadow-lg">
-                <p class="p-20 location">Business Bay</p>
-                <p class="p-18 black">
-                  <a href="https://maps.app.goo.gl/NRWTNhf5NnpZGmiP7" target="_blank">DAMAC Maison Cour Jardin Hotel</a> G-Floor / Shop 5
-                </p>
-                <p class="p-18 opening-soon text-red-500 mt-3">Re-opening soon!<br/>We are working to enhance your experience</p>
-              </div>
-              <div class="location-div-pop-up max-w-sm bg-white p-6 rounded-xl shadow-lg">
-                <p class="p-20 location">Dubai Mall</p>
-                <p class="p-18 black">
-                  <a href="https://maps.app.goo.gl/rFVCXsU5pZqvFQHS7" target="_blank">Dubai Mall Zabeel Expansion 2-Floor</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+                        <!-- Image Slider Block -->
+                        <div class="slider_wrap">
+                            <div class="slider_right">
+                                <div class="swiper is-photos swiper-cards swiper-3d">
+                                    <div class="swiper-wrapper is-photos">
+                                        <t t-foreach="[1,2,3,4]" t-as="i">
+                                            <div class="swiper-slide is-photos">
+                                                <img t-att-src="'/nbeauty/static/src/img/slide-%s.webp' % i"
+                                                     loading="lazy" class="image"/>
+                                            </div>
+                                        </t>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrows">
+                                <a href="#" class="arrow is-left w-inline-block"></a>
+                                <a href="#" class="arrow is-right w-inline-block"></a>
+                            </div>
+                        </div>
 
-        <!-- Marquee -->
-        <div class="embed">
-          <div class="marquee-horizontal-css w-embed">
-            <style>
-              .track-horizontal {
-                position: absolute;
-                white-space: nowrap;
-                will-change: transform;
-                animation: marquee-horizontal 40s linear infinite;
-              }
-              @keyframes marquee-horizontal {
-                from { transform: translateX(0); }
-                to { transform: translateX(-50%); }
-              }
-            </style>
-          </div>
-        </div>
+                        <!-- Branch Showcase Block -->
+                        <div class="_2block-cards-grid">
+                            <div class="_2block-card-left">
+                                <img src="/nbeauty/static/src/img/branch-1.webp" loading="lazy" class="_2block-img-1"/>
+                                <img src="/nbeauty/static/src/img/branch-2.webp" loading="lazy" class="_2block-img-2"/>
+                            </div>
+                            <div class="_2block-rigth-text">
+                                <p class="p-30-2">
+                                    We are excited to unveil our two branches: boutique studio in Business Bay and a
+                                    large-scale salon at the prestigious Dubai Mall Zabeel Expansion.
+                                </p>
+                                <div class="_2block-tag">
+                                    <div class="text-block">Magnify feminine power</div>
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- JS -->
-        <xpath expr="//footer" position="inside">
-          <script src="/nbeauty/static/src/js/servicePage.js"></script>
-        </xpath>
+                    </div>
+                </section>
 
-      </t>
-    </template>
-  </data>
+
+                <section class="modern-services-section">
+                    <svg class="svg-top-curve" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                        <path fill="#fff" fill-opacity="1" d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z"></path>
+                    </svg>
+
+                    <div class="w-container">
+
+                        <!-- Header -->
+                        <div class="nbeauty-services-header">
+                            <h1>Explore Our Signature Services</h1>
+                            <p>Enhancing your elegance with professionally curated treatments</p>
+                        </div>
+
+                        <!-- Filters -->
+                        <div class="nbeauty-filters">
+                            <input id="service-search-input" type="text" placeholder="Search services..."
+                                   class="w-input"/>
+                            <select id="category-filter" class="w-select">
+                                <option value="">All Categories</option>
+                                <t t-foreach="categories" t-as="category">
+                                    <option t-att-value="category.id">
+                                        <t t-esc="category.name"/>
+                                    </option>
+                                </t>
+                            </select>
+                        </div>
+
+                        <!-- Grid -->
+                        <div class="w-row" id="services-container">
+                            <t t-foreach="services" t-as="service">
+                                <div class="w-col w-col-3 service-item"
+                                     t-att-data-category-id="service.category_id.id"
+                                     t-att-data-service-name="(service.name or '').lower()"
+                                     style="margin-bottom: 30px;">
+
+                                    <a t-att-href="'/services/' + service.slug" class="w-inline-block nbeauty-card">
+                                        <div>
+                                            <div class="nbeauty-card-img">
+                                                <img t-att-src="'/web/image/website.service/%s/icon' % service.id"
+                                                     t-att-alt="service.name"/>
+                                            </div>
+                                            <h3 class="nbeauty-card-title">
+                                                <t t-esc="service.name"/>
+                                            </h3>
+                                            <p class="nbeauty-card-subtitle">
+                                                <t t-esc="service.category_id.name"/>
+                                            </p>
+                                        </div>
+                                        <span class="nbeauty-book-btn">Book Now</span>
+                                    </a>
+
+                                </div>
+                            </t>
+                        </div>
+                        <t t-if="pager">
+                            <div class="pagination">
+                                <ul class="pager">
+                                    <t t-foreach="pager['pages']" t-as="page">
+                                        <li t-att-class="'current' if page['num'] == pager['page'] else ''">
+                                            <a t-att-href="page['url']">
+                                                <t t-esc="page['num']"/>
+                                            </a>
+                                        </li>
+                                    </t>
+                                </ul>
+                            </div>
+                        </t>
+
+                    </div>
+                </section>
+                <section>
+                    <div id="works" class="_6block-div">
+                        <div data-w-id="2861163b-62fb-6cd7-7fe0-0ce294b87693" class="top-content-6block-div">
+                            <div class="_6block-h-div-line-1">
+                                <p data-w-id="185430eb-c69e-4dfe-e38e-f02b46accc0e" style="opacity: 0"
+                                   class="p-18 _2block-1 hide">
+                                    Gallery
+                                </p>
+                                <h1 data-w-id="185430eb-c69e-4dfe-e38e-f02b46accc10" style="opacity: 0" class="h-124">
+                                    Our work speaks
+                                </h1>
+                                Explore Our Signature Services
+                            </div>
+                            <div class="works-2line-h-div">
+                                <p class="p-10-mob works">swipe</p>
+                                <h1 data-w-id="1237b029-2452-e7d4-042c-edd565662bdb" style="opacity: 0"
+                                    class="h-124 _6block-2line">
+                                    for itself:
+                                </h1>
+                            </div>
+                            <p data-w-id="38c9ccf1-67cd-0a1b-6a20-fa5c4abd30f5" style="opacity: 0" class="p-18 _6block">
+                                Our works stand as a testament to our expertise, whether in nail
+                                services, hair treatments, facial and body care, or lash and brow
+                                enhancements.
+                            </p>
+                        </div>
+                        <div class="_6block-content-div-main">
+                            <div class="_6block-content-div">
+                                <a href="#" class="lightbox w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-6.webp" loading="eager"
+                                         data-w-id="7733f195-38b2-65b8-c22f-afd5240b97cb" alt=""
+                                         class="_6block-img _1"/>
+                                </a>
+                                <a href="#"
+                                   class="lightbox w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-13.webp" loading="eager"
+                                         data-w-id="56720fe0-51bb-3c95-4c6c-f1e08d93fa81"
+                                         sizes="(max-width: 479px) 38vw, 15vw"
+                                         alt=""
+                                         class="_6block-img _2"/>
+                                </a>
+                                <a href="#" class="lightbox w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-14.webp" loading="eager"
+                                         data-w-id="69324cd4-1787-504c-83eb-feda9cec4f0b" alt=""
+                                         class="_6block-img _3"/>
+                                </a>
+                                <a href="#" class="lightbox w-inline-block w-lightbox">
+
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-15.webp" loading="eager"
+                                         data-w-id="bb10931d-2c60-3112-5345-da4cac83aa43" alt=""
+                                         class="_6block-img _4"/>
+                                </a>
+                                <a href="#" class="lightbox w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-16.webp" loading="eager"
+                                         data-w-id="0f7e32e1-4bc4-bf9e-dc52-54987a05e91a" alt=""
+                                         class="_6block-img _5"/>
+                                </a>
+                                <a href="#" class="lightbox w-inline-block w-lightbox">
+
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-17.webp" loading="eager"
+                                         data-w-id="9200eecd-d3c5-3b36-1fcf-9748b48a6cda" alt=""
+                                         class="_6block-img _6"/>
+                                </a>
+                                <a href="#" class="lightbox w-inline-block w-lightbox">
+
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-18.webp" loading="eager"
+                                         data-w-id="551028ac-e271-433f-a044-98c8d3d7fc29"
+                                         sizes="(max-width: 479px) 36vw, 14vw" alt="" class="_6block-img _8"/>
+                                </a>
+                                <a href="#"
+                                   class="lightbox w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-23.webp" loading="eager"
+                                         data-w-id="0a457eff-d307-0b4c-71ec-0fdd2a799cf1"
+                                         sizes="(max-width: 479px) 32vw, 100vw"
+                                         alt=""
+                                         class="_6block-img new-1"/>
+                                </a>
+                                <a href="#" class="lightbox w-inline-block w-lightbox">
+
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-25.webp" loading="eager"
+                                         data-w-id="e502bb79-a7ca-455d-49d0-d45437aea271" alt=""
+                                         class="_6block-img _7"/>
+                                </a>
+                                <a href="#" class="lightbox w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-26.webp" loading="eager"
+                                         data-w-id="d6de2de0-3cd1-d577-cbd4-452c5515d9a6"
+                                         sizes="(max-width: 479px) 100vw, 18vw" alt="" class="_6block-img _10"/>
+                                </a>
+                                <a href="#"
+                                   class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-27.webp"
+                                         loading=" lazy" data-w-id="ca54c905-3f96-f61f-178e-87099f201649" alt=""
+                                         class="_6block-img _9"/>
+                                </a>
+                                <a
+                                        href="#" class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-28.webp" loading="eager"
+                                         data-w-id="7037e3c8-a84c-5c51-640e-5d33e630a5cc"
+                                         sizes="(max-width: 479px) 34vw, 12vw"
+                                         alt=""
+                                         class="_6block-img _11"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img
+                                            t-attf-src="/nbeauty/static/src/img/toWEBP/image-28.webp" loading="eager"
+
+                                            alt=""
+                                            class="_6block-img _12"/>
+                                </a>
+                                <a href="#"
+                                   class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-23.webp" loading="eager"
+                                         data-w-id="02c3e4d1-a130-f847-4431-fadd4d25bd3c" alt=""
+                                         class="_6block-img _13"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-30.webp" loading="eager"
+                                         data-w-id="14d50d9b-aefd-47b0-c69b-20b669beb5eb" alt=""
+                                         class="_6block-img _14"/>
+                                </a>
+                                <a href="#"
+                                   class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-31.webp" loading="eager"
+                                         data-w-id="68eccb86-4e97-0043-79c0-e9a76bec1425" alt=""
+                                         class="_6block-img _15"/>
+                                </a>
+                                <a href="#"
+                                   class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-32.webp" loading="eager"
+                                         data-w-id="4421e4a4-9ea8-f94b-6dcc-7692dfab13d4"
+                                         sizes="(max-width: 479px) 34vw, 100vw"
+                                         alt=""
+                                         class="_6block-img new-2"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-33.webp" loading="eager"
+                                         data-w-id="abbfbd85-7ea7-f870-826b-022b3babcfc2" alt=""
+                                         class="_6block-img _17"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-34.webp" loading="eager"
+                                         data-w-id="d3333757-ce8f-f3fb-d5c7-651730c404d0" alt=""
+                                         class="_6block-img _16"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-36.webp" loading="eager"
+                                         data-w-id="6b17037b-f1a1-e870-41ab-33f23fca4da6" alt=""
+                                         class="_6block-img _18"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-37.webp" loading="eager"
+                                         data-w-id="fdb1ee2b-e2f7-26b6-4862-19ce3cd02d61" alt=""
+                                         class="_6block-img _19"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-8.webp" loading="eager"
+                                         data-w-id="a242c5ae-8850-3c0e-aa2d-8ff8dba3953c" alt=""
+                                         class="_6block-img _20"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img
+                                            t-attf-src="/nbeauty/static/src/img/slider-image-4.JPG" loading="lazy"
+                                            data-w-id="c7573fdd-1e15-399f-84dd-048660a89080" alt=""
+                                            class="_6block-img _21"/>
+                                </a>
+                                <a href="#" class="w-inline-block w-lightbox">
+                                    <img
+                                            t-attf-src="/nbeauty/static/src/img/slider-image-5.JPG" loading="eager"
+                                            data-w-id="8372d351-70f5-b5a6-3934-d6dfc735d2d3"
+                                            sizes="(max-width: 479px) 36vw, 12vw" alt="" class="_6block-img _22"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- JS Filtering -->
+                <xpath expr="//footer" position="inside">
+                    <script src="/nbeauty/static/src/js/servicePage.js"></script>
+                </xpath>
+
+            </t>
+        </template>
+
+    </data>
 </odoo>

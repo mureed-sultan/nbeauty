@@ -1,62 +1,62 @@
-<odoo>
-    <!-- Action for Service Categories -->
-    <record id="action_website_service_category_popup" model="ir.actions.act_window">
-        <field name="name">Add Category</field>
-        <field name="res_model">website.service.category</field>
-        <field name="view_mode">form</field>
-        <field name="target">new</field>
-    </record>
+    <odoo>
+        <!-- Action for Service Categories -->
+        <record id="action_website_service_category_popup" model="ir.actions.act_window">
+            <field name="name">Add Category</field>
+            <field name="res_model">website.service.category</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
 
-    <!-- Action for Services -->
-    <record id="model_website_service_action" model="ir.actions.act_window">
-        <field name="name">Services</field>
-        <field name="res_model">website.service</field>
-        <field name="view_mode">list,form</field>
-    </record>
+        <!-- Action for Services -->
+        <record id="model_website_service_action" model="ir.actions.act_window">
+            <field name="name">Services</field>
+            <field name="res_model">website.service</field>
+            <field name="view_mode">list,form</field>
+        </record>
 
-    <!-- List View -->
-    <record id="view_service_list" model="ir.ui.view">
-        <field name="name">website.service.list</field>
-        <field name="model">website.service</field>
-        <field name="arch" type="xml">
-            <list>
-                <field name="name"/>
-                <field name="slug"/>
-                <field name="category_id"/>
-                <field name="price"/>
-            </list>
-        </field>
-    </record>
+        <!-- List View -->
+        <record id="view_service_list" model="ir.ui.view">
+            <field name="name">website.service.list</field>
+            <field name="model">website.service</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="slug"/>
+                    <field name="category_id"/>
+                    <field name="price"/>
+                </list>
+            </field>
+        </record>
 
-    <!-- Form View -->
-    <record id="view_service_form" model="ir.ui.view">
-        <field name="name">website.service.form</field>
-        <field name="model">website.service</field>
-        <field name="arch" type="xml">
-            <form>
-                <header>
-                    <button name="%(action_website_service_category_popup)d"
-                            string="Add Category"
-                            type="action"
-                            class="oe_highlight"/>
-                </header>
-                <sheet>
-                    <group>
-                        <field name="name"/>
-                        <field name="slug"/>
-                        <field name="category_id"/>
-                        <field name="description_short"/>
-                        <field name="description_long" widget="html"/>
-                        <field name="price"/>
-                        <field name="image" widget="image"/>
-                        <field name="icon" widget="image"/>
-                        <field name="meta_title"/>
-                        <field name="meta_description"/>
-                        <field name="meta_keywords"/>
-                        <field name="sequence"/>
-                    </group>
-                </sheet>
-            </form>
-        </field>
-    </record>
-</odoo>
+        <!-- Form View -->
+        <record id="view_service_form" model="ir.ui.view">
+            <field name="name">website.service.form</field>
+            <field name="model">website.service</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="%(action_website_service_category_popup)d"
+                                string="Add Category"
+                                type="action"
+                                class="oe_highlight"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="slug"/>
+                            <field name="category_id"/>
+                            <field name="description_short"/>
+                            <field name="description_long" widget="html"/>
+                            <field name="price"/>
+                            <field name="image" widget="image"/>
+                            <field name="icon" widget="image"/>
+                            <field name="meta_title"/>
+                            <field name="meta_description"/>
+                            <field name="meta_keywords"/>
+                            <field name="sequence"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </odoo>

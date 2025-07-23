@@ -1,5 +1,13 @@
 from odoo import models, fields
 
+class WebsiteServiceCategory(models.Model):
+    _name = 'website.service.category'
+    _description = 'Website Service Category'
+    _order = 'name'
+
+    name = fields.Char(string='Category Title', required=True)
+    name_ar = fields.Char(string='Category Title (Arabic)', required=True)
+
 class WebsiteService(models.Model):
     _name = 'website.service'
     _description = 'Website Service'
@@ -17,3 +25,4 @@ class WebsiteService(models.Model):
     meta_keywords = fields.Char()
     sequence = fields.Integer(default=10)
     category_id = fields.Many2one('website.service.category', string='Category')
+

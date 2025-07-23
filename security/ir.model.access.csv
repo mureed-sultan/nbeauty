@@ -1,4 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_website_service_user,website.service,model_website_service,base.group_user,1,1,1,1
 access_nbeauty_booking_user,nbeauty.booking,model_nbeauty_booking,base.group_user,1,1,1,1
-access_website_service_category_user,website.service.category,model_website_service_category,base.group_user,1,1,1,1
+access_website_service_category,access.website.service.category,model_website_service_category,base.group_user,1,1,1,1
+access_website_branch_city_admin,website.branch.city.admin,model_website_branch_city,base.group_system,1,1,1,1
+access_website_branch_admin,website.branch.admin,model_website_branch,base.group_system,1,1,1,1
+access_website_branch_user,website.branch.user,model_website_branch,base.group_user,1,1,1,1
