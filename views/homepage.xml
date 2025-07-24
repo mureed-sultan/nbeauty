@@ -1511,7 +1511,7 @@
                                 </svg>
                             </div>
                         </a>
-                        <a href="/price-list.pdf" class="home-hero_price-link is-last w-inline-block">
+                        <a t-att-href="'/pricelist'"  class="home-hero_price-link is-last w-inline-block">
                             <div class="home-hero_prices-text">Prices</div>
                         </a>
                     </div>
