@@ -335,32 +335,14 @@
                             </div>
                         </div>
                     </div>
-<!--                    <img t-attf-src="/nbeauty/static/src/img/bannerimage.JPG" loading="lazy"-->
-<!--                         data-w-id="6be0ff32-dad0-c6fa-7bed-36db6eaec9d3"-->
-<!--                         sizes="100vw"-->
-<!--                         alt="Luxurious interior of the salon with cosmetics samples on the shelves"-->
-<!--                         class="big-img-1 mob-hide"/>-->
-                    <p>test</p>
- <picture>
-  <!-- Full-res WebP for modern browsers (preloaded) -->
-  <source
-    data-srcset="/nbeauty/static/src/img/bannerimage.webp"
-    type="image/webp" />
-
-  <!-- Fallback full-res JPG for older browsers -->
-  <img
-    src="/nbeauty/static/src/img/lowres/bannerimage.jpg"
-    data-src="/nbeauty/static/src/img/bannerimage.JPG"
-    data-sizes="100vw"
-    class="big-img-1 mob-hide lazyload blur-up"
-    loading="lazy"
-    alt="Luxurious interior of the salon with cosmetics samples on the shelves"
-    data-w-id="6be0ff32-dad0-c6fa-7bed-36db6eaec9d3"
-  />
-</picture>
+                    <img t-attf-src="/nbeauty/static/src/img/lowres/bannerimage.jpg" loading="lazy"
+                         data-w-id="6be0ff32-dad0-c6fa-7bed-36db6eaec9d3"
+                         sizes="100vw"
+                         alt="Luxurious interior of the salon with cosmetics samples on the shelves"
+                         class="big-img-1 "/>
 
 
-                    <p>test</p>
+
                     <div id="services" class="_4block-div">
                         <div class="_4bl-h-div-line-1">
                             <p data-w-id="4b30b9ed-085c-7b23-822f-aaaa4e155330" style="opacity: 1"
