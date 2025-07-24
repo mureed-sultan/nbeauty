@@ -109,14 +109,14 @@
                                 class="photos-1block-div"
                         >
                             <img
-                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-18.JPG"
+                                    src="/nbeauty/static/src/img/lowres/image-18.JPG"
                                     loading="eager"
                                     sizes="(max-width: 479px) 50vw, 15vw"
                                     alt=""
                                     class="_1block-img-1"
                             />
                             <img
-                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-16.JPG"
+                                    src="/nbeauty/static/src/img/lowres/image-16.JPG"
                                     loading="eager"
                                     data-w-id="f1ee6eb7-6cf9-97a9-d406-4acc728e5375"
                                     sizes="(max-width: 479px) 63vw, 19vw"
@@ -124,7 +124,7 @@
                                     class="_1block-img-2"
                             />
                             <img
-                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-14.JPG"
+                                    src="/nbeauty/static/src/img/lowres/image-14.JPG"
                                     loading="eager"
                                     data-w-id="16b8ad2a-f298-69e8-50d2-151e0de3f968"
                                     sizes="(max-width: 479px) 67vw, 19vw"
@@ -132,7 +132,7 @@
                                     class="_1block-img-3"
                             />
                             <img
-                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-12.JPG"
+                                    src="/nbeauty/static/src/img/lowres/image-12.JPG"
                                     loading="eager"
                                     data-w-id="02a09a68-8eb5-1ceb-a89e-77216bcfb0a8"
                                     sizes="(max-width: 479px) 60vw, 15vw"
@@ -140,7 +140,7 @@
                                     class="_1block-img-4"
                             />
                             <img
-                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-26.JPG"
+                                    src="/nbeauty/static/src/img/lowres/image-26.JPG"
                                     loading="eager"
                                     data-w-id="04f42924-a469-7a7a-05ca-0b020bee129c"
                                     sizes="(max-width: 479px) 59vw, 17vw"
@@ -148,7 +148,7 @@
                                     class="_1block-img-5"
                             />
                             <img
-                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-22.JPG"
+                                    src="/nbeauty/static/src/img/lowres/image-22.JPG"
                                     loading="eager"
                                     data-w-id="6e3fbf1b-f6e2-af32-7d4b-32b023be2e20"
                                     sizes="(max-width: 479px) 53vw, 14vw"
@@ -156,7 +156,7 @@
                                     class="_1block-img-6"
                             />
                             <img
-                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-24.JPG"
+                                    src="/nbeauty/static/src/img/lowres/image-24.JPG"
                                     loading="eager"
                                     data-w-id="e7d37861-4b8b-9f93-066b-043a7a209dec"
                                     sizes="(max-width: 479px) 53vw, 14vw"
@@ -164,7 +164,7 @@
                                     class="_1block-img-7"
                             />
                             <img
-                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-37.JPG"
+                                    src="/nbeauty/static/src/img/lowres/image-37.JPG"
                                     loading="eager"
                                     data-w-id="f71da20d-1089-f66b-31ab-72593010cc11"
                                     sizes="(max-width: 479px) 61vw, 17vw"
@@ -172,7 +172,7 @@
                                     class="_1block-img-8"
                             />
                             <img
-                                    src="/nbeauty/static/src/img/FINAL PIC NBS/image-38.webp"
+                                    src="/nbeauty/static/src/img/lowres/image-38.webp"
                                     loading="eager"
                                     data-w-id="54bf990d-49d3-b85b-a128-dcd26fa225c2"
                                     sizes="(max-width: 479px) 49vw, 14vw"
@@ -335,11 +335,32 @@
                             </div>
                         </div>
                     </div>
-                    <img t-attf-src="/nbeauty/static/src/img/bannerimage.JPG" loading="lazy"
-                         data-w-id="6be0ff32-dad0-c6fa-7bed-36db6eaec9d3"
-                         sizes="100vw"
-                         alt="Luxurious interior of the salon with cosmetics samples on the shelves"
-                         class="big-img-1 mob-hide"/>
+<!--                    <img t-attf-src="/nbeauty/static/src/img/bannerimage.JPG" loading="lazy"-->
+<!--                         data-w-id="6be0ff32-dad0-c6fa-7bed-36db6eaec9d3"-->
+<!--                         sizes="100vw"-->
+<!--                         alt="Luxurious interior of the salon with cosmetics samples on the shelves"-->
+<!--                         class="big-img-1 mob-hide"/>-->
+                    <p>test</p>
+ <picture>
+  <!-- Full-res WebP for modern browsers (preloaded) -->
+  <source
+    data-srcset="/nbeauty/static/src/img/bannerimage.webp"
+    type="image/webp" />
+
+  <!-- Fallback full-res JPG for older browsers -->
+  <img
+    src="/nbeauty/static/src/img/lowres/bannerimage.jpg"
+    data-src="/nbeauty/static/src/img/bannerimage.JPG"
+    data-sizes="100vw"
+    class="big-img-1 mob-hide lazyload blur-up"
+    loading="lazy"
+    alt="Luxurious interior of the salon with cosmetics samples on the shelves"
+    data-w-id="6be0ff32-dad0-c6fa-7bed-36db6eaec9d3"
+  />
+</picture>
+
+
+                    <p>test</p>
                     <div id="services" class="_4block-div">
                         <div class="_4bl-h-div-line-1">
                             <p data-w-id="4b30b9ed-085c-7b23-822f-aaaa4e155330" style="opacity: 1"
@@ -586,49 +607,49 @@
                         <div class="_6block-content-div-main">
                             <div class="_6block-content-div">
                                 <a href="#" class="lightbox w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-6.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-6.JPG" loading="eager"
                                          data-w-id="7733f195-38b2-65b8-c22f-afd5240b97cb" alt=""
                                          class="_6block-img _1"/>
                                 </a>
                                 <a href="#"
                                    class="lightbox w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-13.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-13.JPG" loading="eager"
                                          data-w-id="56720fe0-51bb-3c95-4c6c-f1e08d93fa81"
                                          sizes="(max-width: 479px) 38vw, 15vw"
                                          alt=""
                                          class="_6block-img _2"/>
                                 </a>
                                 <a href="#" class="lightbox w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-14.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-14.JPG" loading="eager"
                                          data-w-id="69324cd4-1787-504c-83eb-feda9cec4f0b" alt=""
                                          class="_6block-img _3"/>
                                 </a>
                                 <a href="#" class="lightbox w-inline-block w-lightbox">
 
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-15.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-15.JPG" loading="eager"
                                          data-w-id="bb10931d-2c60-3112-5345-da4cac83aa43" alt=""
                                          class="_6block-img _4"/>
                                 </a>
                                 <a href="#" class="lightbox w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-16.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-16.JPG" loading="eager"
                                          data-w-id="0f7e32e1-4bc4-bf9e-dc52-54987a05e91a" alt=""
                                          class="_6block-img _5"/>
                                 </a>
                                 <a href="#" class="lightbox w-inline-block w-lightbox">
 
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-17.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-17.JPG" loading="eager"
                                          data-w-id="9200eecd-d3c5-3b36-1fcf-9748b48a6cda" alt=""
                                          class="_6block-img _6"/>
                                 </a>
                                 <a href="#" class="lightbox w-inline-block w-lightbox">
 
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-18.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-18.JPG" loading="eager"
                                          data-w-id="551028ac-e271-433f-a044-98c8d3d7fc29"
                                          sizes="(max-width: 479px) 36vw, 14vw" alt="" class="_6block-img _8"/>
                                 </a>
                                 <a href="#"
                                    class="lightbox w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-23.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-23.JPG" loading="eager"
                                          data-w-id="0a457eff-d307-0b4c-71ec-0fdd2a799cf1"
                                          sizes="(max-width: 479px) 32vw, 100vw"
                                          alt=""
@@ -636,24 +657,24 @@
                                 </a>
                                 <a href="#" class="lightbox w-inline-block w-lightbox">
 
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-25.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-25.webp" loading="eager"
                                          data-w-id="e502bb79-a7ca-455d-49d0-d45437aea271" alt=""
                                          class="_6block-img _7"/>
                                 </a>
                                 <a href="#" class="lightbox w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-26.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-26.webp" loading="eager"
                                          data-w-id="d6de2de0-3cd1-d577-cbd4-452c5515d9a6"
                                          sizes="(max-width: 479px) 100vw, 18vw" alt="" class="_6block-img _10"/>
                                 </a>
                                 <a href="#"
                                    class="w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-27.webp"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-27.webp"
                                          loading=" lazy" data-w-id="ca54c905-3f96-f61f-178e-87099f201649" alt=""
                                          class="_6block-img _9"/>
                                 </a>
                                 <a
                                         href="#" class="w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-28.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-28.JPG" loading="eager"
                                          data-w-id="7037e3c8-a84c-5c51-640e-5d33e630a5cc"
                                          sizes="(max-width: 479px) 34vw, 12vw"
                                          alt=""
@@ -661,58 +682,58 @@
                                 </a>
                                 <a href="#" class="w-inline-block w-lightbox">
                                     <img
-                                            t-attf-src="/nbeauty/static/src/img/toWEBP/image-28.webp" loading="eager"
+                                            t-attf-src="/nbeauty/static/src/img/lowres/image-28.JPG" loading="eager"
 
                                             alt=""
                                             class="_6block-img _12"/>
                                 </a>
                                 <a href="#"
                                    class="w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-23.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-23.JPG" loading="eager"
                                          data-w-id="02c3e4d1-a130-f847-4431-fadd4d25bd3c" alt=""
                                          class="_6block-img _13"/>
                                 </a>
                                 <a href="#" class="w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-30.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-30.JPG" loading="eager"
                                          data-w-id="14d50d9b-aefd-47b0-c69b-20b669beb5eb" alt=""
                                          class="_6block-img _14"/>
                                 </a>
                                 <a href="#"
                                    class="w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-31.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-31.JPG" loading="eager"
                                          data-w-id="68eccb86-4e97-0043-79c0-e9a76bec1425" alt=""
                                          class="_6block-img _15"/>
                                 </a>
                                 <a href="#"
                                    class="w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-32.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-32.JPG" loading="eager"
                                          data-w-id="4421e4a4-9ea8-f94b-6dcc-7692dfab13d4"
                                          sizes="(max-width: 479px) 34vw, 100vw"
                                          alt=""
                                          class="_6block-img new-2"/>
                                 </a>
                                 <a href="#" class="w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-33.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-33.JPG" loading="eager"
                                          data-w-id="abbfbd85-7ea7-f870-826b-022b3babcfc2" alt=""
                                          class="_6block-img _17"/>
                                 </a>
                                 <a href="#" class="w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-34.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-34.JPG" loading="eager"
                                          data-w-id="d3333757-ce8f-f3fb-d5c7-651730c404d0" alt=""
                                          class="_6block-img _16"/>
                                 </a>
                                 <a href="#" class="w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-36.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-36.JPG" loading="eager"
                                          data-w-id="6b17037b-f1a1-e870-41ab-33f23fca4da6" alt=""
                                          class="_6block-img _18"/>
                                 </a>
                                 <a href="#" class="w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-37.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-37.JPG" loading="eager"
                                          data-w-id="fdb1ee2b-e2f7-26b6-4862-19ce3cd02d61" alt=""
                                          class="_6block-img _19"/>
                                 </a>
                                 <a href="#" class="w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/toWEBP/image-8.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-8.JPG" loading="eager"
                                          data-w-id="a242c5ae-8850-3c0e-aa2d-8ff8dba3953c" alt=""
                                          class="_6block-img _20"/>
                                 </a>
