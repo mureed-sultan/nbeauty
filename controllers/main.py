@@ -6,18 +6,18 @@ from datetime import datetime
 
 class NBeautyHomepage(http.Controller):
 
-    @http.route('/n', auth='public', website=True)
+    @http.route('/', auth='public', website=True)
     def homepage(self, **kw):
         branches = request.env['stock.warehouse'].sudo().search([])
         return request.render('nbeauty.nbeauty_homepage', {
             'branches': branches
         })
 
-    @http.route('/naboutus', auth="public", website="true")
+    @http.route('/aboutus', auth="public", website="true")
     def aboutpage(self):
         return request.render('nbeauty.nbeauty_aboutpage')
 
-    @http.route(['/nbranches'], type='http', auth='public', website=True)
+    @http.route(['/branches'], type='http', auth='public', website=True)
     def show_branches(self, city_id=None, **kwargs):
         cities = request.env['website.branch.city'].sudo().search([], order='sequence, name')
         domain = [('city_id', '=', int(city_id))] if city_id else []
@@ -28,7 +28,7 @@ class NBeautyHomepage(http.Controller):
             'selected_city': int(city_id) if city_id else None
         })
 
-    @http.route('/nservices', auth="public", website=True)
+    @http.route('/services', auth="public", website=True)
     def services_page(self):
         services = request.env['website.service'].sudo().search([], order='sequence asc')
         categories = request.env['website.service.category'].sudo().search([])
@@ -37,15 +37,15 @@ class NBeautyHomepage(http.Controller):
             'categories': categories
         })
 
-    @http.route('/nlocation', auth="public", website="true")
+    @http.route('/location', auth="public", website="true")
     def location_page(self):
         return request.render('nbeauty.nbeauty-location')
 
-    @http.route('/npricelist',auth='public',website="true")
+    @http.route('/pricelist',auth='public',website="true")
     def pricelist_page(self):
         return request.render('nbeauty.nbeauty-location')
 
-    @http.route('/nservices/<slug>', type='http', auth='public', website=True)
+    @http.route('/services/<slug>', type='http', auth='public', website=True)
     def service_detail(self, slug, **kwargs):
         service = request.env['website.service'].sudo().search([('slug', '=', slug)], limit=1)
         services = request.env['product.product'].sudo().search([('available_in_pos', '=', True)])
@@ -68,7 +68,7 @@ class NBeautyHomepage(http.Controller):
         })
 
     # Booking section
-    @http.route('/nnbeauty/booking', type='http', auth='public', website=True)
+    @http.route('/nbeauty/booking', type='http', auth='public', website=True)
     def booking_page(self, **kwargs):
         services = request.env['product.product'].sudo().search([('available_in_pos', '=', True)])
         employees = request.env['hr.employee'].sudo().search([])
@@ -79,7 +79,7 @@ class NBeautyHomepage(http.Controller):
             'branches': branches,
         })
 
-    @http.route('/nnbeauty/booking/submit', type='http', auth='public', website=True, csrf=True)
+    @http.route('/nbeauty/booking/submit', type='http', auth='public', website=True, csrf=True)
     def submit_booking(self, **post):
         try:
             name = post.get('customer_name')
@@ -109,6 +109,6 @@ class NBeautyHomepage(http.Controller):
         except Exception as e:
             return request.render('nbeauty.website_booking_error', {'error': str(e)})
 
-    @http.route('/nnbeauty/booking/thanks', type='http', auth='public', website=True)
+    @http.route('/nbeauty/booking/thanks', type='http', auth='public', website=True)
     def booking_thanks(self, **kwargs):
         return request.render('nbeauty.website_booking_thank_you')
