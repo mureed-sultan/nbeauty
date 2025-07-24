@@ -36,7 +36,7 @@
         'views/branch_view.xml',
         'views/nbeauty_booking_backend_views.xml',
         'views/website_menu.xml',
-        'data/menus.xml',
+        # 'data/menus.xml',
     ],
     'demo': [],
     'application': True,
