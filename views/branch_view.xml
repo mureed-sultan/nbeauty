@@ -67,6 +67,8 @@
                         <field name="whatsapp"/>
                         <field name="address"/>
                         <field name="map_url"/>
+                        <field name="latitude"/>
+                        <field name="longitude"/>
                         <field name="image"/>
                         <field name="sequence"/>
                     </group>

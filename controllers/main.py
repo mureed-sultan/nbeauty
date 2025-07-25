@@ -41,9 +41,12 @@ class NBeautyHomepage(http.Controller):
     def location_page(self):
         return request.render('nbeauty.nbeauty-location')
 
-    @http.route('/pricelist',auth='public',website="true")
-    def pricelist_page(self):
-        return request.render('nbeauty.nbeauty-location')
+    @http.route('/location2', auth='public', website=True)
+    def branch_locator(self, **kwargs):
+        branches = request.env['website.branch'].sudo().search([], order='sequence, name')
+        return request.render('nbeauty.website_branch_locator', {
+            'branches': branches
+        })
 
     @http.route('/services/<slug>', type='http', auth='public', website=True)
     def service_detail(self, slug, **kwargs):

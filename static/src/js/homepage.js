@@ -672,11 +672,10 @@ function createChildBlock(child, parentWrapper) {
                 <p class="pricelist-description"> Starting From AED ${child.price}</p>
             </div>
         </div>
-        <div class="c-faq-icon">
-            <div class="_w-faq-icon">
-                <img class="arrow-img-4block" src="/nbeauty/static/src/img/arrow.svg">
-            </div>
-        </div>
+<a href="/pricelist" class="_4block-btn hide w-inline-block" style="">
+            <h1 class="h-18 _4block" style="color: rgb(255, 255, 255);">Make an appointment</h1>
+            <div class="white-circle-div-4block" style="opacity: 1;"></div>
+        </a>
     `;
 
   const serviceWrapper = document.createElement("div");

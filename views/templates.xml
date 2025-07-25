@@ -65,13 +65,13 @@
                         <div class="menu-side-div mob-hide">
                             <img t-att-src="'/web/image/website/%d/logo' % website.id"
                                  alt="N Beauty Logo" class="logo-img menu-open" loading="lazy"/>
-                            <a href="https://www.instagram.com/nbeauty_dxb/" class="menu_link w-inline-block">
+                            <a href="https://www.instagram.com/nbeautyme/" class="menu_link w-inline-block">
                                 <div class="menu_link-wrap">
                                     <p class="menu_text">Instagram</p>
                                     <div class="menu_line"></div>
                                 </div>
                             </a>
-                            <a href="/privacy-policy" class="location-header-div w-inline-block">
+                            <a href="/privacy" class="location-header-div w-inline-block">
                                 <div class="black-circle-div"></div>
                                 <h1 class="h-18">privacy policy</h1>
                             </a>
@@ -92,7 +92,7 @@
                                 <h1 class="h-18">close</h1>
                                 <div class="black-circle-div"></div>
                             </a>
-                            <a href="https://www.facebook.com/nbeauty.dxb" class="menu_link mob-hide w-inline-block">
+                            <a href="https://www.facebook.com/nbeautyme1" class="menu_link mob-hide w-inline-block">
                                 <div class="menu_link-wrap">
                                     <p class="menu_text">Facebook</p>
                                     <div class="menu_line"></div>

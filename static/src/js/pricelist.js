@@ -1036,7 +1036,7 @@ function updateParentHeight(parentWrapper) {
 
 function createChildBlock(child, parentWrapper) {
   const childWrapper = document.createElement("div");
-  childWrapper.className = "c-faq-titles-content";
+  childWrapper.className = "c-faq-titles-content pasenda-font";
 
   const header = document.createElement("div");
   header.className = "c-faq-b";

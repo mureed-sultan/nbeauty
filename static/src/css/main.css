@@ -1,7 +1,14 @@
+@import url("https://db.onlinewebfonts.com/c/f473f700de91a640e254893622e7a138?family=Pasadena-Regular");
+
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-family: sans-serif;
+}
+.pasenda-font,
+.pasenda-font * {
+  font-family: 'Pasadena-Regular', Arial, sans-serif !important;
 }
 
 body {
@@ -2735,7 +2742,7 @@ body {
 }
 
 .logo-img {
-  width: 2.604vw;
+   height:75px;
   margin-left: 26.5vw;
   margin-right: 18vw;
 }
@@ -2784,7 +2791,7 @@ body {
 
 .h-345._1-1 {
   letter-spacing: 0.006em;
-  margin-left: -2.76vw;
+  margin-left: 5.76vw;
   margin-right: 0.417vw;
 }
 
@@ -2908,7 +2915,7 @@ body {
 ._1block-content-div-2line {
   align-items: flex-end;
   margin-top: 1.589vw;
-  padding-left: 2.604vw;
+  padding-left: 20.604vw;
   padding-right: 2.604vw;
   display: flex;
 }
@@ -2983,12 +2990,12 @@ body {
   align-items: center;
   width: 17.56vw;
   height: 21.21vw;
-  margin-top: 21vw;
+  margin-top: 15vw;
   margin-left: 42vw;
   display: flex;
   position: absolute;
   inset: 0% auto auto 0%;
-  overflow:hidden;
+
 }
 
 ._1block-img-1 {
@@ -5174,11 +5181,11 @@ body {
 }
 
 select.p-20.location {
-  padding: 20px;
+  /*padding: 20px;*/
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background: var(--biege);
+/*  background: var(--biege);*/
   color: #333;
   cursor: pointer;
 }
@@ -7381,7 +7388,7 @@ select.p-20.location {
 
   .h-345._1-1 {
     letter-spacing: -0.034em;
-    margin-left: 0;
+    margin-left: -10vw;
     margin-right: 0;
     font-size: 20.533vw;
     line-height: 82%;
@@ -7440,7 +7447,7 @@ select.p-20.location {
   }
 
   .btn-1.mob-hide {
-    visibility:hidden;
+    /*visibility:hidden;*/
     width: 42.877vw;
     margin-right: 2.667vw;
     display: flex;
@@ -7505,7 +7512,7 @@ select.p-20.location {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 0vw;
+    margin-top: 85vw;
     margin-bottom: 8vw;
     padding-left: 0;
     position: relative;
@@ -7534,7 +7541,7 @@ select.p-20.location {
     align-items: center;
     width: 54.133vw;
     height: 65.387vw;
-    margin-top: 67vw;
+    margin-top: 45vw;
     margin-left: 23.2vw;
   }
 
@@ -11786,3 +11793,4 @@ a.btn-primary{
     transition: all 0.4s ease-in-out;
     z-index: 11000;
 }
+

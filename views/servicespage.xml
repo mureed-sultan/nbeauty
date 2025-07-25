@@ -202,7 +202,8 @@
                             <div class="_2block-card-left hover-right-section">
                                 <img src="/nbeauty/static/src/img/lowres/image-2.JPG" loading="lazy"
                                      class="_2block-img-1"/>
-                                <img src="/nbeauty/static/src/img/lowres/image-6.JPG" loading="lazy" class="_2block-img-2"/>
+                                <img src="/nbeauty/static/src/img/lowres/image-6.JPG" loading="lazy"
+                                     class="_2block-img-2"/>
                             </div>
                             <div class="_2block-rigth-text">
                                 <p class="p-30-2">
@@ -224,7 +225,7 @@
                         <path fill="#fff" fill-opacity="1" d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z"></path>
                     </svg>
 
-                    <div class="w-container">
+                    <div class="">
 
                         <!-- Header -->
                         <div class="nbeauty-services-header">
@@ -233,59 +234,28 @@
                         </div>
 
                         <!-- Filters -->
-                        <div class="nbeauty-filters">
+                        <div class="nbeauty-filters w-container">
                             <input id="service-search-input" type="text" placeholder="Search services..."
                                    class="w-input"/>
                             <select id="category-filter" class="w-select">
                                 <option value="">All Categories</option>
-                                <t t-foreach="categories" t-as="category">
-                                    <option t-att-value="category.id">
-                                        <t t-esc="category.name"/>
-                                    </option>
-                                </t>
+                                <option value="1">Hair Care</option>
+                                <option value="2">Make-Up &amp; Tinting Eyelash Extensions</option>
+                                <option value="3">Skin Care</option>
+                                <option value="4">Body Care</option>
+                                <option value="5">Nail Care</option>
                             </select>
+
                         </div>
 
                         <!-- Grid -->
-                        <div class="w-row" id="services-container">
-                            <t t-foreach="services" t-as="service">
-                                <div class="w-col w-col-3 service-item"
-                                     t-att-data-category-id="service.category_id.id"
-                                     t-att-data-service-name="(service.name or '').lower()"
-                                     style="margin-bottom: 30px;">
+                        <section>
+                            <div id="faq-container" class="faq-container"></div>
+                            <!--                            <xpath expr="//footer" position="inside">-->
+                            <!--                                <script src="/nbeauty/static/src/js/pricelist.js"></script>-->
+                            <!--                            </xpath>-->
+                        </section>
 
-                                    <a t-att-href="'/services/' + service.slug" class="w-inline-block nbeauty-card">
-                                        <div>
-                                            <div class="nbeauty-card-img">
-                                                <img t-att-src="'/web/image/website.service/%s/icon' % service.id"
-                                                     t-att-alt="service.name"/>
-                                            </div>
-                                            <h3 class="nbeauty-card-title">
-                                                <t t-esc="service.name"/>
-                                            </h3>
-                                            <p class="nbeauty-card-subtitle">
-                                                <t t-esc="service.category_id.name"/>
-                                            </p>
-                                        </div>
-                                        <span class="nbeauty-book-btn">Book Now</span>
-                                    </a>
-
-                                </div>
-                            </t>
-                        </div>
-                        <t t-if="pager">
-                            <div class="pagination">
-                                <ul class="pager">
-                                    <t t-foreach="pager['pages']" t-as="page">
-                                        <li t-att-class="'current' if page['num'] == pager['page'] else ''">
-                                            <a t-att-href="page['url']">
-                                                <t t-esc="page['num']"/>
-                                            </a>
-                                        </li>
-                                    </t>
-                                </ul>
-                            </div>
-                        </t>
 
                     </div>
                 </section>

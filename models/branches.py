@@ -23,3 +23,5 @@ class WebsiteBranch(models.Model):
     map_url = fields.Char(string="Google Map URL")
     image = fields.Image(max_width=1024, max_height=1024)
     sequence = fields.Integer(default=10)
+    latitude = fields.Float(string="Latitude", digits=(10, 6))
+    longitude = fields.Float(string="Longitude", digits=(10, 6))
