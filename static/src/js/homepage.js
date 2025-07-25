@@ -322,8 +322,8 @@ const serviceCategories = [
         price: "160",
         services: [
           {
-            name: "Olaplex HairTreatment",
-            arabic: "عج أو¥بليكس للشعر",
+            name: "Treatment A , B , C , D",
+            arabic: "‫د‬ ،‫ج‬ ،‫ب‬ ،‫أ‬ ‫عالج‬",
             price: "25 AED",
           },
         ],
@@ -362,13 +362,6 @@ const serviceCategories = [
         description:
           "Bespoke rituals, pure indulgence—discover your hair’s ultimate transformation.",
         price: "260",
-        services: [
-          {
-            name: "Protein HairTreatment",
-            arabic: "عج أو¥بليكس للشعر",
-            price: "25 AED",
-          },
-        ],
       },
       {
         title: "Keratin",
@@ -552,13 +545,6 @@ const serviceCategories = [
         price: "160",
       },
       {
-        title: "French",
-        titleArabic: "فرنÌ ",
-        description:
-          "Timeless sophistication — elevate your nails with a French twist.",
-        price: "50",
-      },
-      {
         title: "Nail Brightening",
         titleArabic: "تفتيح اظافر ",
         description: "",
@@ -570,13 +556,6 @@ const serviceCategories = [
         description:
           "A glow-up for your nails — bright, fresh, and healthy-looking.",
         price: "180",
-      },
-      {
-        title: "Nail Liquid & Powder / Natural",
-        titleArabic: "فرنÌ",
-        description:
-          "For nails that wow — structure, style, and serious staying power.",
-        price: "50",
       },
       {
         title: "Hand Spa",

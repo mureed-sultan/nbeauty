@@ -13,10 +13,10 @@ const serviceCategories = [
           "Snip into a fresh new you, where every cut is a cut above the rest!",
         price: "50",
         services: [
-          { name: "Hair Wash", arabic: "غسيل الشعر", price: "50  " },
-          { name: "Trim", arabic: "قص أطراف الشعر", price: "80  " },
-          { name: "Fringe Haircut", arabic: "قص الغرة", price: "50  " },
-          { name: "Haircut", arabic: "قص الشعر", price: "150  " },
+          { name: "Hair Wash", arabic: "غسيل الشعر", price: "50 " },
+          { name: "Trim", arabic: "قص أطراف الشعر", price: "80 " },
+          { name: "Fringe Haircut", arabic: "قص الغرة", price: "50" },
+          { name: "Haircut", arabic: "قص الشعر", price: "150 " },
           {
             name: "Hair Cut and Blow Dry",
             arabic: "قص الشعر مع سيشوار",
