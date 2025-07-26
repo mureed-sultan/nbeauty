@@ -2,107 +2,174 @@
 <odoo>
     <data>
 
-        <!-- Booking Form Template -->
+        <!-- ✅ Assets -->
+        <template id="assets_booking_js" inherit_id="website.layout" name="Booking Page JS">
+            <xpath expr="//footer" position="inside">
+                <script type="text/javascript" src="/nbeauty/static/src/js/booking.js"></script>
+            </xpath>
+        </template>
+
+        <!-- ✅ Booking Page -->
         <template id="website_booking_form" name="NBeauty Booking Page">
             <t t-call="website.layout">
-                <div class="container my-5 animated fadeIn slow">
-                    <div class="card shadow-lg border-0 p-5" style="background: linear-gradient(145deg, #fff0f5, #f0f8ff); border-radius: 20px;">
-                        <h2 class="text-center mb-4 text-uppercase" style="color:#c71585;">💅 Book Your Beauty Session</h2>
+                <section style="position: relative; background: linear-gradient(135deg, #fff5fa, #f7f9ff); overflow: hidden;">
 
-                        <form action="/nbeauty/booking/submit" method="post" class="form" style="font-family: 'Poppins', sans-serif;">
-                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                    <!-- ✅ Decorative Top Wave -->
+                    <div style="position:absolute; top:0; left:0; width:100%; overflow:hidden; line-height:0;">
+                        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100px; width: 100%;">
+                            <path d="M0,0 C150,100 350,0 500,100 L500,0 L0,0 Z" style="stroke: none; fill: #ffffff;"></path>
+                        </svg>
+                    </div>
 
-                            <div class="mb-3">
-                                <label class="form-label">Your Name:</label>
-                                <input type="text" name="customer_name" class="form-control" required="required" placeholder="Enter your full name"/>
-                            </div>
+                    <div class="container py-5" style="position: relative; z-index:2;">
+                        <div class="row g-5 align-items-stretch">
 
-                            <div class="mb-3">
-                                <label class="form-label">Mobile Number:</label>
-                                <input type="text" name="customer_mobile" class="form-control" required="required" placeholder="e.g. 0501234567"/>
-                            </div>
+                            <!-- ✅ Left Side: Luxury Info -->
+                            <div class="col-md-5 d-flex">
+                                <div class="p-4 text-center shadow-lg d-flex flex-column w-100"
+                                     style="background: linear-gradient(145deg, #ffffff, #fdfbff); border-radius: 24px;">
 
-                            <div class="mb-3">
-                                <label class="form-label">Choose Services:</label>
-                                <select name="service_ids" multiple="multiple" class="form-select" required="required">
-                                    <t t-foreach="services" t-as="service">
-                                        <option t-att-value="service.id">
-                                            <t t-esc="service.name"/>
-                                        </option>
-                                    </t>
-                                </select>
-                                <small class="text-muted">Hold Ctrl or Cmd to select multiple</small>
-                            </div>
+                                    <!-- ✅ Service Banner -->
+                                    <img src="/nbeauty/static/src/img/lowres/image-11.JPG"
+                                         class="img-fluid mb-4 shadow-sm"
+                                         style="border-radius: 20px; max-height:220px; object-fit:cover;" />
 
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label">Booking Date:</label>
-                                    <input type="date" name="booking_date" class="form-control" required="required"/>
+                                    <!-- ✅ Service Titles -->
+                                    <div>
+                                        <h2 style="color:#b30059; font-weight:700; font-size:1.8rem;" id="service-title">
+                                            Book Your Signature Beauty Experience
+                                        </h2>
+                                        <h4 style="color:#7a1fa2; font-weight:500;" class="mt-2" id="service-title-arabic">
+                                            احجز تجربتك الجمالية الفاخرة
+                                        </h4>
+                                    </div>
+
+                                    <!-- ✅ Luxury Tagline -->
+                                    <p class="mt-3 px-3"
+                                       style="font-size:1rem; color:#6c757d; line-height:1.7;" id="service-description">
+                                        Step into a world of elegance and self-care. At NBeauty, every appointment is
+                                        crafted to deliver luxury, comfort, and flawless results. Let our expert
+                                        stylists bring out the best version of you.
+                                    </p>
+
+                                    <p class="mt-2 px-3"
+                                       style="font-size:0.9rem; color:#999;">
+                                        ✨ *Your journey to timeless beauty starts here.*
+                                    </p>
                                 </div>
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label">Booking Time:</label>
-                                    <input type="time" name="booking_time" class="form-control" required="required"/>
+                            </div>
+
+                            <!-- ✅ Right Side: Booking Form -->
+                            <div class="col-md-7 d-flex">
+                                <div class="card shadow-lg border-0 p-5 d-flex flex-column w-100"
+                                     style="background: #fff; border-radius: 24px;">
+
+                                    <!-- ✅ Multi-Service Selection -->
+                                    <div class="mb-4">
+                                        <h3 style="color:#b30059; font-weight:600;">Select Your Services:</h3>
+                                        <select id="service-dropdown" name="service_ids" class="form-select mb-3"
+                                                multiple="multiple" size="6"></select>
+                                        <p class="small text-muted">💡 Hold Ctrl/Cmd to select multiple services.</p>
+                                    </div>
+
+                                    <!-- ✅ Branch Selection -->
+                                    <div class="mb-4">
+                                        <h5 class="text-muted">Choose Your Preferred Branch:</h5>
+                                        <select name="branch_id" class="form-select" required="">
+                                            <t t-foreach="branches" t-as="br">
+                                                <option t-att-value="br.id"><t t-esc="br.name"/></option>
+                                            </t>
+                                        </select>
+                                    </div>
+
+                                    <!-- ✅ Employee Selection -->
+                                    <div class="mb-4">
+                                        <h5 class="text-muted">Choose Your Stylist:</h5>
+                                        <select name="employee_id" class="form-select">
+                                            <option value="">Any Available Stylist</option>
+                                            <t t-foreach="employees" t-as="emp">
+                                                <option t-att-value="emp.id"><t t-esc="emp.name"/></option>
+                                            </t>
+                                        </select>
+                                    </div>
+
+                                    <!-- ✅ Booking Form -->
+                                    <form action="/nbeauty/booking/submit" method="post" class="form mt-4" >
+                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                        <input type="hidden" id="selected-service" name="selected_service"/>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Your Name:</label>
+                                            <input type="text" name="customer_name" class="form-control"
+                                                   placeholder="Enter your full name" required=""/>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Mobile Number:</label>
+                                            <input type="text" name="customer_mobile" class="form-control"
+                                                   placeholder="e.g. 0501234567" required=""/>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label class="form-label">Booking Date:</label>
+                                                <input type="date" name="booking_date" class="form-control" id="booking-date" required=""/>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label class="form-label">Booking Time:</label>
+                                                <input type="time" name="booking_time" class="form-control" id="booking-time" required=""/>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center mt-4">
+                                            <button type="submit"
+                                                    class="btn btn-lg px-5 py-2"
+                                                    style="background:linear-gradient(90deg,#b30059,#ff4f81); color:#fff; border:none; border-radius: 50px;">
+                                                ✨ Confirm My Booking
+                                            </button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
 
-                            <div class="mb-3">
-                                <label class="form-label">Choose Provider:</label>
-                                <select name="employee_id" class="form-select" required="required">
-                                    <t t-foreach="employees" t-as="emp">
-                                        <option t-att-value="emp.id">
-                                            <t t-esc="emp.name"/>
-                                        </option>
-                                    </t>
-                                </select>
-                            </div>
+                        </div>
+                    </div>
 
-                            <div class="mb-3">
-                                <label class="form-label">Select Branch:</label>
-                                <select name="branch_id" class="form-select" required="required">
-                                    <t t-foreach="branches" t-as="branch">
-                                        <option t-att-value="branch.id">
-                                            <t t-esc="branch.name"/>
-                                        </option>
-                                    </t>
-                                </select>
-                            </div>
-
-                            <div class="text-center mt-4">
-                                <button type="submit" class="btn btn-lg btn-danger shadow px-5 py-2" style="border-radius: 50px;">✨ Submit Booking</button>
-                            </div>
-                        </form>
+                    <!-- ✅ Decorative Bottom Wave -->
+                    <div style="position:absolute; bottom:0; left:0; width:100%; overflow:hidden; line-height:0;">
+                        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100px; width: 100%;">
+                            <path d="M0,100 C150,0 350,150 500,50 L500,150 L0,150 Z" style="stroke: none; fill: #ffffff;"></path>
+                        </svg>
+                    </div>
+                </section>
+            </t>
+        </template>
+              <template id="website_booking_thank_you" name="Thank You Page">
+            <t t-call="website.layout">
+                <div class="container my-5 text-center">
+                    <div class="alert alert-success shadow-sm p-4 animated fadeIn">
+                        <h2 class="mb-3">🎉 Thank You!</h2>
+                        <p>Your beauty appointment has been submitted successfully.</p>
+                        <a href="/" class="btn btn-outline-primary mt-3">Return to Home</a>
                     </div>
                 </div>
             </t>
         </template>
 
-        <!-- Thank You Page Template -->
-       <template id="website_booking_thank_you" name="Thank You Page">
-      <t t-call="website.layout">
-        <div class="container my-5 text-center">
-          <div class="alert alert-success shadow-sm p-4 animated fadeIn">
-            <h2 class="mb-3">🎉 Thank You!</h2>
-            <p>Your beauty appointment has been submitted successfully.</p>
-            <a href="/" class="btn btn-outline-primary mt-3">Return to Home</a>
-          </div>
-        </div>
-      </t>
-    </template>
-
-    <!-- Error Page (Custom Fallback) -->
-    <template id="website_booking_error" name="Booking Error Page">
-      <t t-call="website.layout">
-        <div class="container my-5 text-center">
-          <div class="alert alert-danger shadow-sm p-4 animated fadeIn">
-            <h2 class="mb-3">🚫 Booking Failed</h2>
-            <p>We couldn't process your booking. Please try again or contact support.</p>
-            <t t-if="error">
-              <pre class="text-sm text-muted mt-3"><t t-esc="error"/></pre>
+        <!-- ✅ Error Page -->
+        <template id="website_booking_error" name="Booking Error Page">
+            <t t-call="website.layout">
+                <div class="container my-5 text-center">
+                    <div class="alert alert-danger shadow-sm p-4 animated fadeIn">
+                        <h2 class="mb-3">🚫 Booking Failed</h2>
+                        <p>We couldn't process your booking. Please try again or contact support.</p>
+                        <t t-if="error">
+                            <pre class="text-sm text-muted mt-3"><t t-esc="error"/></pre>
+                        </t>
+                    </div>
+                </div>
             </t>
-          </div>
-        </div>
-      </t>
-    </template>
+        </template>
 
     </data>
 </odoo>

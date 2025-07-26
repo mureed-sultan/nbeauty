@@ -2,6 +2,8 @@ from odoo import http
 from odoo.http import request
 import pytz
 from datetime import datetime
+import json
+
 
 
 class NBeautyHomepage(http.Controller):
@@ -43,23 +45,17 @@ class NBeautyHomepage(http.Controller):
             'branches': branches
         })
 
-    @http.route('/services/<slug>', type='http', auth='public', website=True)
-    def service_detail(self, slug, **kwargs):
-        service = request.env['website.service'].sudo().search([('slug', '=', slug)], limit=1)
-        services = request.env['product.product'].sudo().search([('available_in_pos', '=', True)])
+    @http.route('/booking/<slug>', type='http', auth='public', website=True)
+    def booking_service_page(self, slug, **kwargs):
         employees = request.env['hr.employee'].sudo().search([])
         branches = request.env['stock.warehouse'].sudo().search([])
 
-        # Dubai timezone minimum date logic
         Dubai = pytz.timezone('Asia/Dubai')
         today_date = datetime.now(Dubai).strftime('%Y-%m-%d')
 
-        if not service:
-            return request.not_found()
-
-        return request.render('nbeauty.service_page_template', {
-            'service': service,
-            'services': services,
+        # Pass the slug to the template for booking.js
+        return request.render('nbeauty.website_booking_form', {
+            'slug': slug,
             'employees': employees,
             'branches': branches,
             'today': today_date,
@@ -77,35 +73,27 @@ class NBeautyHomepage(http.Controller):
             'branches': branches,
         })
 
-    @http.route('/nbeauty/booking/submit', type='http', auth='public', website=True, csrf=True)
+
+    @http.route('/nbeauty/booking/submit', type='http', auth='public', methods=['POST'], csrf=False, website=True)
     def submit_booking(self, **post):
         try:
-            name = post.get('customer_name')
-            mobile = post.get('customer_mobile')
-            service_ids = [int(s) for s in request.httprequest.form.getlist('service_ids')]
-            employee_id = int(post.get('employee_id'))
-            date = post.get('booking_date')
-            time_str = post.get('booking_time')
-
-            hours, minutes = map(int, time_str.split(':'))
-            time_float = hours + minutes / 60.0
-
-            branch_id = int(post.get('branch_id'))
+            services_data = post.getlist('services')  # ✅ multiple services from form
+            services_json = json.dumps(services_data) # ✅ Convert to JSON
 
             request.env['nbeauty.booking'].sudo().create({
-                'customer_name': name,
-                'customer_mobile': mobile,
-                'service_ids': [(6, 0, service_ids)],
-                'employee_id': employee_id,
-                'booking_date': date,
-                'booking_time': time_float,  # ✅ Use float
-                'branch_id': branch_id,
+                'customer_name': post.get('customer_name'),
+                'customer_mobile': post.get('customer_mobile'),
+                'branch_id': int(post.get('branch_id')) if post.get('branch_id') else False,
+                'employee_id': int(post.get('employee_id')) if post.get('employee_id') else False,
+                'booking_date': post.get('booking_date'),
+                'booking_time': float(post.get('booking_time')),
+                'services': services_json,   # ✅ Save as JSON text
             })
 
-            return request.redirect('/nbeauty/booking/thanks')
+            return request.redirect('/thank-you')
 
         except Exception as e:
-            return request.render('nbeauty.website_booking_error', {'error': str(e)})
+            return f"🚫 Booking Failed<br>{str(e)}"
 
     @http.route('/nbeauty/booking/thanks', type='http', auth='public', website=True)
     def booking_thanks(self, **kwargs):

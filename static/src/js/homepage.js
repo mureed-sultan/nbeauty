@@ -673,8 +673,8 @@ function createChildBlock(child, parentWrapper) {
             </div>
         </div>
 <a href="/services?id=${child.description}" class="_4block-btnwithout hide w-inline-block" style="">
-            <h1 class="h-18 _4block" style="color: rgb(255, 255, 255);">Make an appointment</h1>
-            <div class="white-circle-div-4block" style="opacity: 1;"></div>
+            <h1 class="h-18 _4block mobile-black" style="color: rgb(255, 255, 255);">Make an appointment</h1>
+            <div class="white-circle-div-4block mob-hide" style="opacity: 1;"></div>
         </a>
     `;
 

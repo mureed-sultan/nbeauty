@@ -44,7 +44,7 @@
                         <field name="booking_date"/>
                         <field name="booking_time"/>
                         <field name="employee_id"/>
-                        <field name="service_ids" widget="many2many_tags"/>
+<!--                        <field name="service_ids" widget="many2many_tags"/>-->
                     </group>
                 </form>
             </field>

@@ -3786,6 +3786,24 @@ body {
 .c-faq-titles-content:hover ._4block-btnwithout {
 opacity: 1; display: flex; background-color: black;
 }
+@media screen and (max-width:1024px) {
+  ._4block-btnwithout {
+    opacity: 1;
+    display: flex;
+    width: 27vw;
+    height: 10vw;
+    border-radius:99px;
+  }
+  .mobile-black{
+  color:black !important;
+  }  .mobile-black:hover,.mobile-black:active{
+  color:white !important;
+  }
+  .mob-hide{
+  display:none;
+  }
+
+}
 
 .white-circle-div-4block {
   opacity: 0;

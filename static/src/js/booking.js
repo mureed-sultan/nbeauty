@@ -1,74 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const canvas = document.getElementById('silk-canvas');
-    if(!canvas) return
-    const ctx = canvas.getContext('2d');
-
-    let width = canvas.width = window.innerWidth;
-    let height = canvas.height = window.innerHeight;
-
-    const rows = 70;
-    const cols = 120;
-    const spacingX = width / (cols - 1);
-    const spacingY = height / (rows - 1);
-
-    const points = [];
-
-    for (let y = 0; y < rows; y++) {
-        for (let x = 0; x < cols; x++) {
-            points.push({
-                originX: x * spacingX,
-                originY: y * spacingY,
-                x: x * spacingX,
-                y: y * spacingY,
-                offset: Math.random() * 1000
-            });
-        }
-    }
-
-    function drawCloth() {
-        ctx.clearRect(0, 0, width, height);
-        ctx.fillStyle = '#df8da8'; // deep silk pink
-
-        for (let y = 0; y < rows - 1; y++) {
-            for (let x = 0; x < cols - 1; x++) {
-                const i = y * cols + x;
-                const p1 = points[i];
-                const p2 = points[i + 1];
-                const p3 = points[i + cols + 1];
-                const p4 = points[i + cols];
-
-                ctx.beginPath();
-                ctx.moveTo(p1.x, p1.y);
-                ctx.lineTo(p2.x, p2.y);
-                ctx.lineTo(p3.x, p3.y);
-                ctx.lineTo(p4.x, p4.y);
-                ctx.closePath();
-                ctx.fill();
-            }
-        }
-    }
-
-    function animateCloth() {
-        const time = Date.now() * 0.0015;
-        for (let p of points) {
-            const waveX = Math.sin(time + p.originY * 0.03) * 15;
-            const waveY = Math.cos(time + p.originX * 0.03) * 10;
-            p.x = p.originX + waveX;
-            p.y = p.originY + waveY;
-        }
-        drawCloth();
-        requestAnimationFrame(animateCloth);
-    }
-
-    animateCloth();
-
-    window.addEventListener('resize', () => {
-        width = canvas.width = window.innerWidth;
-        height = canvas.height = window.innerHeight;
-    });
-});
-
-
+// Example JSON data
 const serviceCategories = [
   {
     id: "1",
@@ -1040,270 +970,99 @@ const serviceCategories = [
   },
 ];
 
+document.addEventListener('DOMContentLoaded', () => {
+    const slug = decodeURIComponent(window.location.pathname.split('/').pop()).replace(/-/g, ' ').trim().toLowerCase();
 
-// ✅ Accordion UI Code (your exact version)
-function createServiceBlock(service) {
-  const block = document.createElement("div");
-  block.className = "service-item c-faq-a-text";
-  block.dataset.serviceName = service.name.toLowerCase();
+    const titleEl = document.getElementById('service-title');
+    const descEl = document.getElementById('service-description');
+    const priceEl = document.getElementById('service-price');
+    const hiddenService = document.getElementById('selected-service');
+    const serviceDropdown = document.getElementById('service-dropdown');
 
-  block.innerHTML = `
-        <div class="_4block-faq-text-div-main">
-            <div class="_4block-top-text-div">
-                <div class="_4block-faq-text-top-div">
-                    <h1 class="p-30">${service.name}<span>${service.arabic || ""}</span></h1>
-                </div>
-            </div>
-            <div class="_4block-text-bottom-main-div">
-                <div class="_4block-faq-text-bottom-div"><p>Started From ${service.price}</p></div>
-                <a   href="/booking/${service.name.replace(' ', '-')}"  class="_4block-btn-mob
-                w-inline-block">
-                    <h1 class="h-18 _4block">Make an appointment</h1>
-                    <div class="white-circle-div-4block"></div>
-                </a>
-            </div>
-        </div>
-        <a href="/booking/${service.name.replace(' ', '-')}"  class="_4block-btn hide w-inline-block">
-            <h1 class="h-18 _4block">Make an appointment</h1>
-            <div class="white-circle-div-4block"></div>
-        </a>
-    `;
-  return block;
-}
+    let selectedService = null;
 
-function toggleWrapper(wrapper, arrow) {
-  const isOpen = wrapper.style.height && wrapper.style.height !== "0px";
-  if (!isOpen) {
-    const fullHeight = [...wrapper.children].reduce((acc, el) => acc + el.scrollHeight, 0);
-    wrapper.style.height = `${fullHeight}px`;
-    arrow.style.transform = "rotate(180deg)";
-  } else {
-    wrapper.style.height = "0px";
-    arrow.style.transform = "rotate(0deg)";
-  }
-}
+    // ✅ Build dropdown dynamically from serviceCategories
+    serviceCategories.forEach(cat => {
+        const group = document.createElement('optgroup');
+        group.label = cat.title;
 
-function updateParentHeight(parentWrapper) {
-  let totalHeight = 0;
-  parentWrapper
-    .querySelectorAll(":scope > .c-faq-titles-content > .c-faq-a")
-    .forEach((wrapper) => {
-      if (wrapper.style.height && wrapper.style.height !== "0px") {
-        totalHeight += wrapper.scrollHeight + wrapper.previousElementSibling.scrollHeight;
-      } else {
-        totalHeight += wrapper.previousElementSibling.scrollHeight;
-      }
-    });
-  parentWrapper.style.height = `${totalHeight}px`;
-}
+        cat.children?.forEach(service => {
+            const opt = document.createElement('option');
+            opt.value = service.title;
+            opt.textContent = `${service.title} - ${service.price} AED`;
 
-function createChildBlock(child, parentWrapper) {
-  const childWrapper = document.createElement("div");
-  childWrapper.className = "c-faq-titles-content";
+            if (service.title.trim().toLowerCase() === slug) {
+                opt.selected = true;
+                selectedService = service;
+            }
+            group.appendChild(opt);
 
-  const header = document.createElement("div");
-  header.className = "c-faq-b";
-  header.innerHTML = `
-        <div class="c-faq-b-text">
-            <div class="h-50-item">${child.title}
-                <p class="pricelist-description">${child.description || ""}</p>
-            </div>
-        </div>
-        <div class="c-faq-icon">
-            <div class="_w-faq-icon">
-                <img class="arrow-img-4block" src="/nbeauty/static/src/img/arrow.svg">
-            </div>
-        </div>
-    `;
+            // ✅ Nested sub-services
+            if (service.services) {
+                service.services.forEach(sub => {
+                    const subOpt = document.createElement('option');
+                    subOpt.value = sub.name;
+                    subOpt.textContent = `-- ${sub.name} - ${sub.price} AED`;
 
-  const serviceWrapper = document.createElement("div");
-  serviceWrapper.className = "c-faq-a";
-  serviceWrapper.style.height = "0px";
-  serviceWrapper.style.overflow = "hidden";
-  serviceWrapper.style.transition = "height 0.5s ease";
+                    if (sub.name.trim().toLowerCase() === slug) {
+                        subOpt.selected = true;
+                        selectedService = sub;
+                    }
+                    group.appendChild(subOpt);
+                });
+            }
+        });
 
-  child.services?.forEach((service) => {
-    serviceWrapper.appendChild(createServiceBlock(service));
-  });
-
-  header.addEventListener("click", (e) => {
-    e.stopPropagation();
-    toggleWrapper(serviceWrapper, header.querySelector(".arrow-img-4block"));
-    updateParentHeight(parentWrapper);
-  });
-
-  childWrapper.appendChild(header);
-  childWrapper.appendChild(serviceWrapper);
-  return childWrapper;
-}
-
-function createMainCategory(category, container) {
-  const item = document.createElement("div");
-  item.className = "c-faq-item-main";
-  item.dataset.categoryName = category.title.toLowerCase();
-
-  const header = document.createElement("div");
-  header.className = "c-faq-q next";
-  header.innerHTML = `
-        <div class="c-faq-q-text _02">
-            <div class="h-70" style="width:1vw;">0${category.id}</div>
-            <div class="h-70 medium">${category.title}
-                <p class="pricelist-description">${category.description || ""}</p>
-            </div>
-        </div>
-        <div class="c-faq-icon">
-            <div class="_w-faq-icon-main">
-                <img class="arrow-img-4block" src="/nbeauty/static/src/img/arrow.svg">
-            </div>
-        </div>
-    `;
-
-  const wrapper = document.createElement("div");
-  wrapper.className = "c-faq-titles";
-  wrapper.style.height = "0px";
-  wrapper.style.overflow = "hidden";
-  wrapper.style.transition = "height 0.5s ease";
-
-  if (category.children) {
-    category.children.forEach((child) => wrapper.appendChild(createChildBlock(child, wrapper)));
-  } else if (category.services) {
-    const serviceWrapper = document.createElement("div");
-    serviceWrapper.className = "c-faq-a";
-    serviceWrapper.style.height = "0px";
-    serviceWrapper.style.overflow = "hidden";
-    serviceWrapper.style.transition = "height 0.5s ease";
-
-    category.services.forEach((service) => {
-      serviceWrapper.appendChild(createServiceBlock(service));
+        serviceDropdown.appendChild(group);
     });
 
-    wrapper.appendChild(serviceWrapper);
-  }
-
-header.addEventListener("click", () => {
-  document.querySelectorAll(".c-faq-titles").forEach((w) => {
-    if (w !== wrapper) {
-      w.style.height = "0px";
-      const icon = w.previousElementSibling?.querySelector(".arrow-img-4block");
-      if (icon) icon.style.transform = "rotate(0deg)";
-      const innerFaq = w.querySelector(".c-faq-a");
-      if (innerFaq) innerFaq.style.height = "0px";
-    }
-  });
-
-  const arrow = header.querySelector(".arrow-img-4block");
-
-  if (category.services) {
-    const serviceWrapper = wrapper.querySelector(".c-faq-a");
-    const isOpen = serviceWrapper.style.height && serviceWrapper.style.height !== "0px";
-
-    if (!isOpen) {
-      // ✅ Expand: match height to inner content
-      const fullHeight = [...serviceWrapper.children].reduce(
-        (acc, el) => acc + el.scrollHeight,
-        0
-      );
-      serviceWrapper.style.height = `${fullHeight}px`;
-      wrapper.style.height = `${fullHeight}px`;
-      arrow.style.transform = "rotate(180deg)";
+    // ✅ Display details of selected service
+    if (selectedService) {
+        titleEl.textContent = selectedService.title || selectedService.name;
+        descEl.textContent = selectedService.description || "Experience the most luxurious beauty service.";
+        priceEl.textContent = (selectedService.price || 0) + " AED";
+        hiddenService.value = selectedService.title || selectedService.name;
     } else {
-      // ✅ Collapse
-      serviceWrapper.style.height = "0px";
-      wrapper.style.height = "0px";
-      arrow.style.transform = "rotate(0deg)";
+        titleEl.textContent = "Select a Service";
+        descEl.textContent = "Choose from our wide range of luxury beauty services.";
+        priceEl.textContent = "-";
+        hiddenService.value = "";
     }
-  } else {
-    // ✅ For child categories use normal toggle
-    toggleWrapper(wrapper, arrow);
-  }
 });
 
 
-  item.appendChild(header);
-  item.appendChild(wrapper);
-  container.appendChild(item);
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const bookingDate = document.getElementById("booking-date");
+    const bookingTime = document.getElementById("booking-time");
 
-// ✅ Render Accordion
-const container = document.getElementById("faq-container");
-serviceCategories.forEach((category) => createMainCategory(category, container));
+    const WORK_START = 9; // 9 AM
+    const WORK_END = 21;  // 9 PM
+    const MIN_HOURS_AHEAD = 2; // Minimum 2 hours ahead
 
-// ✅ Search + Category Filter
-const searchInput = document.getElementById("service-search-input");
-const categorySelect = document.getElementById("category-filter");
+    function setMinDateTime() {
+        const now = new Date().toLocaleString("en-US", { timeZone: "Asia/Dubai" });
+        const dubaiNow = new Date(now);
 
-// Populate dropdown with parent categories
-serviceCategories.forEach(cat => {
-  const option = document.createElement("option");
-  option.value = cat.title.toLowerCase();
-  option.textContent = cat.title;
-  categorySelect.appendChild(option);
-});
+        // Set min date
+        const today = dubaiNow.toISOString().split("T")[0];
+        bookingDate.setAttribute("min", today);
 
-function filterServices() {
-  const searchText = searchInput.value.toLowerCase();
-  const selectedCategory = categorySelect.value;
+        bookingDate.addEventListener("change", function () {
+            let selectedDate = new Date(this.value + "T00:00:00");
 
-  document.querySelectorAll(".c-faq-item-main").forEach(categoryBlock => {
-    const categoryName = categoryBlock.dataset.categoryName;
-    let categoryVisible = false;
+            if (this.value === today) {
+                let minHour = dubaiNow.getHours() + MIN_HOURS_AHEAD;
+                if (minHour < WORK_START) minHour = WORK_START;
+                if (minHour > WORK_END) minHour = WORK_END;
 
-    categoryBlock.querySelectorAll(".service-item").forEach(service => {
-      const serviceName = service.dataset.serviceName;
-      const matchesText = serviceName.includes(searchText);
-      const matchesCategory = !selectedCategory || categoryName === selectedCategory;
+                bookingTime.setAttribute("min", `${String(minHour).padStart(2, '0')}:00`);
+            } else {
+                bookingTime.setAttribute("min", `${String(WORK_START).padStart(2, '0')}:00`);
+            }
 
-      if (matchesText && matchesCategory) {
-        service.style.display = "";
-        categoryVisible = true;
-      } else {
-        service.style.display = "none";
-      }
-    });
-
-    categoryBlock.style.display = categoryVisible ? "" : "none";
-  });
-}
-
-searchInput.addEventListener("input", filterServices);
-categorySelect.addEventListener("change", filterServices);
-
-// ✅ Get "id" param from URL
-function getUrlParam(name) {
-  const params = new URLSearchParams(window.location.search);
-  return params.get(name);
-}
-
-// ✅ After DOM is ready
-document.addEventListener("DOMContentLoaded", () => {
-  const targetId = getUrlParam("id");
-  if (targetId) {
-    const searchText = decodeURIComponent(targetId).toLowerCase();
-
-    // Find matching child category block
-    const allChildHeaders = document.querySelectorAll(".c-faq-b-text .h-50-item");
-    for (const header of allChildHeaders) {
-      const text = header.textContent.toLowerCase().trim();
-      if (text.includes(searchText)) {
-        const childWrapper = header.closest(".c-faq-titles-content");
-        const parentWrapper = header.closest(".c-faq-titles");
-        const mainItem = header.closest(".c-faq-item-main");
-
-        // ✅ Open parent category if collapsed
-        const mainHeader = mainItem.querySelector(".c-faq-q");
-        if (mainHeader) mainHeader.click();
-
-        // ✅ Open this child category
-        const childHeader = childWrapper.querySelector(".c-faq-b");
-        if (childHeader) childHeader.click();
-
-        // ✅ Smooth scroll into view
-        setTimeout(() => {
-          childWrapper.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 600);
-
-        break;
-      }
+            bookingTime.setAttribute("max", `${String(WORK_END).padStart(2, '0')}:00`);
+        });
     }
-  }
+
+    setMinDateTime();
 });

@@ -10,7 +10,6 @@
                 <field name="customer_mobile"/>
                 <field name="branch_id"/>
                 <field name="employee_id"/>
-                <field name="service_ids"/>
                 <field name="booking_date"/>
                 <field name="booking_time"/>
                 <field name="create_date"/>
@@ -30,7 +29,6 @@
                         <field name="customer_mobile"/>
                         <field name="branch_id"/>
                         <field name="employee_id"/>
-                        <field name="service_ids" widget="many2many_tags"/>
                         <field name="booking_date"/>
                         <field name="booking_time"/>
                         <field name="create_date" readonly="1"/>
