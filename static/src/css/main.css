@@ -3770,6 +3770,22 @@ body {
   display: flex;
   position: relative;
 }
+._4block-btnwithout {
+  opacity: 0;
+  border: 1px solid #000;
+  border-radius: 200%;
+  justify-content: center;
+  align-items: center;
+  width: 7.917vw;
+  height: 7.917vw;
+  text-decoration: none;
+  display: none;
+  position: relative;
+  transition: opacity 250ms ease, background-color 250ms ease;
+}
+.c-faq-titles-content:hover ._4block-btnwithout {
+opacity: 1; display: flex; background-color: black;
+}
 
 .white-circle-div-4block {
   opacity: 0;
@@ -5181,13 +5197,15 @@ body {
 }
 
 select.p-20.location {
-  /*padding: 20px;*/
+    background: transparent;
+    border-radius: 9999px;
+    padding: 15px 50px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 4px;
 /*  background: var(--biege);*/
   color: #333;
   cursor: pointer;
+  border:1px solid #000;
 }
 
 

@@ -30,12 +30,7 @@ class NBeautyHomepage(http.Controller):
 
     @http.route('/services', auth="public", website=True)
     def services_page(self):
-        services = request.env['website.service'].sudo().search([], order='sequence asc')
-        categories = request.env['website.service.category'].sudo().search([])
-        return request.render('nbeauty.nbeauty_services_template', {
-            'services': services,
-            'categories': categories
-        })
+        return request.render('nbeauty.nbeauty_services_template')
 
     @http.route('/location', auth="public", website="true")
     def location_page(self):

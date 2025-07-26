@@ -1267,3 +1267,42 @@ function filterServices() {
 searchInput.addEventListener("input", filterServices);
 categorySelect.addEventListener("change", filterServices);
 
+// ✅ Get "id" param from URL
+function getUrlParam(name) {
+  const params = new URLSearchParams(window.location.search);
+  return params.get(name);
+}
+
+// ✅ After DOM is ready
+document.addEventListener("DOMContentLoaded", () => {
+  const targetId = getUrlParam("id");
+  if (targetId) {
+    const searchText = decodeURIComponent(targetId).toLowerCase();
+
+    // Find matching child category block
+    const allChildHeaders = document.querySelectorAll(".c-faq-b-text .h-50-item");
+    for (const header of allChildHeaders) {
+      const text = header.textContent.toLowerCase().trim();
+      if (text.includes(searchText)) {
+        const childWrapper = header.closest(".c-faq-titles-content");
+        const parentWrapper = header.closest(".c-faq-titles");
+        const mainItem = header.closest(".c-faq-item-main");
+
+        // ✅ Open parent category if collapsed
+        const mainHeader = mainItem.querySelector(".c-faq-q");
+        if (mainHeader) mainHeader.click();
+
+        // ✅ Open this child category
+        const childHeader = childWrapper.querySelector(".c-faq-b");
+        if (childHeader) childHeader.click();
+
+        // ✅ Smooth scroll into view
+        setTimeout(() => {
+          childWrapper.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 600);
+
+        break;
+      }
+    }
+  }
+});
