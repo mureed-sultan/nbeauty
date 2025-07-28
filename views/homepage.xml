@@ -403,15 +403,23 @@
                         <section>
                             <div id="faq-container" class="faq-container"></div>
                             <div class="pricelist-container">
+
+
                                 <a href="/nbeauty/static/src/pdf/price-list.pdf"
-                                   class="_4block-btnwithout-fix w-inline-block"
-                                   download="price-list.pdf">
-                                    <h1 class="h-18 _4block mobile-black" style="color: rgb(255, 255, 255);">See Our
-                                        Complete Price List
-                                    </h1>
-                                    <div class="white-circle-div-4block mob-hide" style="opacity: 1;"></div>
+                                   download="price-list.pdf"
+                                   class="btn-1 w-inline-block">
+                                    <div data-w-id="dba252a3-1e31-9541-99a1-2e9bc6a4daa1"
+                                         style="background-color: rgba(0, 0, 0, 0)"
+                                            class="btn-div-inside"
+                                    >
+                                        <h1 style="color: rgb(0, 0, 0)" class="h-18 center-align">See Our Complete Price
+                                        </h1>
+                                        <div style="opacity: 0" class="btn-1-wh-stroke-circle"></div>
+                                    </div>
                                 </a>
                             </div>
+
+
                         </section>
 
 

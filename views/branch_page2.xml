@@ -1,7 +1,6 @@
 <odoo>
   <data>
 
-    <!-- ✅ Store Locator Page -->
     <template id="website_branch_locator" name="Store Locator">
       <t t-call="website.layout">
         <style>
@@ -89,7 +88,7 @@
           <div class="branch-list" id="branchList"></div>
         </div>
 
-        <!-- ✅ JSON -->
+        <!-- ✅ JSON Data -->
         <script type="application/json" id="branchData">
           <t t-raw="json.dumps([{
             'lat': b.latitude or 0,
@@ -101,18 +100,17 @@
           } for b in branches])"/>
         </script>
 
-        <!-- ✅ Google Maps -->
-  <script t-att-async="'async'" t-att-defer="'defer'"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXFAxSgXP7b5D25WEtjxkYqoWM2PjxaLg&amp;callback=initMap">
-</script>
+        <!-- ✅ Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
       </t>
     </template>
 
-    <!-- ✅ JS Asset Inheritance -->
-            <xpath expr="//footer" position="inside">
-        <script type="text/javascript" src="/nbeauty/static/src/js/branches.js"></script>
-      </xpath>
+    <!-- ✅ Include external JS -->
+    <xpath expr="//footer" position="inside">
+      <script type="text/javascript" src="/nbeauty/static/src/js/branches.js"></script>
+    </xpath>
 
   </data>
 </odoo>

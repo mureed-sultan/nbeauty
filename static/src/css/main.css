@@ -2667,7 +2667,7 @@ body {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   margin: 0;
-  font-family: Inter, sans-serif;
+  font-family:"Ogg Bf 646 C 18 Fc 45 Bd 0", sans-serif;
   font-size: 0.938vw;
   font-weight: 400;
   line-height: 102.5%;
@@ -3825,6 +3825,15 @@ opacity: 1; display: flex; background-color: black;
   .mob-hide{
   display:none;
   }
+  ._4block-btnwithout-fix h1, ._4block-btnwithout-fix div{
+  color:white;
+  }
+  ._4block-btnwithout-fix {
+
+  width: 30vw;
+  height: 30vw;
+  transition: opacity 250ms ease, background-color 250ms ease;
+}
 
 }
 
@@ -9983,7 +9992,7 @@ select.p-20.location {
   }
 
   .h-50-item {
-    font-family: Inter, sans-serif;
+    font-family: "Ogg Bf 646 C 18 Fc 45 Bd 0", sans-serif;
     font-size: 4.267vw;
     font-weight: 400;
   }
