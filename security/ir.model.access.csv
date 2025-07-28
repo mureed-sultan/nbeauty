@@ -3,3 +3,4 @@ access_nbeauty_booking_user,nbeauty.booking,model_nbeauty_booking,base.group_use
 access_website_branch_city_admin,website.branch.city.admin,model_website_branch_city,base.group_system,1,1,1,1
 access_website_branch_admin,website.branch.admin,model_website_branch,base.group_system,1,1,1,1
 access_website_branch_user,website.branch.user,model_website_branch,base.group_user,1,1,1,1
+access_nbeauty_popup_lead_admin,nbeauty.popup.lead,model_nbeauty_popup_lead,base.group_system,1,1,1,1

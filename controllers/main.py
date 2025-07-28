@@ -41,8 +41,10 @@ class NBeautyHomepage(http.Controller):
     @http.route('/location2', auth='public', website=True)
     def branch_locator(self, **kwargs):
         branches = request.env['website.branch'].sudo().search([], order='sequence, name')
+        cities = request.env['website.branch.city'].sudo().search([], order='sequence, name')
         return request.render('nbeauty.website_branch_locator', {
-            'branches': branches
+            'branches': branches,
+            'cities': cities,
         })
 
     @http.route('/booking/<slug>', type='http', auth='public', website=True)
@@ -94,6 +96,41 @@ class NBeautyHomepage(http.Controller):
 
         except Exception as e:
             return f"🚫 Booking Failed<br>{str(e)}"
+
+    @http.route('/nbeauty/popup/submit', type='http', auth='public', methods=['POST'], csrf=False)
+    def submit_popup_form(self, **kwargs):
+        # ✅ Read raw POST data
+        raw_data = request.httprequest.data.decode('utf-8')
+        try:
+            data = json.loads(raw_data)
+        except:
+            data = {}
+
+        # ✅ Extract only required fields
+        name = data.get('name')
+        email = data.get('email')
+        phone = data.get('phone')
+        requirements = data.get('requirements') or ''
+
+        # ✅ Validate required fields
+        if not name or not email or not phone:
+            return request.make_json_response({
+                'status': 'error',
+                'message': 'Name, Email, and Phone are required.'
+            })
+
+        # ✅ Save to DB
+        request.env['nbeauty.popup.lead'].sudo().create({
+            'name': name,
+            'email': email,
+            'phone': phone,
+            'requirements': requirements,
+        })
+
+        return request.make_json_response({
+            'status': 'success',
+            'message': 'Lead saved successfully'
+        })
 
     @http.route('/nbeauty/booking/thanks', type='http', auth='public', website=True)
     def booking_thanks(self, **kwargs):

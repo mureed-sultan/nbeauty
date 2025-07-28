@@ -610,20 +610,13 @@ function createServiceBlock(service) {
                 <div class="_4block-faq-text-bottom-div"><p> Started From ${
                   service.price
                 }</p></div>
-                <a href="/service/${
-                  service.slug ? service.slug : "404"
-                }" class="_4block-btn-mob w-inline-block">
-                    <h1 class="h-18 _4block">Make an appointment</h1>
-                    <div class="white-circle-div-4block"></div>
-                </a>
+
             </div>
         </div>
 
-        <a  href="/service/${
-          service.slug ? service.slug : "404"
-        }"  class="_4block-btn hide w-inline-block">
-            <h1 class="h-18 _4block">Make an appointment</h1>
-            <div class="white-circle-div-4block"></div>
+ <a href="/services?id=Skin&#32;Care" class="_4block-btnwithout hide w-inline-block" style="">
+            <h1 class="h-18 _4block mobile-black" style="color: rgb(255, 255, 255);">check availability.</h1>
+            <div class="white-circle-div-4block mob-hide" style="opacity: 1;"></div>
         </a>
     `;
   return block;
@@ -669,11 +662,11 @@ function createChildBlock(child, parentWrapper) {
         <div class="c-faq-b-text">
             <div class="h-50-item">${child.title}
                 <p class="pricelist-description">${child.description}</p>
-                <p class="pricelist-description"> Starting From AED ${child.price}</p>
+                <p class="pricelist-description-cost"> Starting From AED ${child.price}</p>
             </div>
         </div>
 <a href="/services?id=${child.description}" class="_4block-btnwithout hide w-inline-block" style="">
-            <h1 class="h-18 _4block mobile-black" style="color: rgb(255, 255, 255);">Make an appointment</h1>
+            <h1 class="h-18 _4block mobile-black" style="color: rgb(255, 255, 255);">check availability.</h1>
             <div class="white-circle-div-4block mob-hide" style="opacity: 1;"></div>
         </a>
     `;

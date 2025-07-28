@@ -1,0 +1,25 @@
+<odoo>
+    <record id="view_nbeauty_popup_lead_list" model="ir.ui.view">
+        <field name="name">nbeauty.popup.lead.list</field>
+        <field name="model">nbeauty.popup.lead</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="email"/>
+                <field name="phone"/>
+                <field name="requirements"/>
+                <field name="create_date"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_nbeauty_popup_lead" model="ir.actions.act_window">
+        <field name="name">Popup Leads</field>
+        <field name="res_model">nbeauty.popup.lead</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_nbeauty_popup_lead_root" name="Popup Leads"
+              parent="website.menu_website_configuration"
+              action="action_nbeauty_popup_lead"/>
+</odoo>

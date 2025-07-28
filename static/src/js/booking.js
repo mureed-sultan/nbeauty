@@ -1,5 +1,5 @@
 // Example JSON data
-const serviceCategories = [
+const serviceCategoriesObjet = [
   {
     id: "1",
     title: "Hair Care",
@@ -982,7 +982,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedService = null;
 
     // ✅ Build dropdown dynamically from serviceCategories
-    serviceCategories.forEach(cat => {
+    serviceCategoriesObjet.forEach(cat => {
         const group = document.createElement('optgroup');
         group.label = cat.title;
 

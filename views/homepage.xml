@@ -13,7 +13,7 @@
                                     style="opacity: 0"
                                     class="h-345 _1-1"
                             >
-                                N
+                                N Bea<i>u</i>ty
                             </h1>
                             <a
                                     data-w-id="24265995-43ba-c51a-0956-aa3f205eb7eb"
@@ -51,12 +51,10 @@
                             </a>
                         </div>
                         <div class="_1block-content-div-2line">
-                            <!--                             <p data-w-id="a1d1d981-776e-6d4b-c7ce-6807b666d95e" class="p-15 _1block-2 pc-hide">2025</p> &ndash;&gt;-->
+                            <!--                           <p data-w-id="a1d1d981-776e-6d4b-c7ce-6807b666d95e" class="p-15 _1block-2 pc-hide">2025</p>-->
                             <h1 data-w-id="a1d1d981-776e-6d4b-c7ce-6807b666d959" style="opacity:0" class="h-345 _1-2 ">
-                                Beaut
-                                <span
-                                        class="reg-it">y
-                                </span>
+                                Sa<span class="reg-it">l</span>on
+
                             </h1>
                         </div>
                         <div class="_1block-content-div-3line">
@@ -64,17 +62,15 @@
                                     data-w-id="00803fe3-8a81-1d86-7626-3162137d13a7"
                                     style="opacity: 0"
                                     class="p-26 _1block pc-hide"
+                            ></p>
+                            <p
+                                    data-w-id="142c5fdb-2f0a-0426-9e52-e41897088392"
+                                    style="opacity: 0"
+                                    class="p-26 _1block pc-hide"
                             >
                                 Experience the art of beauty with NBeauty — offering signature treatments for hair,
                                 nails, skin, and body, crafted to make you radiate elegance every day.
                             </p>
-                            <h1
-                                    data-w-id="142c5fdb-2f0a-0426-9e52-e41897088392"
-                                    style="opacity: 0"
-                                    class="h-345 _1-3"
-                            >
-                                Sa<span class="reg-it">l</span>on
-                            </h1>
                             <p
                                     data-w-id="f3dd1afe-10a7-af74-b323-a2b319642ae2"
                                     style="opacity: 0"
@@ -217,6 +213,27 @@
                             </div>
                         </a>
                     </div>
+
+
+                    <marquee class="service-marquee">
+                        • Hair • Nails • Skin • Body • Lashes • Makeup
+                    </marquee>
+                    <style>
+                        .service-marquee {
+                        width: 100%;
+                        font-size: 2.5rem;
+                        font-weight: bold;
+                        color: #000;
+                        background: transparent;
+                        padding: 15px 0;
+                        font-family: Arial, sans-serif;
+                        border: none;
+                        display: block;
+                        white-space: nowrap;
+                        }
+                    </style>
+
+
                     <div id="about" class="_2block-div">
                         <div class="_2bl-h-div-line-1">
                             <p data-w-id="b24e0134-f618-b265-28ca-992d5f2dd78f" style="opacity: 1"
@@ -330,12 +347,14 @@
                                         Our inspiration
                                     </h1>
                                 </div>
-<!--                                <h1 data-w-id="86e20a9f-caab-5c92-10c1-bfe1fe758dbb" style="opacity: 1"-->
-<!--                                    class="h-116 mo-hide-2">-->
-<!--                                    is a celebration of  you-->
-<!--                                </h1>-->
+                                <!--                                <h1 data-w-id="86e20a9f-caab-5c92-10c1-bfe1fe758dbb" style="opacity: 1"-->
+                                <!--                                    class="h-116 mo-hide-2">-->
+                                <!--                                    is a celebration of  you-->
+                                <!--                                </h1>-->
                                 <p class="p-18 black _05">
-                                   Every moment at NBeauty is a celebration of you. Your trust, your loyalty, and your smiles drive us to constantly evolve and craft unforgettable experiences. Welcome to the next chapter of your beauty journey.
+                                    Every moment at NBeauty is a celebration of you. Your trust, your loyalty, and your
+                                    smiles drive us to constantly evolve and craft unforgettable experiences. Welcome to
+                                    the next chapter of your beauty journey.
                                 </p>
                                 <!--                                <a>Learn More ...</a>-->
                             </div>
@@ -367,6 +386,16 @@
 
                         <section>
                             <div id="faq-container" class="faq-container"></div>
+                            <div class="pricelist-container">
+                                <a href="/nbeauty/static/src/pdf/price-list.pdf"
+                                   class="_4block-btnwithout-fix w-inline-block"
+                                   download="price-list.pdf">
+                                    <h1 class="h-18 _4block mobile-black" style="color: rgb(255, 255, 255);">See Our
+                                        Complete Price List
+                                    </h1>
+                                    <div class="white-circle-div-4block mob-hide" style="opacity: 1;"></div>
+                                </a>
+                            </div>
                         </section>
 
 
@@ -457,7 +486,7 @@
                                     Gallery
                                 </p>
                                 <h1 data-w-id="185430eb-c69e-4dfe-e38e-f02b46accc10" style="opacity: 0" class="h-124">
-                                  Our Craft,
+                                    Our Craft,
 
                                 </h1>
                             </div>
@@ -469,7 +498,7 @@
                                 </h1>
                             </div>
                             <p data-w-id="38c9ccf1-67cd-0a1b-6a20-fa5c4abd30f5" style="opacity: 0" class="p-18 _6block">
-                               Every service we offer — from precision nail artistry and advanced hair care to
+                                Every service we offer — from precision nail artistry and advanced hair care to
                                 rejuvenating skin rituals and perfect lash &amp; brow enhancements — reflects our
                                 commitment to excellence and attention to detail.
                             </p>
@@ -671,7 +700,7 @@
                                 Partners
                             </p>
                             <h1 data-w-id="da6e8fc1-9b85-a979-fc69-3e24160badb8" style="opacity: 1" class="h-124">
-                                Our Partners:
+                                Our Brand Partners
                             </h1>
                         </div>
                         <div class="flex-vertical">
@@ -817,108 +846,112 @@
                             </div>
                         </div>
                     </section>
-                    <div class="gift-block-div">
-                        <div class="top-content-gift-div">
-                            <div class="gift-h-div-line-1">
-                                <p data-w-id="d638ee24-93b7-13d6-4af8-b8a4111b0668" style="opacity: 1"
-                                   class="p-18 gift-top-p">
-                                    Gift certificate
-                                </p>
-                                <h1 data-w-id="d638ee24-93b7-13d6-4af8-b8a4111b066a" style="opacity: 1"
-                                    class="h-184 gift-top-1">
-                                    The gift
-                                </h1>
-                            </div>
-                            <div class="gift-2line-h-div">
-                                <h1 data-w-id="d638ee24-93b7-13d6-4af8-b8a4111b066f" style="opacity: 1" class="h-184">
-                                    of beauty
-                                </h1>
-                            </div>
-                        </div>
-                        <div class="gift-content-div">
-                            <div class="gift-imgs-div mob-hide">
-                                <img class="gift-img-brown"
-                                     src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min.png"
-                                     alt="" style="opacity: 1" sizes="(max-width: 479px) 151.4630584716797px, 32vw"
-                                     data-w-id="bb0b7332-abf3-df51-13bf-2478ae53d15b" loading="lazy" srcset="
-              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-500.png   500w,
-              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-800.png   800w,
-              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-1080.png 1080w,
-              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min.png        1822w
-            "/>
-                                <img class="gift-img-white"
-                                     src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min.png"
-                                     alt="" style="opacity: 1" sizes="(max-width: 479px) 142.97584533691406px, 30vw"
-                                     data-w-id="fbb6df40-53a3-8089-5c3b-5f248de2d8b2" loading="lazy" srcset="
-              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-500.png   500w,
-              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-800.png   800w,
-              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-1080.png 1080w,
-              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min.png        1720w
-            "/>
-                            </div>
-                            <div class="gift-text-btn-div">
-                                <div class="gift-text-div">
-                                    <p data-w-id="0173e428-c14a-3393-95d0-21477dd6ff2a" style="opacity: 1"
-                                       class="p-21 reg-80">
-                                        A Gift Certificate at PRO Nails &amp; Beauty is an easy,
-                                        comfortable and the perfect way to treat yourself or your loved
-                                        ones
-                                    </p>
-                                    <p data-w-id="530e6286-8514-985a-554f-024ff2038434" style="opacity: 1"
-                                       class="p-18 gift">
-                                        You can buy a certificate for any price value or particular
-                                        service
-                                    </p>
-                                </div>
-                                <div class="gift-imgs-div pc-hide">
-                                    <img class="gift-img-brown"
-                                         src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min.png"
-                                         alt="" style="opacity: 1" sizes="100vw"
-                                         data-w-id="a6bed255-9a91-370c-81d4-d6c6ea3dd16d" loading="lazy"
-                                         srcset="
-                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-500.png   500w,
-                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-800.png   800w,
-                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-1080.png 1080w,
-                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min.png        1822w
-              "/>
-                                    <img class="gift-img-white"
-                                         src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min.png"
-                                         alt="" style="opacity: 1" sizes="100vw"
-                                         data-w-id="a6bed255-9a91-370c-81d4-d6c6ea3dd16e" loading="lazy"
-                                         srcset="
-                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-500.png   500w,
-                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-800.png   800w,
-                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-1080.png 1080w,
-                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min.png        1720w
-              "/>
-                                </div>
-                                <a data-w-id="c54ae4fc-8801-a9b1-16e6-47402aa8bccc" style="opacity: 1" href="#"
-                                   class="btn-1 gift w-inline-block">
-                                    <img
-                                            src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e43567662740_Arrow%203.svg"
-                                            loading="lazy" style="
-                -webkit-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1)
-                  rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                -moz-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1)
-                  rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                -ms-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1)
-                  rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
-                transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0)
-                  rotateY(0) rotateZ(0) skew(0, 0);
-                opacity: 1;
-              " alt="" class="arrow-img"/>
-                                    <div data-w-id="c54ae4fc-8801-a9b1-16e6-47402aa8bcce"
-                                         style="background-color: rgba(0, 0, 0, 0)"
-                                         class="btn-div-inside">
-                                        <h1 style="color: rgb(0, 0, 0)" class="h-18 center-align">
-                                            get the certificate
-                                        </h1>
-                                        <div style="opacity: 1" class="btn-1-wh-stroke-circle"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+
+
+<!--                    <div class="gift-block-div">-->
+<!--                        <div class="top-content-gift-div">-->
+<!--                            <div class="gift-h-div-line-1">-->
+<!--                                <p data-w-id="d638ee24-93b7-13d6-4af8-b8a4111b0668" style="opacity: 1"-->
+<!--                                   class="p-18 gift-top-p">-->
+<!--                                    Gift certificate-->
+<!--                                </p>-->
+<!--                                <h1 data-w-id="d638ee24-93b7-13d6-4af8-b8a4111b066a" style="opacity: 1"-->
+<!--                                    class="h-184 gift-top-1">-->
+<!--                                    The gift-->
+<!--                                </h1>-->
+<!--                            </div>-->
+<!--                            <div class="gift-2line-h-div">-->
+<!--                                <h1 data-w-id="d638ee24-93b7-13d6-4af8-b8a4111b066f" style="opacity: 1" class="h-184">-->
+<!--                                    of beauty-->
+<!--                                </h1>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="gift-content-div">-->
+<!--                            <div class="gift-imgs-div mob-hide">-->
+<!--                                <img class="gift-img-brown"-->
+<!--                                     src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min.png"-->
+<!--                                     alt="" style="opacity: 1" sizes="(max-width: 479px) 151.4630584716797px, 32vw"-->
+<!--                                     data-w-id="bb0b7332-abf3-df51-13bf-2478ae53d15b" loading="lazy" srcset="-->
+<!--              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-500.png   500w,-->
+<!--              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-800.png   800w,-->
+<!--              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-1080.png 1080w,-->
+<!--              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min.png        1822w-->
+<!--            "/>-->
+<!--                                <img class="gift-img-white"-->
+<!--                                     src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min.png"-->
+<!--                                     alt="" style="opacity: 1" sizes="(max-width: 479px) 142.97584533691406px, 30vw"-->
+<!--                                     data-w-id="fbb6df40-53a3-8089-5c3b-5f248de2d8b2" loading="lazy" srcset="-->
+<!--              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-500.png   500w,-->
+<!--              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-800.png   800w,-->
+<!--              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-1080.png 1080w,-->
+<!--              https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min.png        1720w-->
+<!--            "/>-->
+<!--                            </div>-->
+<!--                            <div class="gift-text-btn-div">-->
+<!--                                <div class="gift-text-div">-->
+<!--                                    <p data-w-id="0173e428-c14a-3393-95d0-21477dd6ff2a" style="opacity: 1"-->
+<!--                                       class="p-21 reg-80">-->
+<!--                                        A Gift Certificate at PRO Nails &amp; Beauty is an easy,-->
+<!--                                        comfortable and the perfect way to treat yourself or your loved-->
+<!--                                        ones-->
+<!--                                    </p>-->
+<!--                                    <p data-w-id="530e6286-8514-985a-554f-024ff2038434" style="opacity: 1"-->
+<!--                                       class="p-18 gift">-->
+<!--                                        You can buy a certificate for any price value or particular-->
+<!--                                        service-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                                <div class="gift-imgs-div pc-hide">-->
+<!--                                    <img class="gift-img-brown"-->
+<!--                                         src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min.png"-->
+<!--                                         alt="" style="opacity: 1" sizes="100vw"-->
+<!--                                         data-w-id="a6bed255-9a91-370c-81d4-d6c6ea3dd16d" loading="lazy"-->
+<!--                                         srcset="-->
+<!--                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-500.png   500w,-->
+<!--                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-800.png   800w,-->
+<!--                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min-p-1080.png 1080w,-->
+<!--                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d33545391a2907d1134_Sertificate%20100x300%20mm%20NEW-1-min.png        1822w-->
+<!--              "/>-->
+<!--                                    <img class="gift-img-white"-->
+<!--                                         src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min.png"-->
+<!--                                         alt="" style="opacity: 1" sizes="100vw"-->
+<!--                                         data-w-id="a6bed255-9a91-370c-81d4-d6c6ea3dd16e" loading="lazy"-->
+<!--                                         srcset="-->
+<!--                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-500.png   500w,-->
+<!--                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-800.png   800w,-->
+<!--                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min-p-1080.png 1080w,-->
+<!--                https://cdn.prod.website-files.com/652fe9df5341e43567662724/65844d6d25537a92e224c2ee_Sertificate%20100x300%20mm%20NEW-2-min.png        1720w-->
+<!--              "/>-->
+<!--                                </div>-->
+<!--                                <a data-w-id="c54ae4fc-8801-a9b1-16e6-47402aa8bccc" style="opacity: 1" href="#"-->
+<!--                                   class="btn-1 gift w-inline-block">-->
+<!--                                    <img-->
+<!--                                            src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e43567662740_Arrow%203.svg"-->
+<!--                                            loading="lazy" style="-->
+<!--                -webkit-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1)-->
+<!--                  rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-->
+<!--                -moz-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1)-->
+<!--                  rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-->
+<!--                -ms-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1)-->
+<!--                  rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-->
+<!--                transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1) rotateX(0)-->
+<!--                  rotateY(0) rotateZ(0) skew(0, 0);-->
+<!--                opacity: 1;-->
+<!--              " alt="" class="arrow-img"/>-->
+<!--                                    <div data-w-id="c54ae4fc-8801-a9b1-16e6-47402aa8bcce"-->
+<!--                                         style="background-color: rgba(0, 0, 0, 0)"-->
+<!--                                         class="btn-div-inside">-->
+<!--                                        <h1 style="color: rgb(0, 0, 0)" class="h-18 center-align">-->
+<!--                                            get the certificate-->
+<!--                                        </h1>-->
+<!--                                        <div style="opacity: 1" class="btn-1-wh-stroke-circle"></div>-->
+<!--                                    </div>-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+
 
                     <div id="card" class="_9block-div">
                         <p data-w-id="28555b0c-d7b2-2bbb-1905-91b7df54a1bb" style="opacity: 1"
