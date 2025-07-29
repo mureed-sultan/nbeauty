@@ -184,7 +184,7 @@
                                     <div class="swiper-wrapper is-photos">
                                         <t t-foreach="[1,2,3,4]" t-as="i">
                                             <div class="swiper-slide is-photos">
-                                                <img t-att-src="'/nbeauty/static/src/img/slide-%s.webp' % i"
+                                                <img t-att-src="'/nbeauty/static/src/img/lowres/image-%s.JPG' % i"
                                                      loading="lazy" class="image"/>
                                             </div>
                                         </t>

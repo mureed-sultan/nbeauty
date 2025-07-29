@@ -94,7 +94,7 @@
                                     </div>
                                 </a
                                 >
-                                <a t-att-href="'/pricelist'" class="home-hero_price-link is-last w-inline-block">
+                                <a t-att-href="'/services'" class="home-hero_price-link is-last w-inline-block">
                                     <div class="home-hero_prices-text">Prices</div>
                                 </a>
                             </div>
@@ -825,7 +825,7 @@
                             <h2 class="mb-4">What Our Clients Say</h2>
                             <div class="row g-4">
                                 <div class="col-md-4 testimonial-card-wrapper">
-                                    <div class="testimonial-card text-center">
+                                    <a href="https://www.google.com/maps/contrib/101602765422579853412/reviews?hl=en-GB" class="testimonial-card text-center">
                                         <img class="testimonial-img mb-3 rounded-circle" alt="Male Icon"
                                              src="/nbeauty/static/src/img/icon-female.png"
                                              style="width: 80px; height: 80px;"/>
@@ -834,10 +834,11 @@
                                         </p>
                                         <h6 class="mb-0">Erfan Shahram Ranjbar</h6>
                                         <small class="text-muted">★★★★★</small>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="col-md-4 testimonial-card-wrapper">
-                                    <div class="testimonial-card text-center">
+                                    <a
+                                            href="https://www.google.com/maps/contrib/112719302650814902189/reviews/@24.3962362,54.4941437,12z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en&amp;entry=ttu&amp;g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" class="testimonial-card text-center">
                                         <img class="testimonial-img mb-3 rounded-circle" alt="Female Icon"
                                              src="/nbeauty/static/src/img/icon-female.png"
                                              style="width: 80px; height: 80px;"/>
@@ -848,10 +849,11 @@
                                         </p>
                                         <h6 class="mb-0">Sara Al Marzooqi</h6>
                                         <small class="text-muted">★★★★★</small>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="col-md-4 testimonial-card-wrapper">
-                                    <div class="testimonial-card text-center">
+                                    <a
+                                            href="https://www.google.com/maps/reviews/@24.3874129,54.7227704,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnTUNnNU9hLUF3EAE!2m1!1s0x0:0x404105c01abc521?entry=ttu&amp;g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" class="testimonial-card text-center">
                                         <img class="testimonial-img mb-3 rounded-circle" alt="Female Icon"
                                              src="/nbeauty/static/src/img/icon-female.png"
                                              style="width: 80px; height: 80px;"/>
@@ -861,7 +863,7 @@
                                         </p>
                                         <h6 class="mb-0">Faviola Dominguez</h6>
                                         <small class="text-muted">★★★★★</small>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -1454,7 +1456,7 @@
                                 </svg>
                             </div>
                         </a>
-                        <a t-att-href="'/pricelist'" class="home-hero_price-link is-last w-inline-block">
+                        <a t-att-href="'/services'" class="home-hero_price-link is-last w-inline-block">
                             <div class="home-hero_prices-text">Prices</div>
                         </a>
                     </div>
