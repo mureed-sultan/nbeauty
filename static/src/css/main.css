@@ -2743,7 +2743,7 @@ body {
 }
 
 .logo-img {
- /*   height:75px; */
+   height:75px;
 
 }
 .logo-img.footer{
@@ -7458,7 +7458,7 @@ text-align:center;
   }
 
   .logo-img {
-    width: 9.883vw;
+  /* width: 9.883vw; */
     margin-left: 0;
     margin-right: 0;
   }
@@ -11864,7 +11864,7 @@ a.btn-primary{
 
 
 #nbeauty-header {
-    position: sticky;
+/*    position: sticky;*/
     top: 0;
     z-index: 10000;
     background-color: #f6d7e1 !important;
