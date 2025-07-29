@@ -2743,7 +2743,7 @@ body {
 }
 
 .logo-img {
-   height:75px;
+ /*   height:75px; */
 
 }
 .logo-img.footer{
@@ -7495,8 +7495,6 @@ text-align:center;
     margin-right: 0;
     font-size: 4vw;
     line-height: 100%;
-    right:1rem;
-
   }
 
 
