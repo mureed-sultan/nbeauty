@@ -58,20 +58,14 @@
                             </h1>
                         </div>
                         <div class="_1block-content-div-3line">
-                            <p
-                                    data-w-id="00803fe3-8a81-1d86-7626-3162137d13a7"
-                                    style="opacity: 0"
-                                    class="p-26 _1block pc-hide"
-                            >      Experience the art of beauty with NBeauty — offering signature treatments for hair,
-                                nails, skin, and body, crafted to make you radiate elegance every day.</p>
-                            <p
+                            <h1
                                     data-w-id="142c5fdb-2f0a-0426-9e52-e41897088392"
                                     style="opacity: 0"
-                                    class="p-26 _1block pc-hide"
+                                    class="h-345 _1-3 services-section"
                             >
-• Hair • Nails • Skin <br/> • Body • Lashes • Makeup
+                                • Hair • Nails • Skin • Body • Lashes • Makeup
 
-                            </p>
+                            </h1>
                             <p
                                     data-w-id="f3dd1afe-10a7-af74-b323-a2b319642ae2"
                                     style="opacity: 0"
@@ -104,7 +98,9 @@
                                     <div class="home-hero_prices-text">Prices</div>
                                 </a>
                             </div>
+
                         </div>
+
                         <div
                                 data-w-id="02ce3fbe-a809-7bfd-4cac-6078064206f1"
                                 class="photos-1block-div"
@@ -173,7 +169,7 @@
                                     class="_1block-img-8"
                             />
                             <img
-                                    src="/nbeauty/static/src/img/lowres/image-38.jpg"
+                                    src="/nbeauty/static/src/img/lowres/banner-top.jpg"
                                     loading="eager"
                                     data-w-id="54bf990d-49d3-b85b-a128-dcd26fa225c2"
                                     sizes="(max-width: 479px) 49vw, 14vw"
@@ -214,25 +210,13 @@
                             </div>
                         </a>
                     </div>
-
-
-                    <marquee class="service-marquee">
-                        • Hair • Nails • Skin • Body • Lashes • Makeup
-                    </marquee>
-                    <style>
-                        .service-marquee {
-                        width: 100%;
-                        font-size: 2.5rem;
-                        font-weight: bold;
-                        color: #000;
-                        background: transparent;
-                        padding: 15px 0;
-                        font-family: Arial, sans-serif;
-                        border: none;
-                        display: block;
-                        white-space: nowrap;
-                        }
-                    </style>
+                    <p
+                            data-w-id="00803fe3-8a81-1d86-7626-3162137d13a7"
+                            style="opacity: 0"
+                            class="p-26 _1block pc-hide"
+                    >Experience the art of beauty with NBeauty — offering signature treatments for hair,
+                        nails, skin, and body, crafted to make you radiate elegance every day.
+                    </p>
 
 
                     <div id="about" class="_2block-div">
@@ -255,7 +239,7 @@
                                         <h1 class="h-151">01</h1>
                                         <div class="_2block-item-div">
                                             <h1 class="h-50">Our Journey: Blossoming in the Heart of the UAE</h1>
-                                            <p class="p-18 black _100">
+                                            <p class="p-18 black _100 read-more-text">
                                                 From a single dream to a flourishing chain, N Beauty Salon’s story began
                                                 with a simple vision: to create a sanctuary where women across the UAE
                                                 could celebrate their individuality. Over the years, we have grown
@@ -263,6 +247,7 @@
                                                 vibrant tapestry of culture, tradition, and modern sophistication across
                                                 our salons.
                                             </p>
+                                            <button class="read-more-btn" type="button">Read More</button>
                                         </div>
                                     </div>
                                 </div>
@@ -273,7 +258,7 @@
                                             <h1 class="h-50 _02-mob">
                                                 Our Mission: Unleashing the Beauty Within
                                             </h1>
-                                            <p class="p-18 black _02">
+                                            <p class="p-18 black _02 read-more-text">
                                                 At N Beauty Salon, our mission is to empower every woman who walks
                                                 through our doors to feel confident, radiant, and authentically herself.
                                                 We believe beauty goes beyond appearances—it’s found in self-expression,
@@ -281,6 +266,8 @@
                                                 tailored experience, blending time-honored beauty secrets with the
                                                 latest techniques to unleash beauty inside and out.
                                             </p>
+                                            <button class="read-more-btn" type="button">Read More</button>
+
                                         </div>
                                     </div>
                                 </div>
@@ -289,13 +276,15 @@
                                         <h1 class="h-151">03</h1>
                                         <div class="_2block-item-div">
                                             <h1 class="h-50">Our Vision: Leading the Way in Holistic Beauty</h1>
-                                            <p class="p-18 black">
+                                            <p class="p-18 black read-more-text">
                                                 We strive to be the UAE’s most trusted and beloved all-female salon
                                                 chain, setting the gold standard in integrated beauty care. Our vision
                                                 is to seamlessly blend the elegance of tradition with the innovation of
                                                 today’s beauty world, championing a holistic approach where self-care is
                                                 both a luxury and a daily essential for every woman.
                                             </p>
+                                            <button class="read-more-btn" type="button">Read More</button>
+
                                         </div>
                                     </div>
                                 </div>
@@ -308,7 +297,7 @@
                                             <h1 class="h-50 _02-mob">
                                                 Our Mission: Unleashing the Beauty Within
                                             </h1>
-                                            <p class="p-18 black _02">
+                                            <p class="p-18 black _02 read-more-text">
                                                 At N Beauty Salon, our mission is to empower every woman who walks
                                                 through our doors to feel confident, radiant, and authentically herself.
                                                 We believe beauty goes beyond appearances—it’s found in self-expression,
@@ -316,6 +305,8 @@
                                                 tailored experience, blending time-honored beauty secrets with the
                                                 latest techniques to unleash beauty inside and out.
                                             </p>
+                                            <button class="read-more-btn" type="button">Read More</button>
+
                                         </div>
                                     </div>
                                 </div>
@@ -324,7 +315,7 @@
                                         <h1 class="h-151">04</h1>
                                         <div class="_2block-item-div">
                                             <h1 class="h-50">Our Expertise: A Complete Spectrum of Care</h1>
-                                            <p class="p-18 black _04">
+                                            <p class="p-18 black _04 read-more-text">
                                                 N Beauty Salon offers an extensive range of top-tier services designed
                                                 with today’s woman in mind:
                                                 - Nail Care: From classic manicures to cutting-edge nail art, your hands
@@ -337,6 +328,8 @@
                                                 and holistic treatments nourish your body from
                                                 head to toe.
                                             </p>
+                                            <button class="read-more-btn" type="button">Read More</button>
+
                                         </div>
                                     </div>
                                 </div>
@@ -367,13 +360,14 @@
                                 <!--                                    class="h-116 mo-hide-2">-->
                                 <!--                                    is a celebration of  you-->
                                 <!--                                </h1>-->
-                                <p class="p-18 black _05">
+                                <p class="p-18 black _05 read-more-text">
                                     As an all-female team, we cherish the power of community and belonging. We are
                                     committed to fostering a welcoming space where clients feel heard, celebrated, and
                                     inspired to embrace their unique beauty. At N Beauty Salon, every visit is a
                                     celebration—of tradition, of modernity, and of the remarkable women we serve.
                                 </p>
-                                <!--                                <a>Learn More ...</a>-->
+                                <button class="read-more-btn" type="button">Read More</button>
+
                             </div>
                         </div>
                     </div>
@@ -398,7 +392,8 @@
                             fingertips
                         </h1>
                         <h1 data-w-id="769b3d76-76bc-783a-58b4-3f1cabb4d211" style="opacity: 1" class="h-124 _4block-3">
-                            to hair <roots></roots>
+                            to hair
+                            <roots></roots>
                         </h1>
 
                         <section>
@@ -411,7 +406,7 @@
                                    class="btn-1 w-inline-block">
                                     <div data-w-id="dba252a3-1e31-9541-99a1-2e9bc6a4daa1"
                                          style="background-color: rgba(0, 0, 0, 0)"
-                                            class="btn-div-inside"
+                                         class="btn-div-inside"
                                     >
                                         <h1 style="color: rgb(0, 0, 0)" class="h-18 center-align">See Our Complete Price
                                         </h1>
@@ -832,7 +827,7 @@
                                 <div class="col-md-4 testimonial-card-wrapper">
                                     <div class="testimonial-card text-center">
                                         <img class="testimonial-img mb-3 rounded-circle" alt="Male Icon"
-                                             src="/nbeauty/static/src/img/icon-male.png"
+                                             src="/nbeauty/static/src/img/icon-female.png"
                                              style="width: 80px; height: 80px;"/>
                                         <p class="mb-2">I am really satisfied with your salon, it is very clean and tidy
                                             and the staff are very kind, especially Mrs. Anna.

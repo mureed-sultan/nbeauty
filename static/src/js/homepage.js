@@ -109,22 +109,6 @@ const serviceCategories = [
         description:
           "Snip into a fresh new you, where every cut is a cut above the rest!",
         price: "50",
-        services: [
-          { name: "Hair Wash", arabic: "غسيل الشعر", price: "50 AED" },
-          { name: "Trim", arabic: "قص أطراف الشعر", price: "80 AED" },
-          { name: "Fringe Haircut", arabic: "قص الغرة", price: "50 AED" },
-          { name: "Haircut", arabic: "قص الشعر", price: "150 AED" },
-          {
-            name: "Hair Cut and Blow Dry",
-            arabic: "قص الشعر مع سيشوار",
-            price: "190 AED",
-          },
-          {
-            name: "Little Princess Cut",
-            arabic: "قصة الأميرة الصغيرة",
-            price: "70 AED",
-          },
-        ],
       },
       {
         title: "Blow Dry",
@@ -133,14 +117,6 @@ const serviceCategories = [
           "Turn up the volume, experience blowouts that bring your hair to life!",
         price: "35",
 
-        services: [
-          { name: "Fringe Blow Dry", arabic: "سيشوار الغرة", price: "35 AED" },
-          {
-            name: "Hair Blow Dry",
-            arabic: "سيشوار الشعر",
-            price: "80 - 200 AED",
-          },
-        ],
       },
       {
         title: "Full Ammonia Free Color",
@@ -148,14 +124,6 @@ const serviceCategories = [
         description:
           "Color your world gently, vibrant hues, zero compromise, all care!",
         price: "220",
-        services: [
-          { name: "Roots", arabic: "الجذور", price: "220 AED" },
-          {
-            name: "Full Color INOA",
-            arabic: "صبغ الشعر بالكامل (إينوا)",
-            price: "110 AED",
-          },
-        ],
       },
       {
         title: "Full Color ",
@@ -163,19 +131,6 @@ const serviceCategories = [
         description:
           "Unleash your boldness, full color, full confidence, full you!",
         price: "110",
-        services: [
-          {
-            name: "Roots Front",
-            arabic: "الجذور الأمامية",
-            price: "160 - 220 AED",
-          },
-          { name: "Roots", arabic: "الجذور", price: "160 AED" },
-          {
-            name: "Full Hair Color",
-            arabic: "صبغة شعر كاملة",
-            price: "280 - 880 AED",
-          },
-        ],
       },
       {
         title: "Color Rinse",
@@ -183,23 +138,12 @@ const serviceCategories = [
         description:
           "Refresh your shade, rinse away the ordinary, reveal the extraordinary!",
         price: "170",
-        services: [
-          {
-            name: "Hair Color Rinse",
-            arabic: "رينساج الشعر",
-            price: "370 AED",
-          },
-        ],
       },
       {
         title: "Highlights",
         titleArabic: "هايلايت",
         description: "Shine bright, let your highlights steal the spotlight!",
         price: "370",
-        services: [
-          { name: "Half Head", arabic: "نصف الرأس", price: "420 - 870 AED" },
-          { name: "Short Hair", arabic: "شعر قصير", price: "200 - 450 AED" },
-        ],
       },
       {
         title: "Decolorization",
@@ -207,24 +151,12 @@ const serviceCategories = [
           "Go lighter, go brighter, embrace a new canvas for your next look!",
         titleArabic: "سحب اللون",
         price: "200",
-        services: [
-          {
-            name: "Hair Decolorization",
-            arabic: "سحب لون الشعر",
-            price: "250 AED",
-          },
-        ],
       },
       {
         title: "Hair Style",
         titleArabic: "تصفيف الشعر",
         description: "Style it your way, where every strand tells your story!",
         price: "250",
-        services: [
-          { name: "Hair Style A", arabic: "تصفيف أ", price: "350 AED" },
-          { name: "Hair Style B", arabic: "تصفيف ب", price: "450 AED" },
-          { name: "Hair Style C", arabic: "تصفيف ج", price: "550 AED" },
-        ],
       },
       {
         title: "Hair Extension",
@@ -232,45 +164,18 @@ const serviceCategories = [
         description:
           "Longer, fuller, fabulous, let your hair dreams grow with us!",
         price: "15",
-        services: [
-          {
-            name: "Place Hair Extension (Per Piece)",
-            arabic: "تركيب وصلة شعر",
-            price: "25 AED",
-          },
-          {
-            name: "Remove Hair Extension only",
-            arabic: "إزالة وصلة الشعر",
-            price: "15 AED",
-          },
-          {
-            name: "Replace Hair Extension (Per Piece)",
-            arabic: "استبدال وصلة شعر",
-            price: "30 AED",
-          },
-        ],
       },
       {
         title: "BB CRÈME ",
         titleArabic: "وصلات الشعر",
         description: "",
         price: "1200",
-        services: [
-          {
-            name: "BB Creme Application",
-            arabic: "تركيب وصلة شعر",
-            price: "25 AED",
-          },
-        ],
       },
       {
         title: "Botox ",
         titleArabic: "بوتوكس",
         description: "",
         price: "1200",
-        services: [
-          { name: "Hair Botox", arabic: "تركيب وصلة شعر", price: "25 AED" },
-        ],
       },
       {
         title: "Kerastase ",
@@ -278,13 +183,6 @@ const serviceCategories = [
         description:
           "Experience hair luxury, Kerastase rituals for unmatched shine and softness.",
         price: "250",
-        services: [
-          {
-            name: "Kerastase Hair Ritual",
-            arabic: "عج الشعر من كاستاس",
-            price: "25 AED",
-          },
-        ],
       },
       {
         title: "L'oreal ",
@@ -292,13 +190,6 @@ const serviceCategories = [
         description:
           "Revitalize your look, L’Oréal treatments for vibrant, healthy hair every day.",
         price: "150",
-        services: [
-          {
-            name: "L'oreal HairTreatment",
-            arabic: "عج الشعر من لوريال",
-            price: "25 AED",
-          },
-        ],
       },
       {
         title: "Olaplex ",
@@ -306,13 +197,6 @@ const serviceCategories = [
         description:
           "Repair from within, Olaplex brings your hair back to its beautiful best.",
         price: "250",
-        services: [
-          {
-            name: "Olaplex HairTreatment",
-            arabic: "عج أو¥بليكس للشعر",
-            price: "25 AED",
-          },
-        ],
       },
       {
         title: "Nashi Argan ",
@@ -320,13 +204,6 @@ const serviceCategories = [
         description:
           "Nourish naturally, Nashi Argan leaves your hair silky, smooth, and glowing.",
         price: "160",
-        services: [
-          {
-            name: "Treatment A , B , C , D",
-            arabic: "‫د‬ ،‫ج‬ ،‫ب‬ ،‫أ‬ ‫عالج‬",
-            price: "25 AED",
-          },
-        ],
       },
       {
         title: "Collagen ",
@@ -334,13 +211,6 @@ const serviceCategories = [
         description:
           "Turn up the bounce—collagen treatments for fuller, youthful-looking hair.",
         price: "160",
-        services: [
-          {
-            name: "Treatment A , B , C , D",
-            arabic: "عج أو¥بليكس للشعر",
-            price: "25 AED",
-          },
-        ],
       },
       {
         title: "Protein ",
@@ -348,13 +218,6 @@ const serviceCategories = [
         description:
           "Strength you can feel, protein therapy for hair that’s smooth, strong, and frizz-free.",
         price: "1200",
-        services: [
-          {
-            name: "Protein HairTreatment",
-            arabic: "عج أو¥بليكس للشعر",
-            price: "25 AED",
-          },
-        ],
       },
       {
         title: "Kerastase Ritual ",
@@ -369,39 +232,6 @@ const serviceCategories = [
         price: "550",
         description:
           "Smooth perfection, keratin treatments for sleek, manageable, and shiny hair.",
-        services: [
-          { name: "Kids ", arabic: "علاج ", price: "250 - 500 AED" },
-          {
-            name: "Roots Front",
-            arabic: "علاج لوريال",
-            price: "150 - 450 AED",
-          },
-          {
-            name: "Olaplex Hair Treatment",
-            arabic: "علاج أولابليكس",
-            price: "250 - 350 AED",
-          },
-          {
-            name: "Nashi Argan Treatment A, B, C, D",
-            arabic: "علاج ناشي أ, ب, ج, د",
-            price: "160 - 310 AED",
-          },
-          {
-            name: "Collagen Treatment A, B, C, D",
-            arabic: "علاج الكولاجين أ, ب, ج, د",
-            price: "160 - 310 AED",
-          },
-          {
-            name: "Protein Hair Treatment",
-            arabic: "علاج البروتين",
-            price: "1200 - 2500 AED",
-          },
-          {
-            name: "Keratin Hair Treatment",
-            arabic: "علاج الكيراتين",
-            price: "1200 - 2500 AED",
-          },
-        ],
       },
     ],
   },
@@ -447,17 +277,15 @@ const serviceCategories = [
     description:
       "Quick, calming, and glow-boosting — the perfect pick-me-up your skin will thank you for.",
     price: "200",
-    services: [
-      { name: "Full Set", arabic: "مجموعة كاملة", price: "500 AED" },
-      { name: "1 Month", arabic: "شهر ١", price: "250 AED" },
-      {
-        name: "Touch up & Refill",
-        arabic: "جلسة نهائية وإعادة ملء",
-        price: "150 AED",
+    children:[
+   {
+        title: "Skin Care",
+        titleArabic: "‫بالبرشة‬ ‫العناية‬",
+        description:
+      "Quick, calming, and glow-boosting — the perfect pick-me-up your skin will thank you for.",
+        price: "200",
       },
-      { name: "One Time Use", arabic: "استخدام مرة واحدة", price: "300 AED" },
-      { name: "Eyelash Removal", arabic: "إزالة الرموش", price: "100 AED" },
-    ],
+    ]
   },
   {
     id: "4",
@@ -662,11 +490,11 @@ function createChildBlock(child, parentWrapper) {
         <div class="c-faq-b-text">
             <div class="h-50-item">${child.title}
                 <p class="pricelist-description">${child.description}</p>
-                <p class="pricelist-description-cost"> Starting From AED ${child.price}</p>
+                <p class="pricelist-description-cost"> Starting From <span> AED  ${child.price}</span></p>
             </div>
         </div>
 <a href="/services?id=${child.description}" class="_4block-btnwithout hide w-inline-block" style="">
-            <h1 class="h-18 _4block mobile-black" style="color: rgb(255, 255, 255);">check availability.</h1>
+            <h1 class="h-18 _4block" style="">check availability.</h1>
             <div class="white-circle-div-4block mob-hide" style="opacity: 1;"></div>
         </a>
     `;
@@ -815,4 +643,15 @@ const appointmentPopup = document.getElementById("appintmentDiv");
 popupCloseBtn.addEventListener("click", function (e) {
   e.preventDefault();
   appointmentPopup.style.display = "none";
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.read-more-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const text = this.previousElementSibling;
+            text.classList.toggle('expanded');
+            this.textContent = text.classList.contains('expanded') ? 'Read Less' : 'Read More';
+        });
+    });
 });

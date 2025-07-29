@@ -2594,7 +2594,7 @@ body {
 }
 
 ._1block-div {
-  margin-bottom: 15vw;
+  margin-bottom: 8vw;
   padding-top: 1vw;
   padding-bottom: 0;
   position: relative;
@@ -2793,6 +2793,8 @@ body {
   letter-spacing: 0.006em;
   margin-left: 0.76vw;
   margin-right: 0.417vw;
+  text-align:center;
+  width:100%;
 }
 
 .h-345._1-2 {
@@ -2813,9 +2815,14 @@ body {
   margin-left: 0;
   margin-right: -5.781vw;
   position: relative;
-  right:10rem;
+  top:5vw;
+  text-align:center;
+  width:100%;
 }
-
+ .services-section{
+  font-size:3vw;
+  color:#8ea488;
+  }
 .reg-it {
   font-family: "Ogg Bf 646 C 18 Fc 4 F 575", sans-serif;
   font-style: italic;
@@ -2953,6 +2960,7 @@ body {
 
 .p-26._1block {
   width: 26.667vw;
+  margin-left:5vw;
 }
 
 .p-26._1block.mob-hide {
@@ -2968,6 +2976,7 @@ body {
 ._2block-div {
   flex-direction: column;
   align-items: center;
+  margin-top: 5vw;
   margin-bottom: 13vw;
   padding-left: 2.604vw;
   padding-right: 2.604vw;
@@ -3804,10 +3813,15 @@ opacity: 1; display: flex; background-color: black;
 .c-faq-a-text:hover ._4block-btnwithout {
 opacity: 1; display: flex; background-color: black;
 }
+.c-faq-titles-content:hover ._4block-btnwithout *,
+.c-faq-a-text:hover ._4block-btnwithout * {
+  color: white; /* Makes all child text white */
+}
 .pricelist-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top:2rem
 }
 @media screen and (max-width:1024px) {
   ._4block-btnwithout {
@@ -3819,7 +3833,8 @@ opacity: 1; display: flex; background-color: black;
   }
   .mobile-black{
   color:black !important;
-  }  .mobile-black:hover,.mobile-black:active{
+  }
+   .mobile-black:hover,.mobile-black:active{
   color:white !important;
   }
   .mob-hide{
@@ -5247,15 +5262,18 @@ opacity: 1; display: flex; background-color: black;
 }
 
 select.p-20.location {
-    background: transparent;
-    border-radius: 9999px;
-    padding: 9px 4px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-/*  background: var(--biege);*/
-  color: #333;
-  cursor: pointer;
-  border:1px solid #000;
+text-align:center;
+ background: transparent;
+ border-radius: 9999px;
+ padding: 9px 4px;
+ font-size: 16px;
+ border: 1px solid #ccc;
+ color: #333;
+ cursor: pointer;
+ border:1px solid #000;
+   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 
@@ -7456,7 +7474,7 @@ select.p-20.location {
 
   .h-345._1-1 {
     letter-spacing: -0.034em;
-    margin-left: -10vw;
+    /* margin-left: -10vw; */
     margin-right: 0;
     font-size: 20.533vw;
     line-height: 82%;
@@ -7475,11 +7493,12 @@ select.p-20.location {
   .h-345._1-3 {
     letter-spacing: -0.033em;
     margin-right: 0;
-    font-size: 24.533vw;
+    font-size: 4vw;
     line-height: 100%;
-      right:1rem;
+    right:1rem;
 
   }
+
 
   .p-15._1block {
     margin-bottom: 0;
@@ -7674,7 +7693,7 @@ select.p-20.location {
     align-items: flex-start;
     width: auto;
     font-size: 3.056vw;
-    display: flex;
+  /* display: flex; */
   }
 
   .p-18.black._02 {
@@ -8661,7 +8680,7 @@ select.p-20.location {
 
   .card-imgs {
     width: 29.067vw;
-    inset: 40% 15% 0% 20%;
+    inset: 40% 15% 0% 35%;
   }
 
   ._9block-line-div {
@@ -11777,15 +11796,17 @@ a.btn-primary{
     font-size: 24px;
     font-style: italic;
     letter-spacing: 1px;
+    display:flex;
+    gap:40px;
 }
 @media screen and (max-width: 991px) {
     .pricelist-description {
         font-size: 8px;
     }
     .pricelist-description-cost{
-    font-weight: 500;
+    font-weight: 900;
     font-size: 10px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     font-style: italic;
 }
 }
@@ -11874,3 +11895,24 @@ a.btn-primary{
     z-index: 11000;
 }
 
+.read-more-text {
+  max-height: 50px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  display: block;
+  transition: max-height 0.4s ease;
+}
+
+.read-more-text.expanded {
+  max-height: 500px; /* enough to show all text */
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #d6336c;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 0;
+}
