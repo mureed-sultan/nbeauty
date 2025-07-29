@@ -40,11 +40,30 @@ class NBeautyHomepage(http.Controller):
 
     @http.route('/location2', auth='public', website=True)
     def branch_locator(self, **kwargs):
-        branches = request.env['website.branch'].sudo().search([], order='sequence, name')
         cities = request.env['website.branch.city'].sudo().search([], order='sequence, name')
+        branches = request.env['website.branch'].sudo().search([], order='sequence, name')
+
+        # Build nested JSON: cities -> branches
+        data = []
+        for city in cities:
+            city_branches = []
+            for branch in branches.filtered(lambda b: b.city_id.id == city.id):
+                city_branches.append({
+                    'id': branch.id,
+                    'name': branch.name,
+                    'lat': branch.latitude or 0,
+                    'lng': branch.longitude or 0,
+                    'phone': branch.phone or '',
+                    'address': branch.address or '',
+                })
+            data.append({
+                'city_id': city.id,
+                'city_name': city.name,
+                'branches': city_branches
+            })
+
         return request.render('nbeauty.website_branch_locator', {
-            'branches': branches,
-            'cities': cities,
+            'city_branch_json': json.dumps(data),  # ✅ send single JSON
         })
 
     @http.route('/booking/<slug>', type='http', auth='public', website=True)

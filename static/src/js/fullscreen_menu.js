@@ -1,4 +1,3 @@
-console.log("JS is successfully loaded");
 
 document.addEventListener('DOMContentLoaded', function () {
   const overlay = document.getElementById('nbeauty-overlay');
