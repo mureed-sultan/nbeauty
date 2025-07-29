@@ -408,7 +408,7 @@
                                          style="background-color: rgba(0, 0, 0, 0)"
                                          class="btn-div-inside"
                                     >
-                                        <h1 style="color: rgb(0, 0, 0)" class="h-18 center-align">See Our Complete Price
+                                        <h1 style="color: rgb(0, 0, 0)" class="h-18 center-align">Download pricelist
                                         </h1>
                                         <div style="opacity: 0" class="btn-1-wh-stroke-circle"></div>
                                     </div>
@@ -825,7 +825,8 @@
                             <h2 class="mb-4">What Our Clients Say</h2>
                             <div class="row g-4">
                                 <div class="col-md-4 testimonial-card-wrapper">
-                                    <a href="https://www.google.com/maps/contrib/101602765422579853412/reviews?hl=en-GB" class="testimonial-card text-center">
+                                    <a href="https://www.google.com/maps/contrib/101602765422579853412/reviews?hl=en-GB"
+                                       class="testimonial-card text-center">
                                         <img class="testimonial-img mb-3 rounded-circle" alt="Male Icon"
                                              src="/nbeauty/static/src/img/icon-female.png"
                                              style="width: 80px; height: 80px;"/>
@@ -838,7 +839,8 @@
                                 </div>
                                 <div class="col-md-4 testimonial-card-wrapper">
                                     <a
-                                            href="https://www.google.com/maps/contrib/112719302650814902189/reviews/@24.3962362,54.4941437,12z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en&amp;entry=ttu&amp;g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" class="testimonial-card text-center">
+                                            href="https://www.google.com/maps/contrib/112719302650814902189/reviews/@24.3962362,54.4941437,12z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en&amp;entry=ttu&amp;g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D"
+                                            class="testimonial-card text-center">
                                         <img class="testimonial-img mb-3 rounded-circle" alt="Female Icon"
                                              src="/nbeauty/static/src/img/icon-female.png"
                                              style="width: 80px; height: 80px;"/>
@@ -853,7 +855,8 @@
                                 </div>
                                 <div class="col-md-4 testimonial-card-wrapper">
                                     <a
-                                            href="https://www.google.com/maps/reviews/@24.3874129,54.7227704,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnTUNnNU9hLUF3EAE!2m1!1s0x0:0x404105c01abc521?entry=ttu&amp;g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" class="testimonial-card text-center">
+                                            href="https://www.google.com/maps/reviews/@24.3874129,54.7227704,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnTUNnNU9hLUF3EAE!2m1!1s0x0:0x404105c01abc521?entry=ttu&amp;g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D"
+                                            class="testimonial-card text-center">
                                         <img class="testimonial-img mb-3 rounded-circle" alt="Female Icon"
                                              src="/nbeauty/static/src/img/icon-female.png"
                                              style="width: 80px; height: 80px;"/>

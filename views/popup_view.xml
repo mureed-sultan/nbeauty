@@ -6,7 +6,10 @@
                 <div class="nbeauty-popup-content">
                     <!-- ✅ Close Button -->
                     <button class="nbeauty-popup-close" type="button"
-                            onclick="document.getElementById('nbeauty-popup').style.display='none'">×</button>
+                            onclick="document.getElementById('nbeauty-popup').style.display='none'">
+                        <h1 class="h-18">Close</h1>
+                        <div class="black-circle-div"></div>
+                    </button>
 
                     <!-- Image -->
                     <img src="/nbeauty/static/src/img/lowres/bannerimage.jpg" alt="Beauty Banner"
@@ -34,142 +37,172 @@
 
             <style>
                 :root {
-                    --dark-pink: #d7a7aa;
-                    --dark-pink-hover: #c48c8f;
+                --dark-pink: #d7a7aa;
+                --dark-pink-hover: #c48c8f;
                 }
 
                 .nbeauty-popup-overlay {
-                    position: fixed;
-                    top: 0; left: 0;
-                    width: 100%; height: 100%;
-                    background: rgba(0,0,0,0.8);
-                    display: flex; justify-content: center; align-items: center;
-                    z-index: 9999;
-                    animation: fadeIn 0.4s ease forwards;
-                    padding: 10px;
+                position: fixed;
+                top: 0; left: 0;
+                width: 100%; height: 100%;
+                background: rgba(0,0,0,0.8);
+                display: flex; justify-content: center; align-items: center;
+                z-index: 9999;
+                animation: fadeIn 0.4s ease forwards;
+                padding: 10px;
                 }
 
                 .nbeauty-popup-content {
-                    background: #fff;
-                    padding: 20px;
-                    border-radius: 12px;
-                    max-width: 460px;
-                    width: 90%;
-                    text-align: center;
-                    position: relative;
-                    transform: scale(0.8);
-                    opacity: 0;
-                    animation: popupScale 0.4s ease forwards;
+                background: #fff;
+                padding: 20px;
+                border-radius: 12px;
+                max-width: 460px;
+                width: 90%;
+                text-align: center;
+                position: relative;
+                transform: scale(0.8);
+                opacity: 0;
+                animation: popupScale 0.4s ease forwards;
                 }
 
-                /* ✅ Close Button */
-                .nbeauty-popup-close {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    background: var(--dark-pink);
-                    color: #fff;
-                    border: none;
-                    font-size: 20px;
-                    width: 36px;
-                    height: 36px;
-                    border-radius: 0 12px 0 12px;
-                    cursor: pointer;
-                    line-height: 1;
-                    padding: 0;
-                    font-weight: bold;
-                    transition: background 0.3s ease;
-                }
+          .nbeauty-popup-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: var(--dark-pink);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 6px 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px; /* space between text and dot */
+    border-radius: 0 12px 0 12px;
+    transition: background 0.3s ease;
+}
+
+.nbeauty-popup-close h1 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Dot style */
+.nbeauty-popup-close .black-circle-div {
+    width: 8px;
+    height: 8px;
+    background: #fff;   /* same color as text */
+    border-radius: 50%;
+}
+
+                <!--                .nbeauty-popup-close {-->
+                <!--                    position: absolute;-->
+                <!--                    top: 0;-->
+                <!--                    right: 0;-->
+                <!--                    background: var(&#45;&#45;dark-pink);-->
+                <!--                    color: #fff;-->
+                <!--                    border: none;-->
+                <!--                    font-size: 20px;-->
+                <!--                    width: 36px;-->
+                <!--                    height: 36px;-->
+                <!--                    border-radius: 0 12px 0 12px;-->
+                <!--                    cursor: pointer;-->
+                <!--                    line-height: 1;-->
+                <!--                    padding: 0;-->
+                <!--                    font-weight: bold;-->
+                <!--                    transition: background 0.3s ease;-->
+                <!--                }-->
                 .nbeauty-popup-close:hover {
-                    background: var(--dark-pink-hover);
+                background: var(--dark-pink-hover);
                 }
 
                 .nbeauty-popup-image {
-                    width: 100%;
-                    border-radius: 8px;
-                    margin-bottom: 15px;
-                    max-height: 200px;
-                    object-fit: cover;
+                width: 100%;
+                border-radius: 8px;
+                margin-bottom: 15px;
+                max-height: 200px;
+                object-fit: cover;
                 }
 
                 .nbeauty-popup-title {
-                    font-size: 22px;
-                    margin: 10px 0 5px;
-                    color: var(--dark-pink);
-                    font-weight: 700;
+                font-size: 22px;
+                margin: 10px 0 5px;
+                color: var(--dark-pink);
+                font-weight: 700;
                 }
 
                 .nbeauty-popup-subtitle {
-                    font-size: 14px;
-                    color: #555;
-                    margin-bottom: 15px;
-                    line-height: 1.4;
+                font-size: 14px;
+                color: #555;
+                margin-bottom: 15px;
+                line-height: 1.4;
                 }
 
                 #nbeauty-popup-form input,
                 #nbeauty-popup-form textarea {
-                    width: 100%;
-                    margin: 6px 0;
-                    padding: 10px;
-                    border: 1px solid #ccc;
-                    border-radius: 6px;
-                    font-size: 14px;
+                width: 100%;
+                margin: 6px 0;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                font-size: 14px;
                 }
 
                 #nbeauty-popup-form button {
-                    background: var(--dark-pink);
-                    color: #fff;
-                    border: none;
-                    padding: 12px;
-                    margin-top: 10px;
-                    cursor: pointer;
-                    border-radius: 6px;
-                    width: 100%;
-                    font-weight: bold;
-                    transition: background 0.3s ease;
+                background: var(--dark-pink);
+                color: #fff;
+                border: none;
+                padding: 12px;
+                margin-top: 10px;
+                cursor: pointer;
+                border-radius: 6px;
+                width: 100%;
+                font-weight: bold;
+                transition: background 0.3s ease;
                 }
 
                 #nbeauty-popup-form button:hover {
-                    background: var(--dark-pink-hover);
+                background: var(--dark-pink-hover);
                 }
 
                 /* 📱 Responsive Fix */
                 @media (max-width: 767px) {
-                    .nbeauty-popup-content {
-                        width: 80vw; /* ✅ Use 80% of viewport width */
-                        padding: 15px;
-                        border-radius: 8px;
-                    }
-                    .nbeauty-popup-close {
-                        width: 30px;
-                        height: 30px;
-                        font-size: 18px;
-                    }
-                    .nbeauty-popup-title {
-                        font-size: 18px;
-                    }
-                    .nbeauty-popup-subtitle {
-                        font-size: 13px;
-                    }
-                    #nbeauty-popup-form input,
-                    #nbeauty-popup-form textarea {
-                        font-size: 13px;
-                        padding: 8px;
-                    }
-                    #nbeauty-popup-form button {
-                        padding: 10px;
-                        font-size: 14px;
-                    }
+                .nbeauty-popup-content {
+                width: 80vw; /* ✅ Use 80% of viewport width */
+                padding: 15px;
+                border-radius: 8px;
+                }
+                .nbeauty-popup-close {
+                width: 30px;
+                height: 30px;
+                font-size: 18px;
+                }
+                .nbeauty-popup-title {
+                font-size: 18px;
+                }
+                .nbeauty-popup-subtitle {
+                font-size: 13px;
+                }
+                #nbeauty-popup-form input,
+                #nbeauty-popup-form textarea {
+                font-size: 13px;
+                padding: 8px;
+                }
+                #nbeauty-popup-form button {
+                padding: 10px;
+                font-size: 14px;
+                }
                 }
 
                 @keyframes fadeIn {
-                    from { opacity: 0; }
-                    to { opacity: 1; }
+                from { opacity: 0; }
+                to { opacity: 1; }
                 }
 
                 @keyframes popupScale {
-                    0% { transform: scale(0.8); opacity: 0; }
-                    100% { transform: scale(1); opacity: 1; }
+                0% { transform: scale(0.8); opacity: 0; }
+                100% { transform: scale(1); opacity: 1; }
                 }
             </style>
         </xpath>

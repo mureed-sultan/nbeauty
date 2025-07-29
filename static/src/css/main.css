@@ -10,6 +10,10 @@ html {
 .pasenda-font * {
   font-family: 'Pasadena-Regular', Arial, sans-serif !important;
 }
+.ogg-font,
+.ogg-font * {
+  font-family: "Ogg Bf 646 C 18 Fc 45 Bd 0", sans-serif !important;
+}
 
 body {
   margin: 0;
@@ -2767,6 +2771,8 @@ body {
 .logo-img.preloader.bottom {
   margin-bottom: 1vw;
   display: block;
+    width: 75px;
+
 }
 
 .logo-img.pc-hide {
@@ -3827,8 +3833,8 @@ opacity: 1; display: flex; background-color: black;
   ._4block-btnwithout {
     opacity: 1;
     display: flex;
-    width: 27vw;
-    height: 10vw;
+    width: 20vw;
+    height: 20vw;
     border-radius:99px;
   }
   .mobile-black{
@@ -4339,14 +4345,14 @@ opacity: 1; display: flex; background-color: black;
 }
 
 .icon-container-alt {
-  background-color: #f4e8d4;
+ /*background-color: #f4e8d4; */
   border: 2px solid #b8b1a6;
   border-radius: 1.979vw;
   flex: none;
   justify-content: center;
   align-items: center;
-  width: 20.833vw;
-  height: 10.625vw;
+  width: 15.833vw;
+  height: 9.625vw;
   padding: 0;
   display: flex;
 }
@@ -9069,6 +9075,7 @@ text-align:center;
   }
 
   ._4block-top-text-div {
+  font-family: "Ogg Bf 646 C 18 Fc 45 Bd 0", sans-serif !important;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
@@ -9208,7 +9215,7 @@ text-align:center;
 
   .p-20 {
     letter-spacing: -0.01em;
-    width: 79vw;
+    width: 55vw;
     font-size: 4vw;
     line-height: 150%;
   }
@@ -11913,4 +11920,12 @@ a.btn-primary{
   font-weight: bold;
   cursor: pointer;
   padding: 5px 0;
+}
+
+.o_header_affixed{
+display:none !important;
+}
+.service-gap{
+display:flex;
+gap:3rem;
 }

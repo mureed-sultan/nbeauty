@@ -1048,14 +1048,15 @@ function createServiceBlock(service) {
   block.dataset.serviceName = service.name.toLowerCase();
 
   block.innerHTML = `
-        <div class="_4block-faq-text-div-main">
+        <div class="_4block-faq-text-div-main ogg-font">
             <div class="_4block-top-text-div">
                 <div class="_4block-faq-text-top-div">
-                    <h1 class="p-30">${service.name}<span>${service.arabic || ""}</span></h1>
+                    <h1 class="p-30 service-gap">${service.name}<span>${service.arabic || ""}</span></h1>
                 </div>
             </div>
             <div class="_4block-text-bottom-main-div">
-                <div class="_4block-faq-text-bottom-div"><p>Started From ${service.price}</p></div>
+                <div class="_4block-faq-text-bottom-div"><p class="service-gap">Started From <span>AED ${service
+                .price}</span></p></div>
                 <a   href="/booking/${service.name.replace(' ', '-')}"  class="_4block-btn-mob
                 w-inline-block">
                     <h1 class="h-18 _4block">Make an appointment</h1>
