@@ -151,6 +151,10 @@ class NBeautyHomepage(http.Controller):
             'message': 'Lead saved successfully'
         })
 
+    @http.route('/ncard', type='http', auth='public', website=True)
+    def ncard_page(self, **kwargs):
+        return request.render('nbeauty.website_ncard')
+
     @http.route('/nbeauty/booking/thanks', type='http', auth='public', website=True)
     def booking_thanks(self, **kwargs):
         return request.render('nbeauty.website_booking_thank_you')

@@ -1,251 +1,251 @@
 <odoo>
-  <template id="template_branch_listing" name="Modern Branch Location Page">
-    <t t-call="website.layout">
-      <t t-set="default_image" t-value="'/nbeauty/static/src/img/default_branch.jpg'"/>
-                <section>
-                    <div class="_1-block-new"
-                         style="background: url('/nbeauty/static/src/img/bannerimage.JPG') no-repeat center center; background-size: cover;">
-                        <div class="buttom-div">
-                            <div class="message">
-                                <div class="h-40 small">
-                                    We offer a complete range of beauty treatments for nails, hair, face and body<br/>-
-                                    allowing you to shine even brighter
-                                </div>
-                                <p class="p-18 op-80">
-                                    Ladies who come to us for procedures aren't thinking about scheduling a manicure or
-                                    hair coloring. They're thinking about spending a few hours immersed in comfort and
-                                    self-care from the best in the business in our beauty cave, and they click the "Make
-                                    an appointment" button.
-                                </p>
+    <template id="template_branch_listing" name="Modern Branch Location Page">
+        <t t-call="website.layout">
+            <t t-set="default_image" t-value="'/nbeauty/static/src/img/default_branch.jpg'"/>
+            <section>
+                <div class="_1-block-new"
+                     style="background: url('/nbeauty/static/src/img/bannerimage.JPG') no-repeat center center; background-size: cover;">
+                    <div class="buttom-div">
+                        <div class="message">
+                            <div class="h-40 small">
+                                We offer a complete range of beauty treatments for nails, hair, face and body<br/>-
+                                allowing you to shine even brighter
+                            </div>
+                            <p class="p-18 op-80">
+                                Ladies who come to us for procedures aren't thinking about scheduling a manicure or
+                                hair coloring. They're thinking about spending a few hours immersed in comfort and
+                                self-care from the best in the business in our beauty cave, and they click the "Make
+                                an appointment" button.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section pt-20 pb-20 location-section">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <!-- Section Title -->
+                    <h2 class="section-title">Our Branch Locations</h2>
+
+                    <t t-foreach="cities" t-as="city">
+                        <div class="city-section">
+                            <h3 class="city-title">
+                                <t t-esc="city.name"/>
+                            </h3>
+
+                            <div class="branch-grid">
+                                <t t-foreach="branches.filtered(lambda b: b.city_id.id == city.id)" t-as="branch">
+                                    <div class="branch-card">
+                                        <!-- Image -->
+                                        <div class="branch-img-wrapper">
+                                            <img t-att-src="branch.image and ('/web/image/website.branch/' + str(branch.id) + '/image') or default_image"
+                                                 alt="Branch Image"
+                                                 class="branch-img"/>
+                                        </div>
+
+                                        <!-- Info -->
+                                        <div class="branch-content">
+                                            <h4 class="branch-name">
+                                                <t t-esc="branch.name"/>
+                                            </h4>
+
+                                            <div class="branch-contact">
+                                                <i class="fab fa-whatsapp whatsapp-icon"></i>
+                                                <a t-att-href="'https://wa.me/' + (branch.whatsapp or '')"
+                                                   target="_blank" class="contact-link whatsapp-link">
+                                                    <t t-esc="branch.whatsapp"/>
+                                                </a>
+                                            </div>
+
+                                            <div class="branch-contact">
+                                                <i class="fa fa-phone phone-icon"></i>
+                                                <a t-att-href="'tel:' + (branch.phone or '')"
+                                                   class="contact-link phone-link">
+                                                    <t t-esc="branch.phone"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </t>
                             </div>
                         </div>
+                    </t>
+                </div>
+            </section>
 
-                    </div>
-                </section>
+            <!-- 🎨 Styles -->
+            <style>
+                .location-section {
+                background: linear-gradient(120deg, #fff1f3, #ffe4ec);
+                }
 
-      <section class="section pt-20 pb-20 location-section">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-          <!-- Section Title -->
-          <h2 class="section-title">Our Branch Locations</h2>
+                .section-title {
+                text-align: center;
+                font-size: 3rem;
+                font-weight: 800;
+                color: #e11d48;
+                margin-bottom: 4rem;
+                position: relative;
+                animation: fadeIn 1s ease;
+                }
 
-          <t t-foreach="cities" t-as="city">
-            <div class="city-section">
-              <h3 class="city-title">
-                <t t-esc="city.name"/>
-              </h3>
+                .city-section {
+                margin-bottom: 5rem;
+                }
 
-              <div class="branch-grid">
-                <t t-foreach="branches.filtered(lambda b: b.city_id.id == city.id)" t-as="branch">
-                  <div class="branch-card">
-                    <!-- Image -->
-                    <div class="branch-img-wrapper">
-                      <img t-att-src="branch.image and ('/web/image/website.branch/' + str(branch.id) + '/image') or default_image"
-                           alt="Branch Image"
-                           class="branch-img"/>
-                    </div>
+                .city-title {
+                font-size: 1.8rem;
+                font-weight: 700;
+                color: #df8da8;
+                border-left: 4px solid #df8da8;
+                padding-left: 1rem;
+                margin-bottom: 2rem;
+                animation: slideInLeft 0.6s ease;
+                }
 
-                    <!-- Info -->
-                    <div class="branch-content">
-                      <h4 class="branch-name">
-                        <t t-esc="branch.name"/>
-                      </h4>
+                .branch-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* force 3 columns always */
+                gap: 2rem;
+                }
 
-                      <div class="branch-contact">
-                        <i class="fab fa-whatsapp whatsapp-icon"></i>
-                        <a t-att-href="'https://wa.me/' + (branch.whatsapp or '')"
-                           target="_blank" class="contact-link whatsapp-link">
-                          <t t-esc="branch.whatsapp"/>
-                        </a>
-                      </div>
+                @media (max-width: 1024px) {
+                .branch-grid {
+                grid-template-columns: repeat(2, 1fr); /* Tablet: 2 columns */
+                }
+                }
 
-                      <div class="branch-contact">
-                        <i class="fa fa-phone phone-icon"></i>
-                        <a t-att-href="'tel:' + (branch.phone or '')"
-                           class="contact-link phone-link">
-                          <t t-esc="branch.phone"/>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </t>
-              </div>
-            </div>
-          </t>
-        </div>
-      </section>
+                @media (max-width: 768px) {
+                .branch-grid {
+                grid-template-columns: 1fr; /* Phone: 1 column */
+                }
+                }
 
-      <!-- 🎨 Styles -->
-      <style>
-        .location-section {
-          background: linear-gradient(120deg, #fff1f3, #ffe4ec);
-        }
+                .branch-card {
+                background: white;
+                border-radius: 1.75rem;
+                overflow: hidden;
+                box-shadow: 0 25px 60px rgba(0, 0, 0, 0.07);
+                transition: all 0.3s ease-in-out;
+                display: flex;
+                flex-direction: column;
+                animation: fadeInUp 0.8s ease;
+                }
 
-        .section-title {
-          text-align: center;
-          font-size: 3rem;
-          font-weight: 800;
-          color: #e11d48;
-          margin-bottom: 4rem;
-          position: relative;
-          animation: fadeIn 1s ease;
-        }
+                .branch-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 35px 75px rgba(0, 0, 0, 0.1);
+                }
 
-        .city-section {
-          margin-bottom: 5rem;
-        }
+                .branch-img-wrapper {
+                height: 180px;
+                overflow: hidden;
+                position: relative;
+                }
 
-        .city-title {
-          font-size: 1.8rem;
-          font-weight: 700;
-          color: #df8da8;
-          border-left: 4px solid #df8da8;
-          padding-left: 1rem;
-          margin-bottom: 2rem;
-          animation: slideInLeft 0.6s ease;
-        }
+                .branch-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.4s ease;
+                }
 
-        .branch-grid {
-          display: grid;
-  grid-template-columns: repeat(3, 1fr); /* force 3 columns always */
-          gap: 2rem;
-        }
+                .branch-card:hover .branch-img {
+                transform: scale(1.05);
+                }
 
-@media (max-width: 1024px) {
-  .branch-grid {
-    grid-template-columns: repeat(2, 1fr); /* Tablet: 2 columns */
-  }
-}
+                .branch-content {
+                padding: 1.5rem 1.2rem;
+                text-align: center;
+                background-color: #fff;
+                }
 
-@media (max-width: 768px) {
-  .branch-grid {
-    grid-template-columns: 1fr; /* Phone: 1 column */
-  }
-}
+                .branch-name {
+                font-size: 1.3rem;
+                font-weight: 700;
+                color: #111827;
+                margin-bottom: 0.8rem;
+                }
 
-        .branch-card {
-          background: white;
-          border-radius: 1.75rem;
-          overflow: hidden;
-          box-shadow: 0 25px 60px rgba(0, 0, 0, 0.07);
-          transition: all 0.3s ease-in-out;
-          display: flex;
-          flex-direction: column;
-          animation: fadeInUp 0.8s ease;
-        }
+                .branch-contact {
+                font-size: 0.95rem;
+                color: #6b7280;
+                margin-bottom: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                }
 
-        .branch-card:hover {
-          transform: translateY(-6px);
-          box-shadow: 0 35px 75px rgba(0, 0, 0, 0.1);
-        }
+                .contact-link {
+                margin-left: 0.5rem;
+                text-decoration: none;
+                font-weight: 500;
+                transition: color 0.3s ease;
+                }
 
-        .branch-img-wrapper {
-          height: 180px;
-          overflow: hidden;
-          position: relative;
-        }
+                .whatsapp-icon {
+                color: #22c55e;
+                }
 
-        .branch-img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: transform 0.4s ease;
-        }
+                .whatsapp-link {
+                color: #22c55e;
+                }
 
-        .branch-card:hover .branch-img {
-          transform: scale(1.05);
-        }
+                .whatsapp-link:hover {
+                color: #16a34a;
+                }
 
-        .branch-content {
-          padding: 1.5rem 1.2rem;
-          text-align: center;
-          background-color: #fff;
-        }
+                .phone-icon {
+                color: #ec4899;
+                }
 
-        .branch-name {
-          font-size: 1.3rem;
-          font-weight: 700;
-          color: #111827;
-          margin-bottom: 0.8rem;
-        }
+                .phone-link {
+                color: #ec4899;
+                }
 
-        .branch-contact {
-          font-size: 0.95rem;
-          color: #6b7280;
-          margin-bottom: 0.5rem;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
+                .phone-link:hover {
+                color: #be185d;
+                }
 
-        .contact-link {
-          margin-left: 0.5rem;
-          text-decoration: none;
-          font-weight: 500;
-          transition: color 0.3s ease;
-        }
+                /* Animations */
+                @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+                }
 
-        .whatsapp-icon {
-          color: #22c55e;
-        }
+                @keyframes fadeInUp {
+                from { opacity: 0; transform: translateY(30px); }
+                to { opacity: 1; transform: translateY(0); }
+                }
 
-        .whatsapp-link {
-          color: #22c55e;
-        }
+                @keyframes slideInLeft {
+                from { opacity: 0; transform: translateX(-20px); }
+                to { opacity: 1; transform: translateX(0); }
+                }
 
-        .whatsapp-link:hover {
-          color: #16a34a;
-        }
+                /* Responsive Adjustments */
+                @media (max-width: 768px) {
+                .section-title {
+                font-size: 2.2rem;
+                }
+                .city-title {
+                font-size: 1.5rem;
+                }
+                .branch-card {
+                border-radius: 1.25rem;
+                }
+                }
 
-        .phone-icon {
-          color: #ec4899;
-        }
-
-        .phone-link {
-          color: #ec4899;
-        }
-
-        .phone-link:hover {
-          color: #be185d;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(30px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes slideInLeft {
-          from { opacity: 0; transform: translateX(-20px); }
-          to { opacity: 1; transform: translateX(0); }
-        }
-
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-          .section-title {
-            font-size: 2.2rem;
-          }
-          .city-title {
-            font-size: 1.5rem;
-          }
-          .branch-card {
-            border-radius: 1.25rem;
-          }
-        }
-
-        @media (max-width: 480px) {
-          .branch-img-wrapper {
-            height: 160px;
-          }
-          .branch-name {
-            font-size: 1.1rem;
-          }
-        }
-      </style>
-    </t>
-  </template>
+                @media (max-width: 480px) {
+                .branch-img-wrapper {
+                height: 160px;
+                }
+                .branch-name {
+                font-size: 1.1rem;
+                }
+                }
+            </style>
+        </t>
+    </template>
 </odoo>

@@ -36,6 +36,7 @@
         'views/branch_page2.xml',
         'views/popup_view.xml',
         'views/popup_lead_views.xml',
+        'views/ncard.xml',
         'views/nbeauty_booking_backend_views.xml',
         'views/website_menu.xml',
         # 'data/menus.xml',

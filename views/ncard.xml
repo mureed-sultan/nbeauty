@@ -1,0 +1,135 @@
+<odoo>
+    <data>
+        <template id="website_ncard" name="N Card">
+            <t t-call="website.layout">
+                <section class="body">
+       <section class="ncard-hero">
+                <div class="container text-center">
+                    <h1 class="ncard-title">Introducing NCard</h1>
+                    <p class="ncard-subtitle">Your gateway to exclusive beauty experiences and rewards at N Beauty Salon.</p>
+                    <a href="/contactus" class="btn btn-primary ncard-cta">Get Your NCard</a>
+                </div>
+            </section>
+
+            <!-- Why NCard -->
+            <section class="ncard-why container">
+                <h2 class="text-center">Why Choose NCard?</h2>
+                <div class="ncard-features">
+                    <div class="feature">
+                        <h3>Save More</h3>
+                        <p>Enjoy bonus credit and discounts every time you top-up your card.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Exclusive Perks</h3>
+                        <p>Access to members-only offers, priority booking and special services.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Easy to Use</h3>
+                        <p>Pay seamlessly for any service or product at N Beauty with your NCard balance.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NCard Types -->
+            <section class="ncard-types container">
+                <h2 class="text-center">Choose Your NCard</h2>
+                <div class="type-grid">
+                    <div class="type-card">
+                        <h3>Silver</h3>
+                        <p>Perfect for regular visits. Get 5% bonus credit.</p>
+                        <p class="amount">AED 500</p>
+                    </div>
+                    <div class="type-card">
+                        <h3>Gold</h3>
+                        <p>For beauty enthusiasts. Get 10% bonus credit.</p>
+                        <p class="amount">AED 1000</p>
+                    </div>
+                    <div class="type-card">
+                        <h3>Platinum</h3>
+                        <p>Premium care for loyal clients. Get 15% bonus credit.</p>
+                        <p class="amount">AED 2000</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Example Section -->
+            <section class="ncard-example container">
+                <h2 class="text-center">How It Works</h2>
+                <div class="example-steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <p>Purchase an NCard at any N Beauty branch.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <p>Top up and get bonus credits instantly.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <p>Pay for services amp; products easily using your NCard.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="ncard-cta-section text-center">
+                <h2>Start your beauty journey with NCard today!</h2>
+                <a href="/contactus" class="btn btn-dark ncard-cta">Get Started</a>
+            </section>
+
+            <style>
+                .ncard-hero {
+                    background: url('/nbeauty/static/src/img/ncard-banner.jpg') center/cover no-repeat;
+                    color: #fff;
+                    padding: 80px 20px;
+                }
+                .ncard-title { font-size: 42px; font-weight: bold; }
+                .ncard-subtitle { font-size: 18px; margin: 15px 0; }
+                .ncard-cta { padding: 10px 30px; border-radius: 6px; }
+
+                .ncard-why, .ncard-types, .ncard-example {
+                    margin: 60px auto;
+                }
+                .ncard-features, .type-grid, .example-steps {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    flex-wrap: wrap;
+                }
+                .feature, .type-card, .step {
+                    background: #fff;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+                    flex: 1;
+                    min-width: 220px;
+                    text-align: center;
+                }
+                .amount { font-weight: bold; font-size: 18px; color: #c48c8f; }
+
+                .step-number {
+                    display: inline-block;
+                    background: #c48c8f;
+                    color: #fff;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    margin-bottom: 10px;
+                }
+                .ncard-cta-section {
+                    background: #f9f9f9;
+                    padding: 50px 20px;
+                    margin-top: 50px;
+                }
+
+                /* Responsive */
+                @media(max-width: 768px) {
+                    .ncard-title { font-size: 28px; }
+                    .feature, .type-card, .step { min-width: 100%; }
+                }
+            </style>                </section>
+            </t>
+        </template>
+    </data>
+</odoo>

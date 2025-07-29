@@ -15,8 +15,8 @@
                     <img src="/nbeauty/static/src/img/lowres/bannerimage.jpg" alt="Beauty Banner"
                          class="nbeauty-popup-image"/>
 
-                    <h3 class="nbeauty-popup-title">Transform Your Beauty Routine</h3>
-                    <h4 class="nbeauty-popup-subtitle">
+                    <h3 class="nbeauty-popup-title ogg-font">Transform Your Beauty Routine</h3>
+                    <h4 class="nbeauty-popup-subtitle ogg-font">
                         Subscribe to our salon’s newsletter for insider access to expert advice,
                         latest styles, and members-only discounts.
                     </h4>
