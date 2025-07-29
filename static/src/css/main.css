@@ -2760,6 +2760,7 @@ body {
 .logo-img.menu-open {
   margin-left: 0;
   margin-right: 0;
+  width:75px;
 }
 
 .logo-img.preloader {
