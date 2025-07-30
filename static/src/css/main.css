@@ -1339,6 +1339,14 @@ textarea.w-select {
     display: inherit !important;
   }
 
+.read-more-text {
+  max-height: 8vw;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  display: block;
+  transition: max-height 0.4s ease;
+}
   .w-hidden-small {
     display: none !important;
   }
@@ -11908,8 +11916,10 @@ a.btn-primary{
     z-index: 11000;
 }
 
+
+
 .read-more-text {
-  max-height: 8vw;
+  max-height: 4vw;
   overflow: hidden;
   position: relative;
   top: 0;

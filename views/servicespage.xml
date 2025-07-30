@@ -245,11 +245,6 @@
                                    class="w-input"/>
                             <select id="category-filter" class="w-select">
                                 <option value="">All Categories</option>
-                                <option value="1">Hair Care</option>
-                                <option value="2">Make-Up &amp; Tinting Eyelash Extensions</option>
-                                <option value="3">Skin Care</option>
-                                <option value="4">Body Care</option>
-                                <option value="5">Nail Care</option>
                             </select>
 
                         </div>
