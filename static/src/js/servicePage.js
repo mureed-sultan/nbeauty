@@ -1047,7 +1047,7 @@ function createServiceBlock(service) {
   block.className = "service-item c-faq-a-text";
   block.dataset.serviceName = service.name.toLowerCase();
 
-  block.innerHTML = `
+  block.innerHTML =`
         <div class="_4block-faq-text-div-main ogg-font">
             <div class="_4block-top-text-div">
                 <div class="_4block-faq-text-top-div">
@@ -1068,8 +1068,8 @@ function createServiceBlock(service) {
         <a href="/booking/${service.name.replace(' ', '-')}"  class="_4block-btn hide w-inline-block">
             <h1 class="h-18 _4block">Make an appointment</h1>
             <div class="white-circle-div-4block"></div>
-        </a>
-    `;
+        </a>`
+    ;
   return block;
 }
 
@@ -1108,8 +1108,10 @@ function createChildBlock(child, parentWrapper) {
   header.innerHTML = `
         <div class="c-faq-b-text">
             <div class="h-50-item">${child.title}
-                <p class="pricelist-description">${child.description || ""}</p>
+                                        <p class="pricelist-description">${child.description || ""}</p>
+
             </div>
+
         </div>
         <div class="c-faq-icon">
             <div class="_w-faq-icon">
