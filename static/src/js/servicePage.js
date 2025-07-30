@@ -1055,7 +1055,8 @@ function createServiceBlock(service) {
                 </div>
             </div>
             <div class="_4block-text-bottom-main-div">
-                <div class="_4block-faq-text-bottom-div"><p class="service-gap">Started From <span>AED ${service
+                <div class="_4block-faq-text-bottom-div"><p class="service-gap font-900">Started From <span>AED
+                ${service
                 .price}</span></p></div>
                 <a   href="/booking/${service.name.replace(' ', '-')}"  class="_4block-btn-mob
                 w-inline-block">

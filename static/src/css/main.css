@@ -2760,7 +2760,7 @@ body {
 .logo-img.menu-open {
   margin-left: 0;
   margin-right: 0;
-  width:75px;
+  width:45px;
 }
 
 .logo-img.preloader {
@@ -5921,7 +5921,7 @@ text-align:center;
 .c-faq-item-main {
   cursor: pointer;
   margin-bottom: 0;
-  font-size: 1.2em;
+  font-size: 0.8em;
   line-height: 1.6em;
 }
 
@@ -5968,7 +5968,7 @@ text-align:center;
 .c-faq-titles-content {
   cursor: pointer;
   margin-bottom: 0;
-  font-size: 1.2em;
+  font-size: 0.8em;
   line-height: 1.6em;
 }
 
@@ -7500,7 +7500,8 @@ text-align:center;
   .h-345._1-3 {
     letter-spacing: -0.033em;
     margin-right: 0;
-    font-size: 4vw;
+    font-size: 4.5vw;
+    font-weight:900;
     line-height: 100%;
   }
 
@@ -11930,3 +11931,5 @@ display:none !important;
 display:flex;
 gap:3rem;
 }
+.font-900{
+font-weight:900;}
