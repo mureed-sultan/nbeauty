@@ -5346,7 +5346,6 @@ text-align:center;
 
 .form {
   grid-column-gap: 5.208vw;
-  grid-row-gap: 5.208vw;
   flex-direction: column;
   justify-content: flex-start;
   display: flex;

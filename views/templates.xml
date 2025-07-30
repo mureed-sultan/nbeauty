@@ -3,7 +3,8 @@
     <data>
 
         <!-- Add custom HTML attributes to <html> tag -->
-        <template id="nbeauty_add_html_attributes" inherit_id="web.layout" name="nBeauty HTML Attributes" priority="1000">
+        <template id="nbeauty_add_html_attributes" inherit_id="web.layout" name="nBeauty HTML Attributes"
+                  priority="1000">
             <xpath expr="/t/html" position="attributes">
                 <attribute name="data-wf-page">652fe9df5341e43567662723</attribute>
                 <attribute name="data-wf-site">652fe9df5341e43567662724</attribute>
@@ -34,13 +35,15 @@
                         <div class="logo-div">
                             <a href="/" class="navbar-brand">
                                 <img t-att-src="'/web/image/website/%d/logo' % website.id"
-                                     alt="N Beauty Logo" class="logo-img" loading="lazy"/>
+                                     alt="N Beauty Logo" height="50"
+                                     class="logo-img" loading="lazy"/>
                             </a>
                         </div>
 
                         <!-- Menu Button -->
                         <div class="menu-button-div">
-                            <a href="javascript:void(0)" id="nbeauty-toggle-btn" class="location-header-div w-inline-block">
+                            <a href="javascript:void(0)" id="nbeauty-toggle-btn"
+                               class="location-header-div w-inline-block">
                                 <h1 class="h-18">menu</h1>
                                 <div class="black-circle-div"></div>
                             </a>
@@ -55,7 +58,8 @@
                         <div class="mob-menu-header">
                             <img t-att-src="'/web/image/website/%d/logo' % website.id"
                                  alt="N Beauty Logo" class="logo-img menu-open" loading="lazy"/>
-                            <a href="javascript:void(0)" id="nbeauty-close-btn" class="location-header-div mob-menu w-inline-block">
+                            <a href="javascript:void(0)" id="nbeauty-close-btn"
+                               class="location-header-div mob-menu w-inline-block">
                                 <h1 class="h-18">close</h1>
                                 <div class="black-circle-div"></div>
                             </a>
@@ -81,14 +85,17 @@
                         <div class="center-menu-div">
                             <t t-foreach="website.menu_id.child_id" t-as="menu">
                                 <a t-att-href="menu.url" class="opened-menu-link-div w-inline-block">
-                                    <div><t t-esc="menu.name"/></div>
+                                    <div>
+                                        <t t-esc="menu.name"/>
+                                    </div>
                                 </a>
                             </t>
                         </div>
 
                         <!-- Footer links -->
                         <div class="menu-side-div-2">
-                            <a href="javascript:void(0)" id="nbeauty-close-btn-2" class="location-header-div omb-hide w-inline-block">
+                            <a href="javascript:void(0)" id="nbeauty-close-btn-2"
+                               class="location-header-div omb-hide w-inline-block">
                                 <h1 class="h-18">close</h1>
                                 <div class="black-circle-div"></div>
                             </a>
@@ -115,7 +122,7 @@
                 <script src="/nbeauty/static/src/js/jquery.js"></script>
                 <script src="/nbeauty/static/src/js/webflow.js"></script>
                 <script src="/nbeauty/static/src/js/script.js"></script>
-<!--                <script src="/nbeauty/static/src/js/homepage.js"></script>-->
+                <!--                <script src="/nbeauty/static/src/js/homepage.js"></script>-->
             </xpath>
         </template>
 

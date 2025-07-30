@@ -94,27 +94,40 @@ class NBeautyHomepage(http.Controller):
             'branches': branches,
         })
 
-
     @http.route('/nbeauty/booking/submit', type='http', auth='public', methods=['POST'], csrf=False, website=True)
     def submit_booking(self, **post):
         try:
-            services_data = post.getlist('services')  # ✅ multiple services from form
-            services_json = json.dumps(services_data) # ✅ Convert to JSON
+            # ✅ Read multiple services correctly
+            services_data = request.httprequest.form.getlist('service_ids')
+            services_json = json.dumps(services_data)
 
+            # ✅ Safe conversions
+            branch_id = int(post.get('branch_id')) if post.get('branch_id') else False
+            employee_id = int(post.get('employee_id')) if post.get('employee_id') else False
+
+            # ✅ Parse booking_time from "HH:MM" to float (e.g., 14.5 for 14:30)
+            booking_time_str = post.get('booking_time') or "00:00"
+            hours, minutes = booking_time_str.split(':')
+            booking_time_float = int(hours) + int(minutes) / 60.0
+
+            # ✅ Create record with correct field name
             request.env['nbeauty.booking'].sudo().create({
                 'customer_name': post.get('customer_name'),
                 'customer_mobile': post.get('customer_mobile'),
-                'branch_id': int(post.get('branch_id')) if post.get('branch_id') else False,
-                'employee_id': int(post.get('employee_id')) if post.get('employee_id') else False,
+                'branch_id': branch_id,
+                'employee_id': employee_id,
                 'booking_date': post.get('booking_date'),
-                'booking_time': float(post.get('booking_time')),
-                'services': services_json,   # ✅ Save as JSON text
+                'booking_time': booking_time_float,
+                'services_json': services_json,
             })
 
-            return request.redirect('/thank-you')
+            return request.redirect('/nbeauty/booking/thanks')
 
         except Exception as e:
-            return f"🚫 Booking Failed<br>{str(e)}"
+            # ✅ Print full error in logs
+            import logging
+            logging.exception("Booking failed")
+            return request.render('nbeauty.website_booking_error', {'error': str(e)})
 
     @http.route('/nbeauty/popup/submit', type='http', auth='public', methods=['POST'], csrf=False)
     def submit_popup_form(self, **kwargs):
