@@ -143,6 +143,12 @@
                     color: #fff;
                     pointer-events: none;
                     }
+                    @media screen and (max-width: 767px) {
+                    .nbeauty-filters {
+                    flex-direction: column;
+                    }
+                    }
+
                 </style>
 
 
