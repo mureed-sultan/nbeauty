@@ -214,7 +214,7 @@
                             data-w-id="00803fe3-8a81-1d86-7626-3162137d13a7"
                             style="opacity: 0"
                             class="p-26 _1block pc-hide"
-                    >Experience the art of beauty with NBeauty — offering signature treatments for hair,
+                    >Experience the art of beauty with N Beauty — offering signature treatments for hair,
                         nails, skin, and body, crafted to make you radiate elegance every day.
                     </p>
 
@@ -242,12 +242,8 @@
                                             <p class="p-18 black _100 read-more-text">
                                                 From a single dream to a flourishing chain, N Beauty Salon’s story began
                                                 with a simple vision: to create a sanctuary where women across the UAE
-                                                could celebrate their individuality. Over the years, we have grown
-                                                organically, one smile and one satisfied guest at a time, weaving a
-                                                vibrant tapestry of culture, tradition, and modern sophistication across
-                                                our salons.
+                                                could celebrate their individuality.
                                             </p>
-                                            <button class="read-more-btn" type="button">Read More</button>
                                         </div>
                                     </div>
                                 </div>
@@ -261,12 +257,7 @@
                                             <p class="p-18 black _02 read-more-text">
                                                 At N Beauty Salon, our mission is to empower every woman who walks
                                                 through our doors to feel confident, radiant, and authentically herself.
-                                                We believe beauty goes beyond appearances—it’s found in self-expression,
-                                                care, and the small rituals that bring joy. Our expert team curates a
-                                                tailored experience, blending time-honored beauty secrets with the
-                                                latest techniques to unleash beauty inside and out.
                                             </p>
-                                            <button class="read-more-btn" type="button">Read More</button>
 
                                         </div>
                                     </div>
@@ -278,12 +269,8 @@
                                             <h1 class="h-50">Our Vision: Leading the Way in Holistic Beauty</h1>
                                             <p class="p-18 black read-more-text">
                                                 We strive to be the UAE’s most trusted and beloved all-female salon
-                                                chain, setting the gold standard in integrated beauty care. Our vision
-                                                is to seamlessly blend the elegance of tradition with the innovation of
-                                                today’s beauty world, championing a holistic approach where self-care is
-                                                both a luxury and a daily essential for every woman.
+                                                chain, setting the gold standard in integrated beauty care.
                                             </p>
-                                            <button class="read-more-btn" type="button">Read More</button>
 
                                         </div>
                                     </div>
@@ -300,12 +287,7 @@
                                             <p class="p-18 black _02 read-more-text">
                                                 At N Beauty Salon, our mission is to empower every woman who walks
                                                 through our doors to feel confident, radiant, and authentically herself.
-                                                We believe beauty goes beyond appearances—it’s found in self-expression,
-                                                care, and the small rituals that bring joy. Our expert team curates a
-                                                tailored experience, blending time-honored beauty secrets with the
-                                                latest techniques to unleash beauty inside and out.
                                             </p>
-                                            <button class="read-more-btn" type="button">Read More</button>
 
                                         </div>
                                     </div>
@@ -320,15 +302,7 @@
                                                 with today’s woman in mind:
                                                 - Nail Care: From classic manicures to cutting-edge nail art, your hands
                                                 and feet get the royal treatment.
-                                                - Hair Care: Advanced color, cuts, and nourishing treatments keep your
-                                                locks luminous and healthy.
-                                                - Lash &amp; Brow Care: Frame your features with precision shaping,
-                                                tinting, and extensions.
-                                                - Body &amp; Skin Care: Indulgent spa therapies, rejuvenating facials,
-                                                and holistic treatments nourish your body from
-                                                head to toe.
                                             </p>
-                                            <button class="read-more-btn" type="button">Read More</button>
 
                                         </div>
                                     </div>
@@ -341,8 +315,6 @@
                                 <div data-w-id="44a12cb3-a578-69c7-1c70-c4b7a31c9966" style="opacity: 1"
                                      class="_05-item-div-line-1">
                                     <h1 class="h-116">Our Promise</h1>
-                                    <img src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e43567662741_%26.svg"
-                                         loading="lazy" alt="" class="img _2block mob-hide"/>
                                 </div>
                                 <div data-w-id="1862ef3f-0b44-2337-f708-ec2b059508b9" style="opacity: 1"
                                      class="_05-item-div-line-1 pc-hide">
@@ -356,18 +328,12 @@
                                         Where Tradition Meets Modern Confidence
                                     </h1>
                                 </div>
-                                <!--                                <h1 data-w-id="86e20a9f-caab-5c92-10c1-bfe1fe758dbb" style="opacity: 1"-->
-                                <!--                                    class="h-116 mo-hide-2">-->
-                                <!--                                    is a celebration of  you-->
-                                <!--                                </h1>-->
                                 <p class="p-18 black _05 read-more-text">
                                     As an all-female team, we cherish the power of community and belonging. We are
                                     committed to fostering a welcoming space where clients feel heard, celebrated, and
-                                    inspired to embrace their unique beauty. At N Beauty Salon, every visit is a
-                                    celebration—of tradition, of modernity, and of the remarkable women we serve.
+                                    inspired to embrace their unique beauty.
                                 </p>
-                                <button class="read-more-btn" type="button">Read More</button>
-
+                                <a href="/aboutus">Read More ...</a>
                             </div>
                         </div>
                     </div>
@@ -406,7 +372,7 @@
                                    class="btn-1 w-inline-block">
                                     <div data-w-id="dba252a3-1e31-9541-99a1-2e9bc6a4daa1"
                                          style="background-color: rgba(0, 0, 0, 0)"
-                                         class="btn-div-inside"
+                                         class="btn-div-inside sizeupdate"
                                     >
                                         <h1 style="color: rgb(0, 0, 0)" class="h-18 center-align">Download pricelist
                                         </h1>
@@ -417,7 +383,7 @@
                                    class="btn-1 w-inline-block">
                                     <div data-w-id="dba252a3-1e31-9541-99a1-2e9bc6a4daa1"
                                          style="background-color: rgba(0, 0, 0, 0)"
-                                         class="btn-div-inside"
+                                         class="btn-div-inside sizeupdate"
                                     >
                                         <h1 style="color: rgb(0, 0, 0)" class="h-18 center-align">See Our Complete
                                             Price List

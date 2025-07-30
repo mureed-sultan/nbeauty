@@ -1332,12 +1332,17 @@ textarea.w-select {
     right: auto;
   }
 }
+.sizeupdate{
+width:11rem;
+height:11rem;
+}
 
 @media screen and (max-width: 767px) {
   .w-hidden-main,
   .w-hidden-medium {
     display: inherit !important;
   }
+
 
 .read-more-text {
   max-height: 8vw;
@@ -2841,7 +2846,9 @@ body {
 .reg-it {
   font-family: "Ogg Bf 646 C 18 Fc 4 F 575", sans-serif;
   font-style: italic;
+  margin:0 4rem;
 }
+
 
 .p-15 {
   color: #00000042;
@@ -2936,8 +2943,8 @@ body {
 
 ._1block-content-div-2line {
   align-items: flex-end;
-  margin-top: 1.589vw;
-  padding-left: 25.604vw;
+  margin-top: 4.589vw;
+  padding-left: 23.604vw;
   padding-right: 2.604vw;
   display: flex;
 }
@@ -7344,7 +7351,9 @@ text-align:center;
   }
   .logo-img {
   height:35px;
-
+}
+.reg-it {
+  margin:0 0 0 0;
 }
   .c-faq-titles-content {
   font-size: 1em;
@@ -7384,6 +7393,7 @@ text-align:center;
     padding-top: 1.333vw;
     display: flex;
   }
+
 
   .headerr-div {
     border-bottom: 1px solid #00000040;
@@ -7581,7 +7591,10 @@ text-align:center;
     padding-left: 7.733vw;
     padding-right: 7.733vw;
   }
-
+ .sizeupdate{
+width:7rem;
+height:7rem;
+}
   .btn-div-inside.pc-hide {
     margin-bottom: 21.333vw;
     display: flex;
@@ -11809,7 +11822,7 @@ a.btn-primary{
     }
 }
 .pricelist-description{
-    font-size: 20px;
+    font-size: 2.3rem;
     letter-spacing: normal;
 }
 .pricelist-description-cost{
@@ -11919,16 +11932,11 @@ a.btn-primary{
 
 
 .read-more-text {
-  max-height: 4vw;
   overflow: hidden;
   position: relative;
   top: 0;
   display: block;
   transition: max-height 0.4s ease;
-}
-
-.read-more-text.expanded {
-  max-height: 500px; /* enough to show all text */
 }
 
 .read-more-btn {
@@ -11950,3 +11958,4 @@ gap:3rem;
 }
 .font-900{
 font-weight:900;}
+
