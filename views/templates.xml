@@ -34,7 +34,7 @@
                         <div class="logo-div">
                             <a href="/" class="navbar-brand">
                                 <img t-att-src="'/web/image/website/%d/logo' % website.id"
-                                     alt="N Beauty Logo" class="logo-img" height="50" loading="lazy"/>
+                                     alt="N Beauty Logo" class="logo-img" loading="lazy"/>
                             </a>
                         </div>
 

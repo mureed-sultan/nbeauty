@@ -2747,7 +2747,7 @@ body {
 }
 
 .logo-img {
-/*   height:75px; */
+  height:75px;
 
 }
 .logo-img.footer{
@@ -7335,6 +7335,10 @@ text-align:center;
   .home-hero_contact {
     bottom: 10px;
   }
+  .logo-img {
+  height:45px;
+
+}
   .c-faq-titles-content {
   font-size: 1em;
 }
