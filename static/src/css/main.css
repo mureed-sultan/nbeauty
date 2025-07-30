@@ -11910,7 +11910,7 @@ a.btn-primary{
 }
 
 .read-more-text {
-  max-height: 55px;
+  max-height: 8vw;
   overflow: hidden;
   position: relative;
   top: 0;
