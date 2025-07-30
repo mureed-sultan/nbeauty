@@ -2894,7 +2894,7 @@ body {
   z-index: 1;
   width: 3.073vw;
   position: absolute;
-  inset: 5.7vw auto auto 0%;
+  inset: 5.7vw auto auto -2vw;
 }
 
 .btn-div-inside {
