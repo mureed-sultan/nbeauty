@@ -22,7 +22,7 @@
                                     class="btn-1 pc-hide w-inline-block"
                             >
                                 <img
-                                        src="https://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e43567662740_Arrow%203.svg"
+                                        src="/nbeauty/static/src/img/lowres/arrow.svg"
                                         loading="lazy"
                                         style="
               -webkit-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1)
@@ -576,18 +576,18 @@
                                 </a>
                                 <a href="#" class="lightbox w-inline-block w-lightbox">
 
-                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-25.jpg" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-25.JPG" loading="eager"
                                          data-w-id="e502bb79-a7ca-455d-49d0-d45437aea271" alt=""
                                          class="_6block-img _7"/>
                                 </a>
                                 <a href="#" class="lightbox w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-26.webp" loading="eager"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-26.JPG" loading="eager"
                                          data-w-id="d6de2de0-3cd1-d577-cbd4-452c5515d9a6"
                                          sizes="(max-width: 479px) 100vw, 18vw" alt="" class="_6block-img _10"/>
                                 </a>
                                 <a href="#"
                                    class="w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-27.jpg"
+                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-27.JPG"
                                          loading=" lazy" data-w-id="ca54c905-3f96-f61f-178e-87099f201649" alt=""
                                          class="_6block-img _9"/>
                                 </a>
@@ -1020,7 +1020,7 @@
                                         <div class="become-a-member-div">
                                             <p class="p-25">get more details</p>
                                             <img
-                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/653173e5c10cc14fb53e3b32_Arrow%203.png"
+                                        src="/nbeauty/static/src/img/lowres/arrow.svg"
                                                     loading="lazy" style="
                     -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
                       rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
@@ -1106,7 +1106,7 @@
                                         <div class="become-a-member-div">
                                             <p class="p-25">Become a member</p>
                                             <img
-                                                    src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/653173e5c10cc14fb53e3b32_Arrow%203.png"
+                                        src="/nbeauty/static/src/img/lowres/arrow.svg"
                                                     loading="lazy" style="
                     -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
                       rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);

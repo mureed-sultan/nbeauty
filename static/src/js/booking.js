@@ -1013,12 +1013,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        serviceDropdown.appendChild(group);
+        serviceDropdown?.appendChild(group);
     });
 
     // ✅ Display details of selected service
     if (selectedService) {
-        titleEl.textContent = selectedService.title || selectedService.name;
+        titleEl.textContent = selectedService?.title || selectedService?.name;
         descEl.textContent = selectedService.description || "Experience the most luxurious beauty service.";
         priceEl.textContent = (selectedService.price || 0) + " AED";
         hiddenService.value = selectedService.title || selectedService.name;
@@ -1045,9 +1045,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Set min date
         const today = dubaiNow.toISOString().split("T")[0];
-        bookingDate.setAttribute("min", today);
+        bookingDate?.setAttribute("min", today);
 
-        bookingDate.addEventListener("change", function () {
+        bookingDate?.addEventListener("change", function () {
             let selectedDate = new Date(this.value + "T00:00:00");
 
             if (this.value === today) {
