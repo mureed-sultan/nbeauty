@@ -5968,7 +5968,7 @@ text-align:center;
 .c-faq-titles-content {
   cursor: pointer;
   margin-bottom: 0;
-  font-size: 0.8em;
+  font-size: 2em;
   line-height: 1.6em;
 }
 
@@ -7335,6 +7335,9 @@ text-align:center;
   .home-hero_contact {
     bottom: 10px;
   }
+  .c-faq-titles-content {
+  font-size: 1em;
+}
 
   .home-hero_phones-ico {
     width: 21px;
@@ -11917,8 +11920,9 @@ a.btn-primary{
 
 .read-more-btn {
   background: none;
+  margin-top:-1rem;
   border: none;
-  color: #d6336c;
+  color: black;
   font-weight: bold;
   cursor: pointer;
   padding: 5px 0;
