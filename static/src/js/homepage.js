@@ -493,7 +493,7 @@ function createChildBlock(child, parentWrapper) {
                 <p class="pricelist-description-cost"> Starting From <span> AED  ${child.price}</span></p>
             </div>
         </div>
-<a href="/services?id=${child.description}" class="_4block-btnwithout hide w-inline-block" style="">
+<a href="/services?id=${encodeURIComponent(child.title)}" class="_4block-btnwithout hide w-inline-block" style="">
             <h1 class="h-18 _4block" style="">check Prices</h1>
             <div class="white-circle-div-4block mob-hide" style="opacity: 1;"></div>
         </a>
