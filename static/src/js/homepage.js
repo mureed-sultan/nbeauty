@@ -76,15 +76,30 @@ const branchData = {
 function updateLocation(value) {
   const data = branchData[value];
   if (!data) return;
+
+  // Update map link & address
   document.getElementById("map-link").href = data.map;
   document.getElementById("map-link").textContent = data.address;
-  document.getElementById("call-btn").href = "tel:" + data.phone;
-  document.getElementById("whatsapp-btn").href =
-    "https://wa.me/" + data.whatsapp;
+
+  // ✅ Phone 1
+  const call1 = document.getElementById("call-btn");
+  call1.href = "tel:" + data.phone;
+  call1.textContent = data.phone;
+
+  // ✅ Phone 2 (optional second number)
+  const call2 = document.getElementById("call-btn-2");
+  if (data.whatsapp) {
+    call2.href = "tel:" + data.whatsapp;
+    call2.textContent = data.whatsapp;
+    call2.style.display = "inline-block";
+  } else {
+    call2.style.display = "none";
+  }
 
   document.getElementById("location-point").classList.remove("hide");
   document.getElementById("location-btns").classList.remove("hide");
 }
+
 
 // Set default on page load
 updateLocation("Dubai");

@@ -64,6 +64,7 @@
                                context="{'form_view_ref': 'view_website_branch_city_form'}"
                                options="{'no_create': False, 'no_open': False}"/>
                         <field name="phone"/>
+                        <field name="phone2"/>
                         <field name="whatsapp"/>
                         <field name="address"/>
                         <field name="map_url"/>

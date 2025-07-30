@@ -18,6 +18,7 @@ class WebsiteBranch(models.Model):
     name = fields.Char(required=True)
     city_id = fields.Many2one('website.branch.city', string="City", required=True)
     phone = fields.Char(string="Phone Number")
+    phone2 = fields.Char(string="Phone Number")
     whatsapp = fields.Char(string="WhatsApp")
     address = fields.Char()
     map_url = fields.Char(string="Google Map URL")

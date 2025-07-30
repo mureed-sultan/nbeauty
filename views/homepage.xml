@@ -184,7 +184,7 @@
                                 class="btn-1 mob-hide w-inline-block"
                         >
                             <img
-                                        src="/nbeauty/static/src/img/lowres/arrow.svg"
+                                    src="/nbeauty/static/src/img/lowres/arrow.svg"
                                     loading="lazy"
                                     style="
             -webkit-transform: translate3d(0vw, 0, 0) scale3d(1, 1, 1)
@@ -1020,7 +1020,7 @@
                                         <div class="become-a-member-div">
                                             <p class="p-25">get more details</p>
                                             <img
-                                        src="/nbeauty/static/src/img/lowres/arrow.svg"
+                                                    src="/nbeauty/static/src/img/lowres/arrow.svg"
                                                     loading="lazy" style="
                     -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
                       rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
@@ -1106,7 +1106,7 @@
                                         <div class="become-a-member-div">
                                             <p class="p-25">Become a member</p>
                                             <img
-                                        src="/nbeauty/static/src/img/lowres/arrow.svg"
+                                                    src="/nbeauty/static/src/img/lowres/arrow.svg"
                                                     loading="lazy" style="
                     -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1)
                       rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
@@ -1435,13 +1435,23 @@
                                         </p>
                                     </div>
                                     <div id="location-btns" class="location-btns-div">
-                                        <a id="call-btn" href="#" class="location-btn w-inline-block">
+
+                                        <div class="location-btn w-inline-block">
                                             <p class="p-18 black btn">CALL US</p>
-                                        </a>
-                                        <a id="whatsapp-btn" href="#" class="location-btn w-inline-block">
+                                            <a id="call-btn" href="tel:" class="p-16 black phone-link"></a>
+                                        </div>
+
+                                        <div class="location-btn w-inline-block">
+                                            <p class="p-18 black btn">CALL US</p>
+                                            <a id="call-btn-2" href="tel:" class="p-16 black phone-link"></a>
+                                        </div>
+
+                                        <a  href="https://wa.me/+971542722555" class="location-btn w-inline-block">
                                             <p class="p-18 black btn">TEXT ON WHATSAPP</p>
                                         </a>
+
                                     </div>
+
                                 </div>
                             </div>
                         </div>
