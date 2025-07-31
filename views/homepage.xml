@@ -94,7 +94,7 @@
                                     </div>
                                 </a
                                 >
-                                <a t-att-href="'/services'" class="home-hero_price-link is-last w-inline-block">
+                                <a t-att-href="'/services#faq-container'" class="home-hero_price-link is-last w-inline-block">
                                     <div class="home-hero_prices-text">Prices</div>
                                 </a>
                             </div>
@@ -1447,7 +1447,7 @@
                                 </svg>
                             </div>
                         </a>
-                        <a t-att-href="'/services'" class="home-hero_price-link is-last w-inline-block">
+                        <a t-att-href="'/services#faq-container'" class="home-hero_price-link is-last w-inline-block">
                             <div class="home-hero_prices-text">Prices</div>
                         </a>
                     </div>

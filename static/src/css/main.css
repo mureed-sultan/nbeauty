@@ -11822,8 +11822,9 @@ a.btn-primary{
     }
 }
 .pricelist-description{
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     letter-spacing: normal;
+    text-transform:none;
 }
 .pricelist-description-cost{
     font-weight: 800;

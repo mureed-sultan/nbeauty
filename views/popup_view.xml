@@ -85,14 +85,14 @@
     font-size: 16px;
     margin: 0;
     font-weight: bold;
-    color: #fff;
+    color: black;
 }
 
 /* Dot style */
 .nbeauty-popup-close .black-circle-div {
     width: 8px;
     height: 8px;
-    background: #fff;   /* same color as text */
+    background: black;
     border-radius: 50%;
 }
 
