@@ -250,7 +250,7 @@
 
                         <!-- Grid -->
                         <section>
-                            <div id="faq-container" class="faq-container"></div>
+                            <div id="faq-container" class="faq-container faq-containers"></div>
                             <!--                            <xpath expr="//footer" position="inside">-->
                             <!--                                <script src="/nbeauty/static/src/js/pricelist.js"></script>-->
                             <!--                            </xpath>-->

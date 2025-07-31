@@ -74,9 +74,9 @@ const serviceCategories = [
     id: "1",
     title: "Hair Care",
     titleArabic: "العناية بالشعر",
-    description:
-      "Expert hands, extraordinary transformation.Your journey to beautiful hair begins here.",
-    children: [
+    description:"Expert hands, extraordinary transformation.Your journey to beautiful hair begins here.",
+ icon: "fa fa-cut",
+     children: [
       {
         title: "Cut ",
         titleArabic: "قص وتصفيف",
@@ -390,8 +390,8 @@ const serviceCategories = [
     id: "2",
     title: "Make-Up & Tinting Eyelash Extentions",
     titleArabic: "مكياج و صبغة",
-    description:
-      "From subtle glam to all-out wow, flawless makeup, defined brows, and lashes that speak volumes.",
+    description:      "From subtle glam to all-out wow, flawless makeup, defined brows, and lashes that speak volumes.",
+        icon: "fa fa-magic",
     children: [
       {
         title: "Make-UP",
@@ -457,9 +457,9 @@ const serviceCategories = [
     id: "3",
     title: "Skin Care",
     titleArabic: "العناية بالب1",
-    description:
-      "Quick, calming, and glow-boosting — the perfect pick-me-up your skin will thank you for.",
+    description:      "Quick, calming, and glow-boosting — the perfect pick-me-up your skin will thank you for.",
     price: "200",
+        icon: "fa fa-leaf",
     services: [
       {
         name: "Anti-Wrinkle, Revitalizing ",
@@ -534,8 +534,9 @@ const serviceCategories = [
     id: "4",
     title: "Body Care",
     titleArabic: "العناية بالبشرة",
-    description:
-      "Smooth, radiant, and confident — from waxing to brightening, we care for every inch. ",
+    description:      "Smooth, radiant, and confident — from waxing to brightening, we care for every inch. ",
+        icon: "fa fa-hand-sparkles",
+
     children: [
       {
         title: "Waxing",
@@ -634,8 +635,9 @@ const serviceCategories = [
     id: "5",
     title: "Nail Care",
     titleArabic: "العناية بالأظافر",
-    description:
-      "More than just polish — it's self-care, style, and confidence at your fingertips.",
+    description:      "More than just polish — it's self-care, style, and confidence at your fingertips.",
+        icon: "fa fa-hand-paper",
+
     children: [
       {
         title: "Classic",
@@ -1040,36 +1042,35 @@ const serviceCategories = [
   },
 ];
 
-
-// ✅ Accordion UI Code (your exact version)
 function createServiceBlock(service) {
   const block = document.createElement("div");
-  block.className = "service-item c-faq-a-text";
+  block.className = "service-item c-faq-a-text padding-none";
   block.dataset.serviceName = service.name.toLowerCase();
 
-  block.innerHTML =`
-        <div class="_4block-faq-text-div-main ogg-font">
-            <div class="_4block-top-text-div">
-                <div class="_4block-faq-text-top-div">
-                    <h1 class="p-30 service-gap">${service.name} </span></h1>
-                </div>
-            </div>
-            <div class="_4block-text-bottom-main-div">
-                <div class="_4block-faq-text-bottom-div"><p class="service-gap font-900">Price  <span>AED
-                ${service
-                .price}</span></p></div>
-                <a   href="/booking/${service.name.replace(' ', '-')}"  class="_4block-btn-mob
-                w-inline-block">
-                    <h1 class="h-18 _4block">Make an appointment</h1>
-                    <div class="white-circle-div-4block"></div>
-                </a>
-            </div>
+  block.innerHTML = `
+    <div class="_4block-faq-text-div-main ogg-font">
+      <div class="_4block-top-text-div">
+        <div class="_4block-faq-text-top-div">
+          <h1 class="p-30 service-gap">${service.name}</h1>
         </div>
-        <a href="/booking/${service.name.replace(' ', '-')}"  class="_4block-btn hide w-inline-block">
-            <h1 class="h-18 _4block">Make an appointment</h1>
-            <div class="white-circle-div-4block"></div>
-        </a>`
-    ;
+      </div>
+      <div class="_4block-text-bottom-main-div">
+        <div class="_4block-faq-text-bottom-div">
+          <p class="service-gap font-900">
+            Price <span>AED ${service.price}</span>
+          </p>
+        </div>
+        <a href="/booking/${encodeURIComponent(service.name.trim().replace(/\s+/g, '-'))}" class="_4block-btn-mob w-inline-block">
+          <h1 class="h-18 _4block">Make an appointment</h1>
+          <div class="white-circle-div-4block"></div>
+        </a>
+      </div>
+    </div>
+    <a href="/booking/${encodeURIComponent(service.name.trim().replace(/\s+/g, '-'))}" class="_4block-btn hide w-inline-block">
+      <h1 class="h-18 _4block">Make an appointment</h1>
+      <div class="white-circle-div-4block"></div>
+    </a>
+  `;
   return block;
 }
 
@@ -1087,8 +1088,7 @@ function toggleWrapper(wrapper, arrow) {
 
 function updateParentHeight(parentWrapper) {
   let totalHeight = 0;
-  parentWrapper
-    .querySelectorAll(":scope > .c-faq-titles-content > .c-faq-a")
+  parentWrapper.querySelectorAll(":scope > .c-faq-titles-content > .c-faq-a")
     .forEach((wrapper) => {
       if (wrapper.style.height && wrapper.style.height !== "0px") {
         totalHeight += wrapper.scrollHeight + wrapper.previousElementSibling.scrollHeight;
@@ -1104,21 +1104,19 @@ function createChildBlock(child, parentWrapper) {
   childWrapper.className = "c-faq-titles-content";
 
   const header = document.createElement("div");
-  header.className = "c-faq-b";
+  header.className = "c-faq-b no-border";
   header.innerHTML = `
-        <div class="c-faq-b-text">
-            <div class="h-50-item">${child.title}
-                                        <p class="pricelist-description">${child.description || ""}</p>
-
-            </div>
-
-        </div>
-        <div class="c-faq-icon">
-            <div class="_w-faq-icon">
-                <img class="arrow-img-4block" src="/nbeauty/static/src/img/arrow.svg">
-            </div>
-        </div>
-    `;
+    <div class="c-faq-b-text">
+      <div class="h-50-item">${child.title}
+        <p class="pricelist-description">${child.description || ""}</p>
+      </div>
+    </div>
+    <div class="c-faq-icon">
+      <div class="_w-faq-icon">
+        <img class="arrow-img-4block" src="/nbeauty/static/src/img/arrow.svg">
+      </div>
+    </div>
+  `;
 
   const serviceWrapper = document.createElement("div");
   serviceWrapper.className = "c-faq-a";
@@ -1143,27 +1141,32 @@ function createChildBlock(child, parentWrapper) {
 
 function createMainCategory(category, container) {
   const item = document.createElement("div");
-  item.className = "c-faq-item-main";
+  item.className = "c-faq-item-main gap-10";
   item.dataset.categoryName = category.title.toLowerCase();
 
   const header = document.createElement("div");
-  header.className = "c-faq-q next";
+  header.className = "c-faq-q next no-border box-border";
   header.innerHTML = `
-        <div class="c-faq-q-text _02">
-            <div class="h-70" style="width:1vw;">0${category.id}</div>
-            <div class="h-70 medium">${category.title}
-                <p class="pricelist-description">${category.description || ""}</p>
-            </div>
-        </div>
-        <div class="c-faq-icon">
-            <div class="_w-faq-icon-main">
-                <img class="arrow-img-4block" src="/nbeauty/static/src/img/arrow.svg">
-            </div>
-        </div>
-    `;
+
+    <div class="c-faq-q-text _02">
+
+      <!--<div class="h-70" style="width:1vw;">0${category.id}</div> -->
+          <div class="c-faq-icon-left">
+      <i class="${category.icon || 'fa fa-star'} icon-size"></i>
+    </div>
+      <div class="h-70 medium">${category.title}
+        <p class="pricelist-description">${category.description || ""}</p>
+      </div>
+    </div>
+    <div class="c-faq-icon">
+      <div class="_w-faq-icon-main">
+        <img class="arrow-img-4block" src="/nbeauty/static/src/img/arrow.svg">
+      </div>
+    </div>
+  `;
 
   const wrapper = document.createElement("div");
-  wrapper.className = "c-faq-titles";
+  wrapper.className = "c-faq-titles box-border-white";
   wrapper.style.height = "0px";
   wrapper.style.overflow = "hidden";
   wrapper.style.transition = "height 0.5s ease";
@@ -1184,90 +1187,46 @@ function createMainCategory(category, container) {
     wrapper.appendChild(serviceWrapper);
   }
 
-header.addEventListener("click", () => {
-  document.querySelectorAll(".c-faq-titles").forEach((w) => {
-    if (w !== wrapper) {
-      w.style.height = "0px";
-      const icon = w.previousElementSibling?.querySelector(".arrow-img-4block");
-      if (icon) icon.style.transform = "rotate(0deg)";
-      const innerFaq = w.querySelector(".c-faq-a");
-      if (innerFaq) innerFaq.style.height = "0px";
+  header.addEventListener("click", () => {
+    document.querySelectorAll(".c-faq-titles").forEach((w) => {
+      if (w !== wrapper) {
+        w.style.height = "0px";
+        const icon = w.previousElementSibling?.querySelector(".arrow-img-4block");
+        if (icon) icon.style.transform = "rotate(0deg)";
+        const innerFaq = w.querySelector(".c-faq-a");
+        if (innerFaq) innerFaq.style.height = "0px";
+      }
+    });
+
+    const arrow = header.querySelector(".arrow-img-4block");
+
+    if (category.services) {
+      const serviceWrapper = wrapper.querySelector(".c-faq-a");
+      const isOpen = serviceWrapper.style.height && serviceWrapper.style.height !== "0px";
+
+      if (!isOpen) {
+        const fullHeight = [...serviceWrapper.children].reduce((acc, el) => acc + el.scrollHeight, 0);
+        serviceWrapper.style.height = `${fullHeight}px`;
+        wrapper.style.height = `${fullHeight}px`;
+        arrow.style.transform = "rotate(180deg)";
+      } else {
+        serviceWrapper.style.height = "0px";
+        wrapper.style.height = "0px";
+        arrow.style.transform = "rotate(0deg)";
+      }
+    } else {
+      toggleWrapper(wrapper, arrow);
     }
   });
-
-  const arrow = header.querySelector(".arrow-img-4block");
-
-  if (category.services) {
-    const serviceWrapper = wrapper.querySelector(".c-faq-a");
-    const isOpen = serviceWrapper.style.height && serviceWrapper.style.height !== "0px";
-
-    if (!isOpen) {
-      // ✅ Expand: match height to inner content
-      const fullHeight = [...serviceWrapper.children].reduce(
-        (acc, el) => acc + el.scrollHeight,
-        0
-      );
-      serviceWrapper.style.height = `${fullHeight}px`;
-      wrapper.style.height = `${fullHeight}px`;
-      arrow.style.transform = "rotate(180deg)";
-    } else {
-      // ✅ Collapse
-      serviceWrapper.style.height = "0px";
-      wrapper.style.height = "0px";
-      arrow.style.transform = "rotate(0deg)";
-    }
-  } else {
-    // ✅ For child categories use normal toggle
-    toggleWrapper(wrapper, arrow);
-  }
-});
-
 
   item.appendChild(header);
   item.appendChild(wrapper);
   container.appendChild(item);
 }
 
-// ✅ Render Accordion
+// ✅ Render Accordion with icon support
 const container = document.getElementById("faq-container");
 serviceCategories.forEach((category) => createMainCategory(category, container));
-
-// ✅ Search + Category Filter
-const searchInput = document.getElementById("service-search-input");
-const categorySelect = document.getElementById("category-filter");
-
-// Populate dropdown with parent categories
-serviceCategories.forEach(cat => {
-  const option = document.createElement("option");
-  option.value = cat.title.toLowerCase();
-  option.textContent = cat.title;
-  categorySelect.appendChild(option);
-});
-
-function filterServices() {
-  const searchText = searchInput.value.toLowerCase();
-  const selectedCategory = categorySelect.value;
-
-  document.querySelectorAll(".c-faq-item-main").forEach(categoryBlock => {
-    const categoryName = categoryBlock.dataset.categoryName;
-    let categoryVisible = false;
-
-    categoryBlock.querySelectorAll(".service-item").forEach(service => {
-      const serviceName = service.dataset.serviceName;
-      const matchesText = serviceName.includes(searchText);
-      const matchesCategory = !selectedCategory || categoryName === selectedCategory;
-
-      if (matchesText && matchesCategory) {
-        service.style.display = "";
-        categoryVisible = true;
-      } else {
-        service.style.display = "none";
-      }
-    });
-
-    categoryBlock.style.display = categoryVisible ? "" : "none";
-  });
-}
 
 searchInput.addEventListener("input", filterServices);
 categorySelect.addEventListener("change", filterServices);
