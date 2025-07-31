@@ -1378,6 +1378,17 @@
                                 </a>
                             </div>
                             <h1 class="h-50 medium">choose your preferred location</h1>
+
+<!--                            <a href="/booking/Cut"-->
+<!--                               class="btn-1 w-inline-block">-->
+<!--                                <div data-w-id="dba252a3-1e31-9541-99a1-2e9bc6a4daa1"-->
+<!--                                     style="background-color: rgba(0, 0, 0, 0)"-->
+<!--                                     class="btn-div-inside sizeupdate">-->
+<!--                                    <h1 style="color: rgb(0, 0, 0)" class="h-18 center-align">Make an Appointment-->
+<!--                                    </h1>-->
+<!--                                    <div style="opacity: 0" class="btn-1-wh-stroke-circle"></div>-->
+<!--                                </div>-->
+<!--                            </a>-->
                             <div class="locations-div">
                                 <div class="location-div-pop-up">
                                     <div class="location-top-div">

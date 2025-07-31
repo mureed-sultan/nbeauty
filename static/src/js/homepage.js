@@ -401,7 +401,7 @@ const serviceCategories = [
       {
         title: "Nail Brightening",
         titleArabic: "تفتيح اظافر ",
-        description: "",
+        description: "A glow-up for your nails — bright, fresh, and healthy-looking.",
         price: "50",
       },
       {
