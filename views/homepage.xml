@@ -1378,9 +1378,6 @@
                                 </a>
                             </div>
                             <h1 class="h-50 medium">choose your preferred location</h1>
-                                     <a href="/booking/Cut" class="location-btn w-inline-block">
-                                            <p class="p-18 black btn">Make an Appointment</p>
-                                        </a>
                             <div class="locations-div">
                                 <div class="location-div-pop-up">
                                     <div class="location-top-div">
