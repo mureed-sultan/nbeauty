@@ -94,7 +94,8 @@
                                     </div>
                                 </a
                                 >
-                                <a t-att-href="'/services#faq-container'" class="home-hero_price-link is-last w-inline-block">
+                                <a t-att-href="'/services#faq-container'"
+                                   class="home-hero_price-link is-last w-inline-block">
                                     <div class="home-hero_prices-text">Prices</div>
                                 </a>
                             </div>
@@ -1377,6 +1378,9 @@
                                 </a>
                             </div>
                             <h1 class="h-50 medium">choose your preferred location</h1>
+                                     <a href="/booking/Cut" class="location-btn w-inline-block">
+                                            <p class="p-18 black btn">Make an Appointment</p>
+                                        </a>
                             <div class="locations-div">
                                 <div class="location-div-pop-up">
                                     <div class="location-top-div">
@@ -1414,17 +1418,18 @@
                                     </div>
                                     <div id="location-btns" class="location-btns-div">
 
-                                        <div class="location-btn w-inline-block">
+                                        <div class="location-btn w-inline-block" data-target="call-btn">
                                             <p class="p-18 black btn">CALL US</p>
                                             <a id="call-btn" href="tel:" class="p-16 black phone-link"></a>
                                         </div>
 
-                                        <div class="location-btn w-inline-block">
+                                        <div class="location-btn w-inline-block" data-target="call-btn-2">
                                             <p class="p-18 black btn">CALL US</p>
                                             <a id="call-btn-2" href="tel:" class="p-16 black phone-link"></a>
                                         </div>
 
-                                        <a  href="https://wa.me/+971542722555" class="location-btn w-inline-block">
+
+                                        <a href="https://wa.me/+971542722555" class="location-btn w-inline-block">
                                             <p class="p-18 black btn">TEXT ON WHATSAPP</p>
                                         </a>
 

@@ -77,7 +77,7 @@ function updateLocation(value) {
   const data = branchData[value];
   if (!data) return;
 
-  // Update map link & address
+  // ✅ Update map link & address
   document.getElementById("map-link").href = data.map;
   document.getElementById("map-link").textContent = data.address;
 
@@ -99,6 +99,17 @@ function updateLocation(value) {
   document.getElementById("location-point").classList.remove("hide");
   document.getElementById("location-btns").classList.remove("hide");
 }
+
+// ✅ Make entire button clickable
+document.querySelectorAll(".location-btn").forEach(btn => {
+  btn.addEventListener("click", function() {
+    const targetId = this.getAttribute("data-target");
+    const link = document.getElementById(targetId);
+    if (link && link.href) {
+      window.location.href = link.href;
+    }
+  });
+});
 
 
 // Set default on page load
