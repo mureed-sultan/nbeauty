@@ -1051,7 +1051,7 @@ function createServiceBlock(service) {
         <div class="_4block-faq-text-div-main ogg-font">
             <div class="_4block-top-text-div">
                 <div class="_4block-faq-text-top-div">
-                    <h1 class="p-30 service-gap">${service.name} <span>${service.arabic||""}</span></h1>
+                    <h1 class="p-30 service-gap">${service.name} </span></h1>
                 </div>
             </div>
             <div class="_4block-text-bottom-main-div">
