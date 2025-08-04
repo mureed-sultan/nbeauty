@@ -716,11 +716,11 @@
                         </div>
                         <div class="_6block-content-div-main">
                             <div class="_6block-content-div">
-                                <a href="#" class="lightbox w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-36.JPG" loading="eager"
-                                         data-w-id="7733f195-38b2-65b8-c22f-afd5240b97cb" alt=""
-                                         class="_6block-img _1"/>
-                                </a>
+<!--                                <a href="#" class="lightbox w-inline-block w-lightbox">-->
+<!--                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-36.JPG" loading="eager"-->
+<!--                                         data-w-id="7733f195-38b2-65b8-c22f-afd5240b97cb" alt=""-->
+<!--                                         class="_6block-img _1"/>-->
+<!--                                </a>-->
                                 <a href="#"
                                    class="lightbox w-inline-block w-lightbox">
                                     <img t-attf-src="/nbeauty/static/src/img/lowres/image-25.JPG" loading="eager"
@@ -740,11 +740,11 @@
                                          data-w-id="bb10931d-2c60-3112-5345-da4cac83aa43" alt=""
                                          class="_6block-img _4"/>
                                 </a>
-                                <a href="#" class="lightbox w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-16.JPG" loading="eager"
-                                         data-w-id="0f7e32e1-4bc4-bf9e-dc52-54987a05e91a" alt=""
-                                         class="_6block-img _5"/>
-                                </a>
+<!--                                <a href="#" class="lightbox w-inline-block w-lightbox">-->
+<!--                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-16.JPG" loading="eager"-->
+<!--                                         data-w-id="0f7e32e1-4bc4-bf9e-dc52-54987a05e91a" alt=""-->
+<!--                                         class="_6block-img _5"/>-->
+<!--                                </a>-->
                                 <a href="#" class="lightbox w-inline-block w-lightbox">
 
                                     <img t-attf-src="/nbeauty/static/src/img/lowres/image-17.JPG" loading="eager"
