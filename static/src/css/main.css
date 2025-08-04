@@ -11937,3 +11937,10 @@ font-size:65px; color:#d7a7aa
 font-size:35px; color:#d7a7aa
 }
 }
+h5.position-absolute.top-50.start-50.translate-middle.text-white{
+font-size:2rem;
+}
+
+h2.text-white.fw-bold{
+color:black;
+}

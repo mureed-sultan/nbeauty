@@ -233,22 +233,22 @@
                             <div class="carousel-item active">
                                 <img src="/nbeauty/static/src/img/image1.JPG" class="d-block w-100" alt="..."/>
                                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                                    <h2 class="text-white fw-bold">Your First Slide Title</h2>
-                                    <p class="text-white">Description for the first slide goes here.</p>
+                                    <h2 class="text-black fw-bold">Your First Slide Title</h2>
+                                    <p class="text-black">Description for the first slide goes here.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="/nbeauty/static/src/img/banner.JPG" class="d-block w-100" alt="..."/>
                                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                                    <h2 class="text-white fw-bold">Second Slide Title</h2>
-                                    <p class="text-white">Another description for the second slide.</p>
+                                    <h2 class="text-black fw-bold">Second Slide Title</h2>
+                                    <p class="text-black">Another description for the second slide.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="/nbeauty/static/src/img/IMG_9653.JPG" class="d-block w-100" alt="..."/>
                                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                                    <h2 class="text-white fw-bold">Third Slide Title</h2>
-                                    <p class="text-white">Details for the third slide.</p>
+                                    <h2 class="text-black fw-bold">Third Slide Title</h2>
+                                    <p class="text-black">Details for the third slide.</p>
                                 </div>
                             </div>
                         </div>
@@ -402,8 +402,8 @@
                             <div class="carousel-item active">
                                 <img src="/nbeauty/static/src/img/image1.JPG" class="d-block w-100" alt="Slide 1"/>
                                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                                    <h2 class="text-white fw-bold">Our Journey: Blossoming in the Heart of the UAE</h2>
-                                    <p class="text-white">From a single dream to a flourishing chain, N Beauty Salon’s
+                                    <h2 class="text-black fw-bold">Our Journey: Blossoming in the Heart of the UAE</h2>
+                                    <p class="text-black">From a single dream to a flourishing chain, N Beauty Salon’s
                                         story began with a simple vision: to create a sanctuary where women across the
                                         UAE could celebrate their individuality.
                                     </p>
@@ -415,8 +415,8 @@
                             <div class="carousel-item">
                                 <img src="/nbeauty/static/src/img/banner.JPG" class="d-block w-100" alt="Slide 2"/>
                                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                                    <h2 class="text-white fw-bold">Our Mission: Unleashing the Beauty Within</h2>
-                                    <p class="text-white">At N Beauty Salon, our mission is to empower every woman who
+                                    <h2 class="text-black fw-bold">Our Mission: Unleashing the Beauty Within</h2>
+                                    <p class="text-black">At N Beauty Salon, our mission is to empower every woman who
                                         walks through our doors to feel confident, radiant, and authentically herself.
                                     </p>
                                     <a href="/aboutus" class="btn btn-light btn-lg mt-3">Read More</a>
@@ -427,8 +427,8 @@
                             <div class="carousel-item">
                                 <img src="/nbeauty/static/src/img/IMG_9653.JPG" class="d-block w-100" alt="Slide 3"/>
                                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                                    <h2 class="text-white fw-bold">Our Vision: Leading the Way in Holistic Beauty</h2>
-                                    <p class="text-white">We strive to be the UAE’s most trusted and beloved all-female
+                                    <h2 class="text-black fw-bold">Our Vision: Leading the Way in Holistic Beauty</h2>
+                                    <p class="text-black">We strive to be the UAE’s most trusted and beloved all-female
                                         salon chain, setting the gold standard in integrated beauty care.
                                     </p>
                                     <a href="/aboutus" class="btn btn-light btn-lg mt-3">Read More</a>
@@ -439,8 +439,8 @@
                             <div class="carousel-item">
                                 <img src="/nbeauty/static/src/img/IMG_9654.JPG" class="d-block w-100" alt="Slide 4"/>
                                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                                    <h2 class="text-white fw-bold">Our Expertise: A Complete Spectrum of Care</h2>
-                                    <p class="text-white">N Beauty Salon offers an extensive range of top-tier services
+                                    <h2 class="text-black fw-bold">Our Expertise: A Complete Spectrum of Care</h2>
+                                    <p class="text-black">N Beauty Salon offers an extensive range of top-tier services
                                         designed with today’s woman in mind: Nail Care, Hair Styling, Skin Treatments
                                         and more.
                                     </p>
@@ -452,8 +452,8 @@
                             <div class="carousel-item">
                                 <img src="/nbeauty/static/src/img/IMG_9655.JPG" class="d-block w-100" alt="Slide 5"/>
                                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
-                                    <h2 class="text-white fw-bold">Our Promise</h2>
-                                    <p class="text-white">As an all-female team, we cherish the power of community and
+                                    <h2 class="text-black fw-bold">Our Promise</h2>
+                                    <p class="text-black">As an all-female team, we cherish the power of community and
                                         belonging. We are committed to fostering a welcoming space where clients feel
                                         celebrated and inspired to embrace their unique beauty.
                                     </p>
@@ -509,7 +509,7 @@
                                             <div class="position-relative">
                                                 <img src="/nbeauty/static/src/img/lowres/image-12.JPG"
                                                      class="rounded-circle img-fluid"
-                                                     style="width:180px; height:180px; object-fit:cover;"/>
+                                                     style="width: 18rem;  height: 18rem; object-fit:cover;"/>
                                                 <h5 class="position-absolute top-50 start-50 translate-middle text-white fw-bold">
                                                     Hair Care
                                                 </h5>
@@ -523,7 +523,7 @@
                                             <div class="position-relative">
                                                 <img src="/nbeauty/static/src/img/IMG_9647.JPG"
                                                      class="rounded-circle img-fluid"
-                                                     style="width:180px; height:180px; object-fit:cover;"/>
+                                                     style="width: 18rem;  height: 18rem; object-fit:cover;"/>
                                                 <h5 class="position-absolute top-50 start-50 translate-middle text-white fw-bold">
                                                     Make-Up
                                                 </h5>
@@ -537,7 +537,7 @@
                                             <div class="position-relative">
                                                 <img src="/nbeauty/static/src/img/lowres/image-27.JPG"
                                                      class="rounded-circle img-fluid"
-                                                     style="width:180px; height:180px; object-fit:cover;"/>
+                                                     style="width: 18rem;  height: 18rem; object-fit:cover;"/>
                                                 <h5 class="position-absolute top-50 start-50 translate-middle text-white fw-bold">
                                                     Skin Care
                                                 </h5>
@@ -551,7 +551,7 @@
                                             <div class="position-relative">
                                                 <img src="/nbeauty/static/src/img/IMG_9652.JPG"
                                                      class="rounded-circle img-fluid"
-                                                     style="width:180px; height:180px; object-fit:cover;"/>
+                                                     style="width: 18rem;  height: 18rem; object-fit:cover;"/>
                                                 <h5 class="position-absolute top-50 start-50 translate-middle text-white fw-bold">
                                                     Body Care
                                                 </h5>
@@ -565,7 +565,7 @@
                                             <div class="position-relative">
                                                 <img src="/nbeauty/static/src/img/lowres/image-20.JPG"
                                                      class="rounded-circle img-fluid"
-                                                     style="width:180px; height:180px; object-fit:cover;"/>
+                                                     style="width: 18rem;  height: 18rem; object-fit:cover;"/>
                                                 <h5 class="position-absolute top-50 start-50 translate-middle text-white fw-bold">
                                                     Nail Care
                                                 </h5>
