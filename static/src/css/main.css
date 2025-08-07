@@ -2697,7 +2697,7 @@ body {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   margin: 0;
-  font-size: 1.1vw;
+  font-size: 1.4vw;
   font-weight: 400;
   line-height: 102.5%;
 }
@@ -2814,6 +2814,7 @@ body {
 .h-345 {
   color: var(--black);
   margin: 0;
+  text-align:center;
   font-size: 17.969vw;
   font-weight: 400;
   line-height: 80%;
@@ -2954,7 +2955,7 @@ body {
 ._1block-content-div-2line {
   align-items: flex-end;
   margin-top: 4.589vw;
-  padding-left: 23.604vw;
+  padding-left: 27.604vw;
   padding-right: 2.604vw;
   display: flex;
 }
@@ -2975,7 +2976,7 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 1.51vw;
-  padding-left: 2.604vw;
+  padding-left: 0.604vw;
   padding-right: 0;
   display: flex;
   position: relative;
@@ -5850,7 +5851,7 @@ text-align:center;
 }
 
 .home-hero_phone-link {
-  background-color: #f5ecdd;
+  background-color: var(--color7);
   border: 2px solid #0006;
   border-radius: 100%;
   justify-content: center;
@@ -5880,7 +5881,7 @@ text-align:center;
 }
 
 .home-hero_price-link {
-  background-color: #f5ecdd;
+  background-color: var(--color7);
   border: 2px solid #938e85;
   border-radius: 100%;
   justify-content: center;
@@ -11943,4 +11944,36 @@ font-size:2rem;
 
 h2.text-white.fw-bold{
 color:black;
+}
+.banner-logo{
+font-weight:900;
+}
+.p-16.phones-header{
+font-size:30px;
+}
+.mkeapontbtn{
+margin-right:25px;
+}
+.menu-font{
+font-size:30px;
+}
+.nbeautylore-text{
+letter-spacing:5px;
+margin-left:2rem;
+}
+.story-text{
+font-size:35px;
+}
+.gradient-box{
+    background: linear-gradient(to right, #8ea488, #8ea4881f);
+        border-radius: 9px;
+        padding:10px;
+}
+.icon-container-alt{
+position:relative;}
+.absolute-top-right{
+    position: absolute;
+    top: -80px;
+    right: -65px;
+    transform: rotate(14deg);
 }

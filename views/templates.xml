@@ -44,7 +44,7 @@
                         <div class="menu-button-div">
                             <a href="javascript:void(0)" id="nbeauty-toggle-btn"
                                class="location-header-div w-inline-block">
-                                <h1 class="h-18">menu</h1>
+                                <h1 class="h-18 menu-font">menu</h1>
                                 <div class="black-circle-div"></div>
                             </a>
                         </div>
