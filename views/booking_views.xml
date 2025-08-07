@@ -36,10 +36,12 @@
 
                                     <!-- ✅ Service Titles -->
                                     <div>
-                                        <h2 style="color:#b30059; font-weight:700; font-size:1.8rem;" id="service-title">
+                                        <h2 style="color:#000000; font-weight:700; font-size:1.8rem;"
+                                            id="service-title">
                                             Book Your Signature Beauty Experience
                                         </h2>
-                                        <h4 style="color:#7a1fa2; font-weight:500;" class="mt-2" id="service-title-arabic">
+                                        <h4 style="color:#8ea488; font-weight:500;" class="mt-2"
+                                            id="service-title-arabic">
                                             احجز تجربتك الجمالية الفاخرة
                                         </h4>
                                     </div>
@@ -66,7 +68,7 @@
 
                                     <!-- ✅ Multi-Service Selection -->
                                     <div class="mb-4">
-                                        <h3 style="color:#b30059; font-weight:600;">Select Your Services:</h3>
+                                        <h3 style="color:#000000; font-weight:600;">Select Your Services:</h3>
                                         <select id="service-dropdown" name="service_ids" class="form-select mb-3"
                                                 multiple="multiple" size="6"></select>
                                         <p class="small text-muted">💡 Hold Ctrl/Cmd to select multiple services.</p>
@@ -124,7 +126,7 @@
                                         <div class="text-center mt-4">
                                             <button type="submit"
                                                     class="btn btn-lg px-5 py-2"
-                                                    style="background:linear-gradient(90deg,#b30059,#ff4f81); color:#fff; border:none; border-radius: 50px;">
+                                                    style="background:linear-gradient(90deg,#d7a7aa,#f6d2d1); color:#fff; border:none; border-radius: 50px;">
                                                 ✨ Confirm My Booking
                                             </button>
                                         </div>
