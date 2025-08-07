@@ -403,10 +403,10 @@
                                 <img src="/nbeauty/static/src/img/image1.JPG" class="d-block w-100" alt="Slide 1"/>
                                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
                                     <h2 class="text-black fw-bold">Our Journey: Blossoming in the Heart of the UAE</h2>
-                                    <p class="text-black">From a single dream to a flourishing chain, N Beauty Salon’s
-                                        story began with a simple vision: to create a sanctuary where women across the
-                                        UAE could celebrate their individuality.
-                                    </p>
+<!--                                    <p class="text-black">From a single dream to a flourishing chain, N Beauty Salon’s-->
+<!--                                        story began with a simple vision: to create a sanctuary where women across the-->
+<!--                                        UAE could celebrate their individuality.-->
+<!--                                    </p>-->
                                     <a href="/aboutus" class="btn btn-light btn-lg mt-3">Read More</a>
                                 </div>
                             </div>
@@ -416,9 +416,9 @@
                                 <img src="/nbeauty/static/src/img/banner.JPG" class="d-block w-100" alt="Slide 2"/>
                                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
                                     <h2 class="text-black fw-bold">Our Mission: Unleashing the Beauty Within</h2>
-                                    <p class="text-black">At N Beauty Salon, our mission is to empower every woman who
-                                        walks through our doors to feel confident, radiant, and authentically herself.
-                                    </p>
+<!--                                    <p class="text-black">At N Beauty Salon, our mission is to empower every woman who-->
+<!--                                        walks through our doors to feel confident, radiant, and authentically herself.-->
+<!--                                    </p>-->
                                     <a href="/aboutus" class="btn btn-light btn-lg mt-3">Read More</a>
                                 </div>
                             </div>
@@ -428,9 +428,9 @@
                                 <img src="/nbeauty/static/src/img/IMG_9653.JPG" class="d-block w-100" alt="Slide 3"/>
                                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
                                     <h2 class="text-black fw-bold">Our Vision: Leading the Way in Holistic Beauty</h2>
-                                    <p class="text-black">We strive to be the UAE’s most trusted and beloved all-female
-                                        salon chain, setting the gold standard in integrated beauty care.
-                                    </p>
+<!--                                    <p class="text-black">We strive to be the UAE’s most trusted and beloved all-female-->
+<!--                                        salon chain, setting the gold standard in integrated beauty care.-->
+<!--                                    </p>-->
                                     <a href="/aboutus" class="btn btn-light btn-lg mt-3">Read More</a>
                                 </div>
                             </div>
@@ -440,10 +440,10 @@
                                 <img src="/nbeauty/static/src/img/IMG_9654.JPG" class="d-block w-100" alt="Slide 4"/>
                                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
                                     <h2 class="text-black fw-bold">Our Expertise: A Complete Spectrum of Care</h2>
-                                    <p class="text-black">N Beauty Salon offers an extensive range of top-tier services
-                                        designed with today’s woman in mind: Nail Care, Hair Styling, Skin Treatments
-                                        and more.
-                                    </p>
+<!--                                    <p class="text-black">N Beauty Salon offers an extensive range of top-tier services-->
+<!--                                        designed with today’s woman in mind: Nail Care, Hair Styling, Skin Treatments-->
+<!--                                        and more.-->
+<!--                                    </p>-->
                                     <a href="/aboutus" class="btn btn-light btn-lg mt-3">Read More</a>
                                 </div>
                             </div>
@@ -453,10 +453,10 @@
                                 <img src="/nbeauty/static/src/img/IMG_9655.JPG" class="d-block w-100" alt="Slide 5"/>
                                 <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
                                     <h2 class="text-black fw-bold">Our Promise</h2>
-                                    <p class="text-black">As an all-female team, we cherish the power of community and
-                                        belonging. We are committed to fostering a welcoming space where clients feel
-                                        celebrated and inspired to embrace their unique beauty.
-                                    </p>
+<!--                                    <p class="text-black">As an all-female team, we cherish the power of community and-->
+<!--                                        belonging. We are committed to fostering a welcoming space where clients feel-->
+<!--                                        celebrated and inspired to embrace their unique beauty.-->
+<!--                                    </p>-->
                                     <a href="/aboutus" class="btn btn-light btn-lg mt-3">Read More</a>
                                 </div>
                             </div>
@@ -519,7 +519,8 @@
 
                                     <!-- Make-Up -->
                                     <div class="text-center">
-                                        <a href="/services?id=make-up" class="text-decoration-none">
+                                        <a href="/services?id=make-up-tinting-eyelash-extentions"
+                                           class="text-decoration-none">
                                             <div class="position-relative">
                                                 <img src="/nbeauty/static/src/img/IMG_9647.JPG"
                                                      class="rounded-circle img-fluid"
@@ -716,11 +717,11 @@
                         </div>
                         <div class="_6block-content-div-main">
                             <div class="_6block-content-div">
-<!--                                <a href="#" class="lightbox w-inline-block w-lightbox">-->
-<!--                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-36.JPG" loading="eager"-->
-<!--                                         data-w-id="7733f195-38b2-65b8-c22f-afd5240b97cb" alt=""-->
-<!--                                         class="_6block-img _1"/>-->
-<!--                                </a>-->
+                                <!--                                <a href="#" class="lightbox w-inline-block w-lightbox">-->
+                                <!--                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-36.JPG" loading="eager"-->
+                                <!--                                         data-w-id="7733f195-38b2-65b8-c22f-afd5240b97cb" alt=""-->
+                                <!--                                         class="_6block-img _1"/>-->
+                                <!--                                </a>-->
                                 <a href="#"
                                    class="lightbox w-inline-block w-lightbox">
                                     <img t-attf-src="/nbeauty/static/src/img/lowres/image-25.JPG" loading="eager"
@@ -740,11 +741,11 @@
                                          data-w-id="bb10931d-2c60-3112-5345-da4cac83aa43" alt=""
                                          class="_6block-img _4"/>
                                 </a>
-<!--                                <a href="#" class="lightbox w-inline-block w-lightbox">-->
-<!--                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-16.JPG" loading="eager"-->
-<!--                                         data-w-id="0f7e32e1-4bc4-bf9e-dc52-54987a05e91a" alt=""-->
-<!--                                         class="_6block-img _5"/>-->
-<!--                                </a>-->
+                                <!--                                <a href="#" class="lightbox w-inline-block w-lightbox">-->
+                                <!--                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-16.JPG" loading="eager"-->
+                                <!--                                         data-w-id="0f7e32e1-4bc4-bf9e-dc52-54987a05e91a" alt=""-->
+                                <!--                                         class="_6block-img _5"/>-->
+                                <!--                                </a>-->
                                 <a href="#" class="lightbox w-inline-block w-lightbox">
 
                                     <img t-attf-src="/nbeauty/static/src/img/lowres/image-17.JPG" loading="eager"
@@ -782,14 +783,14 @@
                                          loading=" lazy" data-w-id="ca54c905-3f96-f61f-178e-87099f201649" alt=""
                                          class="_6block-img _9"/>
                                 </a>
-<!--                                <a-->
-<!--                                        href="#" class="w-inline-block w-lightbox">-->
-<!--                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-22.JPG" loading="eager"-->
-<!--                                         data-w-id="7037e3c8-a84c-5c51-640e-5d33e630a5cc"-->
-<!--                                         sizes="(max-width: 479px) 34vw, 12vw"-->
-<!--                                         alt=""-->
-<!--                                         class="_6block-img _11"/>-->
-<!--                                </a>-->
+                                <!--                                <a-->
+                                <!--                                        href="#" class="w-inline-block w-lightbox">-->
+                                <!--                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-22.JPG" loading="eager"-->
+                                <!--                                         data-w-id="7037e3c8-a84c-5c51-640e-5d33e630a5cc"-->
+                                <!--                                         sizes="(max-width: 479px) 34vw, 12vw"-->
+                                <!--                                         alt=""-->
+                                <!--                                         class="_6block-img _11"/>-->
+                                <!--                                </a>-->
                                 <a href="#" class="w-inline-block w-lightbox">
                                     <img
                                             t-attf-src="/nbeauty/static/src/img/lowres/image-28.JPG" loading="eager"
@@ -803,12 +804,12 @@
                                          data-w-id="02c3e4d1-a130-f847-4431-fadd4d25bd3c" alt=""
                                          class="_6block-img _13"/>
                                 </a>
-<!--                                <a href="#"-->
-<!--                                   class="w-inline-block w-lightbox">-->
-<!--                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-31.JPG" loading="eager"-->
-<!--                                         data-w-id="68eccb86-4e97-0043-79c0-e9a76bec1425" alt=""-->
-<!--                                         class="_6block-img _15"/>-->
-<!--                                </a>-->
+                                <!--                                <a href="#"-->
+                                <!--                                   class="w-inline-block w-lightbox">-->
+                                <!--                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-31.JPG" loading="eager"-->
+                                <!--                                         data-w-id="68eccb86-4e97-0043-79c0-e9a76bec1425" alt=""-->
+                                <!--                                         class="_6block-img _15"/>-->
+                                <!--                                </a>-->
                                 <a href="#"
                                    class="w-inline-block w-lightbox">
                                     <img t-attf-src="/nbeauty/static/src/img/lowres/image-32.JPG" loading="eager"
@@ -837,12 +838,12 @@
                                          data-w-id="a242c5ae-8850-3c0e-aa2d-8ff8dba3953c" alt=""
                                          class="_6block-img _20"/>
                                 </a>
-<!--                                <a href="#" class="w-inline-block w-lightbox">-->
-<!--                                    <img-->
-<!--                                            t-attf-src="/nbeauty/static/src/img/slider-image-4.JPG" loading="lazy"-->
-<!--                                            data-w-id="c7573fdd-1e15-399f-84dd-048660a89080" alt=""-->
-<!--                                            class="_6block-img _21"/>-->
-<!--                                </a>-->
+                                <!--                                <a href="#" class="w-inline-block w-lightbox">-->
+                                <!--                                    <img-->
+                                <!--                                            t-attf-src="/nbeauty/static/src/img/slider-image-4.JPG" loading="lazy"-->
+                                <!--                                            data-w-id="c7573fdd-1e15-399f-84dd-048660a89080" alt=""-->
+                                <!--                                            class="_6block-img _21"/>-->
+                                <!--                                </a>-->
                                 <a href="#" class="w-inline-block w-lightbox">
                                     <img
                                             t-attf-src="/nbeauty/static/src/img/lowres/image-27.JPG" loading="eager"

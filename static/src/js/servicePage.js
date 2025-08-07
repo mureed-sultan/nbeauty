@@ -1223,9 +1223,43 @@ function createMainCategory(category, container) {
   item.appendChild(wrapper);
   container.appendChild(item);
 }
+function filterServices() {
+  const query = searchInput?.value.trim().toLowerCase() || "";
+  const selectedCategory = categorySelect?.value?.toLowerCase() || "";
+
+  // Loop through all main categories
+  document.querySelectorAll(".c-faq-item-main").forEach((category) => {
+    const categoryName = category.dataset.categoryName || "";
+    let categoryVisible = false;
+
+    // If category filter is active, hide non-matching categories early
+    if (selectedCategory && !categoryName.includes(selectedCategory)) {
+      category.style.display = "none";
+      return;
+    }
+
+    // Loop through all services inside category
+    const services = category.querySelectorAll(".service-item");
+    services.forEach((service) => {
+      const serviceName = service.dataset.serviceName || "";
+
+      if (serviceName.includes(query)) {
+        service.style.display = "";
+        categoryVisible = true;
+      } else {
+        service.style.display = "none";
+      }
+    });
+
+    // Show/hide category based on matching services
+    category.style.display = categoryVisible || query === "" ? "" : "none";
+  });
+}
 
 // ✅ Render Accordion with icon support
 const container = document.getElementById("faq-container");
+const searchInput = document.getElementById("service-search-input");
+const categorySelect = document.getElementById("category-filter");
 serviceCategories.forEach((category) => createMainCategory(category, container));
 
 searchInput.addEventListener("input", filterServices);
@@ -1236,37 +1270,44 @@ function getUrlParam(name) {
   const params = new URLSearchParams(window.location.search);
   return params.get(name);
 }
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .replace(/&/g, '')           // remove "&"
+    .replace(/\s+/g, '-')        // spaces → hyphens
+    .replace(/[^a-z0-9-]/g, '')  // remove other special chars
+    .trim();
+}
 
-// ✅ After DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
   const targetId = getUrlParam("id");
   if (targetId) {
-    const searchText = decodeURIComponent(targetId).toLowerCase();
+    const searchSlug = slugify(decodeURIComponent(targetId));
 
-    // Find matching child category block
-    const allChildHeaders = document.querySelectorAll(".c-faq-b-text .h-50-item");
-    for (const header of allChildHeaders) {
-      const text = header.textContent.toLowerCase().trim();
-      if (text.includes(searchText)) {
-        const childWrapper = header.closest(".c-faq-titles-content");
-        const parentWrapper = header.closest(".c-faq-titles");
-        const mainItem = header.closest(".c-faq-item-main");
+    const categories = document.querySelectorAll(".c-faq-item-main");
+    categories.forEach(category => {
+      const categoryName = category.dataset.categoryName || "";
+      const categorySlug = slugify(categoryName);
 
-        // ✅ Open parent category if collapsed
-        const mainHeader = mainItem.querySelector(".c-faq-q");
+      if (categorySlug === searchSlug) {
+        console.log("🎯 Matched category:", categorySlug);
+
+        // ✅ Open if collapsed
+        const mainHeader = category.querySelector(".c-faq-q");
         if (mainHeader) mainHeader.click();
 
-        // ✅ Open this child category
-        const childHeader = childWrapper.querySelector(".c-faq-b");
-        if (childHeader) childHeader.click();
-
-        // ✅ Smooth scroll into view
+        // ✅ Smooth scroll with offset (handles sticky header)
         setTimeout(() => {
-          childWrapper.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 600);
+          const headerOffset = 80; // adjust if you have a fixed header
+          const elementPosition = category.getBoundingClientRect().top + window.scrollY;
+          const offsetPosition = elementPosition - headerOffset;
 
-        break;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        }, 300); // wait for animation to open
       }
-    }
+    });
   }
 });
