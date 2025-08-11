@@ -2796,7 +2796,7 @@ body {
 .logo-img.preloader.bottom {
   margin-bottom: 1vw;
   display: block;
-    width: 75px;
+    /*width: 75px;*/
 
 }
 
@@ -4330,7 +4330,7 @@ opacity: 1; display: flex; background-color: black;
   height: 10.625vw;
   display: flex;
   position: relative;
-  overflow: hidden;
+/*  overflow: hidden;*/
 }
 
 .marquee-horizontal-large.brown-bg {
@@ -5033,7 +5033,7 @@ opacity: 1; display: flex; background-color: black;
   align-items: flex-start;
   margin-bottom: 0;
   padding-left: 1.25vw;
- 
+
   font-size: 0.938vw;
   line-height: 140%;
   list-style-type: decimal;
@@ -5256,7 +5256,7 @@ opacity: 1; display: flex; background-color: black;
   color: var(--black);
   letter-spacing: -0.03em;
   margin-bottom: 0;
- 
+
   font-size: 1.042vw;
   font-weight: 700;
   line-height: 142%;
@@ -5332,7 +5332,7 @@ text-align:center;
   height: 1.719vw;
   margin: 0;
   padding: 0 0 0.365vw;
- 
+
   font-size: 0.938vw;
   font-weight: 300;
   line-height: 140%;
@@ -5423,7 +5423,7 @@ text-align:center;
 .loader_p.is-right {
   color: var(--biege);
   text-align: right;
- 
+
   display: none;
 }
 
@@ -5872,7 +5872,7 @@ text-align:center;
 .home-hero_prices-text {
   color: #0006;
   letter-spacing: -0.54px;
- 
+
   font-size: 18px;
   font-weight: 600;
   line-height: 130%;
@@ -5969,7 +5969,7 @@ text-align:center;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
- 
+
   font-size: 1.563vw;
   font-weight: 400;
   line-height: 98.5%;
@@ -6049,7 +6049,7 @@ text-align:center;
 .p-32 {
   letter-spacing: -0.05063rem;
   width: 40vw;
- 
+
   font-size: 1.667vw;
   font-weight: 400;
   line-height: 130%;
@@ -6140,7 +6140,7 @@ text-align:center;
 
 .h-21 {
   color: #0000004d;
- 
+
   font-size: 1.094vw;
 }
 
@@ -6199,13 +6199,13 @@ text-align:center;
 
 .h-40-inter {
   letter-spacing: -0.075rem;
- 
+
   font-size: 2.083vw;
 }
 
 .h-24-inter {
   color: var(--black);
- 
+
   font-size: 1.25vw;
 }
 
@@ -6341,7 +6341,7 @@ text-align:center;
 .h-30-inter {
   color: var(--black);
   letter-spacing: -0.05625rem;
- 
+
   font-size: 1.563vw;
   line-height: 130%;
 }
@@ -6356,7 +6356,7 @@ text-align:center;
 
 .h-21-inter {
   color: var(--black);
- 
+
   font-size: 1.094vw;
 }
 
@@ -6740,7 +6740,7 @@ text-align:center;
   letter-spacing: -0.03713rem;
   text-transform: uppercase;
   margin-bottom: 0;
- 
+
   font-size: 0.938vw;
   line-height: 102%;
 }
@@ -7079,7 +7079,7 @@ text-align:center;
 .home-hero_prices-text-new {
   color: #312f2c;
   letter-spacing: -0.54px;
- 
+
   font-size: 14px;
   font-weight: 500;
   line-height: 130%;
@@ -7105,7 +7105,7 @@ text-align:center;
 .home-hero_prices-text-new-mob {
   color: #0006;
   letter-spacing: -0.54px;
- 
+
   font-size: 18px;
   font-weight: 600;
   line-height: 130%;
@@ -7128,7 +7128,7 @@ text-align:center;
 
 .p-30-2 {
   width: 42.708vw;
- 
+
   font-size: 1.563vw;
   font-weight: 400;
   line-height: 130%;
@@ -7151,7 +7151,7 @@ text-align:center;
   color: var(--black);
   letter-spacing: -0.09188rem;
   margin: 0;
- 
+
   font-size: 1.875vw;
   font-weight: 400;
   line-height: 98.5%;
@@ -7220,7 +7220,7 @@ text-align:center;
 
 .h-22-inter {
   letter-spacing: -0.06738rem;
- 
+
   font-size: 1.146vw;
   line-height: 120%;
 }
@@ -7314,11 +7314,21 @@ text-align:center;
     font-weight: 700;
   }
 }
-
+.absolute-top-right{
+    position: absolute;
+    top: -6rem;
+    right: -3rem;
+    width:10rem;
+}
 @media screen and (max-width: 767px) {
   .home-hero_contact {
     bottom: 10px;
   }
+  .absolute-top-right{
+    top: -3rem;
+    right: -1rem;
+    width: 5rem;
+}
   .logo-img {
   height:35px;
 }
@@ -7602,7 +7612,8 @@ height:7rem;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 85vw;
+    /*margin-top: 85vw;*/
+    margin-top: 5vw;
     margin-bottom: 8vw;
     padding-left: 0;
     position: relative;
@@ -8096,7 +8107,7 @@ height:7rem;
 
   .h-40 {
     letter-spacing: -0.01em;
-   
+
     font-size: 3.733vw;
     font-weight: 400;
     line-height: 100%;
@@ -9148,7 +9159,7 @@ height:7rem;
   .p-10-mob {
     color: #00000042;
     margin-bottom: 0;
-   
+
     font-size: 2.667vw;
     line-height: 110%;
   }
@@ -9195,7 +9206,7 @@ height:7rem;
   .p12-mob {
     color: #0006;
     margin-bottom: 0;
-   
+
     font-size: 3.2vw;
     line-height: 100%;
     text-decoration: none;
@@ -9262,7 +9273,7 @@ height:7rem;
     color: #0006;
     letter-spacing: -0.033em;
     margin-bottom: 0;
-   
+
     font-size: 3.2vw;
     line-height: 100%;
     text-decoration: none;
@@ -9479,7 +9490,7 @@ height:7rem;
     width: 85.333vw;
     height: 13.867vw;
     padding: 0;
-   
+
     font-size: 4.267vw;
     line-height: 102.5%;
     display: flex;
@@ -9656,7 +9667,7 @@ height:7rem;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     margin-bottom: 0;
-   
+
     font-size: 3.467vw;
     line-height: 140.5%;
   }
@@ -9857,7 +9868,7 @@ height:7rem;
     height: 11.733vw;
     margin-bottom: 0;
     padding: 0 5.333vw;
-   
+
     font-size: 3.733vw;
     line-height: 102.5%;
   }
@@ -9879,7 +9890,7 @@ height:7rem;
     height: 5.867vw;
     margin-bottom: 0;
     padding: 0 0 1.067vw;
-   
+
     font-size: 3.2vw;
     font-weight: 300;
     line-height: 140%;
@@ -10047,7 +10058,7 @@ height:7rem;
     width: 85.333vw;
     height: 13.867vw;
     padding: 0;
-   
+
     font-size: 4.267vw;
     line-height: 102.5%;
     display: flex;
@@ -10061,7 +10072,7 @@ height:7rem;
     color: var(--black);
     text-align: center;
     letter-spacing: -0.033em;
-   
+
     font-size: 3.467vw;
   }
 
@@ -10082,7 +10093,7 @@ height:7rem;
 
   .h-40-item {
     padding-left: 14.667vw;
-   
+
     font-size: 4.267vw;
     font-weight: 400;
   }
@@ -11971,9 +11982,22 @@ font-size:35px;
 }
 .icon-container-alt{
 position:relative;}
-.absolute-top-right{
-    position: absolute;
-    top: -80px;
-    right: -65px;
-    transform: rotate(14deg);
+
+.icon-1.absolute-top-right{
+transform: rotate(-14deg);
+}
+.icon-2.absolute-top-right{
+transform: rotate(0deg);
+}
+.icon-3.absolute-top-right{
+transform: rotate(14deg);
+}
+.icon-4.absolute-top-right{
+transform: rotate(-14deg);
+}
+.icon-4.absolute-top-right{
+transform: rotate(0deg);
+}
+.icon-5.absolute-top-right{
+transform: rotate(14deg);
 }

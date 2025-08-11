@@ -217,7 +217,36 @@
                     <!--                    >Experience the art of beauty with N Beauty — offering signature treatments for hair,-->
                     <!--                        nails, skin, and body, crafted to make you radiate elegance every day.-->
                     <!--                    </p>-->
-                    <marqee>Beautiful inside and out</marqee>
+                    <div class="flex-vertical brown-bg">
+                        <div class="marquee-horizontal-large brown-bg">
+                            <div class="track-horizontal brown-bg">
+                                <div class="flex-horizontal">
+                                    <h1 class="h-124 wh">Beautiful Inside and Out ·</h1>
+                                    <div class="spacer-30 _15-xsvp new-block"></div>
+                                    <h1 class="h-124 wh">Beautiful Inside and Out ·</h1>
+                                    <div class="spacer-30 _15-xsvp new-block"></div>
+                                    <h1 class="h-124 wh">Beautiful Inside and Out ·</h1>
+                                    <div class="spacer-30 _15-xsvp new-block"></div>
+                                    <h1 class="h-124 wh">Beautiful Inside and Out ·</h1>
+                                    <div class="spacer-30 _15-xsvp new-block"></div>
+                                    <h1 class="h-124 wh">Beautiful Inside and Out ·</h1>
+                                    <div class="spacer-30 _15-xsvp new-block"></div>
+                                </div>
+                                <div class="flex-horizontal">
+                                    <h1 class="h-124 wh">Beautiful Inside and Out ·</h1>
+                                    <div class="spacer-30 _15-xsvp new-block"></div>
+                                    <h1 class="h-124 wh">Beautiful Inside and Out ·</h1>
+                                    <div class="spacer-30 _15-xsvp new-block"></div>
+                                    <h1 class="h-124 wh">Beautiful Inside and Out ·</h1>
+                                    <div class="spacer-30 _15-xsvp new-block"></div>
+                                    <h1 class="h-124 wh">Beautiful Inside and Out ·</h1>
+                                    <div class="spacer-30 _15-xsvp new-block"></div>
+                                    <h1 class="h-124 wh">Beautiful Inside and Out ·</h1>
+                                    <div class="spacer-30 _15-xsvp new-block"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div id="about" class="_2block-div">
                         <div class="_2bl-h-div-line-1">
@@ -230,118 +259,121 @@
                                 The N Beauty Lore
                             </h1>
                         </div>
-<!--                        <h1 data-w-id="eb4e90be-cb48-b6f8-1cd6-dd1b6524532d" style="opacity: 1" class="h-124 _2block-2">-->
-<!--                            -->
-<!--                        </h1>-->
+                        <!--                        <h1 data-w-id="eb4e90be-cb48-b6f8-1cd6-dd1b6524532d" style="opacity: 1" class="h-124 _2block-2">-->
+                        <!--                            -->
+                        <!--                        </h1>-->
 
-                                                <div class="_2block-content-div">
-                                                    <div class="_2block-content-div-1">
-                                                        <div class="_2block-item-div-wrapper">
-                                                            <div class="_2block-item-main-div">
-                                                                <h1 class="h-151">01</h1>
-                                                                <div class="_2block-item-div">
-                                                                    <h1 class="h-50 gradient-box">Our Journey:
-                                                                        Blossoming
-                                                                        in the Heart of the UAE</h1>
-                                                                    <p class="p-18 black _100 read-more-text">
-                                                                        From a single dream to a flourishing chain, N Beauty Salon’s story began
-                                                                        with a simple vision: to create a sanctuary where women across the UAE
-                                                                        could celebrate their individuality.
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="_2block-item-div-wrapper pc-hide">
-                                                            <div class="_2block-item-main-div _02">
-                                                                <h1 class="h-151">02</h1>
-                                                                <div class="_2block-item-div">
-                                                                    <h1 class="h-50 _02-mob gradient-box">
-                                                                        Our Mission: Unleashing the Beauty Within
-                                                                    </h1>
-                                                                    <p class="p-18 black _02 read-more-text">
-                                                                        At N Beauty Salon, our mission is to empower every woman who walks
-                                                                        through our doors to feel confident, radiant, and authentically herself.
-                                                                    </p>
+                        <div class="_2block-content-div">
+                            <div class="_2block-content-div-1">
+                                <div class="_2block-item-div-wrapper">
+                                    <div class="_2block-item-main-div">
+                                        <h1 class="h-151">01</h1>
+                                        <div class="_2block-item-div">
+                                            <h1 class="h-50 gradient-box">Our Journey:
+                                                Blossoming
+                                                in the Heart of the UAE
+                                            </h1>
+                                            <p class="p-18 black _100 read-more-text">
+                                                From a single dream to a flourishing chain, N Beauty Salon’s story began
+                                                with a simple vision: to create a sanctuary where women across the UAE
+                                                could celebrate their individuality.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_2block-item-div-wrapper pc-hide">
+                                    <div class="_2block-item-main-div _02">
+                                        <h1 class="h-151">02</h1>
+                                        <div class="_2block-item-div">
+                                            <h1 class="h-50 _02-mob gradient-box">
+                                                Our Mission: Unleashing the Beauty Within
+                                            </h1>
+                                            <p class="p-18 black _02 read-more-text">
+                                                At N Beauty Salon, our mission is to empower every woman who walks
+                                                through our doors to feel confident, radiant, and authentically herself.
+                                            </p>
 
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="_2block-item-div-wrapper">
-                                                            <div class="_2block-item-main-div _03">
-                                                                <h1 class="h-151">03</h1>
-                                                                <div class="_2block-item-div">
-                                                                    <h1 class="h-50 gradient-box">Our Vision: Leading the Way in
-                                                                        Holistic Beauty</h1>
-                                                                    <p class="p-18 black read-more-text">
-                                                                        We strive to be the UAE’s most trusted and beloved all-female salon
-                                                                        chain, setting the gold standard in integrated beauty care.
-                                                                    </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_2block-item-div-wrapper">
+                                    <div class="_2block-item-main-div _03">
+                                        <h1 class="h-151">03</h1>
+                                        <div class="_2block-item-div">
+                                            <h1 class="h-50 gradient-box">Our Vision: Leading the Way in
+                                                Holistic Beauty
+                                            </h1>
+                                            <p class="p-18 black read-more-text">
+                                                We strive to be the UAE’s most trusted and beloved all-female salon
+                                                chain, setting the gold standard in integrated beauty care.
+                                            </p>
 
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="_2block-content-div-2">
-                                                        <div class="_2block-item-div-wrapper mob-hide">
-                                                            <div class="_2block-item-main-div _02">
-                                                                <h1 class="h-151">02</h1>
-                                                                <div class="_2block-item-div">
-                                                                    <h1 class="h-50 _02-mob gradient-box">
-                                                                        Our Mission: Unleashing the Beauty Within
-                                                                    </h1>
-                                                                    <p class="p-18 black _02 read-more-text">
-                                                                        At N Beauty Salon, our mission is to empower every woman who walks
-                                                                        through our doors to feel confident, radiant, and authentically herself.
-                                                                    </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_2block-content-div-2">
+                                <div class="_2block-item-div-wrapper mob-hide">
+                                    <div class="_2block-item-main-div _02">
+                                        <h1 class="h-151">02</h1>
+                                        <div class="_2block-item-div">
+                                            <h1 class="h-50 _02-mob gradient-box">
+                                                Our Mission: Unleashing the Beauty Within
+                                            </h1>
+                                            <p class="p-18 black _02 read-more-text">
+                                                At N Beauty Salon, our mission is to empower every woman who walks
+                                                through our doors to feel confident, radiant, and authentically herself.
+                                            </p>
 
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="_2block-item-div-wrapper">
-                                                            <div class="_2block-item-main-div _04">
-                                                                <h1 class="h-151">04</h1>
-                                                                <div class="_2block-item-div">
-                                                                    <h1 class="h-50  gradient-box">Our Expertise: A Complete
-                                                                        Spectrum of Care</h1>
-                                                                    <p class="p-18 black _04 read-more-text">
-                                                                        N Beauty Salon offers an extensive range of top-tier services designed
-                                                                        with today’s woman in mind:
-                                                                        - Nail Care: From classic manicures to cutting-edge nail art, your hands
-                                                                        and feet get the royal treatment.
-                                                                    </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_2block-item-div-wrapper">
+                                    <div class="_2block-item-main-div _04">
+                                        <h1 class="h-151">04</h1>
+                                        <div class="_2block-item-div">
+                                            <h1 class="h-50  gradient-box">Our Expertise: A Complete
+                                                Spectrum of Care
+                                            </h1>
+                                            <p class="p-18 black _04 read-more-text">
+                                                N Beauty Salon offers an extensive range of top-tier services designed
+                                                with today’s woman in mind:
+                                                - Nail Care: From classic manicures to cutting-edge nail art, your hands
+                                                and feet get the royal treatment.
+                                            </p>
 
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="_2block-item-main-div _05">
-                                                    <h1 class="h-151">05</h1>
-                                                    <div class="_2block-item-div _05">
-                                                        <div data-w-id="44a12cb3-a578-69c7-1c70-c4b7a31c9966" style="opacity: 1"
-                                                             class="_05-item-div-line-1">
-                                                            <h1 class="h-116">Our Promise</h1>
-                                                        </div>
-                                                        <div data-w-id="1862ef3f-0b44-2337-f708-ec2b059508b9" style="opacity: 1"
-                                                             class="_05-item-div-line-1 pc-hide">
-                                                            <img src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e43567662741_%26.svg"
-                                                                 loading="lazy" alt="" class="img _2block"/>
-                                                            <h1 class="h-116">Where Tradition Meets Modern Confidence</h1>
-                                                        </div>
-                                                        <div data-w-id="971b0e87-93f7-2c5a-6c50-cc74804a7e2b" style="opacity: 1"
-                                                             class="_05-item-div-line-1">
-                                                            <h1 class="h-116 mob-hide">
-                                                                Where Tradition Meets Modern Confidence
-                                                            </h1>
-                                                        </div>
-                                                        <p class="p-18 black _05 read-more-text">
-                                                            As an all-female team, we cherish the power of community and belonging. We are
-                                                            committed to fostering a welcoming space where clients feel heard, celebrated, and
-                                                            inspired to embrace their unique beauty.
-                                                        </p>
-                                                        <a href="/aboutus" class="link-black">Read More ...</a>
-                                                    </div>
-                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_2block-item-main-div _05">
+                            <h1 class="h-151">05</h1>
+                            <div class="_2block-item-div _05">
+                                <div data-w-id="44a12cb3-a578-69c7-1c70-c4b7a31c9966" style="opacity: 1"
+                                     class="_05-item-div-line-1">
+                                    <h1 class="h-116">Our Promise</h1>
+                                </div>
+                                <div data-w-id="1862ef3f-0b44-2337-f708-ec2b059508b9" style="opacity: 1"
+                                     class="_05-item-div-line-1 pc-hide">
+                                    <img src="http://cdn.prod.website-files.com/652fe9df5341e43567662724/652fe9df5341e43567662741_%26.svg"
+                                         loading="lazy" alt="" class="img _2block"/>
+                                    <h1 class="h-116">Where Tradition Meets Modern Confidence</h1>
+                                </div>
+                                <div data-w-id="971b0e87-93f7-2c5a-6c50-cc74804a7e2b" style="opacity: 1"
+                                     class="_05-item-div-line-1">
+                                    <h1 class="h-116 mob-hide">
+                                        Where Tradition Meets Modern Confidence
+                                    </h1>
+                                </div>
+                                <p class="p-18 black _05 read-more-text">
+                                    As an all-female team, we cherish the power of community and belonging. We are
+                                    committed to fostering a welcoming space where clients feel heard, celebrated, and
+                                    inspired to embrace their unique beauty.
+                                </p>
+                                <a href="/aboutus" class="link-black">Read More ...</a>
+                            </div>
+                        </div>
                     </div>
 
 
@@ -416,84 +448,7 @@
                         </h1>
 
                         <section>
-                            <div class="container my-5">
-                                <div class="d-flex flex-wrap justify-content-center gap-4">
-
-                                    <!-- Hair Care -->
-                                    <div class="text-center">
-                                        <a href="/services?id=hair-care" class="text-decoration-none">
-                                            <div class="position-relative">
-                                                <img src="/nbeauty/static/src/img/lowres/image-12.JPG"
-                                                     class="rounded-circle img-fluid"
-                                                     style="width: 18rem;  height: 18rem; object-fit:cover;"/>
-                                                <h5 class="position-absolute top-50 start-50 translate-middle text-white fw-bold">
-                                                    Hair Care
-                                                </h5>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <!-- Make-Up -->
-                                    <div class="text-center">
-                                        <a href="/services?id=make-up-tinting-eyelash-extentions"
-                                           class="text-decoration-none">
-                                            <div class="position-relative">
-                                                <img src="/nbeauty/static/src/img/IMG_9647.JPG"
-                                                     class="rounded-circle img-fluid"
-                                                     style="width: 18rem;  height: 18rem; object-fit:cover;"/>
-                                                <h5 class="position-absolute top-50 start-50 translate-middle text-white fw-bold">
-                                                    Make-Up
-                                                </h5>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <!-- Skin Care -->
-                                    <div class="text-center">
-                                        <a href="/services?id=skin-care" class="text-decoration-none">
-                                            <div class="position-relative">
-                                                <img src="/nbeauty/static/src/img/lowres/image-27.JPG"
-                                                     class="rounded-circle img-fluid"
-                                                     style="width: 18rem;  height: 18rem; object-fit:cover;"/>
-                                                <h5 class="position-absolute top-50 start-50 translate-middle text-white fw-bold">
-                                                    Skin Care
-                                                </h5>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <!-- Body Care -->
-                                    <div class="text-center">
-                                        <a href="/services?id=body-care" class="text-decoration-none">
-                                            <div class="position-relative">
-                                                <img src="/nbeauty/static/src/img/IMG_9652.JPG"
-                                                     class="rounded-circle img-fluid"
-                                                     style="width: 18rem;  height: 18rem; object-fit:cover;"/>
-                                                <h5 class="position-absolute top-50 start-50 translate-middle text-white fw-bold">
-                                                    Body Care
-                                                </h5>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <!-- Nail Care -->
-                                    <div class="text-center">
-                                        <a href="/services?id=nail-care" class="text-decoration-none">
-                                            <div class="position-relative">
-                                                <img src="/nbeauty/static/src/img/lowres/image-20.JPG"
-                                                     class="rounded-circle img-fluid"
-                                                     style="width: 18rem;  height: 18rem; object-fit:cover;"/>
-                                                <h5 class="position-absolute top-50 start-50 translate-middle text-white fw-bold">
-                                                    Nail Care
-                                                </h5>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!--                            <div id="faq-container" class="faq-container"></div>-->
+                            <div id="faq-container" class="faq-container"></div>
                             <div class="pricelist-container">
 
 
@@ -828,15 +783,18 @@
                                         <div class="icon-container-alt">
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-1-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
+                                                       <img t-attf-src="/nbeauty/static/src/img/wellaproduct.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon absolute-top-right icon-1"/>
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-2-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt=""
                                                  class="icon"/>
-                                            <img t-attf-src="/nbeauty/static/src/img/productimg.png"
+                                            <img t-attf-src="/nbeauty/static/src/img/kerastaseprodut.png"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt=""
-                                                 class="icon absolute-top-right"/>
+                                                 class="icon absolute-top-right icon-2"/>
 
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
@@ -844,12 +802,18 @@
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-3-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt=""
                                                  class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/sawansilkproduct.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon absolute-top-right icon-3"/>
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-4-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt=""
                                                  class="icon"/>
+                                              <img t-attf-src="/nbeauty/static/src/img/arethaproduct.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon absolute-top-right icon-4"/>
 
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
@@ -857,6 +821,10 @@
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-5-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt=""
                                                  class="icon"/>
+                                                <img t-attf-src="/nbeauty/static/src/img/cosmoproduct.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon absolute-top-right icon-5"/>
+
 
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
@@ -864,12 +832,18 @@
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-6-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt=""
                                                  class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/thalgoproduct.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon absolute-top-right icon-6"/>
 
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-1-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
+                                             <img t-attf-src="/nbeauty/static/src/img/wellaproduct.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon absolute-top-right icon-1"/>
 
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
@@ -878,12 +852,18 @@
                                         <div class="icon-container-alt">
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-2-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
+                                               <img t-attf-src="/nbeauty/static/src/img/kerastaseprodut.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon absolute-top-right icon-2"/>
 
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-3-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/sawansilkproduct.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon absolute-top-right icon-3"/>
 
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
@@ -891,23 +871,36 @@
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-4-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
 
+                                              <img t-attf-src="/nbeauty/static/src/img/arethaproduct.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon absolute-top-right icon-4"/>
+
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-5-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
+                                                <img t-attf-src="/nbeauty/static/src/img/cosmoproduct.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon absolute-top-right icon-5"/>
 
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-6-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/thalgoproduct.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon absolute-top-right icon-6"/>
 
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-1-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
+                                             <img t-attf-src="/nbeauty/static/src/img/wellaproduct.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon absolute-top-right icon-1"/>
 
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
@@ -1487,7 +1480,7 @@
                                 <img
                                         t-attf-src="/nbeauty/static/src/img/logo.webp" loading="lazy" alt=""
                                         class="logo-img preloader bottom"/>
-                                <p class="loader_number">   </p>
+                                <h1 class="loader_number">   </h1>
                             </div>
                         </div>
                     </div>

@@ -1,24 +1,37 @@
-from odoo import models, fields
+from odoo import models, fields, api
 import json
 
 class NBeautyBooking(models.Model):
     _name = 'nbeauty.booking'
-    _description = 'Customer Booking'
+    _description = 'NBeauty Bookings'
 
-    customer_name = fields.Char(required=True)
-    customer_mobile = fields.Char(required=True)
+    customer_name = fields.Char(string="Customer Name")
+    customer_mobile = fields.Char(string="Customer Mobile")
 
-    # ✅ Changed: Store multiple services as JSON text
-    services_json = fields.Text(string="Selected Services")
+    # Store as Text so we can save JSON or comma-separated
+    selected_services = fields.Text(string="Selected Services")
 
-    employee_id = fields.Many2one('hr.employee', string="Provider")
-    booking_date = fields.Date(string="Date", required=True)
-    booking_time = fields.Float(string="Time", required=True)
-    branch_id = fields.Many2one('stock.warehouse', string="Branch")
+    provider_id = fields.Many2one('res.users', string="Provider")
+    date = fields.Date(string="Date")
+    time = fields.Char(string="Time")
+    branch_id = fields.Many2one('res.branch', string="Branch")  # adjust to your branch model
 
-    def get_services_list(self):
-        """Helper to get Python list from JSON"""
+    @api.model
+    def create(self, vals):
+        if isinstance(vals.get('selected_services'), list):
+            # Convert list to JSON string
+            vals['selected_services'] = json.dumps(vals['selected_services'])
+        return super(NBeautyBooking, self).create(vals)
+
+    def write(self, vals):
+        if isinstance(vals.get('selected_services'), list):
+            vals['selected_services'] = json.dumps(vals['selected_services'])
+        return super(NBeautyBooking, self).write(vals)
+
+    def get_selected_services_display(self):
+        """Helper for displaying services nicely"""
         try:
-            return json.loads(self.services_json or "[]")
-        except:
-            return []
+            services = json.loads(self.selected_services or "[]")
+            return ", ".join([s.get("name") for s in services if s.get("name")])
+        except Exception:
+            return self.selected_services or ""

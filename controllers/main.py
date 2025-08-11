@@ -85,7 +85,7 @@ class NBeautyHomepage(http.Controller):
     # Booking section
     @http.route('/nbeauty/booking', type='http', auth='public', website=True)
     def booking_page(self, **kwargs):
-        services = request.env['product.product'].sudo().search([('available_in_pos', '=', True)])
+        services = request.env['nbeauty.service'].sudo().search([])
         employees = request.env['hr.employee'].sudo().search([])
         branches = request.env['stock.warehouse'].sudo().search([])
         return request.render('nbeauty.website_booking_form', {
@@ -97,20 +97,22 @@ class NBeautyHomepage(http.Controller):
     @http.route('/nbeauty/booking/submit', type='http', auth='public', methods=['POST'], csrf=False, website=True)
     def submit_booking(self, **post):
         try:
-            # ✅ Read multiple services correctly
-            services_data = request.httprequest.form.getlist('service_ids')
+            # Read multiple services (IDs) from form
+            services_data = request.httprequest.form.getlist('service_ids[]') or request.httprequest.form.getlist(
+                'service_ids')
+            services_data = [int(s) for s in services_data if s.isdigit()]  # ensure IDs
             services_json = json.dumps(services_data)
 
-            # ✅ Safe conversions
+            # Safe conversions
             branch_id = int(post.get('branch_id')) if post.get('branch_id') else False
             employee_id = int(post.get('employee_id')) if post.get('employee_id') else False
 
-            # ✅ Parse booking_time from "HH:MM" to float (e.g., 14.5 for 14:30)
+            # Convert booking_time "HH:MM" to float
             booking_time_str = post.get('booking_time') or "00:00"
             hours, minutes = booking_time_str.split(':')
             booking_time_float = int(hours) + int(minutes) / 60.0
 
-            # ✅ Create record with correct field name
+            # Create booking
             request.env['nbeauty.booking'].sudo().create({
                 'customer_name': post.get('customer_name'),
                 'customer_mobile': post.get('customer_mobile'),
@@ -124,7 +126,6 @@ class NBeautyHomepage(http.Controller):
             return request.redirect('/nbeauty/booking/thanks')
 
         except Exception as e:
-            # ✅ Print full error in logs
             import logging
             logging.exception("Booking failed")
             return request.render('nbeauty.website_booking_error', {'error': str(e)})
