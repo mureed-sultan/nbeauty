@@ -119,8 +119,8 @@ class NBeautyHomepage(http.Controller):
                 'branch_id': branch_id,
                 'employee_id': employee_id,
                 'booking_date': post.get('booking_date'),
-                'booking_time': booking_time_float,
-                'services_json': services_json,
+                'booking_time': post.get('booking_time'),
+                'selected_services': json.dumps(services_data),
             })
 
             return request.redirect('/nbeauty/booking/thanks')

@@ -12,9 +12,11 @@ class NBeautyBooking(models.Model):
     selected_services = fields.Text(string="Selected Services")
 
     provider_id = fields.Many2one('res.users', string="Provider")
-    date = fields.Date(string="Date")
-    time = fields.Char(string="Time")
+    booking_date = fields.Date(string="Date")
+    booking_time = fields.Char(string="Time")
     branch_id = fields.Many2one('res.branch', string="Branch")  # adjust to your branch model
+
+    employee_id = fields.Many2one('hr.employee', string="Employee")
 
     @api.model
     def create(self, vals):
