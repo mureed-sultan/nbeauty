@@ -84,7 +84,7 @@ const serviceCategories = [
           "Snip into a fresh new you, where every cut is a cut above the rest!",
         price: "50",
         services: [
-          { name: "Hair Wash", arabic: "غسيل الشعر", price: "50 " },
+          { name: "Hair Wash", arabic: "غسيل الشعر", price: "50 ",details:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." },
           { name: "Trim", arabic: "قص أطراف الشعر", price: "80 " },
           { name: "Fringe Haircut", arabic: "قص الغرة", price: "50" },
           { name: "Haircut", arabic: "قص الشعر", price: "150 " },
@@ -1044,7 +1044,7 @@ const serviceCategories = [
 
 function createServiceBlock(service) {
   const block = document.createElement("div");
-  block.className = "service-item c-faq-a-text padding-none";
+  block.className = "service-item c-faq-a-text padding-none position-relative";
   block.dataset.serviceName = service.name.toLowerCase();
 
   block.innerHTML = `
@@ -1060,6 +1060,18 @@ function createServiceBlock(service) {
             Price <span>AED ${service.price}</span>
           </p>
         </div>
+            <div id="popup-${service.name}" class="popup-content" style="display:none;">
+                    <button class="popup-close" type="button" onclick="closePopup()">  ✕</button>
+                    <img id="popupImage" src="" alt="Detail Image" class="popup-image"/>
+                    <h2 id="popupHeading" class="popup-title"></h2>
+                    <div id="popupDetails" class="popup-details"></div>
+                </div>
+
+            <a href="#" onclick="showDetailPopup('${service.name}'); return false;">
+              <span>  View Detail</span>
+            </a>
+
+
         <a href="/booking/${encodeURIComponent(service.name.trim().replace(/\s+/g, '-'))}" class="_4block-btn-mob w-inline-block">
           <h1 class="h-18 _4block">Make an appointment</h1>
           <div class="white-circle-div-4block"></div>
@@ -1311,3 +1323,50 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+
+
+function showDetailPopup(serviceName) {
+  let found = null;
+
+  for (const category of serviceCategories) {
+    if (!Array.isArray(category.children)) continue;
+
+    for (const child of category.children) {
+      if (child.title === serviceName) {
+        found = child;
+        break;
+      }
+      if (Array.isArray(child.services)) {
+        for (const sub of child.services) {
+          if (sub.name === serviceName) {
+            found = sub;
+            break;
+          }
+        }
+      }
+      if (found) break;
+    }
+    if (found) break;
+  }
+
+  if (!found) {
+    console.error("Service not found:", serviceName);
+    return;
+  }
+  console.log(found)
+  console.log(`popup-${found.name||""}`)
+  document.getElementById('popupHeading').textContent = found.name||"";
+  document.getElementById('popupDetails').textContent =  "No additional details available. No additional details available.No additional details available.No additional details available.No additional details available.";
+  document.getElementById('popupImage').src =  "/nbeauty/static/src/img/lowres/bannerimage.jpg";
+
+  document.getElementById(`popup-${found.name||""}`).style.display = 'block';
+
+}
+
+function closePopup() {
+  document.querySelectorAll('.popup-content').forEach(function(el) {
+    el.style.display = 'none';
+  });
+}
