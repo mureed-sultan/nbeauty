@@ -4206,7 +4206,7 @@ body {
 }
 
 .marquee-horizontal-large.brown-bg {
-  background-color: #756153;
+  background-color: var(--color7);
   flex: none;
   height: 9.063vw;
   padding-top: 1.302vw;
@@ -4642,7 +4642,7 @@ body {
 
 .menu-open-div {
   z-index: 1000;
-  background-color: var(--biege);
+  background-color: var(--color1);
   justify-content: space-between;
   width: 100vw;
   height: 100vh;
@@ -5294,7 +5294,7 @@ select.p-20.location {
 }
 
 .loader_p.is-right {
-  color: var(--biege);
+  color: var(--color1);
   text-align: right;
 
   display: none;
