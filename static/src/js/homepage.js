@@ -556,7 +556,7 @@ function createMainCategory(category, container) {
   header.innerHTML = `
         <div class="c-faq-q-text _02">
             <div class="h-70" style="width:1vw;">0${category.id}</div>
-            <div class="h-70 medium">${category.title}
+            <div class="h-70 medium"><span class="green-heading-greadient">${category.title}</span>
                 <p class="pricelist-description">${category.description}</p>
             </div>
         </div>
