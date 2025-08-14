@@ -779,11 +779,11 @@
                         <div class="flex-vertical">
                             <div class="marquee-horizontal-large">
                                 <div class="track-horizontal">
-                                    <div class="flex-horizontal">Membership
+                                    <div class="flex-horizontal">
                                         <div class="icon-container-alt">
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-1-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
-                                                       <img t-attf-src="/nbeauty/static/src/img/wellaproduct.png"
+                                            <img t-attf-src="/nbeauty/static/src/img/wellaproduct.png"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt=""
                                                  class="icon absolute-top-right icon-1"/>
                                         </div>
@@ -811,7 +811,7 @@
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-4-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt=""
                                                  class="icon"/>
-                                              <img t-attf-src="/nbeauty/static/src/img/arethaproduct.png"
+                                            <img t-attf-src="/nbeauty/static/src/img/arethaproduct.png"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt=""
                                                  class="icon absolute-top-right icon-4"/>
 
@@ -821,7 +821,7 @@
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-5-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt=""
                                                  class="icon"/>
-                                                <img t-attf-src="/nbeauty/static/src/img/cosmoproduct.png"
+                                            <img t-attf-src="/nbeauty/static/src/img/cosmoproduct.png"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt=""
                                                  class="icon absolute-top-right icon-5"/>
 
@@ -837,80 +837,120 @@
                                                  class="icon absolute-top-right icon-6"/>
 
                                         </div>
+
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
-                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-1-.webp"
-                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
-                                             <img t-attf-src="/nbeauty/static/src/img/wellaproduct.png"
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-7.svg"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt=""
-                                                 class="icon absolute-top-right icon-1"/>
-
-                                        </div>
-                                        <div class="spacer-30 _15-xsvp"></div>
-                                    </div>
-                                    <div class="flex-horizontal">
-                                        <div class="icon-container-alt">
-                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-2-.webp"
-                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
-                                               <img t-attf-src="/nbeauty/static/src/img/kerastaseprodut.png"
-                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
-                                                 class="icon absolute-top-right icon-2"/>
-
-                                        </div>
-                                        <div class="spacer-30 _15-xsvp"></div>
-                                        <div class="icon-container-alt">
-                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-3-.webp"
-                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
-                                            <img t-attf-src="/nbeauty/static/src/img/sawansilkproduct.png"
-                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
-                                                 class="icon absolute-top-right icon-3"/>
-
-                                        </div>
-                                        <div class="spacer-30 _15-xsvp"></div>
-                                        <div class="icon-container-alt">
-                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-4-.webp"
-                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
-
-                                              <img t-attf-src="/nbeauty/static/src/img/arethaproduct.png"
-                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
-                                                 class="icon absolute-top-right icon-4"/>
-
-                                        </div>
-                                        <div class="spacer-30 _15-xsvp"></div>
-                                        <div class="icon-container-alt">
-                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-5-.webp"
-                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
-                                                <img t-attf-src="/nbeauty/static/src/img/cosmoproduct.png"
-                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
-                                                 class="icon absolute-top-right icon-5"/>
-
-                                        </div>
-                                        <div class="spacer-30 _15-xsvp"></div>
-                                        <div class="icon-container-alt">
-                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-6-.webp"
-                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
-                                            <img t-attf-src="/nbeauty/static/src/img/thalgoproduct.webp"
+                                                 class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/isclinic-product.png"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt=""
                                                  class="icon absolute-top-right icon-6"/>
 
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
                                         <div class="icon-container-alt">
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-8.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/essieproduct.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon absolute-top-right icon-6"/>
+
+                                        </div>
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                        <div class="icon-container-alt">
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-9.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/dmkproduct.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon absolute-top-right icon-6"/>
+                                        </div>
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                        <div class="icon-container-alt">
+                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-10.png"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon"/>
+                                            <img t-attf-src="/nbeauty/static/src/img/thalgoproduct.webp"
+                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""
+                                                 class="icon absolute-top-right icon-6"/>
+                                        </div>
+
+                                        <div class="spacer-30 _15-xsvp"></div>
+                                        <div class="icon-container-alt">
                                             <img t-attf-src="/nbeauty/static/src/img/companies/icon-1-.webp"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
-                                             <img t-attf-src="/nbeauty/static/src/img/wellaproduct.png"
+                                            <img t-attf-src="/nbeauty/static/src/img/wellaproduct.png"
                                                  sizes="(max-width: 479px) 21vw, 10vw" alt=""
                                                  class="icon absolute-top-right icon-1"/>
 
                                         </div>
                                         <div class="spacer-30 _15-xsvp"></div>
-                                        <div class="icon-container-alt">
-                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-2-.webp"
-                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>
-
-                                        </div>
-                                        <div class="spacer-30 _15-xsvp"></div>
                                     </div>
+<!--                                    <div class="flex-horizontal">-->
+<!--                                        <div class="icon-container-alt">-->
+<!--                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-2-.webp"-->
+<!--                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>-->
+<!--                                            <img t-attf-src="/nbeauty/static/src/img/kerastaseprodut.png"-->
+<!--                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""-->
+<!--                                                 class="icon absolute-top-right icon-2"/>-->
+
+<!--                                        </div>-->
+<!--                                        <div class="spacer-30 _15-xsvp"></div>-->
+<!--                                        <div class="icon-container-alt">-->
+<!--                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-3-.webp"-->
+<!--                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>-->
+<!--                                            <img t-attf-src="/nbeauty/static/src/img/sawansilkproduct.png"-->
+<!--                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""-->
+<!--                                                 class="icon absolute-top-right icon-3"/>-->
+
+<!--                                        </div>-->
+<!--                                        <div class="spacer-30 _15-xsvp"></div>-->
+<!--                                        <div class="icon-container-alt">-->
+<!--                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-4-.webp"-->
+<!--                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>-->
+
+<!--                                            <img t-attf-src="/nbeauty/static/src/img/arethaproduct.png"-->
+<!--                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""-->
+<!--                                                 class="icon absolute-top-right icon-4"/>-->
+
+<!--                                        </div>-->
+<!--                                        <div class="spacer-30 _15-xsvp"></div>-->
+<!--                                        <div class="icon-container-alt">-->
+<!--                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-5-.webp"-->
+<!--                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>-->
+<!--                                            <img t-attf-src="/nbeauty/static/src/img/cosmoproduct.png"-->
+<!--                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""-->
+<!--                                                 class="icon absolute-top-right icon-5"/>-->
+
+<!--                                        </div>-->
+<!--                                        <div class="spacer-30 _15-xsvp"></div>-->
+<!--                                        <div class="icon-container-alt">-->
+<!--                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-6-.webp"-->
+<!--                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>-->
+<!--                                            <img t-attf-src="/nbeauty/static/src/img/thalgoproduct.webp"-->
+<!--                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""-->
+<!--                                                 class="icon absolute-top-right icon-6"/>-->
+
+<!--                                        </div>-->
+<!--                                        <div class="spacer-30 _15-xsvp"></div>-->
+<!--                                        <div class="icon-container-alt">-->
+<!--                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-1-.webp"-->
+<!--                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>-->
+<!--                                            <img t-attf-src="/nbeauty/static/src/img/wellaproduct.png"-->
+<!--                                                 sizes="(max-width: 479px) 21vw, 10vw" alt=""-->
+<!--                                                 class="icon absolute-top-right icon-1"/>-->
+
+<!--                                        </div>-->
+<!--                                        <div class="spacer-30 _15-xsvp"></div>-->
+<!--                                        <div class="icon-container-alt">-->
+<!--                                            <img t-attf-src="/nbeauty/static/src/img/companies/icon-2-.webp"-->
+<!--                                                 sizes="(max-width: 479px) 21vw, 10vw" alt="" class="icon"/>-->
+
+<!--                                        </div>-->
+<!--                                        <div class="spacer-30 _15-xsvp"></div>-->
+<!--                                    </div>-->
                                 </div>
                             </div>
                         </div>

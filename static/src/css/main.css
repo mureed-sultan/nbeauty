@@ -7191,9 +7191,9 @@ select.p-20.location {
 
 .absolute-top-right {
   position: absolute;
-  top: -6rem;
-  right: -3rem;
-  width: 10rem;
+  top: -5rem;
+  right: -2rem;
+  width: 8rem;
 }
 
 @media screen and (max-width: 767px) {
