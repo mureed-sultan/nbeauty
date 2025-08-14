@@ -2866,6 +2866,8 @@ body {
   padding-left: 2.604vw;
   padding-right: 2.604vw;
   display: flex;
+  position:relative;
+  top:-43rem;
 }
 
 ._2block-div.hide {
