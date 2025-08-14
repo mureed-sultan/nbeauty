@@ -2862,12 +2862,12 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 5vw;
-  margin-bottom: 13vw;
   padding-left: 2.604vw;
   padding-right: 2.604vw;
   display: flex;
   position:relative;
-  top:-47rem;
+  top:-42rem;
+      margin-bottom: -35rem;
 }
 
 ._2block-div.hide {
