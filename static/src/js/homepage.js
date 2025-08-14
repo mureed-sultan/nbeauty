@@ -514,7 +514,7 @@ function createChildBlock(child, parentWrapper) {
   header.className = "c-faq-b";
   header.innerHTML = `
         <div class="c-faq-b-text">
-            <div class="h-50-item">${child.title}
+            <div class="h-50-item"><span class="child-desciption-heading">${child.title}</span>
                 <p class="pricelist-description">${child.description}</p>
                 <p class="pricelist-description-cost"> Starting From <span> AED  ${child.price}</span></p>
             </div>
