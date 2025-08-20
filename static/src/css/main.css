@@ -2866,8 +2866,8 @@ body {
   padding-right: 2.604vw;
   display: flex;
   position:relative;
-  top:-42rem;
-      margin-bottom: -35rem;
+  top:-41rem;
+  margin-bottom: -35rem;
 }
 
 ._2block-div.hide {
@@ -7517,9 +7517,10 @@ select.p-20.location {
 
   ._2block-div {
     align-items: center;
-    margin-bottom: 37.6vw;
+    margin-bottom: 0vw;
     padding-left: 5.333vw;
     padding-right: 5.333vw;
+    top: -8rem;
   }
 
   .photos-1block-div {
@@ -7528,6 +7529,7 @@ select.p-20.location {
     height: 65.387vw;
     margin-top: 45vw;
     margin-left: 23.2vw;
+
   }
 
   ._1block-img-1 {
@@ -9871,7 +9873,7 @@ select.p-20.location {
   }
 
   .home-hero_phone-link {
-    background-color: #e0cfbf;
+    background-color: var(--color7);
     border-width: 1px;
     border-color: #000;
     width: 75px;
@@ -9889,7 +9891,7 @@ select.p-20.location {
   }
 
   .home-hero_price-link.is-last {
-    background-color: #e0cfbf;
+    background-color: var(--color7);
     border-width: 1px;
     border-color: #000;
     width: 75px;
@@ -11669,7 +11671,7 @@ a.btn-primary {
 
 @media screen and (max-width: 991px) {
   .pricelist-description {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .pricelist-description-cost {
@@ -11925,6 +11927,10 @@ h2.text-white.fw-bold {
 .icon-5.absolute-top-right {
   transform: rotate(14deg);
 }
+.icon-12.absolute-top-right {
+  transform: rotate(14deg);
+}
+
 
 .popup-trigger {
   position: fixed;
@@ -12007,18 +12013,24 @@ h2.text-white.fw-bold {
     opacity: 1;
   }
 }
-
-@media screen and (max-width: 767px) {
-  .popup-content {
-    left: 5vw;
-  }
-}
 .green-heading-greadient{
     background: linear-gradient(to right, #8ea488, #8ea4881f);
     border-radius: 9px;
     padding: 10px;
     font-size:2.8rem !important;
+    display: inline;
+    line-height: 2.5rem;
 }
+@media screen and (max-width: 767px) {
+  .popup-content {
+    left: 5vw;
+  }
+  .green-heading-greadient{
+    display: flex;
+    font-size: 2.3rem !important;
+}
+}
+
 .child-desciption-heading{
 color:var(--color7)
 }
