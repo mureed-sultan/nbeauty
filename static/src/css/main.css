@@ -2713,7 +2713,7 @@ body {
 }
 
 .carousel-item {
-  height: 100vh;
+  height: 100%;
 }
 
 .p-15 {

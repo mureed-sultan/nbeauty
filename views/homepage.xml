@@ -1660,14 +1660,11 @@
                                             <a id="call-btn" href="tel:" class="p-16 black phone-link"></a>
                                         </div>
 
-                                        <div class="location-btn w-inline-block" data-target="call-btn-2">
-                                            <p class="p-18 black btn">CALL US</p>
-                                            <a id="call-btn-2" href="tel:" class="p-16 black phone-link"></a>
-                                        </div>
-
-
                                         <a href="https://wa.me/+971542722555" class="location-btn w-inline-block">
                                             <p class="p-18 black btn">TEXT ON WHATSAPP</p>
+                                        </a>
+                                        <a href="/booking/booking" class="location-btn w-inline-block">
+                                            <p class="p-18 black btn">Make an Appointment</p>
                                         </a>
 
                                     </div>

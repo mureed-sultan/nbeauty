@@ -535,7 +535,7 @@ const serviceCategories = [
     title: "Body Care",
     titleArabic: "العناية بالبشرة",
     description:      "Smooth, radiant, and confident — from waxing to brightening, we care for every inch. ",
-        icon: "fa fa-hand-sparkles",
+        icon: "fa fa-star",
 
     children: [
       {
@@ -636,7 +636,7 @@ const serviceCategories = [
     title: "Nail Care",
     titleArabic: "العناية بالأظافر",
     description:      "More than just polish — it's self-care, style, and confidence at your fingertips.",
-        icon: "fa fa-hand-paper",
+        icon: "fa fa-hand-paper-o",
 
     children: [
       {

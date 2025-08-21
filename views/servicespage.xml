@@ -300,11 +300,11 @@
                                          alt=""
                                          class="_6block-img _2"/>
                                 </a>
-                                <a href="#" class="lightbox w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-14.JPG" loading="eager"
-                                         data-w-id="69324cd4-1787-504c-83eb-feda9cec4f0b" alt=""
-                                         class="_6block-img _3"/>
-                                </a>
+<!--                                <a href="#" class="lightbox w-inline-block w-lightbox">-->
+<!--                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-14.JPG" loading="eager"-->
+<!--                                         data-w-id="69324cd4-1787-504c-83eb-feda9cec4f0b" alt=""-->
+<!--                                         class="_6block-img _3"/>-->
+<!--                                </a>-->
                                 <a href="#" class="lightbox w-inline-block w-lightbox">
 
                                     <img t-attf-src="/nbeauty/static/src/img/lowres/image-15.JPG" loading="eager"
@@ -342,11 +342,11 @@
                                          data-w-id="e502bb79-a7ca-455d-49d0-d45437aea271" alt=""
                                          class="_6block-img _7"/>
                                 </a>
-                                <a href="#" class="lightbox w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-26.JPG" loading="eager"
-                                         data-w-id="d6de2de0-3cd1-d577-cbd4-452c5515d9a6"
-                                         sizes="(max-width: 479px) 100vw, 18vw" alt="" class="_6block-img _10"/>
-                                </a>
+<!--                                <a href="#" class="lightbox w-inline-block w-lightbox">-->
+<!--                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-26.JPG" loading="eager"-->
+<!--                                         data-w-id="d6de2de0-3cd1-d577-cbd4-452c5515d9a6"-->
+<!--                                         sizes="(max-width: 479px) 100vw, 18vw" alt="" class="_6block-img _10"/>-->
+<!--                                </a>-->
                                 <a href="#"
                                    class="w-inline-block w-lightbox">
                                     <img t-attf-src="/nbeauty/static/src/img/lowres/image-27.JPG"
@@ -368,23 +368,23 @@
                                             alt=""
                                             class="_6block-img _12"/>
                                 </a>
-                                <a href="#"
-                                   class="w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-23.JPG" loading="eager"
-                                         data-w-id="02c3e4d1-a130-f847-4431-fadd4d25bd3c" alt=""
-                                         class="_6block-img _13"/>
-                                </a>
-                                <a href="#" class="w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-30.JPG" loading="eager"
-                                         data-w-id="14d50d9b-aefd-47b0-c69b-20b669beb5eb" alt=""
-                                         class="_6block-img _14"/>
-                                </a>
-                                <a href="#"
-                                   class="w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-31.JPG" loading="eager"
-                                         data-w-id="68eccb86-4e97-0043-79c0-e9a76bec1425" alt=""
-                                         class="_6block-img _15"/>
-                                </a>
+<!--                                <a href="#"-->
+<!--                                   class="w-inline-block w-lightbox">-->
+<!--                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-23.JPG" loading="eager"-->
+<!--                                         data-w-id="02c3e4d1-a130-f847-4431-fadd4d25bd3c" alt=""-->
+<!--                                         class="_6block-img _13"/>-->
+<!--                                </a>-->
+<!--                                <a href="#" class="w-inline-block w-lightbox">-->
+<!--                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-30.JPG" loading="eager"-->
+<!--                                         data-w-id="14d50d9b-aefd-47b0-c69b-20b669beb5eb" alt=""-->
+<!--                                         class="_6block-img _14"/>-->
+<!--                                </a>-->
+<!--                                <a href="#"-->
+<!--                                   class="w-inline-block w-lightbox">-->
+<!--                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-31.JPG" loading="eager"-->
+<!--                                         data-w-id="68eccb86-4e97-0043-79c0-e9a76bec1425" alt=""-->
+<!--                                         class="_6block-img _15"/>-->
+<!--                                </a>-->
                                 <a href="#"
                                    class="w-inline-block w-lightbox">
                                     <img t-attf-src="/nbeauty/static/src/img/lowres/image-32.JPG" loading="eager"
@@ -398,11 +398,11 @@
                                          data-w-id="abbfbd85-7ea7-f870-826b-022b3babcfc2" alt=""
                                          class="_6block-img _17"/>
                                 </a>
-                                <a href="#" class="w-inline-block w-lightbox">
-                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-34.JPG" loading="eager"
-                                         data-w-id="d3333757-ce8f-f3fb-d5c7-651730c404d0" alt=""
-                                         class="_6block-img _16"/>
-                                </a>
+<!--                                <a href="#" class="w-inline-block w-lightbox">-->
+<!--                                    <img t-attf-src="/nbeauty/static/src/img/lowres/image-34.JPG" loading="eager"-->
+<!--                                         data-w-id="d3333757-ce8f-f3fb-d5c7-651730c404d0" alt=""-->
+<!--                                         class="_6block-img _16"/>-->
+<!--                                </a>-->
                                 <a href="#" class="w-inline-block w-lightbox">
                                     <img t-attf-src="/nbeauty/static/src/img/lowres/image-36.JPG" loading="eager"
                                          data-w-id="6b17037b-f1a1-e870-41ab-33f23fca4da6" alt=""
