@@ -3,6 +3,7 @@ from odoo.http import request
 import pytz
 from datetime import datetime
 import json
+from odoo.addons.mail.models.mail_mail import MailMail
 
 
 
@@ -132,27 +133,26 @@ class NBeautyHomepage(http.Controller):
 
     @http.route('/nbeauty/popup/submit', type='http', auth='public', methods=['POST'], csrf=False)
     def submit_popup_form(self, **kwargs):
-        # ✅ Read raw POST data
+        import logging
+
         raw_data = request.httprequest.data.decode('utf-8')
         try:
             data = json.loads(raw_data)
         except:
             data = {}
 
-        # ✅ Extract only required fields
         name = data.get('name')
         email = data.get('email')
         phone = data.get('phone')
         requirements = data.get('requirements') or ''
 
-        # ✅ Validate required fields
         if not name or not email or not phone:
             return request.make_json_response({
                 'status': 'error',
                 'message': 'Name, Email, and Phone are required.'
             })
 
-        # ✅ Save to DB
+        # Save lead in DB (optional, can skip if you don't want it)
         request.env['nbeauty.popup.lead'].sudo().create({
             'name': name,
             'email': email,
@@ -160,9 +160,35 @@ class NBeautyHomepage(http.Controller):
             'requirements': requirements,
         })
 
+        # Prepare email
+        subject = f"New Lead from Website Popup: {name}"
+        body_html = f"""
+            <p><strong>Name:</strong> {name}</p>
+            <p><strong>Email:</strong> {email}</p>
+            <p><strong>Phone:</strong> {phone}</p>
+            <p><strong>Requirements:</strong> {requirements}</p>
+        """
+
+        try:
+            # Create and send immediately without queue
+            mail = request.env['mail.mail'].sudo().create({
+                'subject': subject,
+                'body_html': body_html,
+                'email_to': 'mureedsultan11@gmail.com',
+                'auto_delete': True,
+            })
+            mail.send()  # Sends immediately
+        except Exception as e:
+            logging.exception("Failed to send popup email")
+            # You can still return success to user; failure is logged
+            return request.make_json_response({
+                'status': 'error',
+                'message': 'Lead saved but email failed to send.'
+            })
+
         return request.make_json_response({
             'status': 'success',
-            'message': 'Lead saved successfully'
+            'message': 'Lead saved successfully and email sent immediately.'
         })
 
     @http.route('/ncard', type='http', auth='public', website=True)
